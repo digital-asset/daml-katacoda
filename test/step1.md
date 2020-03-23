@@ -1,0 +1,2 @@
+Once the prompt says "Ready to go", you can start using the DAML IDE. Use VSCode in the IDE Tab.
+You can run `daml start`{{execute}} to run your project and open the navigator (or any other UI) by clicking the "+" symbol next to he IDE tab. Navigator runs on [port `7500`](https://[[HOST_SUBDOMAIN]]-7500-[[KATACODA_HOST]].environments.katacoda.com/) by default.
