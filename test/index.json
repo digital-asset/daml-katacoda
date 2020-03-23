@@ -1,0 +1,35 @@
+{
+  "title": "DAML Docker",
+  "description": "DAML Docker",
+  "difficulty": "Beginner",
+  "time": "60 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Run the SDK",
+        "text": "step1.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+      ]
+    }
+  },
+  "environment": {
+    "showide": true,
+    "ide" : "echo starting code server", 
+    "idePort": 23000,
+    "uilayout": "terminal-iframe",
+    "showdashboard": true,
+    "dashboards": [{"name": "Navigator", "port": 7500}]
+  },
+  "backend": {
+    "imageid": "daml-sdk-env"
+  }
+}
