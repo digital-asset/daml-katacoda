@@ -7,19 +7,11 @@
     "steps": [
       {
         "title": "Run the SDK",
-        "text": "step1.md",
-      },
-      {
-        "title": "Other Features",
-        "text": "step2.md"
-      },
-      {
-        "title": "DABL",
-        "text": "step3.md"
+        "text": "step1.md"
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "intro.md"
     },
     "finish": {
       "text": "finish.md"
