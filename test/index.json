@@ -23,7 +23,6 @@
   },
   "environment": {
     "showide": true,
-    "ide" : "echo starting code server", 
     "idePort": 23000,
     "uilayout": "terminal-iframe",
     "showdashboard": true,
