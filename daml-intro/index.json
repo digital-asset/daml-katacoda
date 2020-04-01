@@ -1,0 +1,28 @@
+{
+  "title": "Introduction to daml sdk",
+  "description": "",
+  "difficulty": "Beginner",
+  "time": "30 min",
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1",
+        "text": "step1.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal",
+    "showide": true,
+    "idePort": 23000
+  },
+  "backend": {
+    "imageid": "daml-sdk-env"
+  }
+}
