@@ -11,5 +11,10 @@ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/source
 # Following https://github.com/nodesource/distributions/blob/master/README.md#deb
 curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
 
+sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+
 sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install gcc-4.9
+sudo apt-get upgrade libstdc++6
 sudo apt install adoptopenjdk-11-hotspot-jre nodejs yarn
