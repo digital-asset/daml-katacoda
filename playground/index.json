@@ -8,6 +8,7 @@
       {
         "title": "DAML Playground",
         "text": "step1.md",
+        "courseData": "init_background.sh",
         "code": "init.sh"
       }
     ],
