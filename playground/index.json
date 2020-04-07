@@ -11,6 +11,9 @@
         "code": "init.sh"
       }
     ],
+    "intro": {
+      "courseData": "init_background.sh"
+    },
     "finish": {
       "text": "finish.md"
     }
