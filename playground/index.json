@@ -8,7 +8,7 @@
       {
         "title": "DAML Playground",
         "text": "step1.md",
-        "code": "scripts/init.sh"
+        "code": "init.sh"
       }
     ],
     "finish": {
