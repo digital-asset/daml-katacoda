@@ -1,12 +1,14 @@
 #!/bin/bash
-@Echo off
+
+init()
+{
+    cd /tmp
+    daml new playground_project
+    mkdir -p /root/playground_project
+    mv playground_project/* /root/playground_project/
+    cd /root/playground_project/
+}
 
 echo Initialising...
-
-cd /tmp
-daml new playground_project
-mkdir -p /root/playground_project
-mv playground_project/* /root/playground_project/
-cd /root
-
+init
 echo Done!
