@@ -1,32 +1,25 @@
 {
-  "title": "DAML Docker",
+  "title": "DAML Playground",
   "description": "DAML Docker",
   "difficulty": "Beginner",
   "time": "60 minutes",
   "details": {
     "steps": [
       {
-        "title": "Run the SDK",
-        "text": "step1.md"
+        "title": "DAML Playground",
+        "text": "step1.md",
+        "code": "scripts/init.sh"
       }
     ],
-    "intro": {
-      "text": "intro.md"
-    },
     "finish": {
       "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-      ]
     }
   },
   "environment": {
     "showide": true,
+    "uieditorpath": "/root/playground_project",
     "idePort": 23000,
-    "uilayout": "terminal-iframe",
-    "showdashboard": true,
-    "dashboards": [{"name": "Navigator", "port": 7500}]
+    "uilayout": "terminal-iframe"
   },
   "backend": {
     "imageid": "daml-sdk-env"
