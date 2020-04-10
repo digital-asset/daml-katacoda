@@ -6,7 +6,7 @@ curl https://get.daml.com | sh -s $SDK_VERSION \
 
 # Hack to not show the release notes
 mkdir -p /opt/.katacodacode/user-data/User/state/ \
-    && echo '[["DigitalAssetHoldingsLLC.daml-bundled", "{\"version\":\"0.13.55\"}"]]' > /opt/.katacodacode/user-data/User/state/global.json
+    && echo "[[\"DigitalAssetHoldingsLLC.daml-bundled\", \"{\\\"version\\\":\\\"${SDK_VERSION}\\\", \\\"telemetry-consent\\\": false}\"]]" > /opt/.katacodacode/user-data/User/state/global.json
 
 # Opt out of telemetry
 mkdir -p $HOME/.daml \
