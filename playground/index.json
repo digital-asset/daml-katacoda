@@ -6,14 +6,11 @@
   "details": {
     "steps": [
       {
-        "title": "DAML Playground",
         "text": "step1.md",
-        "code": "init.sh"
+        "code": "init.sh",
+        "courseData": "init_background.sh"
       }
     ],
-    "intro": {
-      "courseData": "init_background.sh"
-    },
     "finish": {
       "text": "finish.md"
     }
