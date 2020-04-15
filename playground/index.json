@@ -1,6 +1,6 @@
 {
   "title": "DAML Playground",
-  "description": "DAML Docker",
+  "description": "A playground for the DAML SDK",
   "difficulty": "Beginner",
   "time": "60 minutes",
   "details": {
