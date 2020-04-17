@@ -1,6 +1,6 @@
 We’ll start by getting the app up and running, and then explain the different components which we will later extend.
 
-First off, open a terminal and instantiate the template project.
+First off, open a terminal and instantiate the template project. You can click on the below snippets to run them in the terminal.
 
 ```
 rm -rf create-daml-app

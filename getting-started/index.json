@@ -2,12 +2,13 @@
   "title": "Build and Run a DAML Application",
   "description": "Run the create-daml-app social network application",
   "difficulty": "Beginner",
-  "time": "60 minutes",
+  "time": "20 minutes",
   "details": {
     "steps": [
       {
         "title": "Running the App",
-        "text": "1_template.md"
+        "text": "1_template.md",
+        "verify": "1_verify.sh"
       },
       {
         "title": "Building  DAML",
