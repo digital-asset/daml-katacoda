@@ -1,0 +1,27 @@
+{
+  "title": "Build and Run a DAML Application",
+  "description": "Run the create-daml-app social network application",
+  "difficulty": "Beginner",
+  "time": "20 minutes",
+  "details": {
+    "steps": [
+    ],
+    "intro": {
+      "text": "0_intro.md"
+    }
+  },
+  "environment": {
+    "showide": true,
+    "uieditorpath": "/root/upgrading",
+    "showdashboard": true,
+    "dashboards": [{"name": "UI", "port": 3000}],
+    "terminals": [
+        {"name": "Terminal 2", "target": "host01"}
+    ],
+    "idePort": 23000,
+    "uilayout": "terminal-iframe"
+  },
+  "backend": {
+    "imageid": "daml-sdk-env"
+  }
+}
