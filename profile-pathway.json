@@ -5,7 +5,7 @@
       {
         "title": "DAML Playground",
         "description": "A playground for the DAML SDK",
-        "id": "daml-docker"
+        "id": "playground"
       }
     ]
   }
