@@ -35,7 +35,8 @@
       }
     ],
     "intro": {
-      "text": "0_intro.md"
+      "text": "0_intro.md",
+      "courseData": "init_background.sh"
     },
     "finish": {
       "text": "99_finish.md"
