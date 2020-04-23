@@ -5,11 +5,13 @@
         {
         "external_link": "https://www.daml.com/websdk",
         "title": "Web SDK",
+        "description": "A plain environment to use the DAML SDK in.",
         "action": "Start"
         },
         {
         "external_link": "https://www.daml.com/learn/getting-started",
         "title": "Get Started with DAML",
+        "description": "A short series of tutorials to learn the basics about DAML development.",
         "action": "Start"
         }
     ]
