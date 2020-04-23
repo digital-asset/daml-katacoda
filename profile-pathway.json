@@ -1,5 +1,10 @@
 {
     "courses": [
+      {
+        "title": "Testing DAML Models",
+        "description": "Learn how to test your DAML models with scenarios and scripts.",
+        "id": "testing-daml-models"
+      }
     ],
     "scenarios": [
       {
