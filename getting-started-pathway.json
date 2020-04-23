@@ -1,11 +1,12 @@
 {
   "title": "Get Started with DAML",
-  "private": true,
+  "private": false,
   "courses": [
-      {
-      "external_link": "https://www.daml.com/learn/scenario/getting-started",
+    {      
+      "external_link": "https://www.daml.com/learn/scenario/getting-started/build-and-run",
       "title": "Build and Run a DAML App",
-      "action": "Start Scenario"
-      }
+      "description": "Get familiar with the getting started application",
+      "course_id": "build-and-run"
+    }
   ]
 }
