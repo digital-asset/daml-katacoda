@@ -3,7 +3,7 @@
   "private": false,
   "courses": [
     {      
-      "external_link": "https://www.daml.com/learn/scenario/getting-started/build-and-run",
+      "external_link": "https://www.daml.com/learn/scenario?id=getting-started/build-and-run",
       "title": "Build and Run a DAML App",
       "description": "Get familiar with the getting started application",
       "course_id": "build-and-run"
