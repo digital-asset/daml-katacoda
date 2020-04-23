@@ -1,0 +1,3 @@
+You’ve gone through the process of setting up a full-stack DAML app and implementing a useful feature end to end. Have a think about how you might further improve or extend this app. For example, you might have noticed that your list of messages can get out of order. You could add a timestamp to the Message template and sort messages in the MessageList component so your most recent are at the top. Of course there are many more features you could imagine (just think of your favourite social media app).
+
+Hopefully this exercise gives you a sense of the power and ease of building DAML apps. Explore the [documentation](https://docs.daml.com) to learn more, and keep shipping DAML apps. Have fun!
