@@ -3,12 +3,12 @@
     "private": true,
     "courses": [
         {
-        "external_link": "https://www.daml.com/learn/scenario?id=websdk",
+        "external_link": "https://www.daml.com/websdk",
         "title": "Web SDK",
         "action": "Start"
         },
         {
-        "external_link": "https://www.daml.com/learn/course?id=getting-started",
+        "external_link": "https://www.daml.com/learn/getting-started",
         "title": "Get Started with DAML",
         "action": "Start"
         }
