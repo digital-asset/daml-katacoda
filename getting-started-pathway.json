@@ -1,0 +1,11 @@
+{
+  "title": "Get Started with DAML",
+  "private": true,
+  "courses": [
+      {
+      "external_link": "https://www.daml.com/learn/scenario/getting-started",
+      "title": "Build and Run a DAML App",
+      "action": "Start Scenario"
+      }
+  ]
+}
