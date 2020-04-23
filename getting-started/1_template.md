@@ -15,4 +15,5 @@ cd create-daml-app
 
 Any commands starting with daml are using the [DAML Assistant](https://docs.daml.com/tools/assistant.html), a command line tool in the DAML SDK for building and running DAML apps. 
 
-You can now open the IDE in the IDE tab to explore the project.
+You can now open the IDE in the IDE tab to explore the project. **Please do so to ensure it's loaded for later steps**. You don't need to wait for it to fully load before continuing.
+
