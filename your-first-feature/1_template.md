@@ -22,7 +22,6 @@ Now we can add messaging into the workflow by adding a new choice to the User te
 Add the below code to the `daml/User.daml`{{open}} file
 
 <pre class="file" data-target="clipboard">
-```daml
     nonconsuming choice SendMessage: ContractId Message with
             sender: Party
             content: Text
@@ -30,7 +29,6 @@ Add the below code to the `daml/User.daml`{{open}} file
         do
             assertMsg "Designated user must follow you back to send a message" (elem sender following)
             create Message with sender, receiver = username, content
-```
 </pre>
 
 As with the Follow choice, there are a few aspects to note here.

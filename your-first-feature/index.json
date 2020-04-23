@@ -1,42 +1,38 @@
 {
-  "title": "DAML Networking application messaging feature",
-  "description": "Your first feature with a UI using DAML",
+  "title": "Build and Run a DAML Application",
+  "description": "Run the create-daml-app social network application",
   "difficulty": "Beginner",
   "time": "20 minutes",
   "details": {
     "steps": [
       {
-        "title": "DAML Changes",
-        "text": "1_template.md"
+        "title": "Running the App",
+        "text": "1_template.md",
+        "verify": "1_verify.sh"
       },
       {
-        "title": "TypeScript Code Generation",
-        "text": "2_typescript_code_generation.md"
+        "title": "Building  DAML",
+        "text": "2_build_daml.md"
       },
       {
-        "title": "UI Changes",
-        "text": "3_messaging_ui.md"
+        "title": "Building the UI",
+        "text": "3_build_ui.md"
       },
       {
-        "title": "MessageList Component",
-        "text": "4_message_list_component.md"
+        "title": "Running the DAML Ledger",
+        "text": "4_start_ledger.md"
       },
       {
-        "title": "MessageEdit Component",
-        "text": "5_message_edit_component.md"
+        "title": "Start the UI",
+        "text": "5_start_ui.md"
       },
       {
-        "title": "MainView Component",
-        "text": "6_main_view_component.md"
-      },
-      {
-        "title": "Running the new feature",
-        "text": "7_running_the_new_feature.md"
+        "title": "Use the Application",
+        "text": "6_use_app.md"
       }
     ],
     "intro": {
-      "text": "0_intro.md",
-      "courseData": "init_background.sh"
+      "text": "0_intro.md"
     },
     "finish": {
       "text": "99_finish.md"
