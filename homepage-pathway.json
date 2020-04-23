@@ -13,6 +13,12 @@
         "title": "Get Started with DAML",
         "description": "A short series of tutorials to learn the basics about DAML development.",
         "action": "Start"
-        }
+        },
+        {
+            "external_link": "https://www.daml.com/learn/testing-daml-models",
+            "title": "Learn how to test DAML models",
+            "description": "A short series of tutorials to learn the basics of testing DAML models.",
+            "action": "Start"
+            }
     ]
 }
