@@ -2,7 +2,8 @@ We can now run the app in two steps. The first is to run the DAML Ledger.
 
 Because we are running in a special environment, we need to configure the API to listen to external connections. To do so, we add the following two lines to the `daml.yaml`{{open}} project definition:
 
-<pre class="file" data-target="clipboard">json-api-options:
+
+<pre class="file" data-filename="daml.yaml" data-target="append">json-api-options:
 - --address=0.0.0.0
 </pre>
 
