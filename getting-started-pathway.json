@@ -2,7 +2,7 @@
   "title": "Get Started with DAML",
   "private": false,
   "courses": [
-    {      
+    {
       "external_link": "https://www.daml.com/learn/getting-started/build-and-run",
       "title": "Build and Run a DAML App",
       "description": "Get familiar with the getting started application",

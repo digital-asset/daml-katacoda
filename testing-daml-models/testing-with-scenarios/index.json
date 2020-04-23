@@ -1,0 +1,52 @@
+{
+  "title": "Test your DAML models with scenarios",
+  "description": "Learn how to test your DAML models with scenarios, trace your code and inspect the sandbox ledger",
+  "difficulty": "Beginner",
+  "time": "20 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Writing a scenario",
+        "text": "1_scenario.md",
+        "code": "init.sh"
+      },
+      {
+        "title": "Scenario results",
+        "text": "2_scenario_results.md"
+      },
+      {
+        "title": "Basic scenario steps",
+        "text": "3_scenario_basics.md"
+      },
+      {
+        "title": "Testing for failing transactions",
+        "text": "4_scenario_failing_transactions.md"
+      },
+      {
+        "title": "Tracing scenario steps",
+        "text": "5_scenario_tracing.md"
+      }
+
+    ],
+    "intro": {
+      "text": "0_intro.md"
+    },
+    "finish": {
+      "text": "99_finish.md"
+    }
+  },
+  "environment": {
+    "showide": true,
+    "uieditorpath": "/root/create-daml-app",
+    "showdashboard": true,
+    "dashboards": [{"name": "UI", "port": 3000}],
+    "terminals": [
+        {"name": "Terminal 2", "target": "host01"}
+    ],
+    "idePort": 23000,
+    "uilayout": "terminal-iframe"
+  },
+  "backend": {
+    "imageid": "daml-sdk-env"
+  }
+}
