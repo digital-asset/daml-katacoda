@@ -7,8 +7,6 @@ init()
     mkdir -p /root/create-daml-app
     mv create-daml-app/* /root/create-daml-app/
     cd /root/create-daml-app/ui
-    yarn install
-    cd ..
 }
 
 echo Initialising...
