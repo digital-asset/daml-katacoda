@@ -1,10 +1,3 @@
-Well done, you have now built and run your first full stack DAML Application.
+We’ve gone through the process of setting up a full-stack DAML app and implementing a useful feature end to end. Have a think about how you might further improve or extend this app. For example, you might have noticed that your list of messages can get out of order. You could add a timestamp to the Message template and sort messages in the MessageList component so your most recent are at the top. Of course there are many more features you could imagine (just think of your favourite social media app).
 
-If you want to continue learning, head over to the next parts of this course:
-
-1. [Application Architecture](https://docs.daml.com/getting-started/app-architecture.html)
-1. [Your First Feature](https://docs.daml.com/getting-started/first-feature.html)
-
-You can continue to use the [Web SDK](https://www.daml.com/websdk) or head over to the [Installation Instructions](https://docs.daml.com/getting-started/installation.html) to install DAML on your local machine.
-
-If you have any questions or problems, connect with the DAML Community on [Slack](slack.daml.com).
+Hopefully this exercise gives you a sense of the power and ease of building DAML apps. Explore the documentation to learn more, and keep shipping DAML apps. Have fun!
