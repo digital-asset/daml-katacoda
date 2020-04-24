@@ -1,6 +1,6 @@
 Next we need the MessageEdit component to compose and send messages to our followers. Again we show the entire component here; you should copy this into a new MessageEdit.tsx file in `ui/src/components`{{open}} and save it.
 
-<pre class="file" data-target="clipboard">
+```
 import React from 'react'
 import { Form, Button } from 'semantic-ui-react';
 import { Party } from '@daml/types';
@@ -66,7 +66,7 @@ const MessageEdit: React.FC<Props> = ({followers}) => {
 };
 
 export default MessageEdit;
-</pre>
+```{{copy}}
 
 You will first notice a Props type near the top of the file with a single following field. A prop in React is an input to a component; in this case a list of users from which to select the message receiver. The prop will be passed down from the MainView component, reusing the work required to query users from the ledger. You can see this following field bound at the start of the MessageEdit component.
 
