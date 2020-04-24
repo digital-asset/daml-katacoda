@@ -6,24 +6,14 @@ To implement this workflow, let’s start by adding the new data for messages. N
 
 First, add the below code to `daml/User.daml`{{open}}
 
-```haskell
-template Message with
-    sender: Party
-    receiver: Party
-    content: Text
-  where
-    signatory sender, receiver
-```
+<pre class="file" data-filename="daml/User.daml" data-target="append">
 
-<pre class="file" data-target="clipboard">
-```haskell
 template Message with
     sender: Party
     receiver: Party
     content: Text
   where
     signatory sender, receiver
-```
 </pre>
 
 This template is very simple: it contains the data for a message and no choices. The interesting part is the signatory clause: both the sender and receiver are signatories on the template. This enforces the fact that creation and archival of Message contracts must be authorized by both parties.
@@ -32,18 +22,7 @@ Now we can add messaging into the workflow by adding a new choice to the User te
 
 Add the below code to the `daml/User.daml`{{open}} file
 
-```daml
-    nonconsuming choice SendMessage: ContractId Message with
-            sender: Party
-            content: Text
-        controller sender
-        do
-            assertMsg "Designated user must follow you back to send a message" (elem sender following)
-            create Message with sender, receiver = username, content
-```
-
 <pre class="file" data-target="clipboard">
-```daml
     nonconsuming choice SendMessage: ContractId Message with
             sender: Party
             content: Text
@@ -51,7 +30,6 @@ Add the below code to the `daml/User.daml`{{open}} file
         do
             assertMsg "Designated user must follow you back to send a message" (elem sender following)
             create Message with sender, receiver = username, content
-```
 </pre>
 
 As with the Follow choice, there are a few aspects to note here.
