@@ -1,6 +1,7 @@
 The goal of the MessageList component is to query all Message contracts where the receiver is the current user, and display their contents and senders in a list. The entire component is shown below. You should copy this into a new MessageList.tsx file in `ui/src/components`{{open}} and save it.
 
 <pre class="file" data-target="clipboard">
+```typescript
 import React from 'react'
 import { List, ListItem } from 'semantic-ui-react';
 import { User } from '@daml.js/create-daml-app';
@@ -29,6 +30,7 @@ const MessageList: React.FC = () => {
 };
 
 export default MessageList;
+```
 </pre>
 
 First we get the username of the current user with the useParty hook. Then messagesResult gets the stream of all Message contracts where the receiver is our username. The streaming aspect means that we don’t need to reload the page when new messages come in. We extract the payload of every Message contract (the data as opposed to metadata like the contract ID) in messages. The rest of the component simply constructs a React List element with an item for each message.

@@ -8,11 +8,11 @@ daml codegen js .daml/dist/create-daml-app-0.1.0.dar -o daml.js
 
 The result is an up-to-date TypeScript interface to our DAML model, in particular to the new Message template and SendMessage choice.
 
-To make sure that Yarn picks up the newly generated JavaScript code, we have to run the following command in the ui directory:
+Now, changing to the ui folder, use Yarn to install the project dependencies:
 
 ```
 cd ui
-yarn install --force --frozen-lockfile
+yarn install
 ```{{execute T2}}
 
 Once that command finishes, you have to close Visual Studio Code and restart it by running daml studio from the root directory of your project.
