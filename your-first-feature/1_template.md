@@ -4,7 +4,7 @@ For the authorization part, we take the following approach: a user Bob can messa
 
 To implement this workflow, let’s start by adding the new data for messages. Navigate to the daml/User.daml file and copy the following Message template to the bottom. Indentation is important: it should be at the top level like the original User template.
 
-First, add the below code to `daml/User.daml`{{open}}
+First, **open the IDE tab** and then add the below code to `daml/User.daml`{{open}}
 
 <pre class="file" data-filename="daml/User.daml" data-target="append">
 
