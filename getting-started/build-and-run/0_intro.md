@@ -6,7 +6,7 @@ This is the first in a series of three tutorials to get you up and running with 
 
 The final application will look something like this:
 
-![Final App](/daml/scenarios/getting-started/assets/gsg_better.gif)
+![Final App](/daml/courses/getting-started/build-and-run/assets/gsg_better.gif)
 
 We do not aim to be comprehensive in all DAML concepts and tools (covered in [Writing DAML](https://docs.daml.com/daml/intro/0_Intro.html)) or in all deployment options (see [Deploying](https://docs.daml.com/deploy/index.html)]). The goal is that by the end of this tutorial, you’ll have a good idea of the following:
 
