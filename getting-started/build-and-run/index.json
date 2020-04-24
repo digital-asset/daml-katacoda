@@ -41,7 +41,6 @@
   "environment": {
     "showide": true,
     "uieditorpath": "/root/create-daml-app",
-    "showdashboard": true,
     "dashboards": [{"name": "UI", "port": 3000}],
     "terminals": [
         {"name": "Terminal 2", "target": "host01"}
