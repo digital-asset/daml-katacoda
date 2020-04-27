@@ -9,7 +9,6 @@ daml start
 In terminal 2 run
 
 ```
-cd ui
 yarn start
 ```{{execute T2}}
 
