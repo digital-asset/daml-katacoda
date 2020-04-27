@@ -7,7 +7,9 @@ To implement this workflow, let’s start by adding the new data for messages. N
 First, **open the IDE tab and wiat for it to load**. After that add the below code to `daml/User.daml`{{open}}
 
 <pre class="file" data-filename="daml/User.daml" data-target="append">
-
+<br>
+<br>
+<br>
 template Message with
     sender: Party
     receiver: Party
