@@ -6,7 +6,7 @@ First create a new file and name it MessageList.tsx file in `ui/src/components`{
 ![Create New File](/nemanja/scenarios/your-first-feature/assets/create-new-file-katacoda.png)
 
 After you have created a new file paste the code and save the file.
-<pre class="file" data-filename="src/ui/MessageList.tsx" data-target="append">
+<pre class="file" data-filename="ui/src/components/MessageList.tsx" data-target="append">
 import React from 'react'
 import { List, ListItem } from 'semantic-ui-react';
 import { User } from '@daml.js/create-daml-app';

@@ -2,7 +2,7 @@ Next we need the MessageEdit component to compose and send messages to our follo
 
 First, create a new file in the `ui/src/components`{{open}} folder and name it MessageEdit.tsx. Next copy the code in it and save it.
 
-<pre class="file" data-filename="src/ui/MessageEdit.tsx" data-target="append">
+<pre class="file" data-filename="ui/src/components/MessageEdit.tsx" data-target="append">
 import React from 'react'
 import { Form, Button } from 'semantic-ui-react';
 import { Party } from '@daml/types';
