@@ -22,10 +22,10 @@ template Message with
 
 This template is very simple: it contains the data for a message and no choices. The interesting part is the signatory clause: both the sender and receiver are signatories on the template. This enforces the fact that creation and archival of Message contracts must be authorized by both parties.
 
-Now we can add messaging into the workflow by adding a new choice to the User template. Copy the following choice to the User template after the Follow choice. **The indentation for the SendMessage choice must match the one of Follow. Make sure you save the file after copying the code.**
+Now we can add messaging into the workflow by adding a new choice to the User template.
 
-Add the below code to the `daml/User.daml`{{open}} file
-
+- Open `daml/User.daml`{{open}} file
+- Copy the below choice by clicking on the "Copy to Clipboard" button
 <pre class="file" data-target="clipboard">
     nonconsuming choice SendMessage: ContractId Message with
             sender: Party
@@ -35,6 +35,8 @@ Add the below code to the `daml/User.daml`{{open}} file
             assertMsg "Designated user must follow you back to send a message" (elem sender following)
             create Message with sender, receiver = username, content
 </pre>
+
+- Finally paste the code into the User template after the Follow choice. **The indentation for the SendMessage choice must match the one of Follow. Make sure you save the file after copying the code.**
 
 As with the Follow choice, there are a few aspects to note here.
 
