@@ -1,8 +1,12 @@
 The goal of the MessageList component is to query all Message contracts where the receiver is the current user, and display their contents and senders in a list. The entire component is shown below.
 
-First, copy the code below.
 
-<pre class="file" data-target="clipboard">
+First create a new file and name it MessageList.tsx file in `ui/src/components`{{open}}. You can create a new file my right clicking on the *components* folder and selecting the option "New File".
+
+![Create New File](/nemanja/scenarios/your-first-feature/assets/create-new-file-katacoda.png)
+
+After you have created a new file paste the code and save the file.
+<pre class="file" data-filename="src/ui/MessageList.tsx" data-target="append">
 import React from 'react'
 import { List, ListItem } from 'semantic-ui-react';
 import { User } from '@daml.js/create-daml-app';
@@ -32,12 +36,6 @@ const MessageList: React.FC = () =&gt; {
 
 export default MessageList;
 </pre>
-
-Next create a new file and name it MessageList.tsx file in `ui/src/components`{{open}}. You can create a new file my right clicking on the *components* folder and selecting the option "New File".
-
-![Create New File](/nemanja/scenarios/your-first-feature/assets/create-new-file-katacoda.png)
-
-After you have created a new file paste the code and save the file.
 
 This is how the code works. First we get the username of the current user with the useParty hook. Then messagesResult gets the stream of all Message contracts where the receiver is our username. The streaming aspect means that we don’t need to reload the page when new messages come in. We extract the payload of every Message contract (the data as opposed to metadata like the contract ID) in messages. The rest of the component simply constructs a React List element with an item for each message.
 
