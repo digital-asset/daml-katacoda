@@ -9,22 +9,22 @@ import { useStreamQuery } from '@daml/react';
 /**
  * React component displaying the list of messages for the current user.
  */
-const MessageList: React.FC = () => {
+const MessageList: React.FC = () =&gt; {
   const messagesResult = useStreamQuery(User.Message);
 
   return (
-    <List relaxed>
-      {messagesResult.contracts.map(message => {
+    &lt;List relaxed&gt;
+      {messagesResult.contracts.map(message =&gt; {
         const {sender, receiver, content} = message.payload;
         return (
-          <ListItem
+          &lt;ListItem
             className='test-select-message-item'
-            key={message.contractId}>
-            <strong>{sender} &rarr; {receiver}:</strong> {content}
-          </ListItem>
+            key={message.contractId}&gt;
+            &lt;strong&gt;{sender} &amp;rarr; {receiver}:&lt;/strong&gt; {content}
+          &lt;/ListItem&gt;
         );
       })}
-    </List>
+    &lt;/List&gt;
   );
 };
 
