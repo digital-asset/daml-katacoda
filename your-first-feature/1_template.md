@@ -27,7 +27,7 @@ Now we can add messaging into the workflow by adding a new choice to the User te
 - Open `daml/User.daml`{{open}} file
 - Copy the below choice by clicking on the "Copy to Clipboard" button
 <pre class="file" data-target="clipboard">
-        nonconsuming choice SendMessage: ContractId Message with
+    nonconsuming choice SendMessage: ContractId Message with
             sender: Party
             content: Text
         controller sender

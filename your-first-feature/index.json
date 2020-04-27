@@ -19,10 +19,12 @@
       },
       {
         "title": "MessageList Component",
+        "courseData": "4_create_message_list.sh",
         "text": "4_message_list_component.md"
       },
       {
         "title": "MessageEdit Component",
+        "courseData": "5_create_message_edit.sh",
         "text": "5_message_edit_component.md"
       },
       {
