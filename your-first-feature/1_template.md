@@ -28,12 +28,12 @@ Now we can add messaging into the workflow by adding a new choice to the User te
 - Copy the below choice by clicking on the "Copy to Clipboard" button
 <pre class="file" data-target="clipboard">
     nonconsuming choice SendMessage: ContractId Message with
-            sender: Party
-            content: Text
-        controller sender
-        do
-            assertMsg "Designated user must follow you back to send a message" (elem sender following)
-            create Message with sender, receiver = username, content
+        sender: Party
+        content: Text
+      controller sender
+      do
+        assertMsg "Designated user must follow you back to send a message" (elem sender following)
+        create Message with sender, receiver = username, content
 </pre>
 
 - Finally paste the code into the User template after the Follow choice. **The indentation for the SendMessage choice must match the one of Follow. Make sure you save the file after copying the code.**
