@@ -1,3 +1,5 @@
+It's time to run the app with the newly added feature!
+
 In the root create-daml-app folder of terminal 1 run
 
 ```

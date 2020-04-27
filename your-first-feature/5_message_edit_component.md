@@ -1,6 +1,8 @@
-Next we need the MessageEdit component to compose and send messages to our followers. Again we show the entire component here; you should copy this into a new MessageEdit.tsx file in `ui/src/components`{{open}} and save it.
+Next we need the MessageEdit component to compose and send messages to our followers. Again we show the entire component here.
 
-```
+First, copy the code below.
+
+<pre class="file" data-filename="daml/User.daml" data-target="append">
 import React from 'react'
 import { Form, Button } from 'semantic-ui-react';
 import { Party } from '@daml/types';
@@ -14,14 +16,14 @@ type Props = {
 /**
  * React component to edit a message to send to a follower.
  */
-const MessageEdit: React.FC<Props> = ({followers}) => {
+const MessageEdit: React.FC&lt;Props&gt; = ({followers}) =&gt; {
   const sender = useParty();
-  const [receiver, setReceiver] = React.useState<string | undefined>();
-  const [content, setContent] = React.useState("");
+  const [receiver, setReceiver] = React.useState&lt;string | undefined&gt;();
+  const [content, setContent] = React.useState(&quot;&quot;);
   const [isSubmitting, setIsSubmitting] = React.useState(false);
   const ledger = useLedger();
 
-  const submitMessage = async (event: React.FormEvent) => {
+  const submitMessage = async (event: React.FormEvent) =&gt; {
     try {
       event.preventDefault();
       if (receiver === undefined) {
@@ -29,7 +31,7 @@ const MessageEdit: React.FC<Props> = ({followers}) => {
       }
       setIsSubmitting(true);
       await ledger.exerciseByKey(User.User.SendMessage, receiver, {sender, content});
-      setContent("");
+      setContent(&quot;&quot;);
     } catch (error) {
       alert(`Error sending message:\n${JSON.stringify(error)}`);
     } finally {
@@ -38,35 +40,37 @@ const MessageEdit: React.FC<Props> = ({followers}) => {
   };
 
   return (
-    <Form onSubmit={submitMessage}>
-      <Form.Dropdown
+    &lt;Form onSubmit={submitMessage}&gt;
+      &lt;Form.Dropdown
         selection
         className='test-select-message-receiver'
-        placeholder="Select a follower"
-        options={followers.map(follower => ({ key: follower, text: follower, value: follower }))}
+        placeholder=&quot;Select a follower&quot;
+        options={followers.map(follower =&gt; ({ key: follower, text: follower, value: follower }))}
         value={receiver}
-        onChange={event => setReceiver(event.currentTarget.textContent ?? undefined)}
-      />
-      <Form.Input
+        onChange={event =&gt; setReceiver(event.currentTarget.textContent ?? undefined)}
+      /&gt;
+      &lt;Form.Input
         className='test-select-message-content'
-        placeholder="Write a message"
+        placeholder=&quot;Write a message&quot;
         value={content}
-        onChange={event => setContent(event.currentTarget.value)}
-      />
-      <Button
+        onChange={event =&gt; setContent(event.currentTarget.value)}
+      /&gt;
+      &lt;Button
         fluid
         className='test-select-message-send-button'
-        type="submit"
-        disabled={isSubmitting || receiver === undefined || content === ""}
+        type=&quot;submit&quot;
+        disabled={isSubmitting || receiver === undefined || content === &quot;&quot;}
         loading={isSubmitting}
-        content="Send"
-      />
-    </Form>
+        content=&quot;Send&quot;
+      /&gt;
+    &lt;/Form&gt;
   );
 };
 
 export default MessageEdit;
-```{{copy}}
+</pre>
+
+Next, create a new file in the `ui/src/components`{{open}} folder and name it MessageEdit.tsx. Paste the code in it and save it.
 
 You will first notice a Props type near the top of the file with a single following field. A prop in React is an input to a component; in this case a list of users from which to select the message receiver. The prop will be passed down from the MainView component, reusing the work required to query users from the ledger. You can see this following field bound at the start of the MessageEdit component.
 
