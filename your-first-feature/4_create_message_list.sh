@@ -9,4 +9,5 @@ ls
 cd src/components
 echo "About to see what's in create-daml-app/ui/src/components"
 touch MessageList.tsx
+echo "Added MessageEdit.tsx"
 ls
