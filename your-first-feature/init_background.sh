@@ -7,8 +7,10 @@ init()
     mkdir -p /root/create-daml-app
     mv create-daml-app/* /root/create-daml-app/
     cd /root/create-daml-app/
+    echo "About to see what's in create-daml-app"
     ls
     cd ui/
+    echo "About to see what's in create-daml-app/ui"
     ls
     touch MessageList.tsx
     touch MessageEdit.tsx
