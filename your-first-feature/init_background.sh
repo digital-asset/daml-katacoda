@@ -8,7 +8,7 @@ init()
     mv create-daml-app/* /root/create-daml-app/
     cd /root/create-daml-app/ui
     echo "DANGEROUSLY_DISABLE_HOST_CHECK=true" >> .env
-    sed -i 's+ws://localhost:7575/+wss://2886795359-7575-maple01.environments.katacoda.com/+g' src/config.ts
+    sed -i 's+ws://localhost:7575/+wss://2886795313-7575-maple01.environments.katacoda.com/+g' src/config.ts
 }
 
 echo Initialising...
