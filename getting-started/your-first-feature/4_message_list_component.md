@@ -1,11 +1,9 @@
 The goal of the MessageList component is to query all Message contracts where the receiver is the current user, and display their contents and senders in a list. The entire component is shown below.
 
 
-First create a new file and name it MessageList.tsx file in `ui/src/components`{{open}}. You can create a new file my right clicking on the *components* folder and selecting the option "New File".
+First, we have created a new empty file *MessageList.tsx* in the *ui/src/components* folder.
 
-![Create New File](/nemanja/scenarios/your-first-feature/assets/create-new-file-katacoda.png)
-
-After you have created a new file paste the code and save the file.
+Copy the below code into the *MessageList.tsx* file by clicking on the *Copy to Editor* button. Make sure to save the file in order for the changes to take effect.
 <pre class="file" data-filename="ui/src/components/MessageList.tsx" data-target="append">
 import React from 'react'
 import { List, ListItem } from 'semantic-ui-react';

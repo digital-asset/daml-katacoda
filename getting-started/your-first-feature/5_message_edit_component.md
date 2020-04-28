@@ -1,7 +1,6 @@
 Next we need the MessageEdit component to compose and send messages to our followers. Again we show the entire component here.
 
-First, create a new file in the `ui/src/components`{{open}} folder and name it MessageEdit.tsx. Next copy the code in it and save it.
-
+First, we have created a new empty file *MessageEdit.tsx* in the *ui/src/components* folder. Copy the below code into the *MessageEdit.tsx* file by clicking on the *Copy to Editor* button. Make sure to save the file in order for the changes to take effect.
 <pre class="file" data-filename="ui/src/components/MessageEdit.tsx" data-target="append">
 import React from 'react'
 import { Form, Button } from 'semantic-ui-react';
