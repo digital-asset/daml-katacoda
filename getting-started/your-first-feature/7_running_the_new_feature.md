@@ -20,7 +20,7 @@ Once you’ve logged in, you’ll see a familiar UI but with our new Messages pa
 
 ![Messaging Feature](/nemanja/courses/getting-started/your-first-feature/assets/create-daml-app-messaging-feature.png)
 
-Go ahead and add follow more users, and log in as some of those users in separate browser windows to follow yourself back. Then, if you click on the dropdown menu in the Messages panel, you’ll be able to see some followers to message!
+Go ahead and add follow more users, and log in as some of those users by [right clikcing on this link and opening a separate tab in your browser](https://[[HOST_SUBDOMAIN]]-3000-[[KATACODA_HOST]].environments.katacoda.com) to follow yourself back. Then, if you click on the dropdown menu in the Messages panel, you’ll be able to see some followers to message!
 
 
 ![Select User](/nemanja/courses/getting-started/your-first-feature/assets/create-daml-app-messaging-select-user.png)
