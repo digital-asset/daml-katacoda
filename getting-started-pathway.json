@@ -2,11 +2,17 @@
   "title": "Get Started with DAML",
   "private": false,
   "courses": [
-    {      
+    {
       "external_link": "https://www.daml.com/learn/getting-started/build-and-run",
       "title": "Build and Run a DAML App",
       "description": "Get familiar with the getting started application",
       "course_id": "build-and-run"
+    },
+    {
+      "external_link": "https://www.daml.com/learn/getting-started/your-first-feature",
+      "title": "DAML Networking application messaging feature",
+      "description": "Your first feature with a UI using DAML",
+      "course_id": "your-first-feature"
     }
   ]
 }
