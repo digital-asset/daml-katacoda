@@ -9,11 +9,11 @@ daml codegen js .daml/dist/create-daml-app-0.1.0.dar -o daml.js
 
 The result is an up-to-date TypeScript interface to our DAML model, in particular to the new Message template and SendMessage choice.
 
-After the above commands have been executed run Yarn to install the project dependencies by clicking on the code below. *Do not run the below commands until the first set of commands in terminal 1 have been executed*.
+*Only after the above commands have been executed run Yarn to install the project dependencies by clicking on the code below*. To make sure that Yarn picks up the newly generated JavaScript code, we have to run the following command in the ui directory:
 
 ```
 cd create-daml-app/ui
-yarn install
+yarn install --force --frozen-lockfile
 ```{{execute T2}}
 
 Once that command finishes we can start implementing our messaging feature in the UI!
