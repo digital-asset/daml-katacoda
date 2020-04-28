@@ -1,4 +1,4 @@
-As mentioned in the ([application architecture](https://docs.daml.com/getting-started/app-architecture.html)) section, the DAML code defines the data and workflow of the application. The workflow aspect refers to the interactions between parties that are permitted by the system. In the context of a messaging feature, these are essentially the authorization and privacy concerns listed above.
+As mentioned in the [application architecture](https://docs.daml.com/getting-started/app-architecture.html) section, the DAML code defines the data and workflow of the application. The workflow aspect refers to the interactions between parties that are permitted by the system. In the context of a messaging feature, these are essentially the authorization and privacy concerns listed above.
 
 For the authorization part, we take the following approach: a user Bob can message another user Alice when Alice starts following Bob back. When Alice starts following Bob back, she gives permission or authority to Bob to send her a message.
 
