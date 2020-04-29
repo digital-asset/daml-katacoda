@@ -6,7 +6,7 @@ This is the last in a series of three tutorials to get you up and running with f
 
 In this scenario we'll dive into implementing a new feature for our social network app. This will give us a better idea how to develop DAML applications using our template.
 
-At the moment, our app lets us follow users in the network, but we have no way to communicate with them! Let’s fix that by adding a direct messaging feature. This should let users that follow each other send messages, repsecting authorization and privacy. This means:
+At the moment, our app lets us follow users in the network, but we have no way to communicate with them! Let’s fix that by adding a direct messaging feature. This will allow users that follow each other send messages, repsecting authorization and privacy. This means:
 
 - You cannot send a message to someone unless they have given you the authority by following you back.
 - You cannot see a message unless you sent it or it was sent to you.

@@ -35,6 +35,6 @@ const MessageList: React.FC = () =&gt; {
 export default MessageList;
 </pre>
 
-This is how the code works. First we get the username of the current user with the useParty hook. Then messagesResult gets the stream of all Message contracts where the receiver is our username. The streaming aspect means that we don’t need to reload the page when new messages come in. We extract the payload of every Message contract (the data as opposed to metadata like the contract ID) in messages. The rest of the component simply constructs a React List element with an item for each message.
+This is how the code works: The messagesResult gets the stream of all Message contracts where the receiver is our username. The streaming aspect means that we don’t need to reload the page when new messages come in. We extract the payload of every Message contract (the data as opposed to metadata like the contract ID) in messages. The rest of the component simply constructs a React List element with an item for each message.
 
 There is one important point about privacy here. No matter how we write our Message query in the UI code, it is impossible to break the privacy rules given by the DAML model. That is, it is impossible to see a Message contract of which you are not the sender or the receiver (the only parties that can observe the contract). This is a major benefit of writing apps on DAML: the burden of ensuring privacy and authorization is confined to the DAML model.

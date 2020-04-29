@@ -5,8 +5,8 @@ For the authorization part, we take the following approach: a user Bob can messa
 To implement this workflow, let’s start by adding the new data for messages.
 
 - First, **open the IDE tab and wait for it to load**
-- After that click on this link `daml/User.daml`{{open}} to open the User.daml file
-- Finally click on the button *Copy to Editor* to add the code snippet to the end of the User.daml file. Indentation is important: it should be at the top level like the original User template.
+- After that click on this link `daml/User.daml`{{open}} to open the `User.daml` file
+- Finally click on the button *Copy to Editor* to add the code snippet to the end of the `User.daml` file. Indentation is important: it should be at the top level like the original User template.
 
 <pre class="file" data-filename="daml/User.daml" data-target="append">
 template Message with
@@ -17,12 +17,12 @@ template Message with
     signatory sender, receiver
 </pre>
 
-This template is very simple: it contains the data for a message and no choices. The interesting part is the signatory clause: both the sender and receiver are signatories on the template. This enforces the fact that creation and archival of Message contracts must be authorized by both parties.
+This template is very simple: it contains the data for a message and no choices. The interesting part is the signatory clause: both the sender and receiver are signatories on the template. This enforces the fact that creation and archival of `Message` contracts must be authorized by both parties.
 
-Now we can add messaging into the workflow by adding a new choice to the User template.
+Now we can add messaging into the workflow by adding a new choice to the `User` template.
 
 - Open `daml/User.daml`{{open}} file
-- Copy the below choice by clicking on the "Copy to Clipboard" button
+- Copy the below choice by clicking on the *Copy to Clipboard* button
 <pre class="file" data-target="clipboard">
       nonconsuming choice SendMessage: ContractId Message with
           sender: Party
@@ -33,7 +33,7 @@ Now we can add messaging into the workflow by adding a new choice to the User te
           create Message with sender, receiver = username, content
 </pre>
 
-- Finally paste the code into the User template after the Follow choice. **The indentation for the SendMessage choice must match the one of Follow. Make sure you save the file after copying the code.**
+- Finally paste the code into the `User` template after the Follow choice. **The indentation for the SendMessage choice must match the one of Follow. Make sure you save the file after copying the code.**
 
 As with the Follow choice, there are a few aspects to note here.
 
