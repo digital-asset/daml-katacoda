@@ -1,0 +1,12 @@
+{
+  "title": "Testing DAML Models",
+  "private": false,
+  "courses": [
+    {
+      "external_link": "https://www.daml.com/learn/testing-daml-models/testing-with-scenarios",
+      "title": "Testing DAML Models with Scenarios",
+      "description": "Learn how to test your DAML models with scenarios",
+      "course_id": "testing-with-scenarios"
+    }
+  ]
+}
