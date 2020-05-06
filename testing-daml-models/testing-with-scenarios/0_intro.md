@@ -8,7 +8,7 @@ This tutorial will teach you how to
 1. add assertions to you scenarios
 1. trace through your scenarios and output debug information
 
-We'll take the DAML model of the social network of the [GettingStarted](https://katacoda.com/daml/courses/getting-started)
+We'll take the DAML model of the social network of the [GettingStarted](https://daml.com/learn/getting-started/)
 guide and extend it with tests. After that, we'll be 100% certain that we're not sending any
 messages to the wrong person!
 
