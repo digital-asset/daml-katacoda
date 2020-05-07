@@ -2,7 +2,7 @@ This is the first in a series of three tutorials to get you up and running with 
 
 1. How to build and run the application (this tutorial)
 1. The design of its different components ([Application Architecture](https://docs.daml.com/getting-started/app-architecture.html))
-1. How to write a new feature for the app ([Your First Feature](https://docs.daml.com/getting-started/first-feature.html))
+1. How to write a new feature for the app ([Your First Feature](https://daml.com/learn/getting-started/your-first-feature/))
 
 The final application will look something like this:
 

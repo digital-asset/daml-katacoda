@@ -16,6 +16,7 @@
       },
       {
         "title": "Building the UI",
+        "courseData": "4_start_ledger.sh",
         "text": "3_build_ui.md"
       },
       {
@@ -32,7 +33,8 @@
       }
     ],
     "intro": {
-      "text": "0_intro.md"
+      "text": "0_intro.md",
+      "courseData": "init_background.sh"
     },
     "finish": {
       "text": "99_finish.md"
