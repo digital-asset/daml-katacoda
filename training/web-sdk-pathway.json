@@ -1,0 +1,14 @@
+{
+    "title": "Web SDK Training",
+    "description": "This training teaches you using the vanilla WebSDK",
+    "courses": [
+      {
+        "pathway_id": "daml",
+        "id": "playground",
+        "course_id": "playground",
+        "title": "Learn DAML",
+        "description": "Learn how to DAML"
+      }
+    ]
+  }
+  
