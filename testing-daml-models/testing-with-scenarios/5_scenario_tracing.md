@@ -15,7 +15,7 @@ replace the last line with an assertion that doesn't hold, you'll see the error 
 scenario results.
 
 <pre class="file" data-filename="daml/User.daml" data-target="append">
-      assertMsg "Whoops!" $ following == [alice]
+      assertMsg "Whoops!" (aliceUser.following == [alice])
 </pre>
 
 Let's remove the failing line again.
