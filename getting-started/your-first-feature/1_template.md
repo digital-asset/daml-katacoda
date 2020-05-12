@@ -4,7 +4,7 @@ For the authorization part, we take the following approach: a user Bob can messa
 
 To implement this workflow, let’s start by adding the new data for messages.
 
-- First, **open the IDE tab and wait for it to load.** You should see the IDE, similiar to thte screen below, before proceeding with the next step.
+- First, **open the IDE tab and wait for it to load.** You should see the IDE, similiar to the screen below, before proceeding with the next step.
 ![IDE Loaded](/nemanja/courses/getting-started/your-first-feature/assets/IDE-loaded.png)
 
 - After that click on the button `Copy to Editor` to add the code snippet to the end of the `User.daml` file. Indentation is important: it should be at the top level like the original User template.
