@@ -1,4 +1,6 @@
-Instead of writing a script in a DAML source file, you can also connect to the ledger with the `DAML REPL` and run your commands interactively step by step. This is very helpful if you are trying to get a better feel for how your code works.
+Instead of writing a script in a DAML source file, you can also connect to the ledger with the `DAML REPL`
+and run your commands interactively step by step. This is very helpful if you are trying to
+get a better feel for how your code works.
 
 First, kill the running sandbox in the first terminal (ctrl-c) and restart it to get back into a clean state.
 
@@ -9,11 +11,10 @@ daml sandbox .daml/dist/create-daml-app-0.1.0.dar
 To start the `DAML REPL` run
 
 ```
-cd create-daml-app
 daml repl --ledger-host=localhost --ledger-port=6865 .daml/dist/create-daml-app-0.1.0.dar
 ```{{execute T2}}
 
-in the second terminal. After a few seconds you'll see the REPL prompt:
+in the **second** terminal. After a few seconds you'll see the REPL prompt:
 
 ```
 daml>
@@ -53,7 +54,7 @@ debug contracts
 1. as expected, the `contracts` variable contains the single contract `Alice` we just created
 1. note that the first entry of the tuple is an opaque contract ID, indicated by
    `<contract-id>`. The representation of contract ID's is internal to the ledger you are using.
-   Hence it's representat as an opaque in the `REPL`.
+   Hence it's represented as an opaque in the `REPL`.
 
 As an exercise, try to allocate another party `Bob` and issue an `exerciseCmd` to make `Alice`
 follow `Bob`! Step by step you can build your social network.

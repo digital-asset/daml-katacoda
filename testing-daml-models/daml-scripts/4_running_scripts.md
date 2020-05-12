@@ -30,14 +30,15 @@ that input file needs to be encoded in the [DAML-LF-JSON
 format](https://docs.daml.com/json-api/lf-value-specification.html). In our case it's just a list
 of strings. Paste the following in a new `initialParties.json`{{open}} file.
 
-```
+<pre class="file" data-filename="initialParties.json" data-target="append">
 ["Alice", "Bob", "Charlie"]
-```
+</pre>
 
-Now you can run your script against the local sandbox ledger. Run the following in the second
-terminal:
+Now you can run your script against the local sandbox ledger. In the **second** terminal, change
+directory to `create-daml-app` and execute the script with
 
 ```
+cd create-daml-app
 daml script --dar .daml/dist/create-daml-app-0.1.0.dar --script-name User:initialize --ledger-host localhost --ledger-port 6865 --wall-clock-time --input-file initialParties.json
 ```{{execute T2}}
 

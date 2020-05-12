@@ -1,5 +1,6 @@
-Next to a fixed `operator` party we want to allocate a list of parties given as an argument to the
-`initialize` script. We want them to follow the operator and the operator should follow them back.
+Next to a fixed `operator` party we want to also allocate a list of parties given as an argument to the
+`initialize` script. These parties will follow the operator and the operator will follow them back.
+
 As before, we will be using the `allocatePartyWithHint` function. Replace the initialize script
 with:
 
@@ -16,6 +17,7 @@ Easy! Scripts are just like usual DAML functions and follow the same syntax to d
 type signatures.
 
 1. Now we get the other party names from the `initialParties` argument to the script. 
+
 1. `forA: (Applicative m) => [a] -> (a -> m b) -> m [b]` starts a `for loop` that you can
 use to map anything that returns an `Applicative` (such as `Script`) over an input list and returns
 the collected results. In fact, `forA` is just `mapA` with it's arguments flipped, but it's often a
@@ -26,13 +28,21 @@ equivalents for scripts to the usual `create` and `exercise` commands you use in
 create `User` contracts for all allocated parties and have the `initialParties` follow the
 `operator`.
 
-Paste the following before the final `debug` line:
+Add the following import under the line `module User where` to have the function `forA_` available:
+
+<pre class="file" data-target="clipboard">
+import DA.Foldable (forA_)
+</pre>
+
+Next, paste the following before the final `debug` line at the same indentation level as `ps <- ...`:
+
 <pre class="file" data-target="clipboard">
     submit operator $ createCmd User with username = operator, following = ps
     forA_ ps $ \p -> do
       h <- submit p $ createCmd User with username = p, following = []
       submit p $ exerciseCmd h  Follow with userToFollow = operator
 </pre>
+
 
 1. `forA_` is just like `forA`, but it forgets about the return value and just returns `()`.
 1. note how the syntax is almost exactly the same as for scenarios, only that `create` has been

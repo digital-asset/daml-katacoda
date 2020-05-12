@@ -15,12 +15,19 @@ line before the final `debug` line.
    contract data for it.
 
 To write assertions you need to import the `DA.Assert` module. We also import the `sort` function
-that we will use later:
+that we will be using later. Replace 
+
+<pre class="file">
+module User where
+</pre>
+
+with
 
 <pre class="file" data-target="clipboard">
 module User where
 
 import Daml.Script
+import DA.Foldable (forA_)
 import DA.Assert ((===))
 import DA.List (sort)
 </pre>
