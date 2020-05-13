@@ -1,0 +1,43 @@
+{
+  "title": "Extending DAML models",
+  "description": "Extend a DAML model with a feature contained in a new package and upload it to a running ledger.",
+  "difficulty": "Intermediate",
+  "time": "20 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Package IDs",
+        "text": "1_package_ids.md",
+        "code": "init.sh"
+      },
+      {
+        "title": "A New Package",
+        "text": "2_new_package.md"
+      },
+      {
+        "title": "Uploading the new package",
+        "text": "3_uploading.md"
+      }
+    ],
+    "intro": {
+      "text": "0_intro.md"
+    },
+    "finish": {
+      "text": "99_finish.md"
+    }
+  },
+  "environment": {
+    "showide": true,
+    "uieditorpath": "/root/create-daml-app",
+    "showdashboard": true,
+    "dashboards": [{"name": "UI", "port": 3000}],
+    "terminals": [
+        {"name": "Terminal 2", "target": "host01"}
+    ],
+    "idePort": 23000,
+    "uilayout": "terminal-iframe"
+  },
+  "backend": {
+    "imageid": "daml-sdk-env"
+  }
+}
