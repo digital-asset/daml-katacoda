@@ -1,0 +1,29 @@
+{
+  "title": "DAML Dojo 101",
+  "description": "A scenario with a sample Project for DAML Dojo",
+  "difficulty": "Beginner",
+  "time": "20 minutes",
+  "details": {
+    "steps": [
+      {
+        "text": "step1.md",
+        "code": "init.sh"
+      }
+    ],
+    "intro": {
+      "courseData": "init_background.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "showide": true,
+    "uieditorpath": "/root/daml-race",
+    "idePort": 23000,
+    "uilayout": "terminal-iframe"
+  },
+  "backend": {
+    "imageid": "daml-sdk-env"
+  }
+}
