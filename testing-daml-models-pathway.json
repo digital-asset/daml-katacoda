@@ -7,6 +7,12 @@
       "title": "Testing DAML Models with Scenarios",
       "description": "Learn how to test your DAML models with scenarios",
       "course_id": "testing-with-scenarios"
+    },
+    {
+      "external_link": "https://daml.com/learn/testing-daml-models/daml-scripts",
+      "title": "Testing DAML Models with DAML scripts and REPL",
+      "description": "Learn how to test your DAML models with DAML scripts and REPL",
+      "course_id": "daml-scripts"
     }
   ]
 }
