@@ -1,0 +1,21 @@
+{
+    "title": "DAML Dojo 101",
+    "description": "This training teaches you the basics of DAML",
+    "courses": [
+      {
+        "pathway_id": "daml",
+        "id": "dojo-101",
+        "course_id": "dojo-101",
+        "title": "The Dojo Scenario",
+        "description": "A WebSDK with a daml-race project"
+      },
+      {
+        "pathway_id": "daml",
+        "id": "playground",
+        "course_id": "playground",
+        "title": "The WebSDK",
+        "description": "A vanilla WebSDK"
+      }
+    ]
+  }
+  
