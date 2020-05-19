@@ -38,4 +38,4 @@ with
 Make sure that `trace` has the same indentation as `archive self`. If you look at the transaction view of the scenario result panel now, you see your trace at the very
 bottom.
 
-![[Scenario Result]](/drsk/courses/testing-daml-models/testing-with-scenarios/assets/scenario-result-traces.png)
+![[Scenario Result]](/daml/courses/testing-daml-models/testing-with-scenarios/assets/scenario-result-traces.png)
