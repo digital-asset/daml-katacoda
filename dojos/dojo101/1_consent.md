@@ -10,8 +10,7 @@ they would be on any production ledger.
 A scenario starts with a name assigned to a scenario `do` block.
 
 <pre class="file" data-filename="daml/Excercise.daml" data-target="append">
-test = 
-  scenario do
+test = scenario do
 </pre>
 ## Task 2
 
@@ -29,12 +28,14 @@ Suppose, `Alice` is the `landlord` and `Bob` is the `tenant` and they want to ex
 
 <pre class="file" data-filename="daml/Excercise.daml" data-target="append">
   aliceAgreement <- submit alice do
-    create RentAgreement with
-    landlord = alice
-    tenant = bob
-    address = "1 King William Street"
-    rent = 1000.0
-    terms = ["term1","term2"]
+    create RentAgreement 
+      with
+        landlord = alice
+        tenant = bob
+        address = "1 King William Street"
+        rent = 1000.0
+        terms = ["term1","term2"]
+  return ()
 </pre>
 
 Did you notice the popped up `Scenario results`? The transaction failed!! :-(
