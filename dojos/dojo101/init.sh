@@ -1,3 +1,3 @@
 #!/bin/bash
 
-cd daml-race
+cd dojo101
