@@ -8,6 +8,7 @@
         {
           "title": "Running the App",
           "text": "1_template.md",
+          "courseData": "1_create_daml_app.sh",
           "verify": "1_verify.sh"
         }
       ],
