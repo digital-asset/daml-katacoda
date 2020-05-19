@@ -1,0 +1,35 @@
+{
+    "title": "Deploy your application to project:DABL",
+    "description": "Package your create-daml-app application artifacts and deploy them to your project:DABL account",
+    "difficulty": "Beginner",
+    "time": "20 minutes",
+    "details": {
+      "steps": [
+        {
+          "title": "Running the App",
+          "text": "1_template.md",
+          "verify": "1_verify.sh"
+        }
+      ],
+      "intro": {
+        "text": "0_intro.md",
+        "courseData": "init_background.sh"
+      },
+      "finish": {
+        "text": "99_finish.md"
+      }
+    },
+    "environment": {
+      "showide": true,
+      "uieditorpath": "/root/create-daml-app",
+      "dashboards": [{"name": "UI", "port": 3000}],
+      "terminals": [
+          {"name": "Terminal 2", "target": "host01"}
+      ],
+      "idePort": 23000,
+      "uilayout": "terminal-iframe"
+    },
+    "backend": {
+      "imageid": "daml-sdk-env"
+    }
+  }
