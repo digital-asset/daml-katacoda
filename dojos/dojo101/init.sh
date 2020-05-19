@@ -1,3 +1,3 @@
 #!/bin/bash
 
-cd dojo101
+mkdir -p dojo101 && cd dojo101
