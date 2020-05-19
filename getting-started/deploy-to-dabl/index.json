@@ -6,10 +6,14 @@
     "details": {
       "steps": [
         {
-          "title": "Running the App",
-          "text": "1_template.md",
+          "title": "Create artifacts folder",
+          "text": "1_create_target.md",
           "courseData": "1_create_daml_app.sh",
           "verify": "1_verify.sh"
+        },
+        {
+            "title": "Build DAML model",
+            "text": "2_build_daml.md"
         }
       ],
       "intro": {

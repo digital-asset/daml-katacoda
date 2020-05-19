@@ -1,3 +1,3 @@
 #!/bin/bash
 
-[ -f $HOME/create-daml-app/daml.yaml ] && echo "done"
+[ -d $HOME/create-daml-app/target ] && echo "done"

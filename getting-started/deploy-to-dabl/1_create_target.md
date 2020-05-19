@@ -1,6 +1,7 @@
-First off lets check that we are in the create-daml-app parent folder or our app
+First off, lets navigate to the parent folder of or our app
 
 ```
+cd create-daml-app
 pwd
 ```{{execute T1}}
 
