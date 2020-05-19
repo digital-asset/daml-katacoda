@@ -5,7 +5,7 @@ This is the last in a series of four tutorials to get you up and running with fu
 1. How to write a new feature for the app.
 1. How to deploy your app to project:DABL (this tutorial).
 
-In this scenario we will learn how to deploy the create-daml-app to project:DABL
+In this scenario we will learn how to deploy the create-daml-app to project:DABL.
 
 <!-- In this scenario we'll dive into implementing a new feature for our social network app. This will give us a better idea how to develop DAML applications using our template.
 
