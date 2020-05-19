@@ -20,7 +20,7 @@ Add following fields:
 
 Given, `Alice` is the `landlord` and `Bob` is the `tenant` and `Alice` has to create a `RentalProposal`
 
-<pre class="file" data-filename="daml/User.daml" data-target="append">
+<pre class="file" data-filename="daml/Excercise.daml" data-target="append">
 aliceProposal <- submit alice do
     create RentalProposal with
       landlord = alice
@@ -32,4 +32,3 @@ aliceProposal <- submit alice do
 
 If you click on the `Scenario results` pop-up over your `test` scenario, a table view of active
 contracts is opened in the right panel of the IDE.
-

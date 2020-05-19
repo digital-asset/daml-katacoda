@@ -20,17 +20,17 @@ Add following fields:
 5. `terms` - this should be a list of terms, what should be the data type?
 
 ### Hint
-<pre class="file" data-filename="daml/Exercise.daml">
-template NameofTemplate
-    with
-        fields  
-    where
-        signatory ListOfSignatories    
+<pre class="file" data-filename="daml/Excercise.daml">
+template RentAgreement
+  with
+    tenant: ??
+    landlord : ??
+    address: ??
+    rent:??
+    terms: ??
+  where
+    signatory ??    
 </pre>
 
 ### Key Question
 Who all should be the signatories of this template?
-
-
-
-
