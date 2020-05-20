@@ -33,8 +33,8 @@ As you can see, `Bob` does not even have visibility to the proposal contract. Th
 ## Task 5
 Now lets give some righst to the tenant, we will start with the basic right of `Accept`:
 
-1. Using `controller` block give a `choice` to the tenant to `accept` the `RentalProposal` in a way that it creates a `RentAgreement` when the `choice` is `excercise`. 
-2. Now add the corresponding step in the `scenario` by submitting an `excercise` command.
+1. Using `controller` block give a `choice` to the tenant to `accept` the `RentalProposal` in a way that it creates a `RentAgreement` when the `choice` is `exercise`. 
+2. Now add the corresponding step in the `scenario` by submitting an `exercise` command.
 
 ## Task 6
 

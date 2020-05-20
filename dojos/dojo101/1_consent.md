@@ -9,7 +9,7 @@ they would be on any production ledger.
 
 A scenario starts with a name assigned to a scenario `do` block.
 
-<pre class="file" data-filename="daml/Excercise.daml" data-target="append">
+<pre class="file" data-filename="daml/Rentals.daml" data-target="append">
 test = scenario do
 </pre>
 ## Task 2
@@ -17,7 +17,7 @@ test = scenario do
 We want two parties `Alice` and `Bob` to be known identites on our simulated ledger. You can
 allocate them with the `getParty` function:
 
-<pre class="file" data-filename="daml/Excercise.daml" data-target="append">
+<pre class="file" data-filename="daml/Rentals.daml" data-target="append">
   alice <- getParty "Alice"
   bob <- getParty "Bob"
 </pre>
@@ -26,7 +26,7 @@ The ledger is now ready and you can simulate how the two parties submit transact
 
 Suppose, `Alice` is the `landlord` and `Bob` is the `tenant` and they want to execute a `RentAgreement`
 
-<pre class="file" data-filename="daml/Excercise.daml" data-target="append">
+<pre class="file" data-filename="daml/Rentals.daml" data-target="append">
   aliceAgreement <- submit alice do
     create RentAgreement 
       with

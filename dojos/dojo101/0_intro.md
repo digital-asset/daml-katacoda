@@ -20,7 +20,7 @@ Add following fields:
 5. `terms` - this should be a list of terms, what should be the data type?
 
 ### Hint
-<pre class="file" data-filename="daml/Excercise.daml">
+<pre class="file" data-filename="daml/Rentals.daml">
 template RentAgreement
   with
     tenant: ??
