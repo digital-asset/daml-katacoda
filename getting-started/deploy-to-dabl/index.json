@@ -18,8 +18,7 @@
         },
         {
             "title": "Build UI Assets",
-            "text": "3_build_ui.md",
-            "verify": "3_verify.sh"
+            "text": "3_build_ui.md"
         },
         {
             "title": "Sign Up for project:DABL",
