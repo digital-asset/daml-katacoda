@@ -20,6 +20,10 @@
             "title": "Build UI Assets",
             "text": "3_build_ui.md",
             "verify": "3_verify.sh"
+        },
+        {
+            "title": "Sign Up for project:DABL",
+            "text": "4_create_dabl_account.md"
         }
       ],
       "intro": {
