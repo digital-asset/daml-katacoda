@@ -17,18 +17,9 @@ Add following fields:
 4. `rent` - what should be the data type?
 5. `terms` - this should be a list of terms, what should be the data type?
 
+## Task 4
 
-Given, `Alice` is the `landlord` and `Bob` is the `tenant` and `Alice` has to create a `RentalProposal`
-
-<pre class="file" data-filename="daml/Excercise.daml" data-target="append">
-aliceProposal <- submit alice do
-    create RentalProposal with
-      landlord = alice
-      tenant = bob
-      address = "1 King William Street"
-      rent = 1000.0
-      terms = ["term1","term2"]
-</pre>
+Given, `Alice` is the `landlord` and `Bob` is the `tenant` and `Alice` has to create a `RentalProposal`, change the scenario so that `Alice` is creating a  `RentalProposal` in place of `RentAgreement`.
 
 If you click on the `Scenario results` pop-up over your `test` scenario, a table view of active contracts is opened in the right panel of the IDE.
 
@@ -39,12 +30,12 @@ As you can see, `Bob` does not even have visibility to the proposal contract. Th
 2. `conroller` - parties who have a rights on that contract
 3. `observer` - parties who have read access to the contracts
 
-## Task 4
+## Task 5
 Now lets give some righst to the tenant, we will start with the basic right of `Accept`:
 
 1. Using `controller` block give a `choice` to the tenant to `accept` the `RentalProposal` in a way that it creates a `RentAgreement` when the `choice` is `excercise`. 
-2. Now add the corresponding step in the `scenario` bu submitting an `excercise` command.
+2. Now add the corresponding step in the `scenario` by submitting an `excercise` command.
 
-## Task 5
+## Task 6
 
 If you want to start the project, run `daml start --open-browser=no`{{execute}}. Once started, you can then open the Navigator at https://[[HOST_SUBDOMAIN]]-7500-[[KATACODA_HOST]].environments.katacoda.com/, and the JSON API at https://[[HOST_SUBDOMAIN]]-7575-[[KATACODA_HOST]].environments.katacoda.com/.
