@@ -31,7 +31,7 @@
         {
             "title": "Upload your artifacts",
             "text": "6_upload_artifacts.md",
-            "courseData": "6_start_web_server.md"
+            "courseData": "6_start_web_server.sh"
         }
       ],
       "intro": {
