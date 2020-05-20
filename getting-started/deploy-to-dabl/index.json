@@ -13,7 +13,13 @@
         },
         {
             "title": "Build DAML model",
-            "text": "2_build_daml.md"
+            "text": "2_build_daml.md",
+            "verify": "2_verify.sh"
+        },
+        {
+            "title": "Build UI Assets",
+            "text": "3_build_ui.md",
+            "verify": "3_verify.sh"
         }
       ],
       "intro": {
