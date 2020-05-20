@@ -27,6 +27,11 @@
         {
             "title": "Create your ledger",
             "text": "5_create_ledger.md"
+        },
+        {
+            "title": "Upload your artifacts",
+            "text": "6_upload_artifacts.md",
+            "courseData": "6_start_web_server.md"
         }
       ],
       "intro": {
