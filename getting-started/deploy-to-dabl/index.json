@@ -23,6 +23,10 @@
         {
             "title": "Sign Up for project:DABL",
             "text": "4_create_dabl_account.md"
+        },
+        {
+            "title": "Create your ledger",
+            "text": "5_create_ledger.md"
         }
       ],
       "intro": {
