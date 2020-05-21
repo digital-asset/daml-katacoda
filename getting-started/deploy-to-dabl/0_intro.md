@@ -7,9 +7,9 @@ In the previous scenario of this series, you learned how to build and run your f
 
 In this scenario we will learn how to deploy the social network app you previously built, to project:DABL. We will:
 
-- Build our app artifacts and get them ready for deployment
+- Build your app artifacts and get them ready for deployment
 - Create a DABL account (if this is your first time using DABL)
-- Create a DABL Project and a Ledger that will host our app
-- Download the artifacts that we will build here and deploy them to our newly created Ledger
+- Create a DABL Project and a Ledger that will host your app
+- Download the artifacts that you built and deploy them to your newly created Ledger
 
 Let's get to it!
