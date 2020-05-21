@@ -44,7 +44,7 @@
       }
     },
     "environment": {
-      "uilayout": "terminal-iframe"
+        "uilayout": "terminal-iframe"
     },
     "backend": {
       "imageid": "daml-sdk-env"

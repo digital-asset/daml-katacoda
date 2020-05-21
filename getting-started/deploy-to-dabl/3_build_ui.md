@@ -28,3 +28,8 @@ Before we move on, let's take a look at the contents of our target folder to mak
 
 - `create-daml-app.dar` for your daml model and
 - `create-daml-app-ui.zip` for your app's UI.
+
+```
+cd /root/create-daml-app/target
+ls
+```{{execute T1}}

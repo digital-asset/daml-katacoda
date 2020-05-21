@@ -7,7 +7,7 @@ cd create-daml-app
 If we check your present working directory with `pwd` we should see `/root/create-daml-app` as the output.
 
 ```
-cd create-daml-app
+pwd
 ```{{execute T1}}
 
 
@@ -17,7 +17,7 @@ We'll start by creating a `target` folder which will eventually contain all the 
 mkdir -p target/
 ```{{execute T1}}
 
-Before we move on to the next step let's list the contents of the parent folder. We should see our new target folder:
+Before we move on to the next step let's list the contents of the parent folder. You should see your new target folder:
 
 ```
 ls
