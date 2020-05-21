@@ -10,7 +10,7 @@ Then click on _"Sign Up for Free"_.
 
 You can choose to sign up with your Google account or use your email and password.
 
-Please note that you will have to verify your email prior to logging in, in case did not use your Google credentials:
+Please note that you will have to verify your email prior to logging in, if you did not use your Google credentials:
 
 ![Sign Up Confirmation](/dimitri-da/courses/getting-started/deploy-to-dabl/assets/project-dabl-signup-confirmation.gif)
 

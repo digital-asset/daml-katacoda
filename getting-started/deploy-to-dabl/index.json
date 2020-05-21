@@ -18,7 +18,8 @@
         },
         {
             "title": "Build UI Assets",
-            "text": "3_build_ui.md"
+            "text": "3_build_ui.md",
+            "verify": "3_verify.sh"
         },
         {
             "title": "Sign Up for project:DABL",
@@ -43,13 +44,6 @@
       }
     },
     "environment": {
-      "showide": true,
-      "uieditorpath": "/root/create-daml-app",
-      "dashboards": [{"name": "UI", "port": 3000}],
-      "terminals": [
-          {"name": "Terminal 2", "target": "host01"}
-      ],
-      "idePort": 23000,
       "uilayout": "terminal-iframe"
     },
     "backend": {
