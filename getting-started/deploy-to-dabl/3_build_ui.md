@@ -12,7 +12,7 @@ A successful run of the `codegen js` should jave created a set of packages in th
 Now onto building our UI code. We change directory into `ui` and we invoke a `yarn install` followed by a `yarn build`:
 
 ```
-cd ui && yarn install && yarn build && cd ..
+cd ui && yarn install && yarn build
 ```{{execute T1}}
 
 Remember that these steps take a couple of moments..
@@ -20,5 +20,5 @@ Remember that these steps take a couple of moments..
 Finally we will zip up our build folder and drop it in our `target/` folder:
 
 ```
-zip -r target/create-daml-app-ui.zip ui/build
+zip -r ../target/create-daml-app-ui.zip build
 ```{{execute T1}}
