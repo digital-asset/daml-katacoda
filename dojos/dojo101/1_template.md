@@ -4,6 +4,9 @@ Now please follow the two steps, highlighted in the image below:
 1. Click on IDE
 2. Open the file `Rentals.daml`
 
+![IDE Help](/vivek-da/courses/dojos/dojo101/assets/idehelp.png)
+
+
 A DAML file defines a module. The first line of a DAML file gives the module a name. In this case, its `Rentals`, thus the file name `Rentals.daml`.
 
 
