@@ -29,13 +29,13 @@ If you click on the `Scenario results` pop-up over your `test` scenario, a table
 ![[Scenario Result]](/vivek-da/courses/dojos/dojo101/assets/scenario-result1.png)
 
 You see that one contract of your test scenario have been created together with its parameters.
-`Alice` as the `landlord` created contract that has the contract ID `#0:0`. In the left column of the
+`Alice` as the `landlord` created contract that has the contract ID `#1:0`. In the left column of the
 table, an `x` indicates which party can observe the contract. As expected, Alice can see the `RentalProposal`
 contract. Now try clicking on the `Show transaction view` button.
 
 ![[Scenario Result]](/vivek-da/courses/dojos/dojo101/assets/scenario-result2.png)
 
-This shows you a full transaction graph of your scenario. Right now, it consists of the one
+This shows you a full transaction graph of your scenario. Right now, it consists of the negative test using `submitMustFail` and one
 creations of `RentalProposal` contract. Try clicking the links! Clicking the link next to a transaction
 time-stamp will take you to the exact place in the scenario where the transaction was created.
 Clicking on a template name will take you to the definition of the template in the source code. At
@@ -51,11 +51,27 @@ As you can see, `Bob` does not even have visibility to the proposal contract. Th
 3. `observer` - parties who have read access to the contracts
 
 ## Task 5
-Now let's give some rights to the tenant, we will start with the basic right of `Accept`:
+(covered in [Transforming data using choices](https://docs.daml.com/daml/intro/4_Transformations.html)) Now let's give some rights to the tenant, we will start with the basic right of `Accept`:
 
 1. Using a `controller` block gives a `choice` to the tenant to `accept` the `RentalProposal` in a way that it creates a `RentAgreement` when the `choice` is `exercise`. 
+
+![[Choice]](/vivek-da/courses/dojos/dojo101/assets/choice.png)
+
+
 2. Now add the corresponding step in the `scenario` by submitting an `exercise` command.
+![[exercise]](/vivek-da/courses/dojos/dojo101/assets/exercise.png)
 
-## Task 6
+Now if you look ate the results, using the table view, you should see `RentAgreement` contract
 
-If you want to start the project, run `daml start --open-browser=no`{{execute}}. Once started, you can then open the Navigator at https://[[HOST_SUBDOMAIN]]-7500-[[KATACODA_HOST]].environments.katacoda.com/, and the JSON API at https://[[HOST_SUBDOMAIN]]-7575-[[KATACODA_HOST]].environments.katacoda.com/.
+![[agreementcontract]](/vivek-da/courses/dojos/dojo101/assets/agreementcontract.png)
+
+and if you click on Show Archived, you will see that `RentalProposal` has been archived. 
+![[archived]](/vivek-da/courses/dojos/dojo101/assets/archived.png)
+
+Switching to transaction view shows you that as part of `TX 2` Following has happened:
+1. contract `#1:0` is consumed or archived
+2. contract `#2:1` is created and active
+
+Let's understand, what happened here. Remember the piece of paper with terms & conditions, when signed by all parties becomes a contract, at any point when a party  exercises their rights the current paper becomes VOID or archived and a new contract which is based on the previous contract gets created reflecting the current state of the world. In DAML contracts are immutable and by default when a `choice` is `exercise`d the current contract is archived and based on the buisness logic zero or more contract can be created. In this case our business logic states that when Bob `Accept`s (as part of `TX 2`) on the `RentalProposal` (`#1:0`) a new contract of type `RentAgreement` (`#2:1`) is created and by default behaviour existing contract (`#1:0`) is archived. 
+
+Lets move on the to next step!!

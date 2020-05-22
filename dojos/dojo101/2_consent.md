@@ -42,7 +42,7 @@ Did you notice the popped up `Scenario results`? If you click on the `Scenario r
 ![Initialfailure](/vivek-da/courses/dojos/dojo101/assets/initialfailure.png)
 
 
-#The transaction failed!! :-(#
+**The transaction failed!! :-(**
 
 ### Somewhere, something went wrong!! 
 
