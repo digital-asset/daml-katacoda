@@ -5,13 +5,13 @@ This step guides you through signing up for a project:DABL free account. If you 
 Visit the [project:DABL home page](https://projectdabl.com/) and click on _"Try for Free!"_.
 Then click on _"Sign Up for Free"_.
 
-![Sign Up](/dimitri-da/courses/getting-started/deploy-to-dabl/assets/project-dabl-signup.gif)
+![Sign Up](/daml/courses/getting-started/deploy-to-dabl/assets/project-dabl-signup.gif)
 
 
 You can choose to sign up with your Google account or use your email and password.
 
 Please note that you will have to verify your email prior to logging in, if you did not use your Google credentials:
 
-![Sign Up Confirmation](/dimitri-da/courses/getting-started/deploy-to-dabl/assets/project-dabl-signup-confirmation.gif)
+![Sign Up Confirmation](/daml/courses/getting-started/deploy-to-dabl/assets/project-dabl-signup-confirmation.gif)
 
 Once you have signed up, let's move on to create the ledger that will host our app.

@@ -1,6 +1,6 @@
 Well done, you have now deployed your app to project DABL!
 
-![Deployed App](/dimitri-da/courses/getting-started/deploy-to-dabl/assets/project-dabl-deployed-app.gif)
+![Deployed App](/daml/courses/getting-started/deploy-to-dabl/assets/project-dabl-deployed-app.gif)
 
 If you want to continue learning, head over to the next parts of this course:
 

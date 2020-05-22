@@ -8,7 +8,7 @@ First download the artifacts you built in the previous steps:
 
 Then click on your newly created ledger and under the _"App Artifacts"_ tab click on _"Upload .dar"_ and upload the `create-daml-app.dar` you just downloaded.
 
-![Upload dar](/dimitri-da/courses/getting-started/deploy-to-dabl/assets/project-dabl-upload-dar.gif)
+![Upload dar](/daml/courses/getting-started/deploy-to-dabl/assets/project-dabl-upload-dar.gif)
 
 You should see two confirmation messages and your `.dar` file will appear under the _"DAML Models"_ section.
 
@@ -16,10 +16,10 @@ For the last step you will need to upload your UI Assets.
 
 Click on the _"Expand Section"_ to reveal the artifact tiles. Find the _"UI Assets"_ tile and click on it to upload the `create-daml-app-ui.zip` you just downloaded.
 
-![Upload UI](/dimitri-da/courses/getting-started/deploy-to-dabl/assets/project-dabl-upload-ui.gif)
+![Upload UI](/daml/courses/getting-started/deploy-to-dabl/assets/project-dabl-upload-ui.gif)
 
 You should get another set of confirmations and the _"App UI"_ tile will activate revealing the subdomain of your deployed app and a quick link to visit it:
 
-![App UI](/dimitri-da/courses/getting-started/deploy-to-dabl/assets/project-dabl-published-ui.png)
+![App UI](/daml/courses/getting-started/deploy-to-dabl/assets/project-dabl-published-ui.png)
 
 Click on _"View Site"_ or copy paste the subdomain link to a new browser tab and start interacting with your deployed app!

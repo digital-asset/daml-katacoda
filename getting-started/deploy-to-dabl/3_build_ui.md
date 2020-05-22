@@ -10,7 +10,7 @@ daml codegen js target/create-daml-app.dar -o daml.js
 
 A successful run of the `codegen js` should have created a set of packages in the `daml.js` directory.
 
-Now onto building our UI code. We change directory into `ui` and we invoke a `yarn install` followed by a `yarn build`:
+Now onto building our UI code. Let's change directories to `ui` and invoke a `yarn install` followed by a `yarn build`:
 
 ```
 cd ui && yarn install && yarn build
@@ -18,13 +18,13 @@ cd ui && yarn install && yarn build
 
 Remember that these steps usually take a couple of moments..
 
-Finally we will zip up our build folder and drop it in our `target/` folder:
+Finally we will zip up your build folder and drop it in the `target/` folder you crated previously:
 
 ```
 zip -r ../target/create-daml-app-ui.zip build
 ```{{execute T1}}
 
-Before we move on, let's take a look at the contents of our target folder to make sure we have everything. There should be two files:
+Before we move on, let's take a look at the contents of your target folder to make sure you have everything. There should be two files:
 
 - `create-daml-app.dar` for your daml model and
 - `create-daml-app-ui.zip` for your app's UI.
