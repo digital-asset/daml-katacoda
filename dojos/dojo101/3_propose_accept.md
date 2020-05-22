@@ -16,11 +16,14 @@ Add following fields:
 4. `rent` - what should be the data type?
 5. `terms` - this should be a list of terms, what should be the data type?
 
+![RentalProposal](/vivek-da/courses/dojos/dojo101/assets/proposalcode.png)
+
 ## Task 4
 
 Given, `Alice` is the `landlord` and `Bob` is the `tenant` and `Alice` has to create a `RentalProposal`, change the scenario so that `Alice` is creating a  `RentalProposal` in place of `RentAgreement`.
+![ScenarioUpdate](/vivek-da/courses/dojos/dojo101/assets/scenarioupdate.png)
 
-If you click on the `Scenario results` pop-up over your `test` scenario, a table view of active contracts is opened in the right panel of the IDE.
+If you click on the `Scenario results` pop-up over your `test` scenario, a table view of active contracts is opened in the right panel of the IDE. 
 
 
 ![[Scenario Result]](/vivek-da/courses/dojos/dojo101/assets/scenario-result1.png)
