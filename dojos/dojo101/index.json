@@ -6,23 +6,25 @@
   "details": {
     "steps": [
       {
-        "title": "Rental Agreement",
-        "text": "0_intro.md",
+        "title": "DAML driven Rental use case",
+        "text": "1_template.md",
         "code": "init.sh"
       },
       {
         "title": "Scenarios & Consent",
-        "text": "1_consent.md"
+        "text": "2_consent.md"
       }
       ,
       {
         "title": "Propose/Accept",
-        "text": "2_propose_accept.md"
+        "text": "3_propose_accept.md"
       }
       
     ],
     "intro": {
-      "courseData": "init_background.sh"
+      "courseData": "init_background.sh",
+      "text": "0_intro.md"
+
     },
     "finish": {
       "text": "finish.md"

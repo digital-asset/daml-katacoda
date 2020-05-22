@@ -1,5 +1,3 @@
-# Learning about Consent
-
 Before we move forward, we will learn how to test a DAML `template`
 
 With DAML scenarios you can specify a linear sequence of actions that different parties take, and
@@ -14,7 +12,7 @@ test = scenario do
 </pre>
 ## Task 2
 
-We want two parties `Alice` and `Bob` to be known identites on our simulated ledger. You can
+We want two parties `Alice` and `Bob` to be known identities on our simulated ledger. You can
 allocate them with the `getParty` function:
 
 <pre class="file" data-filename="daml/Rentals.daml" data-target="append">
