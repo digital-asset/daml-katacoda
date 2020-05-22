@@ -18,7 +18,7 @@ cd ui && yarn install && yarn build
 
 Remember that these steps usually take a couple of moments..
 
-Finally we will zip up your build folder and drop it in the `target/` folder you crated previously:
+Finally we will zip up your build folder and drop it in the `target/` folder you created previously:
 
 ```
 zip -r ../target/create-daml-app-ui.zip build

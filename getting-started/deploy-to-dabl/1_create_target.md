@@ -1,4 +1,4 @@
-First off, let's navigate to the parent folder of your app
+First off, let's navigate to the parent folder of your app:
 
 ```
 cd create-daml-app

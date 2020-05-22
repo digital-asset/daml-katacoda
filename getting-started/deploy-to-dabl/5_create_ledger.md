@@ -14,4 +14,4 @@ It may take a minute until your ledger is ready. Once initialized, the spinner w
 
 ![Ledger Ready](/daml/courses/getting-started/deploy-to-dabl/assets/project-dabl-ledger-ready.gif)
 
-Now that your ledger is ready and we move on to the next step to deploy our artifacts!
+Now that your ledger is ready, let's move on to the next step to deploy your artifacts!
