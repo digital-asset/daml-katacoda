@@ -4,15 +4,8 @@ The goal of the tutorial is to teach you:
 1. Authorisation & Consent
 2. Propose/Accept pattern
 
-Before we start, lets review some basics about ledger basics. 
-
-![Ledger Basics](/vivek-da/courses/dojos/dojo101/assets/ledgerbasics.png =200x)
-
-and how we go about modelling things in DAML:
-![Modelling](/vivek-da/courses/dojos/dojo101/assets/modelling.png =200x)
-
-Coming back to the use case, following is wat we want to implement:
-![RentAgreement](/vivek-da/courses/dojos/dojo101/assets/agreement.png =200x)
+## Rent Agreement:
+![RentAgreement](/vivek-da/courses/dojos/dojo101/assets/agreement.png)
 
 
 <!-- 3. Defining custom data
