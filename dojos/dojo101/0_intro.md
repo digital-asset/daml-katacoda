@@ -6,7 +6,7 @@ The goal of the tutorial is to teach you:
 
 Before we start, lets review some basics about ledger basics. 
 
-![Ledger Basics](/vivek-da/courses/dojos/dojo101/assets/ledgerbasics.png)
+![Ledger Basics](/vivek-da/courses/dojos/dojo101/assets/ledgerbasics.png=200x)
 
 and how we go about modelling things in DAML:
 ![Modelling](/vivek-da/courses/dojos/dojo101/assets/modelling.png)
