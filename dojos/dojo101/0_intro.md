@@ -6,13 +6,13 @@ The goal of the tutorial is to teach you:
 
 Before we start, lets review some basics about ledger basics. 
 
-![Ledger Basics](/daml/courses/dojos/dojo101/assets/ledgerbasics.png)
+![Ledger Basics](/vivek-da/courses/dojos/dojo101/assets/ledgerbasics.png)
 
 and how we go about modelling things in DAML:
-![Modelling](/daml/courses/dojos/dojo101/assets/modelling.png)
+![Modelling](/vivek-da/courses/dojos/dojo101/assets/modelling.png)
 
 Coming back to the use case, following is wat we want to implement:
-![RentAgreement](/daml/courses/dojos/dojo101/assets/agreement.png)
+![RentAgreement](/vivek-da/courses/dojos/dojo101/assets/agreement.png)
 
 
 <!-- 3. Defining custom data
