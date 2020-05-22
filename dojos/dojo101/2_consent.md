@@ -38,7 +38,11 @@ The `submit` keyword allows a party to submit a transaction to the ledger.
   return ()
 </pre>
 
-Did you notice the popped up `Scenario results`? The transaction failed!! :-(
+Did you notice the popped up `Scenario results`? If you click on the `Scenario results` pop-up over your `test` scenario, the IDE will split and you will see something like:
+![Initialfailure](/vivek-da/courses/dojos/dojo101/assets/initialfailure.png)
+
+
+#The transaction failed!! :-(#
 
 ### Somewhere, something went wrong!! 
 
@@ -47,5 +51,6 @@ The reason it failed, as per the error, `Bob` never gave his consent to this agr
 If a single statement in a scenario fails, the whole scenario fails at that point. To test failure of more than one submission in a single scenario, we need a different keyword `submitMustFail`, which succeeds when the submitted transaction fails. `Alice` and `Bob` cannot create `RentAgreement` unilaterally, as neither has the authority to put the other's signature on the `RentAgreement`.
 
 ## Task 3
-Now, change the `submit alice` to `submitMustFail alice` 
+Now, change the `submit alice` to `submitMustFail alice` and check the results. 
+![SubmitMustFail](/vivek-da/courses/dojos/dojo101/assets/SubmitMustFail.png)
 
