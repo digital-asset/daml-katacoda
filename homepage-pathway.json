@@ -19,6 +19,12 @@
         "title": "Learn how to test DAML models",
         "description": "A short series of tutorials to learn the basics of testing DAML models.",
         "action": "Start"
+        },
+        {
+        "external_link": "https://www.daml.com/learn/upgrading",
+        "title": "Upgrading DAML Ledgers",
+        "description": "Learn how to upgrade running DAML ledgers and migrate existing data to your new model.",
+        "action": "Start"
         }
     ]
 }
