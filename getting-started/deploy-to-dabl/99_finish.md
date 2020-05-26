@@ -1,6 +1,6 @@
-Well done, you have now deployed your app to project DABL!
+Well done, you have now deployed your app to project:DABL!
 
-![Deployed App](/daml/courses/getting-started/deploy-to-dabl/assets/project-dabl-deployed-app.gif)
+![Deployed App](assets/project-dabl-deployed-app.gif)
 
 Hopefully this exercise gives you a sense of the power and ease of building and deploying DAML apps. Explore the [DAML documentation](https://docs.daml.com) and [project:DABL docs](https://docs.projectdabl.com) to learn more, and keep shipping DAML apps. Have fun!
 
