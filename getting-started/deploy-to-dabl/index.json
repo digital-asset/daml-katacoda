@@ -1,0 +1,52 @@
+{
+    "title": "Deploy your application to project:DABL",
+    "description": "Package your create-daml-app application artifacts and deploy them to your project:DABL account",
+    "difficulty": "Beginner",
+    "time": "20 minutes",
+    "details": {
+      "steps": [
+        {
+          "title": "Create artifacts folder",
+          "text": "1_create_target.md",
+          "courseData": "1_create_daml_app.sh",
+          "verify": "1_verify.sh"
+        },
+        {
+            "title": "Build DAML model",
+            "text": "2_build_daml.md",
+            "verify": "2_verify.sh"
+        },
+        {
+            "title": "Build UI Assets",
+            "text": "3_build_ui.md",
+            "verify": "3_verify.sh"
+        },
+        {
+            "title": "Sign Up for project:DABL",
+            "text": "4_create_dabl_account.md"
+        },
+        {
+            "title": "Create your ledger",
+            "text": "5_create_ledger.md"
+        },
+        {
+            "title": "Upload your artifacts",
+            "text": "6_upload_artifacts.md",
+            "courseData": "6_start_web_server.sh"
+        }
+      ],
+      "intro": {
+        "text": "0_intro.md",
+        "courseData": "init_background.sh"
+      },
+      "finish": {
+        "text": "99_finish.md"
+      }
+    },
+    "environment": {
+        "uilayout": "terminal-iframe"
+    },
+    "backend": {
+      "imageid": "daml-sdk-env"
+    }
+  }
