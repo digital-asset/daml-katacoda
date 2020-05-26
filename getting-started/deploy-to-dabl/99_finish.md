@@ -2,11 +2,6 @@ Well done, you have now deployed your app to project DABL!
 
 ![Deployed App](/daml/courses/getting-started/deploy-to-dabl/assets/project-dabl-deployed-app.gif)
 
-If you want to continue learning, head over to the next parts of this course:
+Hopefully this exercise gives you a sense of the power and ease of building and deploying DAML apps. Explore the [DAML documentation](https://docs.daml.com) and [project:DABL docs](https://docs.projectdabl.com) to learn more, and keep shipping DAML apps. Have fun!
 
-1. [Application Architecture](https://docs.daml.com/getting-started/app-architecture.html)
-1. [Your First Feature](https://daml.com/learn/getting-started/your-first-feature/)
-
-You can continue to use the [Web SDK](https://www.daml.com/websdk) or head over to the [Installation Instructions](https://docs.daml.com/getting-started/installation.html) to install DAML on your local machine.
-
-If you have any questions or problems, connect with the DAML Community on [Slack](slack.daml.com).
+As always, if you have any questions or problems, connect with the DAML Community on [Slack](slack.daml.com).

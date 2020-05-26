@@ -9,16 +9,16 @@
       "course_id": "build-and-run"
     },
     {
-      "external_link": "https://www.daml.com/learn/getting-started/deploy-to-dabl",
-      "title": "Deploy your DAML app to project:DABL",
-      "description": "Package your create-daml-app application artifacts and deploy them to your project:DABL account",
-      "course_id": "deploy-to-dabl"
-    },
-    {
       "external_link": "https://www.daml.com/learn/getting-started/your-first-feature",
       "title": "Add a new feature with UI elements to your DAML app",
       "description": "Get familiar with the process of adding a new full stack feature to your DAML app",
       "course_id": "your-first-feature"
+    },
+    {
+      "external_link": "https://www.daml.com/learn/getting-started/deploy-to-dabl",
+      "title": "Deploy your DAML app to project:DABL",
+      "description": "Package your create-daml-app application artifacts and deploy them to your project:DABL account",
+      "course_id": "deploy-to-dabl"
     }
   ]
 }

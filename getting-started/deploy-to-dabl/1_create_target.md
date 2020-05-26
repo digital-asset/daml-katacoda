@@ -1,3 +1,8 @@
+[project:DABL](https://projectdabl.com) is the speediest way of deploying a daml app to production. It is a hosted and scalable environment which supports all your application management needs out of the box.
+> If you would like to learn more, you can check out the [DABL Product Knowledge Base](https://projectdabl.com/use-cases)
+
+Preparing your app for deployment does not deviate from building it locally. In brief, you just need to gather all your deployment artifacts in one place and then drop them into a DABL ledger.
+
 First off, let's navigate to the parent folder of your app:
 
 ```
