@@ -74,6 +74,7 @@ template Comment with
     post: ContractId Post
   where
     signatory commenter.username
+    observer commenter.following
 </pre>
 
 Notice how we reuse the `User` template imported from the `create-daml-app` package. Thus a forum
