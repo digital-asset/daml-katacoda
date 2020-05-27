@@ -4,17 +4,9 @@
     "courses": [
       {
         "pathway_id": "daml",
-        "id": "dojo-101",
-        "course_id": "dojo-101",
-        "title": "The Dojo Scenario",
-        "description": "A WebSDK with a daml-race project"
-      },
-      {
-        "pathway_id": "daml",
-        "id": "playground",
-        "course_id": "playground",
-        "title": "The WebSDK",
-        "description": "A vanilla WebSDK"
+        "id": "dojos/dojo101",
+        "course_id": "dojo101"
+
       }
     ]
   }

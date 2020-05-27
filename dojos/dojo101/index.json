@@ -1,0 +1,40 @@
+{
+  "title": "DAML Dojo 101",
+  "description": "In this example we aim to create a rental agreement use case.",
+  "difficulty": "Beginner",
+  "time": "45 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Rental Agreement",
+        "text": "0_intro.md",
+        "code": "init.sh"
+      },
+      {
+        "title": "Scenarios & Consent",
+        "text": "1_consent.md"
+      }
+      ,
+      {
+        "title": "Propose/Accept",
+        "text": "2_propose_accept.md"
+      }
+      
+    ],
+    "intro": {
+      "courseData": "init_background.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "showide": true,
+    "uieditorpath": "/root/dojo101",
+    "idePort": 23000,
+    "uilayout": "terminal-iframe"
+  },
+  "backend": {
+    "imageid": "daml-sdk-env"
+  }
+}

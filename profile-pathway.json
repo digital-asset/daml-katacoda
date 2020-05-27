@@ -4,6 +4,11 @@
         "title": "Testing DAML Models",
         "description": "Learn how to test your DAML models with scenarios and scripts.",
         "id": "testing-daml-models"
+      },
+      {
+        "title": "Upgrading DAML Ledgers",
+        "description": "Learn how to upgrade running DAML ledgers and migrate existing data to your new model.",
+        "id": "upgrading"
       }
     ],
     "scenarios": [

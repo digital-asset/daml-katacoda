@@ -18,4 +18,4 @@ social network doesn't start off as a ghost town.
 Once you've developed a feel for DAML script, you will learn to use the DAML REPL, where you can run
 DAML script commands interactively against your ledger.
 
-[![asciicast](https://asciinema.org/a/K2Erh7AjHRTvuSEvEvsBI21lk.svg)](https://asciinema.org/a/K2Erh7AjHRTvuSEvEvsBI21lk)
+![asciicast](assets/daml-repl.gif)
