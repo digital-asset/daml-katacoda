@@ -1,6 +1,11 @@
 {
     "courses": [
       {
+        "title": "Get started with DAML",
+        "description": "A short series of tutorials to learn the basics about DAML development.",
+        "id": "getting-started"
+      },
+      {
         "title": "Testing DAML Models",
         "description": "Learn how to test your DAML models with scenarios and scripts.",
         "id": "testing-daml-models"
