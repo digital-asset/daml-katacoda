@@ -1,13 +1,18 @@
 {
     "courses": [
       {
+        "title": "Get started with DAML",
+        "description": "A short series of tutorials to learn the basics about DAML development.",
+        "id": "getting-started"
+      },
+      {
         "title": "Testing DAML Models",
         "description": "Learn how to test your DAML models with scenarios and scripts.",
         "id": "testing-daml-models"
       },
       {
-        "title": "Upgrading DAML Ledgers",
-        "description": "Learn how to upgrade running DAML ledgers and migrate existing data to your new model.",
+        "title": "Upgrading DAML Applications",
+        "description": "Learn how to upgrade running DAML applications and migrate existing data to your new model.",
         "id": "upgrading"
       }
     ],

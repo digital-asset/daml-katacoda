@@ -32,7 +32,7 @@ In the second terminal change directory to the `forum` project.
 cd forum
 ```{{execute T2}}
 
-To extend your ledger with the new data model, simply upload the package:
+To extend your application with the new data model, simply upload the package:
 
 ```
 daml ledger upload-dar .daml/dist/forum-0.0.1.dar

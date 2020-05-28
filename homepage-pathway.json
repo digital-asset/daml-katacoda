@@ -22,8 +22,8 @@
         },
         {
         "external_link": "https://www.daml.com/learn/upgrading",
-        "title": "Upgrading DAML Ledgers",
-        "description": "Learn how to upgrade running DAML ledgers and migrate existing data to your new model.",
+        "title": "Upgrading DAML Applications",
+        "description": "Learn how to upgrade running DAML aplication and migrate existing data to your new model.",
         "action": "Start"
         }
     ]
