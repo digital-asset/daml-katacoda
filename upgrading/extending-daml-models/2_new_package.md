@@ -15,7 +15,7 @@ Let's now also open the new project in the [Visual Studio Code IDE](https://[[HO
 
 1. Navigate to the burger menu ![burger menu](assets/vs-burger-menu.png) in the top left corner and select `File -> Open`
 2. A new dialog will open. First click on the two dots ![two dots](assets/vs-two-dots.png)
-3. Then scroll down until you see the `forum` project and then clickon it ![forum project](assets/vs-open-forum.png)
+3. Then scroll down until you see the `forum` project and then click on it ![forum project](assets/vs-open-forum.png)
 
 The whole process is depicted in the video below.
 
