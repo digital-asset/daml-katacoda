@@ -8,4 +8,5 @@ If you want to continue learning, head over to the next parts of this course:
 
 You can continue to use the [Web SDK](https://www.daml.com/websdk) or head over to the [Installation Instructions](https://docs.daml.com/getting-started/installation.html) to install DAML on your local machine.
 
-If you have any questions or problems, connect with the DAML Community on [Discuss](discuss.daml.com).
+As always, if you have any questions or problems, connect with the DAML Community on the [DAML
+forum](https://discuss.daml.com).

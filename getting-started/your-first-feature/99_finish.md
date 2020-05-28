@@ -2,4 +2,5 @@ You’ve gone through the process of setting up a full-stack DAML app and implem
 
 Next up you can learn how to deploy your app to [project:DABL](https://www.daml.com/learn/getting-started/deploy-to-dabl/) - a hosted and scalable environment supporting all your app management needs.
 
-If you have any questions or problems, connect with the DAML Community on [Discuss](discuss.daml.com).
+As always, if you have any questions or problems, connect with the DAML Community on the [DAML
+forum](https://discuss.daml.com).
