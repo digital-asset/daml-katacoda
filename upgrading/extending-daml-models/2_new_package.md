@@ -11,12 +11,13 @@ daml new forum
 cd forum
 ```{{execute T1}}
 
-Let's now also open the new project in the [Visual Studio Code IDE](https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com). To do so
+Let's now also open the new project in the Visual Studio Code IDE. To do so
 
-1. Navigate to the burger menu ![burger menu](assets/vs-burger-menu.png) in the top left corner and select `File -> Open`
-2. A new dialog will open. First click on the two dots ![two dots](assets/vs-two-dots.png)
-3. Then scroll down until you see the `forum` project and then click on it ![forum project](assets/vs-open-forum.png)
-4. Finally click on the `ok` button to switch to the `forum` project in the IDE ![ok button](assets/vs-ok.png)
+1. **Open the IDE tab and wait for it to load**
+2. Navigate to the burger menu ![burger menu](assets/vs-burger-menu.png) in the top left corner and select `File -> Open`
+3. A new dialog will open. First click on the two dots ![two dots](assets/vs-two-dots.png)
+4. Then scroll down until you see the `forum` project and then click on it ![forum project](assets/vs-open-forum.png)
+5. Finally click on the `ok` button to switch to the `forum` project in the IDE ![ok button](assets/vs-ok.png)
 
 The whole process is depicted in the video below.
 
