@@ -11,6 +11,16 @@ daml new forum
 cd forum
 ```{{execute T1}}
 
+Let's now also open the new project in the [Visual Studio Code IDE](https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com). To do so
+
+1. Navigate to the burger menu ![burger menu](assets/vs-burger-menu.png) in the top left corner and select `File -> Open`
+2. A new dialog will open. First click on the two dots ![two dots](assets/vs-two-dots.png)
+3. Then scroll down until you see the `forum` project and then click on it ![forum project](assets/vs-open-forum.png)
+
+The whole process is depicted in the video below.
+
+![open the forum project](assets/change-to-forum-project-ide.gif)
+
 The first thing you need to do is to add the `create-daml-app` to the dependencies in the
 `../forum/daml.yaml`{{open}} file. After, the file will look like this:
 
