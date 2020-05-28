@@ -1,17 +1,17 @@
 {
-  "title": "Upgrading DAML Ledgers",
+  "title": "Upgrading DAML Applications",
   "private": false,
   "courses": [
     {
       "external_link": "https://www.daml.com/learn/upgrading/extending-daml-models",
       "title": "Extend DAML Models with Packages",
-      "description": "Extend a DAML model with a feature contained in a new package and upload it to a running ledger.",
+      "description": "Extend a DAML model with a feature contained in a new package and upload it to a running application.",
       "course_id": "extending-daml-models"
     },
     {
       "external_link": "https://www.daml.com/learn/upgrading/upgrade-running-ledgers",
       "title": "Upgrade DAML Models and Migrate a Live Sytem",
-      "description": "Learn how to upgrade a DAML model and migrate a running ledger.",
+      "description": "Learn how to upgrade a DAML model and migrate a running application.",
       "course_id": "upgrade-runnning-ledgers"
     }
   ]

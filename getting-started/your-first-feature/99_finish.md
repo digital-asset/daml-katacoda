@@ -1,3 +1,5 @@
 You’ve gone through the process of setting up a full-stack DAML app and implementing a useful feature end to end. Have a think about how you might further improve or extend this app. For example, you might have noticed that your list of messages can get out of order. You could add a timestamp to the Message template and sort messages in the MessageList component so your most recent are at the top. Of course there are many more features you could imagine (just think of your favourite social media app).
 
-Next up you can learn how to deploy your app to [project:DABL](https://projectdabl.com) - a hosted and scalable environment supporting all your app management needs.
+Next up you can learn how to deploy your app to [project:DABL](https://www.daml.com/learn/getting-started/deploy-to-dabl/) - a hosted and scalable environment supporting all your app management needs.
+
+If you have any questions or problems, connect with the DAML Community on [Discuss](discuss.daml.com).

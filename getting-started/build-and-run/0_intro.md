@@ -3,7 +3,7 @@ This is the first in a series of four tutorials to get you up and running with f
 1. How to build and run the application (this tutorial)
 1. The design of its different components ([Application Architecture](https://docs.daml.com/getting-started/app-architecture.html))
 1. How to write a new feature for the app ([Your First Feature](https://daml.com/learn/getting-started/your-first-feature/))
-1. How to deploy your app to [project:DABL](https://projectdabl.com)
+1. How to deploy your app to [project:DABL](https://www.daml.com/learn/getting-started/deploy-to-dabl/)
 
 The final application will look something like this:
 
