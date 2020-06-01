@@ -14,6 +14,9 @@
         "title": "Upgrading DAML Applications",
         "description": "Learn how to upgrade running DAML applications and migrate existing data to your new model.",
         "id": "upgrading"
+      },
+      {
+        ""
       }
     ],
     "scenarios": [
