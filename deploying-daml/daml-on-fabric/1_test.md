@@ -76,7 +76,7 @@ daml json-api --ledger-host localhost --ledger-port 6865 --http-port 7575
 
 And now let's start our UI
 ```
-cd /root/my-app
+cd /root/my-app/ui
 yarn start
 ```{{execute T4}}
 
