@@ -1,0 +1,13 @@
+{
+    "title": "Deploying with DAML",
+    "private": false,
+    "courses": [
+      {
+        "external_link": "TODO",
+        "title": "Deploy DAML on Fabric",
+        "description": "Get familiar with running an application on the Fabric distributed ledger",
+        "course_id": "daml-on-fabric"
+      }
+    ]
+  }
+  
