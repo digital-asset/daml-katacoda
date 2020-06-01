@@ -42,7 +42,8 @@ export PATH=fabric/bin:$PATH
 
 Now let's run a local Fabric network that we'll then connect the DAML Runtime to
 ```
-git clone git@github.com:digital-asset/daml-on-fabric.git
+cd /root
+git clone https://github.com/digital-asset/daml-on-fabric.git
 cd /root/daml-on-fabric/src/test/fixture/
 ./gen.sh
 ./restart_fabric.sh
