@@ -33,6 +33,7 @@ This step may take a couple of moments (it’s worth it!). You should see `succe
 
 Let's install Fabric
 ```
+cd /root
 mkdir fabric
 cd fabric
 curl -sSL https://bit.ly/2ysbOFE | bash -s -- 2.0.0 -s
