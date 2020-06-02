@@ -10,9 +10,9 @@
     },
     {
       "external_link": "https://www.daml.com/learn/upgrading/upgrade-running-ledgers",
-      "title": "Upgrade DAML Models and Migrate a Live Sytem",
+      "title": "Upgrade DAML Models and Migrate a Live Application",
       "description": "Learn how to upgrade a DAML model and migrate a running application.",
-      "course_id": "upgrade-runnning-ledgers"
+      "course_id": "upgrade-runnning-applications"
     }
   ]
 }
