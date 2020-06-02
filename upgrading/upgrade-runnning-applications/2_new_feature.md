@@ -9,7 +9,8 @@ and open `daml/User.daml`{{open}} in the IDE tab and wait for it to load. We'll 
 data with a `nickname` field, such that the beginning of the template looks like
 
 <pre class="file" data-target="clipboard">
-template User where
+template User 
+  with
     username: Party
     following: [Party]
     nickname: Optional Text
