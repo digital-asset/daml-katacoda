@@ -24,7 +24,7 @@ The whole process is depicted in the video below.
 ![open the forum project](assets/change-to-forum-project-ide.gif)
 
 The first thing you need to do is to add the `create-daml-app` to the dependencies in the
-`../forum/daml.yaml`{{open}} file. After, the file will look like this:
+`/forum/daml.yaml`{{open}} file. After, the file will look like this:
 
 <pre class="file" data-target="clipboard">
 sdk-version: 1.1.1
@@ -55,7 +55,7 @@ rm daml/Main.daml
 rm daml/Setup.daml
 ```{{execute T1}}
 
-Now open a new file `../forum/daml/Forum.daml`{{open}}. The data model for the forum consists of two
+Now open a new file `/forum/daml/Forum.daml`{{open}}. The data model for the forum consists of two
 templates `Post` and `Comment`, where `Post` has a non-consuming choice to add comments. Copy the
 following to the file:
 
