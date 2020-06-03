@@ -13,6 +13,13 @@
       "title": "Upgrade DAML Models and Migrate a Live Application",
       "description": "Learn how to upgrade a DAML model and migrate a running application.",
       "course_id": "upgrade-runnning-applications"
+    },
+    {
+      "external_link": "https://www.daml.com/learn/upgrading/upgrade-ui",
+      "title": "DAML Upgrades: User Interface",
+      "description": "Extend your UI to carry out upgrades",
+      "course_id": "upgrade-ui"
     }
+
   ]
 }
