@@ -17,7 +17,7 @@ in hindsight, and stay exactly as you defined it.
 
 Let's verify this.
 
-First, open the IDE and **wait for it to load**. After that open the `daml/User.daml`{{open}} file.
+First, open the IDE and **wait for it to load**. After that open the `/create-daml-app/daml/User.daml`{{open}} file.
 This is the familiar `User` module of the Getting Started Guide.
 
 In the terminal build the `create-daml-app` package with

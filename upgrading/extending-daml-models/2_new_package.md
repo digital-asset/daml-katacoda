@@ -59,7 +59,7 @@ Now open a new file `/forum/daml/Forum.daml`{{open}}. The data model for the for
 templates `Post` and `Comment`, where `Post` has a non-consuming choice to add comments. Copy the
 following to the file:
 
-<pre class="file" data-filename="../forum/daml/Forum.daml" data-target="append">
+<pre class="file" data-filename="/forum/daml/Forum.daml" data-target="append">
 module Forum where
 
 import User
