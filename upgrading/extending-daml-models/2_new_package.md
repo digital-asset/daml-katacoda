@@ -6,7 +6,7 @@ user roles.
 In the terminal, change directory to your home directory and create a new empty DAML project:
 
 ```
-cd
+cd ..
 daml new forum
 cd forum
 ```{{execute T1}}
