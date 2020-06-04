@@ -6,25 +6,12 @@ user roles.
 In the terminal, change directory to your home directory and create a new empty DAML project:
 
 ```
-cd
+cd ..
 daml new forum
 cd forum
 ```{{execute T1}}
 
-Let's now also open the new project in the Visual Studio Code IDE. To do so
-
-1. **Open the IDE tab and wait for it to load**
-2. Navigate to the burger menu ![burger menu](assets/vs-burger-menu.png) in the top left corner and select `File -> Open`
-3. A new dialog will open. First click on the two dots ![two dots](assets/vs-two-dots.png)
-4. Then scroll down until you see the `forum` project and then click on it ![forum project](assets/vs-open-forum.png)
-5. Finally click on the `ok` button to switch to the `forum` project in the IDE ![ok button](assets/vs-ok.png)
-
-The whole process is depicted in the video below.
-
-![open the forum project](assets/change-to-forum-project-ide.gif)
-
-The first thing you need to do is to add the `create-daml-app` to the dependencies in the
-`../forum/daml.yaml`{{open}} file. After, the file will look like this:
+The new project is also visible in the Visual Studio Code IDE. The first thing you need to do is to add the `create-daml-app` to the dependencies in the `/forum/daml.yaml`{{open}} file. After, the file will look like this:
 
 <pre class="file" data-target="clipboard">
 sdk-version: 1.1.1
@@ -55,11 +42,11 @@ rm daml/Main.daml
 rm daml/Setup.daml
 ```{{execute T1}}
 
-Now open a new file `../forum/daml/Forum.daml`{{open}}. The data model for the forum consists of two
+Now open a new file `/forum/daml/Forum.daml`{{open}}. The data model for the forum consists of two
 templates `Post` and `Comment`, where `Post` has a non-consuming choice to add comments. Copy the
 following to the file:
 
-<pre class="file" data-filename="../forum/daml/Forum.daml" data-target="append">
+<pre class="file" data-filename="/forum/daml/Forum.daml" data-target="append">
 module Forum where
 
 import User
