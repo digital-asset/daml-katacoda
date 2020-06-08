@@ -37,7 +37,7 @@ cd /root
 mkdir fabric
 cd fabric
 curl -sSL https://bit.ly/2ysbOFE | bash -s -- 2.0.0 -s
-export PATH=fabric/bin:$PATH
+export PATH=/root/fabric/bin:$PATH
 ```{{execute T1}}
 
 Now let's run a local Fabric network that we'll then connect the DAML Runtime to
