@@ -37,7 +37,7 @@ cd /root
 mkdir fabric
 cd fabric
 curl -sSL https://bit.ly/2ysbOFE | bash -s -- 2.0.0 -s
-export PATH=/root/fabric/bin:$PATH
+echo "export PATH=/root/fabric/bin:$PATH" >> ~/.bashrc
 ```{{execute T1}}
 
 Now let's run a local Fabric network that we'll then connect the DAML Runtime to
@@ -51,6 +51,9 @@ cd /root/daml-on-fabric/src/test/fixture/
 
 And connect the runtime, we'll do this from another terminal
 ```
+curl -s "https://get.sdkman.io" | bash
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+sdk install sbt 1.2.8
 cd /root/daml-on-fabric
 sbt "run --port 6865 --role provision,time,ledger" -J-DfabricConfigFile=config.json
 ```{{execute T2}}
