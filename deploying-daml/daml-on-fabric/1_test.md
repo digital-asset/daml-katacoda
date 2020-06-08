@@ -40,8 +40,8 @@ source "$HOME/.sdkman/bin/sdkman-init.sh"
 sdk install java 8.0.252-zulu
 sdk use java 8.0.252-zulu
 
-sdk install scala 2.12.11
-sdk use scala 2.12.11
+sdk install scala 2.12.7
+sdk use scala 2.12.7
 
 sdk install sbt 1.2.8
 sdk use sbt 1.2.8
