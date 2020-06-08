@@ -31,13 +31,26 @@ yarn build
 
 This step may take a couple of moments (it’s worth it!). You should see `success Saved lockfile.` in the output if everything worked as expected.
 
+Install SDKMan to manage Java and SBT dependencies:
+
+```
+curl -s "https://get.sdkman.io" | bash
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+sdk install java 8.0.242-zulu
+sdk use java 8.0.242-zulu
+sdk install sbt 1.2.8
+sdk use sbt 1.2.8
+```
+
 Let's install Fabric
 ```
 cd /root
 mkdir fabric
 cd fabric
 curl -sSL https://bit.ly/2ysbOFE | bash -s -- 2.0.0 -s
-echo "export PATH=/root/fabric/bin:$PATH" >> ~/.bashrc
+echo "export PATH=/root/fabric/bin:$PATH" >> $HOME/.bashrc
+source $HOME/.bashrc
 ```{{execute T1}}
 
 Now let's run a local Fabric network that we'll then connect the DAML Runtime to
@@ -51,9 +64,6 @@ cd /root/daml-on-fabric/src/test/fixture/
 
 And connect the runtime, we'll do this from another terminal
 ```
-curl -s "https://get.sdkman.io" | bash
-source "$HOME/.sdkman/bin/sdkman-init.sh"
-sdk install sbt 1.2.8
 cd /root/daml-on-fabric
 sbt "run --port 6865 --role provision,time,ledger" -J-DfabricConfigFile=config.json
 ```{{execute T2}}
