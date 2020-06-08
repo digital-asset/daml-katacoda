@@ -15,6 +15,12 @@
         "action": "Start"
         },
         {
+        "external_link": "https://www.daml.com/learn/fundamental-concepts",
+        "title": "Fundamental DAML concepts",
+        "description": "Understand the 'signatory', 'observer' and 'controller' keywords and learn how you can write secure and privacy respecting DAML applications.",
+        "action": "Start"
+        },
+        {
         "external_link": "https://www.daml.com/learn/testing-daml-models",
         "title": "Learn how to test DAML models",
         "description": "A short series of tutorials to learn the basics of testing DAML models.",

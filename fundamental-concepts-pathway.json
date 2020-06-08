@@ -1,0 +1,12 @@
+{
+  "title": "Fundamental DAML Concepts",
+  "private": false,
+  "courses": [
+    {
+      "external_link": "https://www.daml.com/learn/fundamental-concepts/template-authorization",
+      "title": "DAML Template Authorization",
+      "description": "Understand the 'signatory', 'observer' and 'controller' keywords and learn how you can write secure and privacy respecting DAML applications.",
+      "course_id": "template-authorization"
+    }
+  ]
+}
