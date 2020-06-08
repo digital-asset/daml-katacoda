@@ -36,7 +36,6 @@ Install SDKMan to manage Java and SBT dependencies:
 ```
 curl -s "https://get.sdkman.io" | bash
 source "$HOME/.sdkman/bin/sdkman-init.sh"
-
 sdk install java 8.0.242-zulu
 sdk use java 8.0.242-zulu
 sdk install sbt 1.2.8
@@ -44,6 +43,7 @@ sdk use sbt 1.2.8
 ```
 
 Let's install Fabric
+
 ```
 cd /root
 mkdir fabric
