@@ -1,28 +1,3 @@
-```
-daml create-daml-app my-app
-cd my-app
-```{{execute T1}}
-
-Next we need to compile the DAML code to a DAR file:
-
-```
-daml build
-```{{execute T1}}
-
-Once the DAR file is created you will see this message in terminal: 
-
-```
-Created .daml/dist/my-app-0.1.0.dar.
-```
-
-In order to connect the UI code to this DAML, we need to run a code generation step:
-
-```
-daml codegen js .daml/dist/create-daml-app-0.1.0.dar -o daml.js
-```{{execute T1}}
-
-This step may take a couple of moments (it’s worth it!). You should see `success Saved lockfile.` in the output if everything worked as expected.
-
 Install SDKMan to manage Java, Scala, and SBT dependencies:
 
 ```

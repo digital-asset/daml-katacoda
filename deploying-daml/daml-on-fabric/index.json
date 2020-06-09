@@ -6,8 +6,13 @@
   "details": {
     "steps": [
       {
-        "title": "TEST",
-        "text": "1_test.md"
+        "title": "Create our DAML App",
+        "text": "create_app.md"
+      },
+      {
+        "title": "Build our DAML App",
+        "text": "build_app.md",
+        "courseData": "build_app.sh"
       }
     ],
     "intro": {
