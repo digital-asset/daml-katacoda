@@ -7,12 +7,36 @@
     "steps": [
       {
         "title": "Create our DAML App",
-        "text": "create_app.md"
+        "text": "daml_create_app.md"
       },
       {
         "title": "Build our DAML App",
-        "text": "build_app.md",
-        "courseData": "build_app.sh"
+        "text": "daml_build_app.md",
+        "courseData": "daml_build_app.sh"
+      },
+      {
+        "title": "Install Fabric Dependencies",
+        "text": "fabric_dependencies.md"
+      },
+      {
+        "title": "Install Fabric",
+        "text": "fabric_install.md"
+      },
+      {
+        "title": "Run Fabric Network",
+        "text": "fabric_run_network.md"
+      },
+      {
+        "title": "Connect DAML Runtime",
+        "text": "daml_connect_runtime.md"
+      },
+      {
+        "title": "Deploy DAML App",
+        "text": "daml_deploy_app.md"
+      },
+      {
+        "title": "Run our App's UI",
+        "text": "daml_run_ui.md"
       }
     ],
     "intro": {
