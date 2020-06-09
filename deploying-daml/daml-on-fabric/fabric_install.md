@@ -1,4 +1,4 @@
-Let's install Fabric
+Let's install Fabric. This has to pull down a lot of packages so it will take a few minutes.
 
 ```
 cd $HOME

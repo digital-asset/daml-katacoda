@@ -35,6 +35,10 @@
         "text": "daml_deploy_app.md"
       },
       {
+        "title": "Run DAML JSON API",
+        "text": "daml_run_json_api.md"
+      },
+      {
         "title": "Run our App's UI",
         "text": "daml_run_ui.md"
       }

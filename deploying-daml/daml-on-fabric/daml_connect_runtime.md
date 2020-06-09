@@ -1,7 +1,7 @@
 And connect the DAML Runtime to our Fabric network, we'll do this from another terminal
 ```
 cd $HOME/daml-on-fabric
-sbt "run --port 6865 --role provision,time,ledger" -J-DfabricConfigFile=config-local.yaml
+sbt "run --port 6865 --role provision,time,ledger" -J-DfabricConfigFile=config-local.yaml -Xss2M -XX:MaxMetaspaceSize=1024M
 ```{{execute T2}}
 
 Give the `sbt` process a moment to start, when it's ready the output will look like:
