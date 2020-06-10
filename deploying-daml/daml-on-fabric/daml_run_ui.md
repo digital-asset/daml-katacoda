@@ -1,9 +1,9 @@
 And now let's build and start our UI
 ```
 cd $HOME/my-app/ui
+export REACT_APP_LEDGER_ID=fabric-ledger
 yarn install
 yarn build
-export REACT_APP_LEDGER_ID=fabric-ledger
 yarn start
 ```{{execute T4}}
 
