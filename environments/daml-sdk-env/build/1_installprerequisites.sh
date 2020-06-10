@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Configuring the environment for more file watchers
+echo "fs.inotify.max_user_watches=524288" >> /etc/sysctl.conf
+
 # Following https://adoptopenjdk.net/installation.html
 wget -qO - https://adoptopenjdk.jfrog.io/adoptopenjdk/api/gpg/key/public | sudo apt-key add -
 sudo add-apt-repository --yes https://adoptopenjdk.jfrog.io/adoptopenjdk/deb/
