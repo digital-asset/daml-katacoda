@@ -1,4 +1,5 @@
-Now let's run a local Fabric network that we'll then connect the DAML Runtime to
+Alright time to start up Fabric. The git repo we're cloning has an example configuration for running a few peers and is a great starting point if you decide to do your own deployment. If you go that route the DAML-on-Fabric [README](https://github.com/digital-asset/daml-on-fabric/blob/master/README.md) and [DEPLOYMENT GUIDE](https://github.com/digital-asset/daml-on-fabric/blob/master/DEPLOYMENT_GUIDE.md) are must-reads.
+
 ```
 cd $HOME
 git clone https://github.com/digital-asset/daml-on-fabric.git
