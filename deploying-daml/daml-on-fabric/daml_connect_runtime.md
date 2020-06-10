@@ -15,5 +15,5 @@ Give the `sbt` process a moment to start, when it's ready the output will look l
 [\.\.\.]
 
 13:57:11.931 INFO  c.d.p.a.LedgerApiServer - Listening on 0.0.0.0:6865 over plain text.
-13:57:11.934 INFO  c.d.p.a.StandaloneApiServer - Initialized API server version 1.2.0-snapshot.20200520.4224.0.2af134ca with ledger-id = fabric-ledger, port = 6865, dar file = List()
+13:57:11.934 INFO  c.d.p.a.StandaloneApiServer - Initialized API server version 1.1.1 with ledger-id = fabric-ledger, port = 6865, dar file = List()
 ```
