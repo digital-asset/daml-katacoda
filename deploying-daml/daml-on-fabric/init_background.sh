@@ -3,9 +3,10 @@
 init()
 {
     ls
-    rm -rf /root/my-app
-    rm -rf /root/daml-on-fabric
-    rm -rf /root/fabric
+    rm -rf $HOME/my-app
+    rm -rf $HOME/daml-on-fabric
+    rm -rf $HOME/fabric
+    rm -f $HOME/daml.yaml
 }
 
 echo Initialising...
