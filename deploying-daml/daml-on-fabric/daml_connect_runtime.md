@@ -2,8 +2,9 @@ Okay now that Fabric is up and running we need a way for our DAML code to be abl
 
 ```
 cd $HOME/daml-on-fabric
-sbt "run --port 6865 --role provision"
-sbt "run --port 6865 --role time,ledger" -J-DfabricConfigFile=config-local.yaml -Xss2M -XX:MaxMetaspaceSize=1024M
+sbt assembly
+java -jar target/scala-2.12/daml-on-fabric.jar --port 6865 --role provision
+java -jar target/scala-2.12/daml-on-fabric.jar --port 6865 --role time,ledger" -Xss2M -XX:MaxMetaspaceSize=1024M
 ```{{execute T2}}
 
 Give the `sbt` process a moment to start, when it's ready the output will look like:
