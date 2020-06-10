@@ -1,4 +1,4 @@
-Alright now to install Fabric. This has to pull down a lot of packages so it will take a few minutes. Perhaps take this moment to do a few minutes of meditation or read [Q&A on our forum](https://discuss.daml.com/c/questions/5), either one works.
+Alright now it's time to install Fabric. This command has to download some large packages so it will take a few minutes. Perhaps take this moment to do a few minutes of meditation or browse the [Q&A section on our forum](https://discuss.daml.com/c/questions/5), either one works.
 
 ```
 cd $HOME
