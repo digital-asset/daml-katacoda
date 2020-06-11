@@ -11,8 +11,4 @@ cd create-daml-app
 sed -i 's+ws://localhost:7575/+wss://[[HOST_SUBDOMAIN]]-7575-[[KATACODA_HOST]].environments.katacoda.com/+g' ui/src/config.ts
 mkdir .daml
 
-# make sure there are enough filewatchers for `yarn start`
-echo "fs.inotify.max_user_watches=524288" >> /etc/sysctl.conf
-sysctl -p
-
 echo done
