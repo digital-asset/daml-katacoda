@@ -6,7 +6,7 @@ sbt "run --port 6865 --role provision"
 sbt "run --port 6865 --role time,ledger" -J-DfabricConfigFile=config-local.yaml -Xss2M -XX:MaxMetaspaceSize=1024M
 ```{{execute T2}}
 
-Give the `sbt` process a moment to start, when it's ready the output will look like:
+Give the `sbt` a few minutes to install dependencies. You can check out the [DAML Cheat Sheet](https://docs.daml.com/cheat-sheet/) while you wait. When `sbt` is ready the output will look like:
 
 ```
 13:57:11.931 INFO  c.d.p.a.LedgerApiServer - Listening on 0.0.0.0:6865 over plain text.
