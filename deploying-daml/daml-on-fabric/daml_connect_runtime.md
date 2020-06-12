@@ -9,10 +9,6 @@ sbt "run --port 6865 --role time,ledger" -J-DfabricConfigFile=config-local.yaml 
 Give the `sbt` process a moment to start, when it's ready the output will look like:
 
 ```
-13:57:06.404 INFO  c.d.p.a.ApiServices - DAML LF Engine supports LF versions: 0, 0.dev, 1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.dev; Transaction versions: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10; Value versions: 1, 2, 3, 4, 5, 6, 7
-
-[\.\.\.]
-
 13:57:11.931 INFO  c.d.p.a.LedgerApiServer - Listening on 0.0.0.0:6865 over plain text.
 13:57:11.934 INFO  c.d.p.a.StandaloneApiServer - Initialized API server version 1.1.1 with ledger-id = fabric-ledger, port = 6865, dar file = List()
 ```
