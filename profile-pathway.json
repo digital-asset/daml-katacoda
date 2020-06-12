@@ -6,6 +6,11 @@
         "id": "getting-started"
       },
       {
+        "title": "Fundamental DAML Concepts",
+        "description": "Understand the 'signatory', 'observer' and 'controller' keywords and learn how you can write secure and privacy respecting DAML applications.",
+        "id": "fundamental-concepts"
+      },
+      {
         "title": "Testing DAML Models",
         "description": "Learn how to test your DAML models with scenarios and scripts.",
         "id": "testing-daml-models"
