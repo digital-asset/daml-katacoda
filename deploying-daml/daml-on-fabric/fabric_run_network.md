@@ -7,3 +7,5 @@ cd $HOME/daml-on-fabric/src/test/fixture/
 ./gen.sh
 ./restart_fabric.sh
 ```{{execute T1}}
+
+This process is ready once you see a line similar to `peer0.org2.example.com_1 | 2020-06-16 17:18:36.639 UTC [fsblkstorage] preResetHtFiles -> INFO 01d No active channels passed` in the terminal. It'll start fairly quickly.

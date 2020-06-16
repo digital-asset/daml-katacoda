@@ -1,9 +1,9 @@
 {
-    "title": "Deploying with DAML",
+    "title": "Deploying DAML on Production Ledgers",
     "private": false,
     "courses": [
       {
-        "external_link": "TODO",
+        "external_link": "https://github.com/digital-asset/daml-on-fabric/",
         "title": "Deploy DAML on Fabric",
         "description": "Get familiar with running an application on the Fabric distributed ledger",
         "course_id": "daml-on-fabric"

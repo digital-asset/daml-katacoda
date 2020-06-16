@@ -4,3 +4,5 @@ Okay now that our code is deployed if we wanted to we could talk directly to it 
 cd $HOME/my-app
 daml json-api --ledger-host localhost --ledger-port 6865 --http-port 7575 --address 0.0.0.0 --allow-insecure-tokens
 ```{{execute T3}}
+
+This is done once you see `[http-json-ledger-api-akka.actor.default-dispatcher-6] INFO com.daml.http.Main$ - Started server: ServerBinding(/0:0:0:0:0:0:0:0:7575)` in the terminal.
