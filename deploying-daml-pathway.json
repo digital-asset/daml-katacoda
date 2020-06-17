@@ -1,0 +1,13 @@
+{
+    "title": "Deploying DAML on Production Ledgers",
+    "private": false,
+    "courses": [
+      {
+        "external_link": "https://www.daml.com/learn/deploying-daml/daml-on-fabric/",
+        "title": "Deploy DAML on Fabric",
+        "description": "Get familiar with running an application on the Fabric distributed ledger",
+        "course_id": "daml-on-fabric"
+      }
+    ]
+  }
+  

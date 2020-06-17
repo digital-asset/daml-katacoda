@@ -1,0 +1,69 @@
+{
+  "title": "Build, Deploy, and Run a DAML application on Fabric",
+  "description": "Run any DAML program on Fabric in a few steps",
+  "difficulty": "Beginner",
+  "time": "20 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Create our DAML App",
+        "text": "daml_create_app.md"
+      },
+      {
+        "title": "Build our DAML App",
+        "text": "daml_build_app.md",
+        "courseData": "daml_build_app.sh"
+      },
+      {
+        "title": "Install Fabric Dependencies",
+        "text": "fabric_dependencies.md"
+      },
+      {
+        "title": "Install Fabric",
+        "text": "fabric_install.md"
+      },
+      {
+        "title": "Run Fabric Network",
+        "text": "fabric_run_network.md"
+      },
+      {
+        "title": "Connect DAML Runtime",
+        "text": "daml_connect_runtime.md"
+      },
+      {
+        "title": "Deploy DAML App",
+        "text": "daml_deploy_app.md"
+      },
+      {
+        "title": "Run DAML JSON API",
+        "text": "daml_run_json_api.md"
+      },
+      {
+        "title": "Run our App's UI",
+        "text": "daml_run_ui.md"
+      }
+    ],
+    "intro": {
+      "text": "0_intro.md",
+      "courseData": "init_background.sh"
+    },
+    "finish": {
+      "text": "99_finish.md"
+    }
+  },
+  "environment": {
+    "showide": true,
+    "uieditorpath": "/root/my-app",
+    "dashboards": [{"name": "UI", "port": 3000}],
+    "terminals": [
+        {"name": "Terminal 2", "target": "host01"},
+        {"name": "Terminal 3", "target": "host01"},
+        {"name": "Terminal 4", "target": "host01"}
+      ],
+    "idePort": 23000,
+    "uilayout": "terminal-iframe"
+  },
+  "backend": {
+    "imageid": "daml-sdk-env"
+  }
+}

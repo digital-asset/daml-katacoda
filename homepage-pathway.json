@@ -31,6 +31,12 @@
         "title": "Upgrading DAML Applications",
         "description": "Learn how to upgrade running DAML aplication and migrate existing data to your new model.",
         "action": "Start"
+        },
+        {
+        "external_link": "https://www.daml.com/learn/deploying-daml/",
+        "title": "Deploying DAML on Production Ledgers",
+        "description": "Get familiar with running a DAML application on distributed ledgers.",
+        "action": "Start"
         }
     ]
 }

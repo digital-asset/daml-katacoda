@@ -19,6 +19,11 @@
         "title": "Upgrading DAML Applications",
         "description": "Learn how to upgrade running DAML applications and migrate existing data to your new model.",
         "id": "upgrading"
+      },
+      {
+        "title": "Deploying DAML on Fabric",
+        "description": "A short tutorial on deploying a full E2E DAML Application on the Fabric distributed ledger",
+        "id": "deploying-daml"
       }
     ],
     "scenarios": [

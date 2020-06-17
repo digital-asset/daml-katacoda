@@ -1,0 +1,1 @@
+Awesome! All done, and not too shabby for deploying an entire tech stack. If you're interested in learning more about and using DAML more you can check out [our docs](https://docs.daml.com), join [our forum](https://discuss.daml.com) for Q&A and to say hi to our community, or [chat with us on Slack](https://slack.daml.com/)
