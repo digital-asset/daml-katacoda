@@ -1,0 +1,47 @@
+{
+  "title": "Contract Keys",
+  "description": "Keep your API clean and simple with contract keys.",
+  "difficulty": "Beginner",
+  "time": "20 minutes",
+  "details": {
+    "assets": {
+        "host01": [
+        ]
+    },
+    "steps": [
+      { "title": "Chasing contract IDs",
+        "text": "1_chasing_contract_ids.md",
+        "code": "start_sandbox_background.sh"
+      },
+      { "title": "Contract keys",
+        "text": "2_contract_keys.md"
+      },
+      { "title": "Key maintainers",
+        "text": "3_key_maintainers.md"
+      },
+      { "title": "Using contract keys",
+        "text": "4_using_contract_keys.md"
+      }
+    ],
+    "intro": {
+      "text": "0_intro.md"
+    },
+    "finish": {
+      "text": "99_finish.md"
+    }
+  },
+  "environment": {
+    "showide": true,
+    "uieditorpath": "/root/create-daml-app",
+    "showdashboard": true,
+    "dashboards": [{"name": "UI", "port": 3000}],
+    "terminals": [
+        {"name": "Terminal 2", "target": "host01"}
+    ],
+    "idePort": 23000,
+    "uilayout": "terminal-iframe"
+  },
+  "backend": {
+    "imageid": "daml-sdk-env"
+  }
+}
