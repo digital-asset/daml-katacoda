@@ -4,7 +4,7 @@ Alright now it's time to install Fabric. This command has to download some large
 cd $HOME
 mkdir fabric
 cd fabric
-curl -sSL https://bit.ly/2ysbOFE | bash -s -- 2.0.0 -s
+curl -sSL https://raw.githubusercontent.com/hyperledger/fabric/master/scripts/bootstrap.sh | bash -s -- 2.1.0 -s
 echo "export PATH=/root/fabric/bin:$PATH" >> $HOME/.bashrc
 source $HOME/.bashrc
 ```{{execute T1}}
