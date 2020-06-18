@@ -4,7 +4,6 @@ Alright now our entire backend is up and running, participant nodes are particip
 cd $HOME/my-app/ui
 export REACT_APP_LEDGER_ID=fabric-ledger
 yarn install
-yarn build
 yarn start
 ```{{execute T4}}
 
