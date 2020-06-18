@@ -1,0 +1,48 @@
+{
+  "title": "Choices and the Role Pattern",
+  "description": "Design the API of your application with consuming and non-consuming choices and structure your code with the role pattern.",
+  "difficulty": "Beginner",
+  "time": "20 minutes",
+  "details": {
+    "assets": {
+        "host01": [
+        ]
+    },
+    "steps": [
+      { "title": "Designing your API",
+        "text": "1_api_design.md",
+        "code": "start_sandbox_background.sh"
+      },
+      { "title": "Implement your API with choices",
+        "text": "2_api_to_choices.md"
+      },
+      { "title": "Control resources with consuming choices",
+        "text": "3_consuming_choices.md"
+      },
+      { "title": "The role pattern",
+        "text": "4_role_pattern.md"
+      }
+    ],
+    "intro": {
+      "text": "0_intro.md",
+      "courseData": "init_background.sh"
+    },
+    "finish": {
+      "text": "99_finish.md"
+    }
+  },
+  "environment": {
+    "showide": true,
+    "uieditorpath": "/root/create-daml-app",
+    "showdashboard": true,
+    "dashboards": [{"name": "UI", "port": 3000}],
+    "terminals": [
+        {"name": "Terminal 2", "target": "host01"}
+    ],
+    "idePort": 23000,
+    "uilayout": "terminal-iframe"
+  },
+  "backend": {
+    "imageid": "daml-sdk-env"
+  }
+}

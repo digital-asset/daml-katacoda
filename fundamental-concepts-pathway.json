@@ -7,6 +7,12 @@
       "title": "DAML Template Authorization",
       "description": "Understand the 'signatory', 'observer' and 'controller' keywords and learn how you can write secure and privacy respecting DAML applications.",
       "course_id": "template-authorization"
+    },
+    {
+      "external_link": "https://www.daml.com/learn/fundamental-concepts/choices-role-pattern",
+      "title": "Choices and the Role Pattern",
+      "description": "Design the API of your application with consuming and non-consuming choices and structure your code with the role pattern.",
+      "course_id": "choices-role-pattern"
     }
   ]
 }
