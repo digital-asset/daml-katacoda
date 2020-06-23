@@ -1,7 +1,5 @@
 #!/bin/bash
-
 cd /root/create-daml-app
-
 daml sandbox --ledgerid create-daml-app-sandbox &
 sleep 5
 daml ledger upload-dar create-daml-app-0.1.0.dar
