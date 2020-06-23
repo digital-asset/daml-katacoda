@@ -13,6 +13,12 @@
       "title": "Choices and the Role Pattern",
       "description": "Design the API of your application with consuming and non-consuming choices and structure your code with the role pattern.",
       "course_id": "choices-role-pattern"
+    },
+    {
+      "external_link": "https://www.daml.com/learn/fundamental-concepts/contract-keys",
+      "title": "Contract Keys",
+      "description": "Keep your API clean and simple with contract keys.",
+      "course_id": "contract-keys"
     }
   ]
 }
