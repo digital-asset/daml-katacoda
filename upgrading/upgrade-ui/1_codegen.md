@@ -6,7 +6,7 @@ migration package `migration-0.1.0` and deploy it together with the new packages
 
 Now you want to drive the upgrade process of the `create-daml-app-0.1.0` DAML application from the
 UI.  If a user wants to login, whose `User` contract is still of the old `create-daml-app-0.1.0`
-package, you ask her kindly to upgrade to the newer package. 
+package, you ask her kindly to upgrade to the newer package.
 
 In order to do so, you need the generated JavaScript bindings for the newly available packages.
 **Wait for the sandbox to boot in the background**. Then create them with the DAML Assistant like
@@ -28,9 +28,9 @@ Once finished, open `ui/package.json`{{open}} in the IDE and add the new depende
     "@daml.js/create-daml-app": "file:../daml.js/create-daml-app-0.1.1",
     "@daml.js/forum-0.1.0": "file:../daml.js/forum-0.1.0",
     "@daml.js/migration-v0-v1": "file:../daml.js/migration-0.1.0",
-    "@daml/ledger": "1.1.1",
-    "@daml/react": "1.1.1",
-    "@daml/types": "1.1.1",
+    "@daml/ledger": "1.2.0",
+    "@daml/react": "1.2.0",
+    "@daml/types": "1.2.0",
     "jwt-simple": "^0.5.6",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",

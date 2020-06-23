@@ -6,8 +6,7 @@
   "details": {
     "assets": {
         "host01": [
-            {"file": "forum.tar.gz", "target": "/root/"},
-            {"file": "create-daml-app.tar.gz", "target": "/root/"}
+            {"file": "forum.tar.gz", "target": "/root/"}
         ]
     },
     "steps": [
