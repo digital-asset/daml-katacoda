@@ -1,0 +1,46 @@
+{
+  "title": "The Propose/Accept Pattern",
+  "description": "Use the Propose/Accept pattern to create multi-signatory contracts and delegate authority.",
+  "difficulty": "Beginner",
+  "time": "20 minutes",
+  "details": {
+    "assets": {
+        "host01": [
+        ]
+    },
+    "steps": [
+      { "text": "1_making_friends.md"
+      },
+      { "text": "2_becoming_friends.md"
+      },
+      { "text": "3_testing_your_friendship.md"
+      },
+      { "text": "4_growing_a_friends_network.md"
+      , "courseData": "4_start_ledger.sh"
+      },
+      { "text": "5_demo.md"
+      }
+    ],
+    "intro": {
+      "text": "0_intro.md",
+      "courseData": "init_background.sh"
+    },
+    "finish": {
+      "text": "99_finish.md"
+    }
+  },
+  "environment": {
+    "showide": true,
+    "uieditorpath": "/root/create-daml-app",
+    "showdashboard": true,
+    "dashboards": [{"name": "UI", "port": 3000}],
+    "terminals": [
+        {"name": "Terminal 2", "target": "host01"}
+    ],
+    "idePort": 23000,
+    "uilayout": "terminal-iframe"
+  },
+  "backend": {
+    "imageid": "daml-sdk-env"
+  }
+}
