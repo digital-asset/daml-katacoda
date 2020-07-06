@@ -13,8 +13,9 @@ cd forum
 
 The new project is also visible in the Visual Studio Code IDE. The first thing you need to do is to add the `create-daml-app` to the dependencies in the `/forum/daml.yaml`{{open}} file. After, the file will look like this:
 
+<!-- TODO: automate having the right sdk-version in the snippet-->
 <pre class="file" data-target="clipboard">
-sdk-version: 1.1.1
+sdk-version: 1.2.0
 name: forum
 source: daml
 parties:

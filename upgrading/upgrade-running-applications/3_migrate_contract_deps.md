@@ -17,8 +17,9 @@ To write a migration contract, we need to import the two versions of each packag
 project. Open the
 `../migration/daml.yaml`{{open}} file and change it to
 
+<!-- TODO: automate having the right sdk-version in the snippet-->
 <pre class="file" data-target="clipboard">
-sdk-version: 1.1.1
+sdk-version: 1.2.0
 name: migration
 source: daml
 parties:

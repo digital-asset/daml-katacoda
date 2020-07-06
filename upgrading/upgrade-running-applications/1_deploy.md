@@ -10,7 +10,7 @@ directory. The `forum` package has been extended to contain an initialization sc
 ls
 ```{{execute T1}}
 
-Change directory to `create-daml-app` 
+Change directory to `create-daml-app`
 
 ```
 cd create-daml-app
@@ -36,7 +36,7 @@ No we can start a local sandbox ledger with
 daml sandbox
 ```{{execute T1}}
 
-and deploy the packages **in the second terminal after the sandbox has fully started** with 
+and deploy the packages **in the second terminal after the sandbox has fully started** with
 
 ```
 cd forum
@@ -52,5 +52,5 @@ daml script --dar forum-0.1.0.dar --script-name Init:initialize --ledger-host lo
 ```{{execute T2}}
 
 Nice, your social network is running and users are happily posting and commenting in the forum
-(look at the `../forum/Init.daml`{{open}} module in the forum source code to see what). In the next
+(look at the `../forum/daml/Init.daml`{{open}} module in the forum source code to see what). In the next
 step we'll upgrade the `create-daml-app` package with a new feature.

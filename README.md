@@ -12,3 +12,15 @@
 
 This repo contains environment definitions and scenarios for using DAML within
 the [Katacoda](https://www.katacoda.com) learning environment.
+
+# Ensuring that DAML projects used in the scenarios are up to date with the latest DAML SDK version
+
+When using external DAML projects in the scenario (e.g., via a downloaded `.tar` file) make sure that `daml.yaml` file references the DAML SDK version used in the Katacoda environment. You can do that by either
+
+- Creating a new project with `daml new` command and moving the project files into the folder
+- By changing the DAML SDK version in the `daml.yaml` file via shell and awk
+
+# Upgrading the DAML SDK version in the Katacoda environment
+
+When upgrading the DAML SDK version in the Katacoda environment make sure to go through all the scenarios and update
+the code snippets that are used in the scenario with the appropriate version (mainly daml version in `daml.yaml` file)
