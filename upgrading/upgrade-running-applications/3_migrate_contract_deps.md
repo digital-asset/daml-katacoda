@@ -18,7 +18,7 @@ project. Open the
 `../migration/daml.yaml`{{open}} file and change it to
 
 <pre class="file" data-target="clipboard">
-sdk-version: 1.1.1
+sdk-version: 1.2.0
 name: migration
 source: daml
 parties:

@@ -9,7 +9,7 @@ and open `daml/User.daml`{{open}} in the IDE tab and wait for it to load. We'll 
 data with a `nickname` field, such that the beginning of the template looks like
 
 <pre class="file" data-target="clipboard">
-template User 
+template User
   with
     username: Party
     following: [Party]
@@ -20,7 +20,7 @@ template User
 Of course you could make a lot more involved changes to the template, but for the sake of the
 presentation we restrict ourself to a simple additional data field. Now open the
 `daml.yaml`{{open}}
-file and increase the version of the package to `0.1.1`. 
+file and increase the version of the package to `0.1.1`.
 
 In the terminal, build the new package with
 
@@ -48,7 +48,7 @@ and edit the `../forum/daml.yaml`{{open}} file to update the `create-daml-app` d
 Your `daml.yaml` file should look like
 
 <pre class="file" data-target="clipboard">
-sdk-version: 1.1.1
+sdk-version: 1.2.0
 name: forum
 source: daml
 parties:
@@ -79,7 +79,7 @@ Now build the new forum package with
 daml build -o forum-0.1.1.dar
 ```{{execute T2}}
 
-and deploy it with 
+and deploy it with
 
 ```
 daml ledger upload-dar forum-0.1.1.dar
