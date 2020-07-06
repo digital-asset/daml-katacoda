@@ -22,5 +22,5 @@ When using external DAML projects in the scenario (e.g., via a downloaded `.tar`
 
 # Upgrading the DAML SDK version in the Katacoda environment
 
-When upgrading the DAML SDK version in the Katsacoda environment make sure to go through all the scenarios and update
+When upgrading the DAML SDK version in the Katacoda environment make sure to go through all the scenarios and update
 the code snippets that are used in the scenario with the appropriate version (mainly daml version in `daml.yaml` file)
