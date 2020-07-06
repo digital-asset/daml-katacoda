@@ -47,6 +47,7 @@ cd ../forum
 and edit the `../forum/daml.yaml`{{open}} file to update the `create-daml-app` dependency to 0.1.1.
 Your `daml.yaml` file should look like
 
+<!-- TODO: automate having the right sdk-version in the snippet-->
 <pre class="file" data-target="clipboard">
 sdk-version: 1.2.0
 name: forum
