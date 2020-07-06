@@ -19,6 +19,12 @@
       "title": "Contract Keys",
       "description": "Keep your API clean and simple with contract keys.",
       "course_id": "contract-keys"
+    },
+    {
+      "external_link": "https://www.daml.com/learn/fundamental-concepts/propose-accept-pattern",
+      "title": "The Propose/Accept Pattern",
+      "description": "Use the Propose/Accept pattern to create multi-signatory contracts and delegate authority.",
+      "course_id": "propose-accept-pattern"
     }
   ]
 }
