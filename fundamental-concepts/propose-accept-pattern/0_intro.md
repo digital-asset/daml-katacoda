@@ -4,9 +4,9 @@ specified capabilities.
 
 In this scenario, we take a look at the [Propose/Accept
 pattern](https://en.wikipedia.org/wiki/Offer_and_acceptance). The **Propose/Accept** pattern is the
-only way you can create contracts with multiple signatories. It is also an elegant way to delegate
-rights to a party by creating a role contract for it. In that way, the Propose/Accept pattern
-complements the Role pattern.
+best way to create contracts with multiple signatories. It is also an elegant way to delegate rights
+to a party by creating a role contract for it. In that way, the Propose/Accept pattern complements
+the Role pattern.
 
 ![propose_accept](assets/propose_accept.png)
 
