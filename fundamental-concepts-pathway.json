@@ -3,6 +3,18 @@
   "private": false,
   "courses": [
     {
+      "external_link": "https://www.daml.com/learn/fundamental-concepts/data-types-imports",
+      "title": "Data types and imports",
+      "description": "Learn about functions, records, sums and and how to import other packages.",
+      "course_id": "data-types-imports"
+    },
+    {
+      "external_link": "https://www.daml.com/learn/fundamental-concepts/stdlib-tour",
+      "title": "Explore DAML's standard library",
+      "description": "Take a tour through DAML's standard library and learn about lists, maps, sets and optional data types.",
+      "course_id": "stdlib-tour"
+    },
+    {
       "external_link": "https://www.daml.com/learn/fundamental-concepts/template-authorization",
       "title": "DAML Template Authorization",
       "description": "Understand the 'signatory', 'observer' and 'controller' keywords and learn how you can write secure and privacy respecting DAML applications.",
