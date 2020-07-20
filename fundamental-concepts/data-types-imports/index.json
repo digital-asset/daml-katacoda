@@ -1,0 +1,40 @@
+{
+  "title": "Data types and imports",
+  "description": "Learn about functions, records, sums and and how to import other packages.",
+  "difficulty": "Beginner",
+  "time": "30 minutes",
+  "details": {
+    "assets": {
+        "host01": [
+        ]
+    },
+    "steps": [
+      {"text": "1_functions.md"},
+      {"text": "2_records.md"},
+      {"text": "3_sums.md"},
+      {"text": "4_type_synonyms.md"},
+      {"text": "5_imports.md"},
+      {"text": "6_stdlib.md"}
+    ],
+    "intro": {
+      "text": "0_intro.md",
+      "courseData": "init_background.sh"
+    },
+    "finish": {
+      "text": "99_finish.md"
+    }
+  },
+  "environment": {
+    "showide": true,
+    "uieditorpath": "/root/organizer",
+    "showdashboard": false,
+    "dashboards": [{"name": "UI", "port": 3000}],
+    "terminals": [
+    ],
+    "idePort": 23000,
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "daml-sdk-env"
+  }
+}
