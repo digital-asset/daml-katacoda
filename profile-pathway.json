@@ -21,8 +21,8 @@
         "id": "upgrading"
       },
       {
-        "title": "Deploying DAML on Fabric",
-        "description": "A short tutorial on deploying a full E2E DAML Application on the Fabric distributed ledger",
+        "title": "Deploying DAML on Production Ledgers",
+        "description": "Deploy your DAML application on the growing list of supported production ledgers.",
         "id": "deploying-daml"
       }
     ],
