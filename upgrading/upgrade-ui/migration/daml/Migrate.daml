@@ -1,0 +1,90 @@
+module Migrate where
+
+import qualified V1.User
+import qualified V2.User
+import qualified V1.Forum
+import qualified V2.Forum
+
+upgradeUser : V1.User.User -> V2.User.User
+upgradeUser V1.User.User{..} = V2.User.User with nickname = None, ..
+
+rollbackUser : V2.User.User -> V1.User.User
+rollbackUser V2.User.User{..} = V1.User.User with ..
+
+upgradePost : V1.Forum.Post -> V2.Forum.Post
+upgradePost V1.Forum.Post{..} = V2.Forum.Post with user = upgradeUser user, ..
+
+rollbackPost : V2.Forum.Post -> V1.Forum.Post
+rollbackPost V2.Forum.Post{..} = V1.Forum.Post with user = rollbackUser user, ..
+
+upgradeComment : V1.Forum.Comment -> ContractId V2.Forum.Post -> V2.Forum.Comment
+upgradeComment V1.Forum.Comment{..} newPostCid
+  = V2.Forum.Comment with commenter = upgradeUser commenter, post = newPostCid, ..
+
+rollbackComment : V2.Forum.Comment -> ContractId V1.Forum.Post -> V1.Forum.Comment
+rollbackComment V2.Forum.Comment{..} oldPostCid
+  = V1.Forum.Comment with commenter = rollbackUser commenter, post = oldPostCid, ..
+
+template MigrateUser
+  with
+    username: Party
+  where
+    signatory username
+    key username: Party
+    maintainer key
+
+    nonconsuming choice DoMigrateUser : ContractId V2.User.User
+      with
+        userCid : ContractId V1.User.User
+      controller username
+      do
+        user <- fetch userCid
+        archive userCid
+        create $ upgradeUser user
+
+    nonconsuming choice DoRollbackUser : ContractId V1.User.User
+      with
+        userCid : ContractId V2.User.User
+      controller username
+      do
+        user <- fetch userCid
+        archive userCid
+        create $ rollbackUser user
+
+    nonconsuming choice DoMigratePost : ContractId V2.Forum.Post
+      with
+        postCid : ContractId V1.Forum.Post
+      controller username
+      do
+        V1.Forum.Post{..} <- fetch postCid
+        archive postCid
+        create $ V2.Forum.Post with user = upgradeUser user, ..
+
+    nonconsuming choice DoRollbackPost : ContractId V1.Forum.Post
+      with
+        postCid : ContractId V2.Forum.Post
+      controller username
+      do
+        V2.Forum.Post{..} <- fetch postCid
+        archive postCid
+        create $ V1.Forum.Post with user = rollbackUser user, ..
+
+    nonconsuming choice DoMigrateComment : ContractId V2.Forum.Comment
+      with
+        commentCid : ContractId V1.Forum.Comment
+        newPostCid : ContractId V2.Forum.Post
+      controller username
+      do
+        comment <- fetch commentCid
+        archive commentCid
+        create $ upgradeComment comment newPostCid
+
+    nonconsuming choice DoRollbackComment : ContractId V1.Forum.Comment
+      with
+        commentCid : ContractId V2.Forum.Comment
+        oldPostCid : ContractId V1.Forum.Post
+      controller username
+      do
+        comment <- fetch commentCid
+        archive commentCid
+        create $ rollbackComment comment oldPostCid
