@@ -43,5 +43,5 @@ yarn start
 Now [open the UI tab](https://[[HOST_SUBDOMAIN]]-3000-[[KATACODA_HOST]].environments.katacoda.com)
 and check that you'll find the `create-daml-app` live and running.
 
-Once you confirmed that your application runs on the local sandbox ledger, you can tear the sandbox
-and the UI down by emitting a Ctrl-C in terminal 1 and 2.
+Once you confirmed that your application runs on the local sandbox ledger, **you can tear the sandbox
+and the UI down by emitting a Ctrl-C in terminal 1 and 2**.
