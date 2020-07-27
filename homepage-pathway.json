@@ -33,6 +33,12 @@
         "action": "Start"
         },
         {
+        "external_link": "https://www.daml.com/learn/triggers",
+        "title": "Automation with DAML Triggers",
+        "description": "Use DAML triggers to automatically execute choices when a specified ledger event occurs.",
+        "action": "Start"
+        },
+        {
         "external_link": "https://www.daml.com/learn/deploying-daml/",
         "title": "Deploying DAML on Production Ledgers",
         "description": "Get familiar with running a DAML application on distributed ledgers.",

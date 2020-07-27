@@ -21,6 +21,11 @@
         "id": "upgrading"
       },
       {
+        "title": "Automation with DAML Triggers",
+        "description": "Use DAML triggers to automatically execute choices when a specified ledger event occurs.",
+        "id": "triggers"
+      },
+      {
         "title": "Deploying DAML on Production Ledgers",
         "description": "Deploy your DAML application on the growing list of supported production ledgers.",
         "id": "deploying-daml"
