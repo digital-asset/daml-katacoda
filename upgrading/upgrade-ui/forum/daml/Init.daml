@@ -1,0 +1,10 @@
+module Init where
+
+import User
+import Daml.Script
+
+initialize: Script ()
+initialize = do
+  doris <- allocatePartyWithHint "Doris" (PartyIdHint "Doris")
+  submit doris $ createCmd $ User with username = doris, following = [], nickname = Some "DorisTheDamlExpert"
+  return ()

@@ -1,0 +1,50 @@
+-- Copyright (c) 2020 Digital Asset (Switzerland) GmbH and/or its affiliates. All rights reserved.
+-- SPDX-License-Identifier: Apache-2.0
+
+module User where
+
+-- MAIN_TEMPLATE_BEGIN
+template User with
+    username: Party
+    following: [Party]
+  where
+    signatory username
+    observer following
+-- MAIN_TEMPLATE_END
+    nonconsuming choice SendMessage: ContractId Message with
+          sender: Party
+          content: Text
+        controller sender
+        do
+          assertMsg "Designated user must follow you back to send a message" (elem sender following)
+          create Message with sender, receiver = username, content
+
+    nonconsuming choice CreateSpecialOffer: ContractId SpecialOffer
+      with
+        receivingParty: Party
+        offer: Text
+      controller username
+        do
+          create SpecialOffer with offeringParty=username, ..
+
+template Message with
+    sender: Party
+    receiver: Party
+    content: Text
+  where
+    signatory sender, receiver
+
+
+template SpecialOffer
+  with
+    offeringParty: Party
+    receivingParty: Party
+    offer: Text
+  where
+    signatory offeringParty
+    observer receivingParty
+
+    choice TakeOffer: ()
+      controller receivingParty
+        do
+          return ()

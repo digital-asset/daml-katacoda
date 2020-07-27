@@ -1,0 +1,29 @@
+sdk-version: 1.1.1
+name: migration
+source: daml
+parties:
+  - Alice
+  - Bob
+  - Charlie
+version: 0.1.0
+dependencies:
+  - daml-prim
+  - daml-stdlib
+  - daml-script
+  - daml-trigger
+data-dependencies:
+  - ../create-daml-app/create-daml-app-0.1.0.dar
+  - ../create-daml-app/create-daml-app-0.1.1.dar
+  - ../forum/forum-0.1.0.dar
+  - ../forum/forum-0.1.1.dar
+sandbox-options:
+  - --wall-clock-time
+build-options:
+- '--package'
+- 'create-daml-app-0.1.0 with (User as V1.User)'
+- '--package'
+- 'create-daml-app-0.1.1 with (User as V2.User)'
+- '--package'
+- 'forum-0.1.0 with (Forum as V1.Forum)'
+- '--package'
+- 'forum-0.1.1 with (Forum as V2.Forum)'

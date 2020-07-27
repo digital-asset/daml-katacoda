@@ -1,0 +1,28 @@
+module Init where
+
+import User
+import Forum
+import Daml.Script
+
+initialize: Script ()
+initialize = do
+  alice <- allocatePartyWithHint "Alice" (PartyIdHint "Alice")
+  bob <- allocatePartyWithHint "Bob" (PartyIdHint "Bob")
+  charlie <- allocatePartyWithHint "Charlie" (PartyIdHint "Charlie")
+  aliceUserCid <- submit alice $
+    createCmd $ User with username = alice, following = [bob, charlie]
+  bobUserCid <- submit bob $
+    createCmd $ User with username = bob, following = [alice, charlie]
+  charlieUserCid <- submit charlie $
+    createCmd $ User with username = charlie, following = [alice, bob]
+  users <- query @User alice
+  let Some (_, aliceUser) = find (\(_, u) -> u.username == alice) users
+  let Some (_, bobUser) = find (\(_, u) -> u.username == bob) users
+  let Some (_, charlieUser) = find (\(_, u) -> u.username == charlie) users
+  postCid <- submit alice $ createCmd $
+    Post with user = aliceUser, title = "Hey Guys!", body = "Hi, my name is Alice!"
+  submit bob $ createCmd $
+    Comment with commenter = bobUser, comment = "Hi Alice!", post = postCid
+  submit charlie $ createCmd $
+    Comment with commenter = charlieUser, comment = "Welcome to the forum!", post = postCid
+  pure ()
