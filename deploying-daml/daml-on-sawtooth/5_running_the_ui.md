@@ -10,5 +10,5 @@ yarn start
 
 After the Yarn development server has started, you can [open the UI tab](https://[[HOST_SUBDOMAIN]]-3000-[[KATACODA_HOST]].environments.katacoda.com).
 
-You should be presented with the login screen of the your `create-react-app` application and you can
+You should be presented with the login screen of the `create-react-app` application and you can
 login as either `Alice` or `Bob`.
