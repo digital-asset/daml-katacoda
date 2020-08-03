@@ -6,7 +6,7 @@ You should see the main screen with two panels. One for the users you are follow
 
 ![Main Screen](/daml/courses/getting-started/build-and-run/assets/create-daml-app-main-screen-initial-view.png)
 
-You’ll notice that the users you just started following appear in the Following panel. However they do not yet appear in the Network panel. This is either because they have not signed up and are not parties on the ledger or they have not yet started followiong you. This social network is similar to Twitter and Instagram, where by following someone, say Alice, you make yourself visible to her but not vice versa. We will see how we encode this in DAML in the next section.
+You’ll notice that the users you just started following appear in the Following panel. However they do not yet appear in the Network panel. This is either because they have not signed up and are not parties on the ledger or they have not yet started following you. This social network is similar to Twitter and Instagram, where by following someone, say Alice, you make yourself visible to her but not vice versa. We will see how we encode this in DAML in the next section.
 
 ![Bob Follows Alice](/daml/courses/getting-started/build-and-run/assets/create-daml-app-bob-follows-alice.png)
 

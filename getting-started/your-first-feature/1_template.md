@@ -37,8 +37,6 @@ Now we can add messaging into the workflow by adding a new choice to the `User` 
 
 - Finally paste the code into the `User` template after the `Follow` choice. **The indentation for the SendMessage choice must match the one of Follow. Make sure you save the file after copying the code.**
 
-- Finally paste the code into the `User` template after the `Follow` choice. **The indentation for the SendMessage choice must match the one of Follow. Make sure you save the file after copying the code.**
-
 As with the `Follow` choice, there are a few aspects to note here.
 
 - By convention, the choice returns the `ContractId` of the resulting `Message` contract.
