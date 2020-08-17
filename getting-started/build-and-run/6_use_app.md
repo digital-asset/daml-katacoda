@@ -10,11 +10,11 @@ You’ll notice that the users you just started following appear in the Followin
 
 ![Bob Follows Alice](/daml/courses/getting-started/build-and-run/assets/create-daml-app-bob-follows-alice.png)
 
-To make this relationship reciprocal, [open the UI](https://[[HOST_SUBDOMAIN]]-3000-[[KATACODA_HOST]].environments.katacoda.com) in a separate browser tab. (Having separate windows/tabs allows you to see both you and the screen of the user you are following at the same time.) Once you log in as the user you are following - Alice, you’ll notice your name in her network. In fact, Alice can see the entire list of users you are follwing in the Network panel. This is because this list is part of the user data that became visible when you started follwing her.
+To make this relationship reciprocal, [open the UI](https://[[HOST_SUBDOMAIN]]-3000-[[KATACODA_HOST]].environments.katacoda.com) in a separate browser tab. (Having separate windows/tabs allows you to see both you and the screen of the user you are following at the same time.) Once you log in as the user you are following - Alice, you’ll notice your name in her network. In fact, Alice can see the entire list of users you are following in the Network panel. This is because this list is part of the user data that became visible when you started following her.
 
 ![Alice Sees Bob](/daml/courses/getting-started/build-and-run/assets/create-daml-app-alice-sees-bob.png)
 
-When Alice starts follwing you, you can see her in your network as well. Just switch to the window where you are logged in as yourself - the network should update automatically.
+When Alice starts following you, you can see her in your network as well. Just switch to the window where you are logged in as yourself - the network should update automatically.
 
 ![Bob Sees Alice](/daml/courses/getting-started/build-and-run/assets/create-daml-app-bob-sees-alice-in-the-network.png)
 
