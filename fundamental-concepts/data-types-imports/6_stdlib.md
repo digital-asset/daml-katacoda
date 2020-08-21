@@ -34,18 +34,18 @@ The same way you import the standard library you can import modules of your own 
 this in three easy steps:
 
 1. First compile the package with the module you want to import. In our case this would be the
-   `organizer` package 
+   `organizer` package
 
     ```
     cd organizer
     daml build
     ```{{execute T1}}
 
-1. Next add the compiled package to your `daml.yaml` for the project you want to make the package
+2. Next add the compiled package to your `daml.yaml` for the project you want to make the package
    available under the `dependencies` stanza:
 
     ```
-    sdk-version: 1.2.0
+    sdk-version: 1.4.0
     name: some-other-package
     version: 0.1.0
     source: daml
@@ -64,8 +64,8 @@ this in three easy steps:
     start-navigator: false
     ```
 
-1. The last step is to add an `import` statement for the module you want to work with to your
-   module source file. In our case this would be 
+3. The last step is to add an `import` statement for the module you want to work with to your
+   module source file. In our case this would be
 
     ```
     import AddressBook

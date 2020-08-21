@@ -1,7 +1,7 @@
 # Functions
 
 DAML is a functional programming language. Not surprisingly, the most fundamental data type of DAML
-is the function type. Here is a simple example, that you can copy to the `daml/AddressBook.daml`{{open}} file in the IDE (click on the IDE tab and wait for it to load):
+is the function type. Here is a simple example, that you can copy to the `daml/Functions.daml`{{open}} file in the IDE (click on the IDE tab and wait for it to load):
 
 <pre class="file" data-filename="daml/Functions.daml" data-target="append">
 answer: Int
