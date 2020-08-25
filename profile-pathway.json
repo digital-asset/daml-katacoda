@@ -1,7 +1,7 @@
 {
     "courses": [
       {
-        "title": "Get started with DAML",
+        "title": "Get Started with DAML",
         "description": "A short series of tutorials to learn the basics about DAML development.",
         "id": "getting-started"
       },
