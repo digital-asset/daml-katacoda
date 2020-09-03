@@ -9,20 +9,20 @@ There is a small demo UI in the market folder. Get the JavaScript bindings,
 
 ```
 cd market
-daml codegen js -o daml.js .daml/dist/market-0.1.0.dar
+daml codegen js -o ui/daml.js .daml/dist/market-0.1.0.dar
 ```{{execute T2}}
 
 and install the UI dependencies:
 
 ```
 cd ui
-yarn install
+npm install
 ```{{execute T2}}
 
 Finally, start the UI:
 
 ```
-yarn start
+npm start
 ```{{execute T2}}
 
 Triggers are started from the command line with the `daml trigger` command

@@ -35,14 +35,14 @@ daml build
 then generate the new JavaScript bindings with
 
 ```
-daml codegen js .daml/dist/create-daml-app-0.1.0.dar -o daml.js
+daml codegen js .daml/dist/create-daml-app-0.1.0.dar -o ui/daml.js
 ```{{execute T1}}
 
 and install them
 
 ```
 cd ui
-yarn install
+npm install
 cd ..
 ```{{execute T1}}
 
@@ -56,5 +56,5 @@ and the new UI in the second terminal
 
 ```
 cd create-daml-app/ui
-yarn start
+npm start
 ```{{execute T2}}

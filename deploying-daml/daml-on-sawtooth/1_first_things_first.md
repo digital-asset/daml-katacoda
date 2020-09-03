@@ -29,15 +29,15 @@ Now build the JavaScript bindings for the UI in the second terminal with
 
 ```
 cd create-daml-app
-daml codegen js -o daml.js create-daml-app-0.1.0.dar
+daml codegen js -o ui/daml.js create-daml-app-0.1.0.dar
 ```{{execute T2}}
 
 Change to the `ui` directory and build and run the UI with
 
 ```
 cd ui
-yarn install
-yarn start
+npm install
+npm start
 ```{{execute T2}}
 
 Now [open the UI tab](https://[[HOST_SUBDOMAIN]]-3000-[[KATACODA_HOST]].environments.katacoda.com)

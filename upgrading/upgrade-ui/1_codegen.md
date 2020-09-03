@@ -13,10 +13,10 @@ In order to do so, you need the generated JavaScript bindings for the newly avai
 so:
 
 ```
-daml codegen js create-daml-app-0.1.0.dar -o daml.js
-daml codegen js create-daml-app-0.1.1.dar -o daml.js
-daml codegen js forum-0.1.0.dar -o daml.js
-daml codegen js migration-0.1.0.dar -o daml.js
+daml codegen js create-daml-app-0.1.0.dar -o ui/daml.js
+daml codegen js create-daml-app-0.1.1.dar -o ui/daml.js
+daml codegen js forum-0.1.0.dar -o ui/daml.js
+daml codegen js migration-0.1.0.dar -o ui/daml.js
 ```{{execute T1}}
 
 Once finished, open `ui/package.json`{{open}} in the IDE and add the new dependencies for the
@@ -24,10 +24,10 @@ Once finished, open `ui/package.json`{{open}} in the IDE and add the new depende
 
 <pre class="file" data-target="clipboard">
   "dependencies": {
-    "@daml.js/create-daml-app-0.1.0": "file:../daml.js/create-daml-app-0.1.0",
-    "@daml.js/create-daml-app": "file:../daml.js/create-daml-app-0.1.1",
-    "@daml.js/forum-0.1.0": "file:../daml.js/forum-0.1.0",
-    "@daml.js/migration-v0-v1": "file:../daml.js/migration-0.1.0",
+    "@daml.js/create-daml-app-0.1.0": "file:daml.js/create-daml-app-0.1.0",
+    "@daml.js/create-daml-app": "file:daml.js/create-daml-app-0.1.1",
+    "@daml.js/forum-0.1.0": "file:daml.js/forum-0.1.0",
+    "@daml.js/migration-v0-v1": "file:daml.js/migration-0.1.0",
     "@daml/ledger": "1.5.0",
     "@daml/react": "1.5.0",
     "@daml/types": "1.5.0",
@@ -44,7 +44,7 @@ and install them with
 
 ```
 cd ui
-yarn install
+npm install
 ```{{execute T1}}
 
 Notice that the `create-daml-app` import now points to the `create-daml-app-0.1.1` package, while we
