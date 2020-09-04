@@ -6,19 +6,19 @@ First download the artifacts you built in the previous steps:
 
 - [Download create-daml-app-ui.zip](https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/create-daml-app-ui.zip)
 
-Then click on your newly created ledger and under the _"App Artifacts"_ tab click on _"Upload .dar"_ and upload the `create-daml-app.dar` you just downloaded.
+Then click on your newly created ledger and under the _"Deployments"_ tab click on _"Upload File"_ and upload the `create-daml-app.dar` you just downloaded.
 
 ![Upload dar](assets/project-dabl-upload-dar.gif)
 
-You should see two confirmation messages and your `.dar` file will appear under the _"DAML Models"_ section.
+You should see two confirmation messages and your `.dar` file will appear as a deployed file.
 
 For the last step you will need to upload your UI Assets.
 
-Click on the _"Expand Section"_ to reveal the artifact tiles. Find the _"UI Assets"_ tile and click on it to upload the `create-daml-app-ui.zip` you just downloaded.
+Click again on _"Upload File"_ and select the `create-daml-app-ui.zip` you just downloaded.
 
 ![Upload UI](assets/project-dabl-upload-ui.gif)
 
-You should get another set of confirmations and the _"App UI"_ tile will activate revealing the subdomain of your deployed app and a quick link to visit it:
+You should get another set of confirmations and the top bar of _"Deployments"_ will update revealing the subdomain of your deployed app and a quick link to visit it:
 
 ![App UI](assets/project-dabl-published-ui.png)
 

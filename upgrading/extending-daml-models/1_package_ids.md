@@ -1,6 +1,6 @@
 You've already learned how to extend a DAML model when you added the messaging feature to the mini
 social network of the [Getting Started
-Guide](https://daml.com/learn/getting-started/your-first-feature). 
+Guide](https://daml.com/learn/getting-started/your-first-feature).
 
 There's a catch though with extending a DAML model like this. A [DAML
 archive](https://docs.daml.com/daml/reference/packages.html) is build with the `daml build` command.
@@ -17,7 +17,7 @@ in hindsight, and stay exactly as you defined it.
 
 Let's verify this.
 
-First, open the IDE and **wait for it to load**. After that open the `daml/User.daml`{{open}} file.
+First, open the IDE and **wait for it to load**. After that open the `/create-daml-app/daml/User.daml`{{open}} file.
 This is the familiar `User` module of the Getting Started Guide.
 
 In the terminal build the `create-daml-app` package with
@@ -97,7 +97,7 @@ see that it's package ID stayed constant.
 
 In the next step you'll learn how to extend your DAML model by creating a new `forum` package
 depending on the `create-daml-app` package. This way you don't touch the package ID of your already
-deployed packages. 
+deployed packages.
 
 Then, in the second tutorial on upgrading we will change the `create-daml-app` package itself and
 you'll learn how to migrate your data on a live system, without violating any data integrity

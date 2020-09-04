@@ -1,0 +1,48 @@
+{
+  "title": "DAML Upgrades: User Interface",
+  "description": "Extend your UI to initiate upgrades.",
+  "difficulty": "Advanced",
+  "time": "30 minutes",
+  "details": {
+    "assets": {
+        "host01": [
+        ]
+    },
+    "steps": [
+      {
+      "title": "Updating the UI dependencies",
+      "text": "1_codegen.md",
+      "code": "start_sandbox_background.sh"
+      },
+      {
+      "title": "Extending the UI",
+      "text": "2_ui.md"
+      },
+      {
+      "title": "Demonstration",
+      "text": "3_demo.md"
+      }
+    ],
+    "intro": {
+      "text": "0_intro.md",
+      "courseData": "init_background.sh"
+    },
+    "finish": {
+      "text": "99_finish.md"
+    }
+  },
+  "environment": {
+    "showide": true,
+    "uieditorpath": "/root/create-daml-app",
+    "showdashboard": true,
+    "dashboards": [{"name": "UI", "port": 3000}],
+    "terminals": [
+        {"name": "Terminal 2", "target": "host01"}
+    ],
+    "idePort": 23000,
+    "uilayout": "terminal-iframe"
+  },
+  "backend": {
+    "imageid": "daml-sdk-env"
+  }
+}

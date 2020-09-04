@@ -1,0 +1,30 @@
+-- Copyright (c) 2020 Digital Asset (Switzerland) GmbH and/or its affiliates. All rights reserved.
+-- SPDX-License-Identifier: Apache-2.0
+
+module Forum where
+
+import User
+
+template Post with
+    user: User
+    title: Text
+    body: Text
+  where
+    signatory user.username
+    observer user.following
+
+    nonconsuming choice DoComment: ContractId Comment
+      with
+        commenter: User
+        comment: Text
+      controller commenter.username
+      do
+        create Comment with post = self, ..
+
+template Comment with
+    commenter: User
+    comment: Text
+    post: ContractId Post
+  where
+    signatory commenter.username
+    observer commenter.following

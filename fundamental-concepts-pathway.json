@@ -1,0 +1,42 @@
+{
+  "title": "Fundamental DAML Concepts",
+  "private": false,
+  "courses": [
+    {
+      "external_link": "https://www.daml.com/learn/fundamental-concepts/data-types-imports",
+      "title": "Data types and imports",
+      "description": "Learn about functions, records, sums and and how to import other packages.",
+      "course_id": "data-types-imports"
+    },
+    {
+      "external_link": "https://www.daml.com/learn/fundamental-concepts/stdlib-tour",
+      "title": "Explore DAML's standard library",
+      "description": "Take a tour through DAML's standard library and learn about lists, maps, sets and optional data types.",
+      "course_id": "stdlib-tour"
+    },
+    {
+      "external_link": "https://www.daml.com/learn/fundamental-concepts/template-authorization",
+      "title": "DAML Template Authorization",
+      "description": "Understand the 'signatory', 'observer' and 'controller' keywords and learn how you can write secure and privacy respecting DAML applications.",
+      "course_id": "template-authorization"
+    },
+    {
+      "external_link": "https://www.daml.com/learn/fundamental-concepts/choices-role-pattern",
+      "title": "Choices and the Role Pattern",
+      "description": "Design the API of your application with consuming and non-consuming choices and structure your code with the role pattern.",
+      "course_id": "choices-role-pattern"
+    },
+    {
+      "external_link": "https://www.daml.com/learn/fundamental-concepts/contract-keys",
+      "title": "Contract Keys",
+      "description": "Keep your API clean and simple with contract keys.",
+      "course_id": "contract-keys"
+    },
+    {
+      "external_link": "https://www.daml.com/learn/fundamental-concepts/propose-accept-pattern",
+      "title": "The Propose/Accept Pattern",
+      "description": "Use the Propose/Accept pattern to create multi-signatory contracts and delegate authority.",
+      "course_id": "propose-accept-pattern"
+    }
+  ]
+}

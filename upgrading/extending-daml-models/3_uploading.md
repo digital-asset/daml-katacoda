@@ -29,7 +29,7 @@ INFO: Initialized sandbox version 1.1.1 with ledger-id = e0e24b63-322c-4d72-8774
 In the second terminal change directory to the `forum` project.
 
 ```
-cd forum
+cd daml-projects/forum
 ```{{execute T2}}
 
 To extend your application with the new data model, simply upload the package:

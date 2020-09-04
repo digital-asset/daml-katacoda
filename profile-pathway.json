@@ -1,9 +1,14 @@
 {
     "courses": [
       {
-        "title": "Get started with DAML",
+        "title": "Get Started with DAML",
         "description": "A short series of tutorials to learn the basics about DAML development.",
         "id": "getting-started"
+      },
+      {
+        "title": "Fundamental DAML Concepts",
+        "description": "Start modeling your data in DAML, understand the 'signatory', 'observer' and 'controller' keywords and learn how you can write secure and privacy respecting DAML applications.",
+        "id": "fundamental-concepts"
       },
       {
         "title": "Testing DAML Models",
@@ -16,8 +21,13 @@
         "id": "upgrading"
       },
       {
-        "title": "Deploying DAML on Fabric",
-        "description": "A short tutorial on deploying a full E2E DAML Application on the Fabric distributed ledger",
+        "title": "Automation with DAML Triggers",
+        "description": "Use DAML triggers to automatically execute choices when a specified ledger event occurs.",
+        "id": "triggers"
+      },
+      {
+        "title": "Deploying DAML on Production Ledgers",
+        "description": "Deploy your DAML application on the growing list of supported production ledgers.",
         "id": "deploying-daml"
       }
     ],

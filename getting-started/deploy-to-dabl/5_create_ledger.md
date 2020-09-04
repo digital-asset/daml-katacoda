@@ -4,7 +4,7 @@ Ledgers are dedicated infrastructure for your application that can host daml mod
 
 Ledgers live under projects, which are just logical groupings of ledgers.
 
-To create your first project and ledger, simply click on _"New Project"_ and choose a name for your project and ledger.
+To create your first project and ledger, navigate to the _Workspace_ and simply click on _"New Project"_ and choose a name for your project and ledger.
 
 ![Create Ledger](assets/project-dabl-create-ledger.gif)
 

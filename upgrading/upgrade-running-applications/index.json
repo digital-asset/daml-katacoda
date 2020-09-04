@@ -1,0 +1,72 @@
+{
+  "title": "Upgrade DAML Models and Migrate a Live System",
+  "description": "Learn how to upgrade a DAML model and migrate a running application.",
+  "difficulty": "Advanced",
+  "time": "40 minutes",
+  "details": {
+    "assets": {
+        "host01": [
+            {"file": "forum.tar.gz", "target": "/root/"}
+        ]
+    },
+    "steps": [
+      {
+        "title": "Deploying the forum and social network",
+        "text": "1_deploy.md"
+      },
+      {
+        "title": "A new feature",
+        "text": "2_new_feature.md"
+      },
+      {
+        "title": "Migration dependencies",
+        "text": "3_migrate_contract_deps.md"
+      },
+      {
+        "title": "Migration contract",
+        "text": "4_migrate_contract.md"
+      },
+      {
+        "title": "Executing the migration",
+        "text": "5_execute_migration.md"
+      },
+      {
+        "title": "Navigator Walkthrough - 1",
+        "text": "6_1_navigator.md"
+      },
+      {
+        "title": "Navigator Walkthrough - 2",
+        "text": "6_2_navigator.md"
+      },
+      {
+        "title": "Navigator Walkthrough - 3",
+        "text": "6_3_navigator.md"
+      },
+      {
+        "title": "Navigator Walkthrough - 4",
+        "text": "6_4_navigator.md"
+      }
+    ],
+    "intro": {
+      "text": "0_intro.md",
+      "courseData": "init_background.sh"
+    },
+    "finish": {
+      "text": "99_finish.md"
+    }
+  },
+  "environment": {
+    "showide": true,
+    "uieditorpath": "/root/create-daml-app",
+    "showdashboard": true,
+    "dashboards": [{"name": "UI", "port": 4000}],
+    "terminals": [
+        {"name": "Terminal 2", "target": "host01"}
+    ],
+    "idePort": 23000,
+    "uilayout": "terminal-iframe"
+  },
+  "backend": {
+    "imageid": "daml-sdk-env"
+  }
+}

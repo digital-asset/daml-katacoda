@@ -20,7 +20,8 @@
       }
     ],
     "intro": {
-      "text": "0_intro.md"
+      "text": "0_intro.md",
+      "courseData": "init_background.sh"
     },
     "finish": {
       "text": "99_finish.md"
@@ -28,7 +29,7 @@
   },
   "environment": {
     "showide": true,
-    "uieditorpath": "/root/create-daml-app",
+    "uieditorpath": "/root/daml-projects",
     "showdashboard": true,
     "dashboards": [{"name": "UI", "port": 3000}],
     "terminals": [

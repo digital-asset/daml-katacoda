@@ -1,0 +1,39 @@
+{
+  "title": "Explore DAML's standard library",
+  "description": "Take a tour through DAML's standard library and learn about lists, maps, sets and optional data types.",
+  "difficulty": "Beginner",
+  "time": "30 minutes",
+  "details": {
+    "assets": {
+        "host01": [
+        ]
+    },
+    "steps": [
+      {"text": "1_lists.md"},
+      {"text": "2_maps_and_folds.md"},
+      {"text": "3_sets.md"},
+      {"text": "4_maps.md"},
+      {"text": "5_optional.md"}
+    ],
+    "intro": {
+      "text": "0_intro.md",
+      "courseData": "init_background.sh"
+    },
+    "finish": {
+      "text": "99_finish.md"
+    }
+  },
+  "environment": {
+    "showide": true,
+    "uieditorpath": "/root/organizer",
+    "showdashboard": false,
+    "dashboards": [{"name": "UI", "port": 3000}],
+    "terminals": [
+    ],
+    "idePort": 23000,
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "daml-sdk-env"
+  }
+}

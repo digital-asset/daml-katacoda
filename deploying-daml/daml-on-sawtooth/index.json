@@ -1,0 +1,47 @@
+{
+  "title": "Deploy DAML on Sawtooth",
+  "description": "Run your DAML application on the Hyperledger Sawtooth distributed ledger.",
+  "difficulty": "Beginner",
+  "time": "30 minutes",
+  "details": {
+    "steps": [
+        { "title": "First things first",
+          "text": "1_first_things_first.md"
+        },
+        { "title": "Getting Docker",
+          "text": "2_getting_docker.md"
+        },
+        { "title": "Building Sawtooth",
+          "text": "3_building_sawtooth.md"
+        },
+        { "title": "Deploying your app",
+          "text": "4_deploying_your_app.md"
+        },
+        { "title": "Running the UI",
+          "text": "5_running_the_ui.md"
+        }
+    ],
+    "intro": {
+      "text": "0_intro.md",
+      "courseData": "init_background.sh"
+    },
+    "finish": {
+      "text": "99_finish.md"
+    }
+  },
+  "environment": {
+    "showide": true,
+    "uieditorpath": "/root/my-app",
+    "dashboards": [{"name": "UI", "port": 3000}],
+    "terminals": [
+        {"name": "Terminal 2", "target": "host01"},
+        {"name": "Terminal 3", "target": "host01"},
+        {"name": "Terminal 4", "target": "host01"}
+      ],
+    "idePort": 23000,
+    "uilayout": "terminal-iframe"
+  },
+  "backend": {
+    "imageid": "daml-sdk-env"
+  }
+}

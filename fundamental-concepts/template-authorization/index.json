@@ -1,0 +1,60 @@
+{
+  "title": "DAML Template Authorization",
+  "description": "Understand the 'signatory', 'observer' and 'controller' keywords and learn how you can write secure and privacy respecting DAML applications.",
+  "difficulty": "Beginner",
+  "time": "20 minutes",
+  "details": {
+    "assets": {
+        "host01": [
+            {"file": "create-daml-app.tar.gz", "target": "/root/"}
+        ]
+    },
+    "steps": [
+      {
+        "title": "Deja Vue",
+        "text": "1_deja_vue.md"
+      },
+      {
+        "title": "Parties",
+        "text": "2_parties.md"
+      },
+      {
+        "title": "Observers",
+        "text": "3_observers.md"
+      },
+      {
+        "title": "Signatories",
+        "text": "4_signatories.md"
+      },
+      {
+        "title": "Choices and Controllers",
+        "text": "5_choices_controllers.md"
+      },
+      {
+        "title": "Authority and Delegation",
+        "text": "6_authority_delegation.md"
+      }
+    ],
+    "intro": {
+      "text": "0_intro.md",
+      "courseData": "init_background.sh"
+    },
+    "finish": {
+      "text": "99_finish.md"
+    }
+  },
+  "environment": {
+    "showide": true,
+    "uieditorpath": "/root/create-daml-app",
+    "showdashboard": true,
+    "dashboards": [{"name": "UI", "port": 3000}],
+    "terminals": [
+        {"name": "Terminal 2", "target": "host01"}
+    ],
+    "idePort": 23000,
+    "uilayout": "terminal-iframe"
+  },
+  "backend": {
+    "imageid": "daml-sdk-env"
+  }
+}
