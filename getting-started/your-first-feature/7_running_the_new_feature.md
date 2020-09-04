@@ -31,4 +31,4 @@ Send some messages between users and make sure you can see each one from the oth
 ![Message Received](/daml/courses/getting-started/your-first-feature/assets/create-daml-app-message-received.png)
 
 ## You completed the second part of the Getting Started Guide!
-[Join our forum](https://discuss.daml.com) and share a screenshot of your accomplishment to [get your second of 3 badges](https://discuss.daml.com/badges/126/hey-look-what-i-can-do)!
+## [Join our forum](https://discuss.daml.com) and share a screenshot of your accomplishment to [get your second of 3 badges](https://discuss.daml.com/badges/126/hey-look-what-i-can-do)!

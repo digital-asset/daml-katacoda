@@ -25,4 +25,4 @@ You should get another set of confirmations and the _"App UI"_ tile will activat
 Click on _"View Site"_ or copy paste the subdomain link to a new browser tab and start interacting with your deployed app!
 
 ## You completed the entire Getting Started Guide. Congrats!
-If you haven't yet, [join our forum](https://discuss.daml.com) and share a screenshot of your accomplishment to [get your final badge for completing this series](https://discuss.daml.com/badges/126/hey-look-what-i-can-do)!
+## Share a screenshot of your accomplishment [on our forum](https://discuss.daml.com) to get your [final badge for completing this series](https://discuss.daml.com/badges/126/hey-look-what-i-can-do)!
