@@ -29,3 +29,5 @@ Go ahead and follow some more users. Then, log in as some of those users by [rig
 Send some messages between users and make sure you can see each one from the other side. You’ll notice that new messages appear in the UI as soon as they are sent (due to the streaming React hooks).
 
 ![Message Received](/daml/courses/getting-started/your-first-feature/assets/create-daml-app-message-received.png)
+
+## You completed the second part of the Getting Started Guide! [Join our forum](https://discuss.daml.com) and share a screenshot of your accomplishment to [get your second of 3 badges](https://discuss.daml.com/badges/126/hey-look-what-i-can-do)!

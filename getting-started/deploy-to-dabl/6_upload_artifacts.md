@@ -23,3 +23,5 @@ You should get another set of confirmations and the top bar of _"Deployments"_ w
 ![App UI](assets/project-dabl-published-ui.png)
 
 Click on _"View Site"_ or copy paste the subdomain link to a new browser tab and start interacting with your deployed app!
+
+## You completed the entire Getting Started Guide. Congrats! Share a screenshot of your accomplishment [on our forum](https://discuss.daml.com) to get your [final badge for completing this series](https://discuss.daml.com/badges/104/ascendant-lawnmower)!
