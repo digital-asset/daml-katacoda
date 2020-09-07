@@ -1,4 +1,4 @@
 #course-pathway > section > div > div:nth-child(1) > a {
-    background: #fd7700;
-    border-bottom: #fd7700;
+    background: #fd7700 !important;
+    border-bottom: #fd7700 !important;
 }
