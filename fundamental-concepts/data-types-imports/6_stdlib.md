@@ -45,7 +45,7 @@ this in three easy steps:
    available under the `dependencies` stanza:
 
     ```
-    sdk-version: 1.4.0
+    sdk-version: 1.5.0
     name: some-other-package
     version: 0.1.0
     source: daml
