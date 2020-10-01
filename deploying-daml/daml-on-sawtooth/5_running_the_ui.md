@@ -12,3 +12,5 @@ After the Yarn development server has started, you can [open the UI tab](https:/
 
 You should be presented with the login screen of the `create-react-app` application and you can
 login as either `Alice` or `Bob`.
+
+Note: If you're trying this locally on Windows you will need to set the environment variable as `$env:REACT_APP_LEDGER_ID="participant1"`
