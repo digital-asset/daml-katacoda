@@ -23,4 +23,6 @@ Once Bob starts following Alice both of them can now see each other in their Net
 
 Play around more with the app at your leisure: create new users and start following more users. Observe when a user becomes visible to others - this will be important to understanding DAML’s privacy model later.
 
+> Note: If you want to see the code within this `create-daml-app` project click on the IDE tab or [check it out on GitHub](https://github.com/digital-asset/daml/tree/master/templates/create-daml-app).
+
 ## Congratulations on completing the first part of the Getting Started Guide! [Join our forum](https://discuss.daml.com) and share a screenshot of your accomplishment to [get your first of 3 getting started badges](https://discuss.daml.com/badges/125/it-works)!

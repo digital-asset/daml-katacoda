@@ -13,5 +13,3 @@ cd create-daml-app
 ```{{execute T1}}
 
 Any commands starting with `daml` are using the [DAML Assistant](https://docs.daml.com/tools/assistant.html), a command line tool in the DAML SDK for building and running DAML apps.
-
-> Note: If you want to see the code within the `create-daml-app` project click on the IDE tab.
