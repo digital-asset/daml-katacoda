@@ -2,7 +2,7 @@ We can now start the UI by running
 
 ```
 yarn start
-```{{execute T1}}.
+```{{execute T1}}
 
 This starts the web UI which will connect to our JSON API server. 
 Once the web UI has been compiled and started, you should see `Compiled successfully!` in your terminal. 

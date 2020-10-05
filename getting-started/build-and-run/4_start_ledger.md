@@ -16,4 +16,4 @@ The `daml start` command does a few things:
 1. Starts an instance of the [Sandbox](https://docs.daml.com/tools/sandbox.html), an in-memory ledger useful for development, loaded with our DAR.
 1. Starts a server for the [HTTP JSON API](https://docs.daml.com/json-api/index.html), a simple way for the UI to communicate with our DAML ledger.
 
-We’ll leave these processes running to serve requests from our UI.
+We’ll leave this `daml start` running so it can serve requests to our UI.

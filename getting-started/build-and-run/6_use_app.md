@@ -1,6 +1,8 @@
-[On the the UI tab](https://[[HOST_SUBDOMAIN]]-3000-[[KATACODA_HOST]].environments.katacoda.com) you should now see a login page. For simplicity of this app, there is no password or sign-up required. Enter "Alice" and click Log in.
+[On the the UI tab](https://[[HOST_SUBDOMAIN]]-3000-[[KATACODA_HOST]].environments.katacoda.com) you should now see a login page. For simplicity of this app, there is no password or sign-up required. 
 
-Note: Usernames are case sensitive.
+Enter "Alice" in the box and click Log in.
+
+> Note: Usernames are case sensitive.
 
 You should see the main screen with two panels. One for the users you are following and one for your followers. 
 
