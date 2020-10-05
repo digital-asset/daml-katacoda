@@ -1,5 +1,5 @@
 
-In order to connect the UI code to this DAML, we need to run a code generation step:
+In order to connect the UI code to this DAR file, we need to run a code generation step:
 
 ```
 daml codegen js .daml/dist/create-daml-app-0.1.0.dar -o daml.js
@@ -12,5 +12,5 @@ cd ui
 yarn install
 ```{{execute T1}}
 
-This step may take a couple of moments (it’s worth it!). You should see `success Saved lockfile.` in the output if everything worked as expected.
+This step may take a couple of moments. You'll see `success Saved lockfile` in the terminal when it's done.
 
