@@ -1,5 +1,5 @@
 Now that our backend and UI are built we can run the app in two steps.
-The first is to start the DAML Ledger in another terminal.
+The first is to start the DAML ledger in another terminal.
 
 ```
 cd create-daml-app

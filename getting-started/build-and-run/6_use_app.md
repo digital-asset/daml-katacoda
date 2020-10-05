@@ -13,7 +13,7 @@ You’ll notice that the user you just started following appears in the Followin
 1. They have not signed up and are not parties on the ledger
 2. They have not yet started following "Alice" back
 
-This social network is similar to Twitter and Instagram, where by following someone (ie. "Bob"), you make yourself visible to him but not vice versa. Bob still needs to choose on whether or not you're allowed to see his profile.
+This social network is similar to LinkedIn or a private Instagram, where by following someone (ie. "Bob"), you make your profile visible to him but not vice versa. Bob still needs to choose on whether or not you're allowed to see his profile.
 
 To make this relationship reciprocal, logout from "Alice" and login as "Bob".
 
