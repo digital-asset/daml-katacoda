@@ -1,23 +1,28 @@
-You should now see the login page for the social network. For simplicity of this app, there is no password or sign-up required. First enter your name and click Log in.
+[On the the UI tab](https://[[HOST_SUBDOMAIN]]-3000-[[KATACODA_HOST]].environments.katacoda.com) you should now see a login page. For simplicity of this app, there is no password or sign-up required. 
 
-![Login Screen](/daml/courses/getting-started/build-and-run/assets/create-daml-app-login-screen.png)
+Enter "Alice" in the box and click Log in.
 
-You should see the main screen with two panels. One for the users you are following and one for your followers. Initially these are both empty as you are not following anyone and you don’t have any followers! Go ahead and start following users by typing their usernames in the text box and clicking on the Follow button in the top panel.
+> Note: Usernames are case sensitive.
 
-![Main Screen](/daml/courses/getting-started/build-and-run/assets/create-daml-app-main-screen-initial-view.png)
+You should see the main screen with two panels. One for the users you are following and one for your followers. 
 
-You’ll notice that the users you just started following appear in the Following panel. However they do not yet appear in the Network panel. This is either because they have not signed up and are not parties on the ledger or they have not yet started following you. This social network is similar to Twitter and Instagram, where by following someone, say Alice, you make yourself visible to her but not vice versa. We will see how we encode this in DAML in the next section.
+Follow "Bob" by typing their name in the text box and clicking on the Follow button in the top panel.
 
-![Bob Follows Alice](/daml/courses/getting-started/build-and-run/assets/create-daml-app-bob-follows-alice.png)
+You’ll notice that the user you just started following appears in the Following panel. However they do not yet appear in the Network panel. This is because:
 
-To make this relationship reciprocal, [open the UI](https://[[HOST_SUBDOMAIN]]-3000-[[KATACODA_HOST]].environments.katacoda.com) in a separate browser tab. (Having separate windows/tabs allows you to see both you and the screen of the user you are following at the same time.) Once you log in as the user you are following - Alice, you’ll notice your name in her network. In fact, Alice can see the entire list of users you are following in the Network panel. This is because this list is part of the user data that became visible when you started following her.
+1. They have not signed up and are not parties on the ledger
+2. They have not yet started following "Alice" back
 
-![Alice Sees Bob](/daml/courses/getting-started/build-and-run/assets/create-daml-app-alice-sees-bob.png)
+This social network is similar to LinkedIn or a private Instagram, where by following someone (ie. "Bob"), you make your profile visible to him but not vice versa. Bob still needs to choose on whether or not you're allowed to see his profile.
 
-When Alice starts following you, you can see her in your network as well. Just switch to the window where you are logged in as yourself - the network should update automatically.
+To make this relationship reciprocal, logout from "Alice" and login as "Bob".
 
-![Bob Sees Alice](/daml/courses/getting-started/build-and-run/assets/create-daml-app-bob-sees-alice-in-the-network.png)
+Now have Bob follow Alice by clicking the + sign next to Alice's name.
+
+Once Bob starts following Alice both of them can now see each other in their Network. Try logging back in as Alice and you'll see Bob is now in her network. Then log back in as Bob and you'll see the same for him.
 
 Play around more with the app at your leisure: create new users and start following more users. Observe when a user becomes visible to others - this will be important to understanding DAML’s privacy model later.
+
+> Note: If you want to see the code within this `create-daml-app` project click on the IDE tab or [check it out on GitHub](https://github.com/digital-asset/daml/tree/master/templates/create-daml-app).
 
 ## Congratulations on completing the first part of the Getting Started Guide! [Join our forum](https://discuss.daml.com) and share a screenshot of your accomplishment to [get your first of 3 getting started badges](https://discuss.daml.com/badges/125/it-works)!
