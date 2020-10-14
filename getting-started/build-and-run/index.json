@@ -7,8 +7,7 @@
     "steps": [
       {
         "title": "Running the App",
-        "text": "1_template.md",
-        "verify": "1_verify.sh"
+        "text": "1_template.md"
       },
       {
         "title": "Building  DAML",
