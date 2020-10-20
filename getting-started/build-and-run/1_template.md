@@ -3,7 +3,7 @@ We’ll start by getting the app up and running, and then explain the different 
 First off, open a terminal and instantiate the template project. You can click on the below snippets to run them in the terminal.
 
 ```
-daml new create-daml-app create-daml-app
+daml new create-daml-app --template create-daml-app
 ```{{execute T1}}
 
 This creates a new folder with contents from our template. Change to the new folder:
