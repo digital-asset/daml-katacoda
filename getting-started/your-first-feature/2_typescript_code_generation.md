@@ -8,4 +8,13 @@ daml codegen js .daml/dist/create-daml-app-0.1.0.dar -o ui/daml.js
 
 The result is an up-to-date TypeScript interface to our DAML model, in particular to the new `Message` template and `SendMessage` choice.
 
-Now we can start implementing our messaging feature in the UI!
+*Only after the above commands have been executed run `npm` to install the project dependencies by
+clicking on the code below*. To make sure that `npm` picks up the newly generated JavaScript code, we
+have to run the following command in the ui directory:
+
+```
+cd create-daml-app/ui
+npm install --force --frozen-lockfile
+```{{execute T2}}
+
+Once that command finishes we can start implementing our messaging feature in the UI!
