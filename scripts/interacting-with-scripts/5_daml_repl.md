@@ -20,12 +20,22 @@ in the **second** terminal. After a few seconds you'll see the REPL prompt:
 daml>
 ```
 
-You can always exit the DAML REPL by pressing `ctrl-c`.
+You can always exit the DAML REPL by pressing `ctrl-c` and get help with
+
+```
+:help
+```{{execute T2}}
 
 At the REPL prompt you can issue an arbitrary DAML script command. As before we'll allocate a new party:
 
 ```
 alice <- allocatePartyWithHint "Alice" (PartyIdHint "Alice")
+```{{execute T2}}
+
+To have definitions of the `User.daml` module in scope, we need to load it first with
+
+```
+:m User
 ```{{execute T2}}
 
 You can create a new `User` contract for `Alice` by submitting a `createCmd` command:
