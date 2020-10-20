@@ -16,12 +16,12 @@ To display the list of friends, received and sent friend requests, we use querie
 
 ![ui_queries](assets/ui_queries.png)
 
-- We use `useStreamQuery` to continuously update the results in the UI. 
+- We use `useStreamQuery` to continuously update the results in the UI.
 - We filter the results by comparing the `username` to the returned keys.
 
 To display (outstanding) friend requests, we wrote two new React components
 `ui/src/components/FriendRequestList.tsx`{{open}} and
-`ui/src/components/OutsandingFriendRequestList.tsx`{{open}}.
+`ui/src/components/OutstandingFriendRequestList.tsx`{{open}}.
 
 These are straight forward components that display the requests and have a button to cancel them.
 
