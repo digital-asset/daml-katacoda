@@ -2,7 +2,7 @@ The new UI is ready for a demonstration. Start the UI in the second terminal wit
 
 ```
 cd create-daml-app/ui
-yarn start
+npm start
 ```{{execute T2}}
 
 and [open the UI tab](https://[[HOST_SUBDOMAIN]]-3000-[[KATACODA_HOST]].environments.katacoda.com).

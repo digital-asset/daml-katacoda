@@ -11,7 +11,7 @@ Wait for the above terminal command to fnish (it is done once you see the `INFO 
 Once the above command has finished, run the below command in terminal 2 by clicking on it.
 
 ```
-yarn start
+npm start
 ```{{execute T2}}
 
 which will start the UI. As a reminder, this starts the web UI connected to the running Sandbox and JSON API server. Once the web UI has been compiled and started, you should see `Compiled successfully!` in your terminal. You can now [open the UI tab](https://[[HOST_SUBDOMAIN]]-3000-[[KATACODA_HOST]].environments.katacoda.com), where you should see the same login page as before

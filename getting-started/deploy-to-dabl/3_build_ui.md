@@ -5,15 +5,15 @@ The UI package will be the result of the auto-generated javascript objects from 
 Let's first run the code generation step by pointing the codegen tool to the `.dar` we created in the previous step:
 
 ```
-daml codegen js target/create-daml-app.dar -o daml.js
+daml codegen js target/create-daml-app.dar -o ui/daml.js
 ```{{execute T1}}
 
-A successful run of the `codegen js` should have created a set of packages in the `daml.js` directory.
+A successful run of the `codegen js` should have created a set of packages in the `ui/daml.js` directory.
 
-Now onto building our UI code. Let's change directories to `ui` and invoke a `yarn install` followed by a `yarn build`:
+Now onto building our UI code. Let's change directories to `ui` and invoke a `npm install` followed by a `npm run-script build`:
 
 ```
-cd ui && yarn install && yarn build
+cd ui && npm install && npm run-script build
 ```{{execute T1}}
 
 Remember that these steps usually take a couple of moments..
