@@ -17,5 +17,6 @@ echo "DAML SDK version is" $sdk_version
 sed -i "s/__SDK_VERSION__/$sdk_version/g" $(find ~/ -name daml.yaml -or -name package.json)
 cd /root
 rm create-daml-app.tar.gz
+rm /root/create-daml-app/ui/._package.json
 
 echo done
