@@ -17,6 +17,5 @@ sed -i "s/__SDK_VERSION__/$sdk_version/g" $(find ~/ -name daml.yaml -or -name pa
 
 cd /root/create-daml-app
 mkdir .daml
-rm /root/create-daml-app/ui/._package.json
 
 echo done

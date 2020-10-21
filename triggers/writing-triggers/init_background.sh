@@ -20,6 +20,5 @@ cd /root/market
 mkdir .daml
 cd ui
 echo "DANGEROUSLY_DISABLE_HOST_CHECK=true" >> .env
-rm /root/create-daml-app/ui/._package.json
 
 echo done
