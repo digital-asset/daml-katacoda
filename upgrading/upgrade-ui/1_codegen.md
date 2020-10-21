@@ -24,7 +24,7 @@ Once finished, open `ui/package.json`{{open}} in the IDE and add the new depende
 
 <pre class="file" data-target="clipboard">
   "dependencies": {
-    "@daml.js/create-daml-app-0.1.0": "file:daml.js/create-daml-app-0.1.0",
+    "@daml.js/create-daml-app-0.1.0": "file:./daml.js/create-daml-app-0.1.0",
     "@daml.js/create-daml-app": "file:daml.js/create-daml-app-0.1.1",
     "@daml.js/forum-0.1.0": "file:daml.js/forum-0.1.0",
     "@daml.js/migration-v0-v1": "file:daml.js/migration-0.1.0",
