@@ -7,7 +7,7 @@ try to order some wine for `Alice`. Here is a recording of the workflow:
 1. The offer is created and displayed. Both `Alice` and `Bob` can see the offer.
 1. `Bob` takes the offer and an invoice is automatically created and is displayed in the `Debits` list.
 1. For `Alice` a new `Credit` item is created for the successful sale.
-1. `Alice` receives the payment and confirms it by clicking on the `Confirm Payment` button. This
+1. `Alice` receives the payment and confirms it by clicking on the `Confirm receipt` button. This
    creates a `PaymentConfirmation` contract.
 1. Notice how the `Invoice` disappears immediately for both `Alice` and `Bob`!
 
