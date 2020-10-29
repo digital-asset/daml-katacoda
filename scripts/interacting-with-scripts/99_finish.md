@@ -7,4 +7,5 @@ If you want to learn more on advanced DAML script topics, have a look at the
 in a distributed setup, where you can submit commands to different participant hosts. It can also
 run directly against the HTTP JSON API.
 
-As always, if you have any questions or problems, connect with the DAML Community on the [DAML forum](https://discuss.daml.com).
+As always, if you have any questions or problems, connect with the DAML Community on the [DAML
+forum](https://discuss.daml.com).
