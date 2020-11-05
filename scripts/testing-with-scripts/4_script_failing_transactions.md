@@ -1,4 +1,4 @@
-In the previous step, we added a scenario update that fails because it tries to double spend an
+In the previous step, we added a script update that fails because it tries to double spend an
 already archived contract ID. With a `submitMustFail` command, you can simulate parties submitting
 commands that you expect to fail.
 
@@ -6,10 +6,11 @@ Remove the last submission of `Alice` and replace it with a `submitMustFail` sta
 
 <pre class="file" data-filename="daml/User.daml" data-target="append">
     submitMustFail alice do
-      exercise aliceCid $ Follow bob
+      exerciseCmd aliceCid $ Follow bob
     return ()
 </pre>
 
+Note how the error in the transaction view disappears again.
 
 Now you can also test that the assertions in the `Follow` choice work as expected.
 
@@ -18,7 +19,7 @@ herself.  Don't forget to remove the last `return ()` statement.
 
 <pre class="file" data-filename="daml/User.daml" data-target="append">
     submitMustFail alice do
-      exercise newAliceCid $ Follow alice
+      exerciseCmd newAliceCid $ Follow alice
     return ()
 </pre>
 
@@ -27,5 +28,5 @@ Remove the last `return ()` and copy
 
 <pre class="file" data-filename="daml/User.daml" data-target="append">
     submitMustFail alice do
-      exercise newAliceCid $ Follow bob
+      exerciseCmd newAliceCid $ Follow bob
 </pre>

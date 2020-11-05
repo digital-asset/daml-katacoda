@@ -15,9 +15,9 @@
         "action": "Start"
         },
         {
-        "external_link": "https://www.daml.com/learn/testing-daml-models",
-        "title": "Learn How to Test DAML Models",
-        "description": "A short series of tutorials to learn the basics of testing DAML models.",
+        "external_link": "https://www.daml.com/learn/scripts",
+        "title": "DAML Scripts",
+        "description": "Test your DAML models with scripts and interact with any DAML ledger from the command line.",
         "action": "Start"
         },
         {

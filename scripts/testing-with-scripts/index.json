@@ -1,30 +1,30 @@
 {
-  "title": "Test your DAML models with scenarios",
-  "description": "Learn how to test your DAML models with scenarios, trace your code and inspect the sandbox ledger",
+  "title": "Test your DAML models with scripts",
+  "description": "Learn how to test your DAML models with scripts, trace your code and inspect the sandbox ledger",
   "difficulty": "Beginner",
   "time": "20 minutes",
   "details": {
     "steps": [
       {
-        "title": "Writing a scenario",
-        "text": "1_scenario.md",
+        "title": "Writing a script",
+        "text": "1_script.md",
         "code": "init.sh"
       },
       {
-        "title": "Scenario results",
-        "text": "2_scenario_results.md"
+        "title": "Script results",
+        "text": "2_script_results.md"
       },
       {
-        "title": "Basic scenario steps",
-        "text": "3_scenario_basics.md"
+        "title": "Basic script steps",
+        "text": "3_script_basics.md"
       },
       {
         "title": "Testing for failing transactions",
-        "text": "4_scenario_failing_transactions.md"
+        "text": "4_script_failing_transactions.md"
       },
       {
-        "title": "Tracing scenario steps",
-        "text": "5_scenario_tracing.md"
+        "title": "Tracing script steps",
+        "text": "5_script_tracing.md"
       }
 
     ],

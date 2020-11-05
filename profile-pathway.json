@@ -11,9 +11,9 @@
         "id": "fundamental-concepts"
       },
       {
-        "title": "Testing DAML Models",
-        "description": "Learn how to test your DAML models with scenarios and scripts.",
-        "id": "testing-daml-models"
+        "title": "DAML Scripts",
+        "description": "Test your DAML models with scripts and interact with any DAML ledger from the command line.",
+        "id": "scripts"
       },
       {
         "title": "Upgrading DAML Applications",
