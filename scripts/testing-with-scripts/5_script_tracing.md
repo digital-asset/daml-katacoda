@@ -39,7 +39,7 @@ expression. If you replace the last line with an assertion that doesn't hold, yo
 message in the script results.
 
 <pre class="file" data-filename="daml/User.daml" data-target="append">
-      assertMsg "Whoops!" (aliceUser.following == [alice])
+    assertMsg "Whoops!" (aliceUser.following == [alice])
 </pre>
 
 Let's remove the failing line again.
