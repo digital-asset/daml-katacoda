@@ -1,8 +1,8 @@
 In the previous step, you created a `User` template for both parties `Alice` and `Bob` in your test
 script. Now you can start exercising choices on them.
 
-Focus the `User.daml` source file tab in the IDE by clicking on it and click on `Copy to Editor` to
-copy the following to the end of your test script:
+Focus the `User.daml` tab in the IDE and move the cursor to the beginning of the last empty line.
+Then click on `Copy to Editor` to copy the following to the IDE:
 
 <pre class="file" data-filename="daml/User.daml" data-target="append">
     newAliceCid <- submit alice do
