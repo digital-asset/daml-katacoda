@@ -9,10 +9,10 @@
       "course_id": "testing-with-scripts"
     },
     {
-      "external_link": "https://www.daml.com/learn/scripts/daml-scripts",
+      "external_link": "https://www.daml.com/learn/scripts/interacting-with-scripts",
       "title": "Talk to DAML ledgers from the command line",
       "description": "Use DAML scripts and the REPL to interact with ledgers",
-      "course_id": "interact-with-scripts"
+      "course_id": "interacting-with-scripts"
     }
   ]
 }
