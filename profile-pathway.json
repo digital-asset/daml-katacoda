@@ -11,11 +11,6 @@
         "id": "fundamental-concepts"
       },
       {
-        "title": "DAML Scripts",
-        "description": "Test your DAML models with scripts and interact with any DAML ledger from the command line.",
-        "id": "scripts"
-      },
-      {
         "title": "Upgrading DAML Applications",
         "description": "Learn how to upgrade running DAML applications and migrate existing data to your new model.",
         "id": "upgrading"
@@ -36,6 +31,11 @@
         "title": "DAML Playground",
         "description": "A playground for the DAML SDK",
         "id": "playground"
+      },
+      {
+        "title": "DAML Scripts",
+        "description": "Test your DAML models with scripts and interact with any DAML ledger from the command line.",
+        "id": "scripts"
       }
     ]
   }

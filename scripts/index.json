@@ -25,8 +25,13 @@
       {
         "title": "Tracing script steps",
         "text": "5_script_tracing.md"
+      },
+      { "title": "Running scripts",
+        "text": "6_running_scripts.md"
+      },
+      { "title": "Enter the DAML REPL"
+      , "text": "7_daml_repl.md"
       }
-
     ],
     "intro": {
       "text": "0_intro.md"

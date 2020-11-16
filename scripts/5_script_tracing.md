@@ -42,7 +42,7 @@ message in the script results.
     assertMsg "Whoops!" (aliceUser.following == [alice])
 </pre>
 
-Let's remove the failing line again.
+Let's **remove the failing line again**.
 
 Once your scripts grow bigger, it's helpful to trace the execution flow of your script. With the
 function `trace : Text -> a -> a` you can add tracing information to any expression, not just
@@ -63,3 +63,11 @@ Make sure that `trace` has the same indentation as `archive self`. If you look a
 view of the script result panel now, you see your trace at the very bottom.
 
 ![[Script Result]](/daml/courses/scripts/testing-with-scripts/assets/script-result-traces.png)
+
+Finally, you can also add `printf` style output to your scripts with the `debug` statement:
+
+<pre class="file" data-filename="daml/User.daml" data-target="append">
+    debug "done!"
+</pre>
+
+The `debug x` script command does not have any effect on the ledger, but will add `x` to the trace.

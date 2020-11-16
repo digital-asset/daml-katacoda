@@ -1,14 +1,15 @@
-Instead of writing a script in a DAML source file, you can also connect to the ledger with the `DAML REPL`
-and run your commands interactively step by step. This is very helpful if you are trying to
-get a better feel for how your code works.
+Instead of writing a script in a DAML source file, you can also connect to the ledger with the 
+DAML REPL and run your commands interactively step by step. This is very helpful if you are trying
+to get a better feel for how your code works.
 
-First, kill the running sandbox in the first terminal (ctrl-c) and restart it to get back into a clean state.
+First, kill the running sandbox in the first terminal (ctrl-c) and restart it to get back into a
+clean state.
 
 ```
 daml sandbox .daml/dist/create-daml-app-0.1.0.dar
 ```{{execute T1}}
 
-To start the `DAML REPL` run
+To start the DAML REPL run
 
 ```
 daml repl --ledger-host=localhost --ledger-port=6865 .daml/dist/create-daml-app-0.1.0.dar
@@ -26,7 +27,8 @@ You can always exit the DAML REPL by pressing `ctrl-c` and get help with
 :help
 ```{{execute T2}}
 
-At the REPL prompt you can issue an arbitrary DAML script command. As before we'll allocate a new party:
+At the REPL prompt you can issue an arbitrary DAML script command. As before we'll allocate a new
+party:
 
 ```
 alice <- allocatePartyWithHint "Alice" (PartyIdHint "Alice")
