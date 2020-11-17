@@ -44,5 +44,12 @@
         "description": "A plain environment to use the DAML SDK in.",
         "action": "Start"
         }
+    ],
+    "scenarios": [
+      {
+        "title": "DAML Scripts",
+        "description": "Test your DAML models with scripts and interact with live ledgers from the command line.",
+        "id": "scripts"
+      }
     ]
 }
