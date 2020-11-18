@@ -16,7 +16,7 @@ There are four different `query` commands:
 We use the `queryContractId` function to have `Alice` query for her `User` contract:
 
 <pre class="file" data-filename="daml/User.daml" data-target="append">
-    aliceUser <- do 
+    aliceUser <- do
       mbAliceUser <- queryContractId alice newAliceCid
       case mbAliceUser of
         None -> fail "Alice doesn't have a User contract"
@@ -47,7 +47,7 @@ Let's **remove the failing line again**.
 Once your scripts grow bigger, it's helpful to trace the execution flow of your script. With the
 function `trace : Text -> a -> a` you can add tracing information to any expression, not just
 script expressions. For example, you can add a trace just before a new `User` contract is created
-after the `Follow` choice by replacing the line 
+after the `Follow` choice by replacing the line
 
 <pre>
       create this with following = userToFollow :: following
@@ -62,7 +62,7 @@ with
 Make sure that `trace` has the same indentation as `archive self`. If you look at the transaction
 view of the script result panel now, you see your trace at the very bottom.
 
-![[Script Result]](/daml/courses/scripts/testing-with-scripts/assets/script-result-traces.png)
+![[Script Result]](/daml/scenarios/scripts/assets/script-result-traces.png)
 
 Finally, you can also add `printf` style output to your scripts with the `debug` statement:
 
