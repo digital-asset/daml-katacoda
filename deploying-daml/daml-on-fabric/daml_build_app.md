@@ -8,5 +8,5 @@ daml build
 Okay so now our backend code is compiled but we also want our frontend to be able to interface with it. We could do this all manually but we also [have several codegen](https://docs.daml.com/tools/codegen.html) options available so in this case we'll have our handy `daml` assistant do this for us.
 
 ```
-daml codegen js .daml/dist/create-daml-app-0.1.0.dar -o daml.js
+daml codegen js .daml/dist/my-app-0.1.0.dar -o ui/daml.js
 ```{{execute T1}}
