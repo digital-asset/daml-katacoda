@@ -1,4 +1,4 @@
-In this final step, you will learn how to query the ledger and add assertions to your DAML scripts.
+In this final step, you will learn how to query the ledger and add assertions to your Daml scripts.
 
 There are four different `query` commands:
 

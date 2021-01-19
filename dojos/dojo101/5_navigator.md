@@ -1,5 +1,5 @@
 
-(covered in [DAML Navigator](https://docs.daml.com/tools/navigator/index.html)) The Navigator is a front-end that you can use to connect to any DAML Ledger and inspect and modify the ledger. You can use it during DAML development to explore the flow and implications of the DAML models.
+(covered in [Daml Navigator](https://docs.daml.com/tools/navigator/index.html)) The Navigator is a front-end that you can use to connect to any Daml Ledger and inspect and modify the ledger. You can use it during Daml development to explore the flow and implications of the Daml models.
 
 ## Task 7
 
@@ -26,5 +26,4 @@ Using Navigator try to run the same scenario:
 10. Clicking on it will show you the details of the contract.
 ![[nav9]](/vivek-da/courses/dojos/dojo101/assets/nav9.png)
 
-You have done it!!! 
-
+You have done it!!!

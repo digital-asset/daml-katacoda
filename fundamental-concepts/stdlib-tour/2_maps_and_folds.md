@@ -1,7 +1,7 @@
 # Mapping and folding
 
 If you're coming from an imperative language like Java or C/C++, you might be wondering how to write
-a `for` loop to iterate over a list. There are no loop constructs in DAML! Instead, you can map over
+a `for` loop to iterate over a list. There are no loop constructs in Daml! Instead, you can map over
 a list with `map: (a -> b) -> [a] -> [b]` and accumulate local state with  folding functions like
 `foldl: (b -> a -> b) -> b -> [a]-> b`. Take a look at the following `for`-loop in Java:
 
@@ -14,7 +14,7 @@ for (int i = 0; i < xs.length(); i++) {
 
 ```
 
->> 1) How would you implement the above loop in DAML? <<
+>> 1) How would you implement the above loop in Daml? <<
 () ys = foldl (\y x -> x::y) [0] [0, 1, 2, 3, 5, 8, 13]
 () ys = foldl (\_y x -> x * 3) 0 [0, 1, 2, 3, 5, 8, 13]
 (x) ys = map (\x -> x * 3) [0, 1, 2, 3, 5, 8, 13]
@@ -84,7 +84,7 @@ for (int i = 0; i < xs.length(); i++) {
 }
 ```
 
->> 2) How would you implement the above loop in DAML? <<
+>> 2) How would you implement the above loop in Daml? <<
 (x) ys = foldl (\y x -> y * x) 1 [1, 2, 3, 5, 8, 13]
 () ys = foldl (\y x -> x::y) [1] [1, 2, 3, 5, 8, 13]
 () ys = foldl (\y x -> x * y) 0 [1, 2, 3, 5, 8, 13]

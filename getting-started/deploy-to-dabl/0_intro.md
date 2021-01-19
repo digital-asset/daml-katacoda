@@ -1,4 +1,4 @@
-This is the last in a series of four tutorials to get you up and running with full-stack DAML development and deployment. We do this through the example of a simple social networking application. The four tutorials cover:
+This is the last in a series of four tutorials to get you up and running with full-stack Daml development and deployment. We do this through the example of a simple social networking application. The four tutorials cover:
 
 1. How to build and run the application ([Running the app](https://daml.com/learn/getting-started/build-and-run/)).
 1. The design of its different components ([Application Architecture](https://docs.daml.com/getting-started/app-architecture.html)).

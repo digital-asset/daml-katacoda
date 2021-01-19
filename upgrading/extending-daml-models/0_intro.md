@@ -4,15 +4,15 @@ to interact with a new partner and share your database, but the access rights ne
 from what you have deployed for your other partners. Or maybe you decide to share parts of your data
 of a running ledger with the public for reading but not writing.
 
-In this first article on DAML application upgrades you learn how to extend your DAML model and ship this
-extension as a DAML package to a running application. This package will depend on the already deployed
-DAML packages running on the ledger. As a running example, we will extend the social network you build in
+In this first article on Daml application upgrades you learn how to extend your Daml model and ship this
+extension as a Daml package to a running application. This package will depend on the already deployed
+Daml packages running on the ledger. As a running example, we will extend the social network you build in
 the [Getting Started Guide](https://daml.com/learn/getting-started/) with a forum.
 
-In the follow up article on DAML upgrades, you will learn how to make changes to an already deployed
-DAML package and how to migrate the data to your new model.
+In the follow up article on Daml upgrades, you will learn how to make changes to an already deployed
+Daml package and how to migrate the data to your new model.
 
-You can find more documentation on upgrading DAML models and applications
+You can find more documentation on upgrading Daml models and applications
 [here](https://docs.daml.com/upgrade/index.html).
 
 ![AsciiCinema](assets/upgrading-daml-models.gif)

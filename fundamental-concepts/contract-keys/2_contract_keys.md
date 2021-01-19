@@ -29,9 +29,9 @@ curl -X POST -H "Content-Type: application/json" -H 'Authorization: Bearer eyJhb
 }}' localhost:7575/v1/exercise
 ```{{execute T1}}
 
-DAML allows you to specify one field of your template to be a [Contract Key](https://docs.daml.com/daml/reference/contract-keys.html).
+Daml allows you to specify one field of your template to be a [Contract Key](https://docs.daml.com/daml/reference/contract-keys.html).
 
-While the uniqueness of contract IDs is guaranteed by any DAML ledger, you as a DAML model writer
+While the uniqueness of contract IDs is guaranteed by any Daml ledger, you as a Daml model writer
 need to know upfront that the specified contract key is unique among all instantiated contracts of
 the template. Creating a contract twice with the same key will result in a runtime error:
 

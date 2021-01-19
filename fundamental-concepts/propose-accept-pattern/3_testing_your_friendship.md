@@ -1,4 +1,4 @@
-Let's test our new model with a DAML scenario. First, let's create two users:
+Let's test our new model with a Daml scenario. First, let's create two users:
 
 <pre class="file" data-filename="daml/User.daml" data-target="append">
 

@@ -1,6 +1,6 @@
 {
-  "title": "Automation with DAML Triggers",
-  "description": "Use DAML triggers to automatically execute choices when a specified ledger event occurs.",
+  "title": "Automation with Daml Triggers",
+  "description": "Use Daml triggers to automatically execute choices when a specified ledger event occurs.",
   "difficulty": "Intermediate",
   "time": "30 minutes",
   "details": {

@@ -1,22 +1,22 @@
 {
-  "title": "Get Started with DAML",
+  "title": "Get Started with Daml",
   "private": false,
   "courses": [
     {
       "external_link": "https://www.daml.com/learn/getting-started/build-and-run",
-      "title": "Build and Run a DAML App",
+      "title": "Build and Run a Daml App",
       "description": "Get familiar with the getting started application",
       "course_id": "build-and-run"
     },
     {
       "external_link": "https://www.daml.com/learn/getting-started/your-first-feature",
-      "title": "Add a new feature with UI elements to your DAML app",
-      "description": "Get familiar with the process of adding a new full stack feature to your DAML app",
+      "title": "Add a new feature with UI elements to your Daml app",
+      "description": "Get familiar with the process of adding a new full stack feature to your Daml app",
       "course_id": "your-first-feature"
     },
     {
       "external_link": "https://www.daml.com/learn/getting-started/deploy-to-dabl",
-      "title": "Deploy your DAML app to project:DABL",
+      "title": "Deploy your Daml app to project:DABL",
       "description": "Package your create-daml-app application artifacts and deploy them to your project:DABL account",
       "course_id": "deploy-to-dabl"
     }

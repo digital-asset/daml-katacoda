@@ -1,4 +1,4 @@
-Let's begin!! 
+Let's begin!!
 
 Now please follow the two steps, highlighted in the image below:
 1. Click on IDE
@@ -7,7 +7,7 @@ Now please follow the two steps, highlighted in the image below:
 ![IDE Help](/vivek-da/courses/dojos/dojo101/assets/idehelp.png)
 
 
-A DAML file defines a module. The first line of a DAML file gives the module a name. In this case, its `Rentals`, thus the file name `Rentals.daml`.
+A Daml file defines a module. The first line of a Daml file gives the module a name. In this case, its `Rentals`, thus the file name `Rentals.daml`.
 
 
 ## Task 1
@@ -45,7 +45,7 @@ template RentAgreement
     address: ??
     rent:??
   where
-    signatory ??    
+    signatory ??
 </pre>
 
 ### Key Question

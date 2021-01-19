@@ -12,4 +12,4 @@ This creates a new folder with contents from our template. Change to the new fol
 cd create-daml-app
 ```{{execute T1}}
 
-Any commands starting with `daml` are using the [DAML Assistant](https://docs.daml.com/tools/assistant.html), a command line tool in the DAML SDK for building and running DAML apps.
+Any commands starting with `daml` are using the [Daml Assistant](https://docs.daml.com/tools/assistant.html), a command line tool in the Daml SDK for building and running Daml apps.

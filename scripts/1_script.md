@@ -1,4 +1,4 @@
-With DAML scripts you can specify a linear sequence of actions that different parties take, and
+With Daml scripts you can specify a linear sequence of actions that different parties take, and
 these are evaluated in order, according to the same consistency, authorization and privacy rules as
 they would be on any production ledger. Every script you specify is run automaticallya against an
 in-memory ledger in the IDE.
@@ -10,7 +10,7 @@ In this Katacoda, we'll extend the social network defined in `daml/User.daml` wi
 - You can click on `Copy to Editor` to append the following code snippets to the file as you go.
   **Note that indentation matters**.
 
-To write DAML scripts you need to import the `Daml.Script` module. Replace the module header with
+To write Daml scripts you need to import the `Daml.Script` module. Replace the module header with
 
 <pre class="file" data-target="clipboard">
 module User where
@@ -22,7 +22,7 @@ import Daml.Script
 A script starts with a name assigned to a `script do` block.
 
 <pre class="file" data-filename="daml/User.daml" data-target="append">
-test = 
+test =
   script do
 </pre>
 
@@ -30,7 +30,7 @@ We want two parties `Alice` and `Bob` to be known identites on our simulated led
 allocate them with the `allocateParty` function:
 
 <pre class="file" data-filename="daml/User.daml" data-target="append">
-    alice <- allocateParty "Alice" 
+    alice <- allocateParty "Alice"
     bob <- allocateParty "Bob"
 </pre>
 

@@ -1,5 +1,5 @@
-Instead of writing a script in a DAML source file, you can also connect to the ledger with the 
-DAML REPL and run your commands interactively step by step. This is very helpful if you are trying
+Instead of writing a script in a Daml source file, you can also connect to the ledger with the
+Daml REPL and run your commands interactively step by step. This is very helpful if you are trying
 to get a better feel for how your code works.
 
 First, kill the running sandbox in the first terminal (ctrl-c) and restart it to get back into a
@@ -9,7 +9,7 @@ clean state.
 daml sandbox .daml/dist/create-daml-app-0.1.0.dar
 ```{{execute T1}}
 
-To start the DAML REPL run
+To start the Daml REPL run
 
 ```
 daml repl --ledger-host=localhost --ledger-port=6865 .daml/dist/create-daml-app-0.1.0.dar
@@ -21,13 +21,13 @@ in the **second** terminal. After a few seconds you'll see the REPL prompt:
 daml>
 ```
 
-You can always exit the DAML REPL by pressing `ctrl-c` and get help with
+You can always exit the Daml REPL by pressing `ctrl-c` and get help with
 
 ```
 :help
 ```{{execute T2}}
 
-At the REPL prompt you can issue an arbitrary DAML script command. As before we'll allocate a new
+At the REPL prompt you can issue an arbitrary Daml script command. As before we'll allocate a new
 party:
 
 ```
@@ -71,5 +71,5 @@ debug contracts
 As an exercise, try to allocate another party `Bob` and issue an `exerciseCmd` to make `Alice`
 follow `Bob`! Step by step you can build your social network.
 
-Everything you learned for DAML scripts also works in the DAML REPL! This can be a powerful tool to
-run through your DAML code and check the ledger state with queries and `debug` statements.
+Everything you learned for Daml scripts also works in the Daml REPL! This can be a powerful tool to
+run through your Daml code and check the ledger state with queries and `debug` statements.

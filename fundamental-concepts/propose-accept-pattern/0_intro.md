@@ -10,7 +10,7 @@ the Role pattern.
 
 ![propose_accept](assets/propose_accept.png)
 
-It's not surprising that the Propose/Accept pattern turns out to be helpful in DAML. DAML's
+It's not surprising that the Propose/Accept pattern turns out to be helpful in Daml. Daml's
 authority rules are guided by actual legal contracts, and the Propose/Accept pattern is a well known
 and tested pattern in [contract law](https://en.wikipedia.org/wiki/Offer_and_acceptance).
 

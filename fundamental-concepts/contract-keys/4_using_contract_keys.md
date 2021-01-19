@@ -1,4 +1,4 @@
-All DAML update actions that work on contract IDs also have a counter part for contract keys:
+All Daml update actions that work on contract IDs also have a counter part for contract keys:
 
 | Contract ID | Contract Key  |
 |-------------|---------------|

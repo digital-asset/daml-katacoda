@@ -106,7 +106,7 @@ curl -s -X POST -H "Content-Type: application/json" -H 'Authorization: Bearer ey
 As expected the ledger responds with
 
 ```
-{"errors":["io.grpc.StatusRuntimeException: INVALID_ARGUMENT: Command interpretation error in LF-DAMLe: dependency error: couldn't find contract ContractId(0060809eb719f9d28a2d783369440d85630dbc8069c8d7b859556cf8765e4a0858). Details: N/A."],"status":500}%
+{"errors":["io.grpc.StatusRuntimeException: INVALID_ARGUMENT: Command interpretation error in LF-Damle: dependency error: couldn't find contract ContractId(0060809eb719f9d28a2d783369440d85630dbc8069c8d7b859556cf8765e4a0858). Details: N/A."],"status":500}%
 ```
 
 The contract is not available anymore because it was already consumed when we executed the consuming

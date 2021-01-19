@@ -1,6 +1,6 @@
 {
-  "title": "Explore DAML's standard library",
-  "description": "Take a tour through DAML's standard library and learn about lists, maps, sets and optional data types.",
+  "title": "Explore Daml's standard library",
+  "description": "Take a tour through Daml's standard library and learn about lists, maps, sets and optional data types.",
   "difficulty": "Beginner",
   "time": "30 minutes",
   "details": {

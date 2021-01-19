@@ -36,17 +36,17 @@ drwxr-xr-x 2 root   root   4096 May 14 15:06 daml-bundled
 drwxr-xr-x 2 root   root   4096 Apr 24 14:45 Desktop
 ```
 
-The first column specifies the file permissions in the letters 
+The first column specifies the file permissions in the letters
 
 - `r` - **read**
 - `w` - **write**
 - `x` - **execute**
 
-for the owner, group and other identities on the system. 
+for the owner, group and other identities on the system.
 
-Exactly as the UNIX file system, DAML has a concept of identities. In DAML they are called `parties`.
+Exactly as the UNIX file system, Daml has a concept of identities. In Daml they are called `parties`.
 
-And exactly as the UNIX file permissions, with DAML you set permissions on each contract
+And exactly as the UNIX file permissions, with Daml you set permissions on each contract
 corresponding to `read`, `write` and `execute` rights.
 
-In the next step we look at DAMLs equivalent of a UNIX user, the DAML `party`.
+In the next step we look at Damls equivalent of a UNIX user, the Daml `party`.

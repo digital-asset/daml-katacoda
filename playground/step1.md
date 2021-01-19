@@ -1,4 +1,4 @@
-Welcome to the DAML SDK Playground.
+Welcome to the Daml SDK Playground.
 
 A sample project has been created for you and you are in the project root dir. You can open the IDE by clicking on the IDE tab above the terminal.
 

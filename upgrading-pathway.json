@@ -1,22 +1,22 @@
 {
-  "title": "Upgrading DAML Applications",
+  "title": "Upgrading Daml Applications",
   "private": false,
   "courses": [
     {
       "external_link": "https://www.daml.com/learn/upgrading/extending-daml-models",
-      "title": "Extend DAML Models with Packages",
-      "description": "Extend a DAML model with a feature contained in a new package and upload it to a running application.",
+      "title": "Extend Daml Models with Packages",
+      "description": "Extend a Daml model with a feature contained in a new package and upload it to a running application.",
       "course_id": "extending-daml-models"
     },
     {
       "external_link": "https://www.daml.com/learn/upgrading/upgrade-running-applications",
-      "title": "Upgrade DAML Models and Migrate a Live Application",
-      "description": "Learn how to upgrade a DAML model and migrate a running application.",
+      "title": "Upgrade Daml Models and Migrate a Live Application",
+      "description": "Learn how to upgrade a Daml model and migrate a running application.",
       "course_id": "upgrade-running-applications"
     },
     {
       "external_link": "https://www.daml.com/learn/upgrading/upgrade-ui",
-      "title": "DAML Upgrades: User Interface",
+      "title": "Daml Upgrades: User Interface",
       "description": "Extend your UI to carry out upgrades",
       "course_id": "upgrade-ui"
     }

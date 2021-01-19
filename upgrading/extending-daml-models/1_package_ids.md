@@ -1,11 +1,11 @@
-You've already learned how to extend a DAML model when you added the messaging feature to the mini
+You've already learned how to extend a Daml model when you added the messaging feature to the mini
 social network of the [Getting Started
 Guide](https://daml.com/learn/getting-started/your-first-feature).
 
-There's a catch though with extending a DAML model like this. A [DAML
+There's a catch though with extending a Daml model like this. A [Daml
 archive](https://docs.daml.com/daml/reference/packages.html) is build with the `daml build` command.
-It contains the compiled artefact of your DAML code that will be deployed and run on the ledger.
-The package ID of a DAML archive depends on the contents of the compiled DAML code. Changing the
+It contains the compiled artefact of your Daml code that will be deployed and run on the ledger.
+The package ID of a Daml archive depends on the contents of the compiled Daml code. Changing the
 code results in a different package ID. This means that contracts created with the old package will
 be different from contracts created with the updated code and if you would just upload the new
 package to your ledger and replace the old one, you couldn't execute any choices on contracts
@@ -95,7 +95,7 @@ you change package `A`, packages `B` and `C` remain the same. For example, both 
 `create-daml-app` package depend on the `daml-prim` package. If you look at the outputs above you
 see that it's package ID stayed constant.
 
-In the next step you'll learn how to extend your DAML model by creating a new `forum` package
+In the next step you'll learn how to extend your Daml model by creating a new `forum` package
 depending on the `create-daml-app` package. This way you don't touch the package ID of your already
 deployed packages.
 

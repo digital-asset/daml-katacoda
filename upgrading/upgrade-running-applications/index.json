@@ -1,6 +1,6 @@
 {
-  "title": "Upgrade DAML Models and Migrate a Live System",
-  "description": "Learn how to upgrade a DAML model and migrate a running application.",
+  "title": "Upgrade Daml Models and Migrate a Live System",
+  "description": "Learn how to upgrade a Daml model and migrate a running application.",
   "difficulty": "Advanced",
   "time": "40 minutes",
   "details": {

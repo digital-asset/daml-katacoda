@@ -1,6 +1,6 @@
 {
-    "title": "DAML Dojo 101",
-    "description": "This training teaches you the basics of DAML",
+    "title": "Daml Dojo 101",
+    "description": "This training teaches you the basics of Daml",
     "courses": [
       {
         "pathway_id": "daml",
@@ -10,4 +10,3 @@
       }
     ]
   }
-  

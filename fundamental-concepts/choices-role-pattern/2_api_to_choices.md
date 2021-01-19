@@ -1,6 +1,6 @@
-First, some good news: The DAML ecosystem will generate the `createUser` endpoint automatically and
+First, some good news: The Daml ecosystem will generate the `createUser` endpoint automatically and
 there is nothing to do for us. In fact, it will provide a general `create` endpoint for all defined
-contract templates in your DAML model. For the provided HTTP JSON API this is the `v1/create`
+contract templates in your Daml model. For the provided HTTP JSON API this is the `v1/create`
 [endpoint](https://docs.daml.com/json-api/index.html#http-request). It will take the template name
 and its arguments as POST arguments to the call. In addition, there will also be an `archive`
 endpoint at `v1/archive` to archive an active contract and mark it inactive.
@@ -36,7 +36,7 @@ Note that the output might slightly vary and that the contract ID string will be
 To execute the `sendMessage` endpoint we require as a first argument an active `User` contract, to
 ensure that the sending party has opened an account in our application. Making the availability of
 an endpoint dependent on the existence of some contract on the ledger is such a common pattern when
-designing an API for a multi-user system, that in DAML it's embedded in the syntax in the form of
+designing an API for a multi-user system, that in Daml it's embedded in the syntax in the form of
 `choices`.  Let's implement `sendMessage` with a choice called `SendMessage`. Add the following
 choice to the `User` template:
 
@@ -75,7 +75,7 @@ You can see the return type of the choice after the choice name `SendMessage`
 
 ![choice_return_type](assets/choice_return_type.png)
 
-The DAML ecosystem makes this choice available as an API call. For example on the JSON API this
+The Daml ecosystem makes this choice available as an API call. For example on the JSON API this
 choice can be called by the `v1/exercise` [endpoint](https://docs.daml.com/json-api/index.html#id2)
 . The call takes as arguments the `User:User` template identifier, the contract ID and the choice
 arguments `sender` and `content`. And the call will return the contract ID of the created `Message`
@@ -93,7 +93,7 @@ curl -X POST -H "Content-Type: application/json" -H 'Authorization: Bearer eyJhb
     \"choice\": \"SendMessage\",
     \"argument\": {
         \"sender\": \"Bob\",
-        \"content\": \"Hi Alice! \" 
+        \"content\": \"Hi Alice! \"
 }}" localhost:7575/v1/exercise
 ```{{execute T1}}
 

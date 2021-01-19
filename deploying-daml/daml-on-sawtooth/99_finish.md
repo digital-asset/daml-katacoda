@@ -1,4 +1,4 @@
-Congratulations, you deployed your DAML app on the Hyperledger Sawtooth distributed ledger!
+Congratulations, you deployed your Daml app on the Hyperledger Sawtooth distributed ledger!
 
 For now, your Sawtooth ledger consists only of a single node. If you want to test your application
 against a ledger consisting of multiple nodes, please have a look at the Hyperledger Sawtooth
@@ -7,5 +7,5 @@ and change the corresponding configuration values in the file
 [docker/compose/daml-local.yaml](https://github.com/blockchaintp/daml-on-sawtooth/blob/master/docker/compose/daml-local.yaml).
 Then start multiple docker containers running each node.
 
-If you have any questions, insights or suggestions, please come and connect with the DAML Community
-on the [DAML forum](https://discuss.daml.com)!
+If you have any questions, insights or suggestions, please come and connect with the Daml Community
+on the [Daml forum](https://discuss.daml.com)!

@@ -1,4 +1,4 @@
-In the previous step you created a new DAML package that extends the Getting Started social network
+In the previous step you created a new Daml package that extends the Getting Started social network
 with a forum. Now it's time to deploy it.
 
 We assume that the social network is already deployed and running. Hence, change directory to

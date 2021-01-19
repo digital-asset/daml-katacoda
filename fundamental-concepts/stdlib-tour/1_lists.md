@@ -1,6 +1,6 @@
 # List
 
-The **list** is one of the most fundamental container types in DAML. The list type is defined with
+The **list** is one of the most fundamental container types in Daml. The list type is defined with
 square brackets. Open the IDE tab and wait for it to load. Then have a look the
 `daml/AddressBook.daml`{{open}} module of the previous [data type
 course](https://www.katacoda.com/daml/courses/fundamental-concepts/data-types-imports). Let's allow

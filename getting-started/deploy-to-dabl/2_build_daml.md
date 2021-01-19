@@ -1,6 +1,6 @@
-DAML code gets compiled to DAR files. Just like your local development sandbox environment accepts DAML models in the form of DAR files, so does project:DABL.
+Daml code gets compiled to DAR files. Just like your local development sandbox environment accepts Daml models in the form of DAR files, so does project:DABL.
 
-So let's go ahead and compile the DAML code to a DAR file. We will use the `-o` option to specify the output path and file name.
+So let's go ahead and compile the Daml code to a DAR file. We will use the `-o` option to specify the output path and file name.
 
 ```
 daml build -o target/create-daml-app.dar

@@ -1,5 +1,5 @@
-DAML's contracts are immutable. The only way to change the content of a contract is to `archive` it
-and `create` a new one. Hence DAML's analogy to UNIX's `write` access is the right to `create` and
+Daml's contracts are immutable. The only way to change the content of a contract is to `archive` it
+and `create` a new one. Hence Daml's analogy to UNIX's `write` access is the right to `create` and
 `archive` a contract. This right is given to a party by listing it after the `signatory` keyword.
 
 ![signatories0](assets/signatories.png)
@@ -30,7 +30,7 @@ Replace the last line with
 
 and your scenario passes again.
 
-Since every party on a DAML ledger is authenticated, and only the party that appears in the
+Since every party on a Daml ledger is authenticated, and only the party that appears in the
 signatory field of a contract can create it, we can regard such a contract as signed by the
 signatory party.
 

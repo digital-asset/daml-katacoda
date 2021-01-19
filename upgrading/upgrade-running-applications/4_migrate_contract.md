@@ -113,12 +113,12 @@ template MigrateUser
 1. We use qualified imports to avoid name clashes of the two imported modules. Note how we can
    import the two equally named modules of the two packages with the given prefix we added in the
    `../migration/daml.yaml`{{open}} file in the previous step.
-1. We use DAML's `..` record punning syntax to avoid boilerplate code in the pure upgrade functions
-   like `upgradeUser`. `User{..}` brings all the fields of the `User` template in scope and 
+1. We use Daml's `..` record punning syntax to avoid boilerplate code in the pure upgrade functions
+   like `upgradeUser`. `User{..}` brings all the fields of the `User` template in scope and
 
    ```
    V2.User with nickname = None, ..
-   ``` 
+   ```
 
    assigns each equally named field of V2.User the field in scope except `nickname`, which is
    set to `None`.
@@ -129,7 +129,7 @@ template MigrateUser
    the form of a contract ID in the field `post`. If we upgrade a `Post`, we want to upgrade the
    `Comment`s as well and update the contract ID to the contract ID of the new post. Hence the
    `upgradeComment` function has the contract ID of the new post as the second argument.
-1. Notice that the authorization rules of DAML ensure that for example a `User` contract can only
+1. Notice that the authorization rules of Daml ensure that for example a `User` contract can only
    be migrated by its `user` party, because this party is the signatory of the `User` contract and
    it needs to authorize the archival of the old contract and the creation of the new one.
 1. When migrating data, it's generally a good idea to have the possibility to reverse the migration
