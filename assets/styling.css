@@ -1,233 +1,4 @@
-/* --- FONTS START ---- */
-@font-face {
-    font-family: 'Brown';
-    src: url('fonts/Brown-RegularItalicAlt.eot');
-    src: local('fonts/Brown-RegularItalicAlt'),
-        url('fonts/Brown-RegularItalicAlt.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Brown-RegularItalicAlt.woff') format('woff'),
-        url('fonts/Brown-RegularItalicAlt.ttf') format('truetype');
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Brown';
-    src: url('fonts/Brown-LightItalic.eot');
-    src: local('fonts/Brown-LightItalic'),
-        url('fonts/Brown-LightItalic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Brown-LightItalic.woff') format('woff'),
-        url('fonts/Brown-LightItalic.ttf') format('truetype');
-    font-weight: 300;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Brown';
-    src: url('fonts/Brown-Light.eot');
-    src: local('fonts/Brown-Light'),
-        url('fonts/Brown-Light.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Brown-Light.woff') format('woff'),
-        url('fonts/Brown-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Brown';
-    src: url('fonts/Brown-Regular.eot');
-    src: local('fonts/Brown-Regular'),
-        url('fonts/Brown-Regular.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Brown-Regular.woff') format('woff'),
-        url('fonts/Brown-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Brown';
-    src: url('fonts/Brown-BoldAlt.eot');
-    src: local('fonts/Brown-BoldAlt'),
-        url('fonts/Brown-BoldAlt.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Brown-BoldAlt.woff') format('woff'),
-        url('fonts/Brown-BoldAlt.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Brown';
-    src: url('fonts/Brown-ThinItalic.eot');
-    src: local('fonts/Brown-ThinItalic'),
-        url('fonts/Brown-ThinItalic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Brown-ThinItalic.woff') format('woff'),
-        url('fonts/Brown-ThinItalic.ttf') format('truetype');
-    font-weight: 100;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Brown';
-    src: url('fonts/Brown-Thin.eot');
-    src: local('fonts/Brown-Thin'),
-        url('fonts/Brown-Thin.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Brown-Thin.woff') format('woff'),
-        url('fonts/Brown-Thin.ttf') format('truetype');
-    font-weight: 100;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Brown';
-    src: url('fonts/Brown-BoldItalicAlt.eot');
-    src: local('fonts/Brown-BoldItalicAlt'),
-        url('fonts/Brown-BoldItalicAlt.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Brown-BoldItalicAlt.woff') format('woff'),
-        url('fonts/Brown-BoldItalicAlt.ttf') format('truetype');
-    font-weight: bold;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Brown';
-    src: url('fonts/Brown-RegularItalic.eot');
-    src: local('fonts/Brown-RegularItalic'),
-        url('fonts/Brown-RegularItalic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Brown-RegularItalic.woff') format('woff'),
-        url('fonts/Brown-RegularItalic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Brown';
-    src: url('fonts/Brown-LightBackslanted.eot');
-    src: local('fonts/Brown-LightBackslanted'),
-        url('fonts/Brown-LightBackslanted.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Brown-LightBackslanted.woff') format('woff'),
-        url('fonts/Brown-LightBackslanted.ttf') format('truetype');
-    font-weight: 300;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Brown';
-    src: url('fonts/Brown-RegularBackslantedAlt.eot');
-    src: local('fonts/Brown-RegularBackslantedAlt'),
-        url('fonts/Brown-RegularBackslantedAlt.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Brown-RegularBackslantedAlt.woff') format('woff'),
-        url('fonts/Brown-RegularBackslantedAlt.ttf') format('truetype');
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Brown';
-    src: url('fonts/Brown-RegularAlt.eot');
-    src: local('fonts/Brown-RegularAlt'),
-        url('fonts/Brown-RegularAlt.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Brown-RegularAlt.woff') format('woff'),
-        url('fonts/Brown-RegularAlt.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Brown';
-    src: url('fonts/Brown-Bold.eot');
-    src: local('fonts/Brown-Bold'),
-        url('fonts/Brown-Bold.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Brown-Bold.woff') format('woff'),
-        url('fonts/Brown-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Brown';
-    src: url('fonts/Brown-ThinBackslanted.eot');
-    src: local('fonts/Brown-ThinBackslanted'),
-        url('fonts/Brown-ThinBackslanted.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Brown-ThinBackslanted.woff') format('woff'),
-        url('fonts/Brown-ThinBackslanted.ttf') format('truetype');
-    font-weight: 100;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Brown';
-    src: url('fonts/Brown-RegularBackslanted.eot');
-    src: local('fonts/Brown-RegularBackslanted'),
-        url('fonts/Brown-RegularBackslanted.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Brown-RegularBackslanted.woff') format('woff'),
-        url('fonts/Brown-RegularBackslanted.ttf') format('truetype');
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Brown';
-    src: url('fonts/Brown-BoldBackslanted.eot');
-    src: local('fonts/Brown-BoldBackslanted'),
-        url('fonts/Brown-BoldBackslanted.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Brown-BoldBackslanted.woff') format('woff'),
-        url('fonts/Brown-BoldBackslanted.ttf') format('truetype');
-    font-weight: bold;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Brown';
-    src: url('fonts/Brown-BoldItalic.eot');
-    src: local('fonts/Brown-BoldItalic'),
-        url('fonts/Brown-BoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Brown-BoldItalic.woff') format('woff'),
-        url('fonts/Brown-BoldItalic.ttf') format('truetype');
-    font-weight: bold;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Brown';
-    src: url('fonts/Brown-BoldBackslanted-Alt.eot');
-    src: local('fonts/Brown-BoldBackslanted-Alt'),
-        url('fonts/Brown-BoldBackslanted-Alt.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Brown-BoldBackslanted-Alt.woff') format('woff'),
-        url('fonts/Brown-BoldBackslanted-Alt.ttf') format('truetype');
-    font-weight: bold;
-    font-style: italic;
-}
-
-/*-------------------Btn Font------------------------*/
-@font-face {
-    font-family: 'NB International';
-    src: url('fonts/NBInternationalMonoWebfont.woff2') format('woff2'),
-        url('fonts/NBInternationalMonoWebfont.woff') format('woff'),
-        url('fonts/NBInternationalMonoWebfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'NB International';
-    src: url('fonts/NBInternationalMonoWebfont_1.woff2') format('woff2'),
-        url('fonts/NBInternationalMonoWebfont_1.woff') format('woff'),
-        url('fonts/NBInternationalMonoWebfont_1.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'NB International';
-    src: url('fonts/NBInternationalMonoWebfont_2.woff2') format('woff2'),
-        url('fonts/NBInternationalMonoWebfont_2.woff') format('woff'),
-        url('fonts/NBInternationalMonoWebfont_2.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-/* --- FONTS END ---- */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 /* single dashboard item height */
 #course-pathway .panel {
@@ -337,7 +108,7 @@
     border-bottom-color: rgb(78, 125, 249);
     border-left-color: rgb(78, 125, 249);
     border-style: solid;
-    font-family: 'NB International' !important;
+    font-family: 'Roboto Mono' !important;
 }
 
 /* dashboard "start" buttons' font color */
@@ -347,12 +118,12 @@
 
 /* font in the scenarios */
 h3, h4, p, ol, li {
-	font-family: Brown !important;
+	font-family: Lato !important;
 }
 
 /* font for the scenario buttons */
 button, input, optgroup, select, textarea {
-	font-family: 'NB International' !important;
+	font-family: 'Roboto Mono' !important;
 }
 
 /* links in the scenarios */
@@ -372,5 +143,5 @@ button.primary-btn.btn, .primary-btn.btn {
 
 /* copy code font for scenarios */
 .text-tutorial .step code, .side-tutorial .step code {
-	font-family: Brown !important;
+	font-family: Lato !important;
 }
