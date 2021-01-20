@@ -1,12 +1,12 @@
 {
-  "title": "DAML Dojo 101",
+  "title": "Daml Dojo 101",
   "description": "In this example we aim to create a rental agreement use case.",
   "difficulty": "Beginner",
   "time": "45 minutes",
   "details": {
     "steps": [
       {
-        "title": "DAML driven Rental use case",
+        "title": "Daml driven Rental use case",
         "text": "1_template.md",
         "code": "init.sh"
       },
@@ -27,7 +27,7 @@
         "title": "Navigator",
         "text": "5_navigator.md"
       }
-      
+
     ],
     "intro": {
       "courseData": "init_background.sh",

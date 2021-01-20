@@ -1,10 +1,10 @@
-[On the the UI tab](https://[[HOST_SUBDOMAIN]]-3000-[[KATACODA_HOST]].environments.katacoda.com) you should now see a login page. For simplicity of this app, there is no password or sign-up required. 
+[On the the UI tab](https://[[HOST_SUBDOMAIN]]-3000-[[KATACODA_HOST]].environments.katacoda.com) you should now see a login page. For simplicity of this app, there is no password or sign-up required.
 
 Enter "Alice" in the box and click Log in.
 
 > Note: Usernames are case sensitive.
 
-You should see the main screen with two panels. One for the users you are following and one for your followers. 
+You should see the main screen with two panels. One for the users you are following and one for your followers.
 
 Follow "Bob" by typing their name in the text box and clicking on the Follow button in the top panel.
 
@@ -21,7 +21,7 @@ Now have Bob follow Alice by clicking the + sign next to Alice's name.
 
 Once Bob starts following Alice both of them can now see each other in their Network. Try logging back in as Alice and you'll see Bob is now in her network. Then log back in as Bob and you'll see the same for him.
 
-Play around more with the app at your leisure: create new users and start following more users. Observe when a user becomes visible to others - this will be important to understanding DAML’s privacy model later.
+Play around more with the app at your leisure: create new users and start following more users. Observe when a user becomes visible to others - this will be important to understanding Daml’s privacy model later.
 
 > Note: If you want to see the code within this `create-daml-app` project click on the IDE tab or [check it out on GitHub](https://github.com/digital-asset/daml/tree/master/templates/create-daml-app).
 

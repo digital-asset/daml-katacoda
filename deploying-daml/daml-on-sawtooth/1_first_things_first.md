@@ -1,4 +1,4 @@
-Before we think about deployment, we want to build a DAML application that was tested agains the
+Before we think about deployment, we want to build a Daml application that was tested agains the
 local sandbox ledger. For this scenario we'll take the mini social network of the `create-daml-app`
 template.
 

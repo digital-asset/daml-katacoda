@@ -1,12 +1,12 @@
 {
-  "title": "Add a new feature with UI elements to your DAML app",
-  "description": "Get familiar with the process of adding a new full stack feature to your DAML app",
+  "title": "Add a new feature with UI elements to your Daml app",
+  "description": "Get familiar with the process of adding a new full stack feature to your Daml app",
   "difficulty": "Beginner",
   "time": "30 minutes",
   "details": {
     "steps": [
       {
-        "title": "DAML Changes",
+        "title": "Daml Changes",
         "text": "1_template.md"
       },
       {

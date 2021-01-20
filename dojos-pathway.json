@@ -1,10 +1,10 @@
 {
-  "title": "DAML Dojos",
+  "title": "Daml Dojos",
   "private": false,
   "courses": [
     {
-      "title": "DAML Dojo 101 - Rental Agreement",
-      "description": "Get familiar with DAML with real-life rental agreement use case.",
+      "title": "Daml Dojo 101 - Rental Agreement",
+      "description": "Get familiar with Daml with real-life rental agreement use case.",
       "course_id": "dojo101"
     }
   ]

@@ -13,7 +13,7 @@ cd /root
 tar xzf forum.tar.gz
 cd /tmp
 sdk_version=$(~/.daml/bin/daml version | awk '/(default SDK version for new projects)/ {print $1}')
-echo "DAML SDK version is" $sdk_version
+echo "Daml SDK version is" $sdk_version
 sed -i "s/__SDK_VERSION__/$sdk_version/g" $(find ~/ -name daml.yaml -or -name package.json)
 cd /root
 rm forum.tar.gz

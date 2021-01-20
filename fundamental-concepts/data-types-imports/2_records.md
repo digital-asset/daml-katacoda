@@ -1,6 +1,6 @@
 # Records
 
-One of the most basic data types in DAML is the record. Here's an example:
+One of the most basic data types in Daml is the record. Here's an example:
 
 <pre class="file" data-filename="daml/AddressBook.daml" data-target="append">
 data Address = Address {

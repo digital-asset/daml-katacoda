@@ -1,6 +1,6 @@
 {
-  "title": "Extending DAML models",
-  "description": "Extend a DAML model with a feature contained in a new package and upload it to a running ledger.",
+  "title": "Extending Daml models",
+  "description": "Extend a Daml model with a feature contained in a new package and upload it to a running ledger.",
   "difficulty": "Intermediate",
   "time": "20 minutes",
   "details": {

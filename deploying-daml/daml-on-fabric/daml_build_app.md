@@ -1,4 +1,4 @@
-Next we need to compile the DAML code, doing this will give us a DAR file which contains our executable code. DAR files are structurally similar to Java's JAR files and you could even unzip them to have a look inside. But don't do that now. We must stay on task!
+Next we need to compile the Daml code, doing this will give us a DAR file which contains our executable code. DAR files are structurally similar to Java's JAR files and you could even unzip them to have a look inside. But don't do that now. We must stay on task!
 
 ```
 cd $HOME/my-app

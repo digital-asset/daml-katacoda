@@ -1,4 +1,4 @@
-DAML contracts are immutable. The only way to change them, is to archive a contract and create a new
+Daml contracts are immutable. The only way to change them, is to archive a contract and create a new
 one with updated fields.
 
 In the terminal you can see the sandbox ledger spinning up. Open `daml/User.daml`{{open}} in the IDE
@@ -14,7 +14,7 @@ one.
 Contract IDs identify a contract uniquely. Every two contracts, even if they have the same field
 values and are of the same template, will have different contract IDs. If your application exposes
 an interaction with a contract via a consuming choice like above, the contract ID of the contract
-will constantly change and your clients will have to keep track of it. 
+will constantly change and your clients will have to keep track of it.
 
 Try executing the `Follow` choice a couple of times and see how the returned contract ID changes
 every time. First create a new `User` contract for `Alice` via the JSON API:

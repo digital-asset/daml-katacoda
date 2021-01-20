@@ -1,5 +1,5 @@
 The third UNIX access right is the right to execute an executable file, denoted by **x** in the `ls`
-output. While in UNIX the right to access is per file, in DAML the right to execute is more fine
+output. While in UNIX the right to access is per file, in Daml the right to execute is more fine
 grained and denoted per choice of a contract. A choice on a contract defines a possible transaction
 on the ledger. You give a party the right to execute a choice and hence commit that transaction, by
 making it the `controller` of that choice.

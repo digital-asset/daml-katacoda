@@ -22,5 +22,5 @@ The right side of these API signatures is what we want them to return, while the
 arrows (->) are the inputs that are required. The `Update` means that a computation will take place
 to compute the enclosed value that will potentially need to change the state of the ledger.
 
-In the next step you'll learn to go from abstract API idea to a concrete implementation through DAML
+In the next step you'll learn to go from abstract API idea to a concrete implementation through Daml
 choices.

@@ -1,6 +1,6 @@
 It's time to move our users to the newest version of the `create-daml-app` and `forum` packages.
-DAML contracts can only be modified as specified by DAML contract choices. Hence, the only way to
-migrate a DAML contract `A` to a contract `B` is to create a new contract `X` with a choice taking
+Daml contracts can only be modified as specified by Daml contract choices. Hence, the only way to
+migrate a Daml contract `A` to a contract `B` is to create a new contract `X` with a choice taking
 `A` as input and creating `B` as output.
 
 Let's create a new project to write such a migration contract:

@@ -1,6 +1,6 @@
 {
-  "title": "Test your DAML models with scripts",
-  "description": "Learn how to test your DAML models with scripts, trace your code and inspect the sandbox ledger",
+  "title": "Test your Daml models with scripts",
+  "description": "Learn how to test your Daml models with scripts, trace your code and inspect the sandbox ledger",
   "difficulty": "Beginner",
   "time": "20 minutes",
   "details": {
@@ -29,7 +29,7 @@
       { "title": "Running scripts",
         "text": "6_running_scripts.md"
       },
-      { "title": "Enter the DAML REPL"
+      { "title": "Enter the Daml REPL"
       , "text": "7_daml_repl.md"
       }
     ],

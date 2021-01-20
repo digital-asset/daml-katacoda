@@ -1,6 +1,6 @@
-Like the UNIX file system has `users`, every DAML ledger has a concept of identity.
+Like the UNIX file system has `users`, every Daml ledger has a concept of identity.
 
-Because the representation of identities are different from one ledger to another, DAML has an
+Because the representation of identities are different from one ledger to another, Daml has an
 identity abstraction. This is the `Party` type. So for example if we **open the IDE** and look at
 the `User` template of the `create-daml-app` package in `daml/User.daml`{{open}}, the line
 
@@ -13,10 +13,10 @@ whatever representation that ledger uses for identities. This could be public ke
 unique identifier. It is also the underlying ledger that will check the authenticity of these
 identities before any issued commands are accepted.
 
-A DAML model doesn't specify the identities for a deployment upfront, it doesn't know whether there
+A Daml model doesn't specify the identities for a deployment upfront, it doesn't know whether there
 will be an `Alice` or a `Bob`, or an `sshd` and a `root` on the ledger. The parties are allocated
-not in the DAML model, but by the underlying ledger once the model is deployed. This is also why
-actual party identifiers don't appear in DAML contract templates.
+not in the Daml model, but by the underlying ledger once the model is deployed. This is also why
+actual party identifiers don't appear in Daml contract templates.
 
 For example, here we allocate new parties `Alice`, `Bob` and `Charlie`, and create a new `User`
 contract for `Alice` on the simple in-memory ledger of the IDE:

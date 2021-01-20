@@ -3,7 +3,7 @@ to write a migration contract that prescribes how to migrate live data of the ge
 network to a newer version. However, moving contracts manually with the navigator is tedious and
 would soon become unfeasible for big data sets.
 
-In this final tutorial on upgrading DAML applications, you will learn how to drive the upgrading
+In this final tutorial on upgrading Daml applications, you will learn how to drive the upgrading
 process from the UI.
 
 ![LoginAlert](assets/login_screen.png)

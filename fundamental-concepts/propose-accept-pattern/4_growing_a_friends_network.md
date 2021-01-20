@@ -1,4 +1,4 @@
-The new DAML model is complete and tested. Now it's time to include the new `FriendRequest` feature
+The new Daml model is complete and tested. Now it's time to include the new `FriendRequest` feature
 in the UI.
 
 You can find the updated UI in the `ui` directory. Have a look at
@@ -25,7 +25,7 @@ To display (outstanding) friend requests, we wrote two new React components
 
 These are straight forward components that display the requests and have a button to cancel them.
 
-Now compile your DAML model
+Now compile your Daml model
 
 ```
 cd create-daml-app

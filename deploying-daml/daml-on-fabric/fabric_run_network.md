@@ -1,4 +1,4 @@
-Alright time to start up Fabric. The git repo we're cloning has an example configuration for running a few peers and is a great starting point if you decide to do your own deployment. If you go that route the DAML-on-Fabric [README](https://github.com/digital-asset/daml-on-fabric/blob/master/README.md) and [DEPLOYMENT GUIDE](https://github.com/digital-asset/daml-on-fabric/blob/master/DEPLOYMENT_GUIDE.md) are must-reads.
+Alright time to start up Fabric. The git repo we're cloning has an example configuration for running a few peers and is a great starting point if you decide to do your own deployment. If you go that route the Daml-on-Fabric [README](https://github.com/digital-asset/daml-on-fabric/blob/master/README.md) and [DEPLOYMENT GUIDE](https://github.com/digital-asset/daml-on-fabric/blob/master/DEPLOYMENT_GUIDE.md) are must-reads.
 
 ```
 cd $HOME

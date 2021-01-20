@@ -1,16 +1,16 @@
 {
-  "title": "Build, Deploy, and Run a DAML application on Fabric",
-  "description": "Run any DAML program on Fabric in a few steps",
+  "title": "Build, Deploy, and Run a Daml application on Fabric",
+  "description": "Run any Daml program on Fabric in a few steps",
   "difficulty": "Beginner",
   "time": "20 minutes",
   "details": {
     "steps": [
       {
-        "title": "Create our DAML App",
+        "title": "Create our Daml App",
         "text": "daml_create_app.md"
       },
       {
-        "title": "Build our DAML App",
+        "title": "Build our Daml App",
         "text": "daml_build_app.md",
         "courseData": "daml_build_app.sh"
       },
@@ -27,15 +27,15 @@
         "text": "fabric_run_network.md"
       },
       {
-        "title": "Connect DAML Runtime",
+        "title": "Connect Daml Runtime",
         "text": "daml_connect_runtime.md"
       },
       {
-        "title": "Deploy DAML App",
+        "title": "Deploy Daml App",
         "text": "daml_deploy_app.md"
       },
       {
-        "title": "Run DAML JSON API",
+        "title": "Run Daml JSON API",
         "text": "daml_run_json_api.md"
       },
       {

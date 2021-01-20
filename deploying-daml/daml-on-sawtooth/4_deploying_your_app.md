@@ -10,7 +10,7 @@ Once Sawtooth is up, you will see output similar to
 
 You can deploy your application comfortable with the `daml ledger` commands from the
 `create-daml-app` project folder. Let's upload the `create-daml-app-0.1.0.dar` package. By default,
-the Sawtooth ledger listens on port `9000` for DAML ledger administration commands:
+the Sawtooth ledger listens on port `9000` for Daml ledger administration commands:
 
 ```
 cd create-daml-app

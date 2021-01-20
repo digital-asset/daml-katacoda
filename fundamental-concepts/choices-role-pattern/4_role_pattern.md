@@ -9,7 +9,7 @@ tracking of activeness of the contract is not necessary. We say a contract that 
 non-consuming choices implements the **Role Pattern**.
 
 This naming expresses the fact that often applications assign a role with certain capabilities to a
-user. The capabilities need to be active as long as the user exists on the system. In DAML, the role
+user. The capabilities need to be active as long as the user exists on the system. In Daml, the role
 is given by a contract such as `User` and the capabilities by its non-consuming choices.
 
 For example, we could extend our `User` contract of the `create-daml-app` with another capability
@@ -34,7 +34,7 @@ curl -s -X POST -H "Content-Type: application/json" -H 'Authorization: Bearer ey
     \"templateId\": \"User:User\",
     \"contractId\": $ALICE_USER_CONTRACT,
     \"choice\": \"CreateSpecialOffer\",
-    \"argument\": {                  
+    \"argument\": {
       \"receivingParty\": \"Bob\",
       \"offer\": \"A bottle of my newest barbeque sauce for free! \"
   }}" localhost:7575/v1/exercise
@@ -54,7 +54,7 @@ curl -s -X POST -H "Content-Type: application/json" -H 'Authorization: Bearer ey
     \"templateId\": \"User:User\",
     \"contractId\": $ALICE_USER_CONTRACT,
     \"choice\": \"CreateSpecialOffer\",
-    \"argument\": {                  
+    \"argument\": {
       \"receivingParty\": \"Bob\",
       \"offer\": \"Try the new extra spicy for free! \"
   }}" localhost:7575/v1/exercise

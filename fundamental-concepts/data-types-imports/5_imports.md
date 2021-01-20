@@ -17,7 +17,7 @@ data Organizer = Organizer {
 </pre>
 
 Your module names can have hierarchical namespaces like `Organizer.AddressBook`. In this case your
-file needs to be in `Organizer/AddressBook.daml` relative to the root directory of your DAML source
+file needs to be in `Organizer/AddressBook.daml` relative to the root directory of your Daml source
 code and the import will look like
 
 <pre>
@@ -95,7 +95,7 @@ be imported for you. You can read more on module imports and file structure
 
 ### Solutions
 
-1. 
+1.
   - `[*] Address` (the constructor) Type and constructor are imported
   - `[*] Address` (the type)
   - `[*] street: Address -> Text` The projection functions of the imported record types are imported

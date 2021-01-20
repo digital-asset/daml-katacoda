@@ -3,7 +3,7 @@ implementing the back-end for a discussion forum. The users will be identified b
 from the mini social network of the Getting Started Guide. Thus we don't need to reimplement the
 user roles.
 
-In the terminal, change directory to your home directory and create a new empty DAML project:
+In the terminal, change directory to your home directory and create a new empty Daml project:
 
 ```
 cd ..

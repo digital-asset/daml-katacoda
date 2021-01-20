@@ -1,6 +1,6 @@
 {
-  "title": "DAML Template Authorization",
-  "description": "Understand the 'signatory', 'observer' and 'controller' keywords and learn how you can write secure and privacy respecting DAML applications.",
+  "title": "Daml Template Authorization",
+  "description": "Understand the 'signatory', 'observer' and 'controller' keywords and learn how you can write secure and privacy respecting Daml applications.",
   "difficulty": "Beginner",
   "time": "20 minutes",
   "details": {

@@ -1,4 +1,4 @@
-Let's clone the DAML on Sawtooth repository:
+Let's clone the Daml on Sawtooth repository:
 
 ```
 git clone https://github.com/blockchaintp/daml-on-sawtooth.git

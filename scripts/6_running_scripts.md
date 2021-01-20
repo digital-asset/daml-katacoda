@@ -1,5 +1,5 @@
-Your DAML scripts aren't restrained to the in-memory ledger of the IDE. You can run your scripts
-against any live DAML ledger!
+Your Daml scripts aren't restrained to the in-memory ledger of the IDE. You can run your scripts
+against any live Daml ledger!
 
 Let's try this with the local sandbox ledger. You can start the sandbox by running
 
@@ -21,7 +21,7 @@ INFO: Initialized sandbox version 1.1.0-snapshot.20200430.4057.0.681c862d with l
 ```
 in the terminal.
 
-The `daml build` command compiles your DAML source code to a DAR archive, located in
+The `daml build` command compiles your Daml source code to a DAR archive, located in
 `.daml/dist/create-daml-app-0.1.0.dar`.
 
 Now you can run your script against the local sandbox ledger. In the **second** terminal, change

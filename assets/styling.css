@@ -1,4 +1,145 @@
+/* single dashboard item height */
+#course-pathway .panel {
+    height: 270px;
+}
+
+@media only screen and (max-width: 1028px) {
+	#course-pathway .panel {
+    	height: 290px;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+	#course-pathway .panel {
+    	height: 320px;
+    }
+}
+
+@media only screen and (max-width: 835px) {
+	#course-pathway .panel {
+    	height: 350px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+	#course-pathway .panel {
+    	height: 400px;
+    }
+}
+
+/* highlighted dashboard "start" button (the very first one in the row) */
 #course-pathway > section > div > div:nth-child(1) > a {
-    background: #fd7700 !important;
-    border-bottom: #fd7700 !important;
+    background: #A6F6FF !important;
+    background-image: initial !important;
+    background-position-x: initial !important;
+    background-position-y: initial !important;
+    background-size: initial !important;
+    background-repeat-x: initial !important;
+    background-repeat-y: initial !important;
+    background-attachment: initial !important;
+    background-origin: initial !important;
+    background-clip: initial !important;
+    background-color: rgb(166, 246, 255) !important;
+    border: #A6F6FF !important;
+    border-top-color: rgb(166, 246, 255) !important;
+    border-top-style: initial !important;
+    border-top-width: initial !important;
+    border-right-color: rgb(166, 246, 255) !important;
+    border-right-style: initial !important;
+    border-right-width: initial !important;
+    border-bottom-color: rgb(166, 246, 255) !important;
+    border-bottom-style: initial !important;
+    border-bottom-width: initial !important;
+    border-left-color: rgb(166, 246, 255) !important;
+    border-left-style: initial !important;
+    border-left-width: initial !important;
+    border-image-source: initial !important;
+    border-image-slice: initial !important;
+    border-image-width: initial !important;
+    border-image-outset: initial !important;
+    border-image-repeat: initial !important;
+    color: #233040 !important;
+}
+
+/* dashboard scenario divs */
+#user-course-progress, #course-pathway .x .panel {
+    background: white;
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: white;
+    border-color: #4E7DF9;
+    border-top-color: rgb(78, 125, 249);
+    border-right-color: rgb(78, 125, 249);
+    border-bottom-color: rgb(78, 125, 249);
+    border-left-color: rgb(78, 125, 249);
+    border-style: solid;
+}
+
+/* font color for the scenarios dashboard */
+.x .panel {
+    color: #233040;
+}
+
+/* dashboard "start" buttons */
+#user-course-progress .action.start, .x .panel .action.start, #course-pathway .x .panel .action.start {
+    background: #4E7DF9;
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(78, 125, 249);
+    border-color: #4E7DF9;
+    border-top-color: rgb(78, 125, 249);
+    border-right-color: rgb(78, 125, 249);
+    border-bottom-color: rgb(78, 125, 249);
+    border-left-color: rgb(78, 125, 249);
+    border-style: solid;
+    font-family: 'NB International' !important;
+}
+
+/* dashboard "start" buttons' font color */
+#user-course-progress .action, .x .panel .action {
+    color: white !important;
+}
+
+/* font in the scenarios */
+h3, h4, p, ol, li {
+	font-family: Brown !important;
+}
+
+/* font for the scenario buttons */
+button, input, optgroup, select, textarea {
+	font-family: 'NB International' !important;
+}
+
+/* links in the scenarios */
+a {
+	color: #4E7DF9!important;
+}
+
+/* set the scenario buttons' background color */
+button.primary-btn.btn, .primary-btn.btn {
+	background: #A6F6FF;
+}
+
+/* set the scenario buttons' text color */
+.btn, .btn-large, .btn-small {
+	color: #233040 !important;
+}
+
+/* copy code font for scenarios */
+.text-tutorial .step code, .side-tutorial .step code {
+	font-family: Brown !important;
 }

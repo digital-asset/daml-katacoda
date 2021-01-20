@@ -4,12 +4,12 @@ messages in the forum. You decide to upgrade to `create-daml-app-0.1.1` and henc
 migration package `migration-0.1.0` and deploy it together with the new packages
 `create-daml-app-0.1.1`, `forum-0.1.1`.
 
-Now you want to drive the upgrade process of the `create-daml-app-0.1.0` DAML application from the
+Now you want to drive the upgrade process of the `create-daml-app-0.1.0` Daml application from the
 UI.  If a user wants to login, whose `User` contract is still of the old `create-daml-app-0.1.0`
 package, you ask her kindly to upgrade to the newer package.
 
 In order to do so, you need the generated JavaScript bindings for the newly available packages.
-**Wait for the sandbox to boot in the background**. Then create them with the DAML Assistant like
+**Wait for the sandbox to boot in the background**. Then create them with the Daml Assistant like
 so:
 
 ```

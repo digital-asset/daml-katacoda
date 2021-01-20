@@ -1,4 +1,4 @@
-DAML Triggers are provided by the `daml-trigger` package. Like the standard library, we can import
+Daml Triggers are provided by the `daml-trigger` package. Like the standard library, we can import
 the package by adding it to the dependencies in the `daml.yaml`{{open}} file:
 
 <pre class="file" data-filename="daml.yaml" data-target="append">
@@ -42,7 +42,7 @@ data Trigger s = Trigger
   ledger. This can be useful to keep the connection alive.
 
 Here's `Alice`s `deleteInvoiceTrigger`, we will implement the `deleteInvoiceRule` function in the
-next step: 
+next step:
 
 <pre class="file" data-filename="daml/Market.daml" data-target="append">
 deleteInvoiceTrigger : Trigger ()
