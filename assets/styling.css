@@ -1,198 +1,198 @@
 /* --- FONTS START ---- */
 @font-face {
     font-family: 'Brown';
-    src: url('/font/Brown-RegularItalicAlt.eot');
-    src: local('/font/Brown-RegularItalicAlt'),
-        url('/font/Brown-RegularItalicAlt.eot?#iefix') format('embedded-opentype'),
-        url('/font/Brown-RegularItalicAlt.woff') format('woff'),
-        url('/font/Brown-RegularItalicAlt.ttf') format('truetype');
+    src: url('https://www.katacoda.com/daml/assets/font/Brown-RegularItalicAlt.eot');
+    src: local('https://www.katacoda.com/daml/assets/font/Brown-RegularItalicAlt'),
+        url('https://www.katacoda.com/daml/assets/font/Brown-RegularItalicAlt.eot?#iefix') format('embedded-opentype'),
+        url('https://www.katacoda.com/daml/assets/font/Brown-RegularItalicAlt.woff') format('woff'),
+        url('https://www.katacoda.com/daml/assets/font/Brown-RegularItalicAlt.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Brown';
-    src: url('/font/Brown-LightItalic.eot');
-    src: local('/font/Brown-LightItalic'),
-        url('/font/Brown-LightItalic.eot?#iefix') format('embedded-opentype'),
-        url('/font/Brown-LightItalic.woff') format('woff'),
-        url('/font/Brown-LightItalic.ttf') format('truetype');
+    src: url('https://www.katacoda.com/daml/assets/font/Brown-LightItalic.eot');
+    src: local('https://www.katacoda.com/daml/assets/font/Brown-LightItalic'),
+        url('https://www.katacoda.com/daml/assets/font/Brown-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('https://www.katacoda.com/daml/assets/font/Brown-LightItalic.woff') format('woff'),
+        url('https://www.katacoda.com/daml/assets/font/Brown-LightItalic.ttf') format('truetype');
     font-weight: 300;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Brown';
-    src: url('/font/Brown-Light.eot');
-    src: local('/font/Brown-Light'),
-        url('/font/Brown-Light.eot?#iefix') format('embedded-opentype'),
-        url('/font/Brown-Light.woff') format('woff'),
-        url('/font/Brown-Light.ttf') format('truetype');
+    src: url('https://www.katacoda.com/daml/assets/font/Brown-Light.eot');
+    src: local('https://www.katacoda.com/daml/assets/font/Brown-Light'),
+        url('https://www.katacoda.com/daml/assets/font/Brown-Light.eot?#iefix') format('embedded-opentype'),
+        url('https://www.katacoda.com/daml/assets/font/Brown-Light.woff') format('woff'),
+        url('https://www.katacoda.com/daml/assets/font/Brown-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Brown';
-    src: url('/font/Brown-Regular.eot');
-    src: local('/font/Brown-Regular'),
-        url('/font/Brown-Regular.eot?#iefix') format('embedded-opentype'),
-        url('/font/Brown-Regular.woff') format('woff'),
-        url('/font/Brown-Regular.ttf') format('truetype');
+    src: url('https://www.katacoda.com/daml/assets/font/Brown-Regular.eot');
+    src: local('https://www.katacoda.com/daml/assets/font/Brown-Regular'),
+        url('https://www.katacoda.com/daml/assets/font/Brown-Regular.eot?#iefix') format('embedded-opentype'),
+        url('https://www.katacoda.com/daml/assets/font/Brown-Regular.woff') format('woff'),
+        url('https://www.katacoda.com/daml/assets/font/Brown-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Brown';
-    src: url('/font/Brown-BoldAlt.eot');
-    src: local('/font/Brown-BoldAlt'),
-        url('/font/Brown-BoldAlt.eot?#iefix') format('embedded-opentype'),
-        url('/font/Brown-BoldAlt.woff') format('woff'),
-        url('/font/Brown-BoldAlt.ttf') format('truetype');
+    src: url('https://www.katacoda.com/daml/assets/font/Brown-BoldAlt.eot');
+    src: local('https://www.katacoda.com/daml/assets/font/Brown-BoldAlt'),
+        url('https://www.katacoda.com/daml/assets/font/Brown-BoldAlt.eot?#iefix') format('embedded-opentype'),
+        url('https://www.katacoda.com/daml/assets/font/Brown-BoldAlt.woff') format('woff'),
+        url('https://www.katacoda.com/daml/assets/font/Brown-BoldAlt.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Brown';
-    src: url('/font/Brown-ThinItalic.eot');
-    src: local('/font/Brown-ThinItalic'),
-        url('/font/Brown-ThinItalic.eot?#iefix') format('embedded-opentype'),
-        url('/font/Brown-ThinItalic.woff') format('woff'),
-        url('/font/Brown-ThinItalic.ttf') format('truetype');
+    src: url('https://www.katacoda.com/daml/assets/font/Brown-ThinItalic.eot');
+    src: local('https://www.katacoda.com/daml/assets/font/Brown-ThinItalic'),
+        url('https://www.katacoda.com/daml/assets/font/Brown-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('https://www.katacoda.com/daml/assets/font/Brown-ThinItalic.woff') format('woff'),
+        url('https://www.katacoda.com/daml/assets/font/Brown-ThinItalic.ttf') format('truetype');
     font-weight: 100;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Brown';
-    src: url('/font/Brown-Thin.eot');
-    src: local('/font/Brown-Thin'),
-        url('/font/Brown-Thin.eot?#iefix') format('embedded-opentype'),
-        url('/font/Brown-Thin.woff') format('woff'),
-        url('/font/Brown-Thin.ttf') format('truetype');
+    src: url('https://www.katacoda.com/daml/assets/font/Brown-Thin.eot');
+    src: local('https://www.katacoda.com/daml/assets/font/Brown-Thin'),
+        url('https://www.katacoda.com/daml/assets/font/Brown-Thin.eot?#iefix') format('embedded-opentype'),
+        url('https://www.katacoda.com/daml/assets/font/Brown-Thin.woff') format('woff'),
+        url('https://www.katacoda.com/daml/assets/font/Brown-Thin.ttf') format('truetype');
     font-weight: 100;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Brown';
-    src: url('/font/Brown-BoldItalicAlt.eot');
-    src: local('/font/Brown-BoldItalicAlt'),
-        url('/font/Brown-BoldItalicAlt.eot?#iefix') format('embedded-opentype'),
-        url('/font/Brown-BoldItalicAlt.woff') format('woff'),
-        url('/font/Brown-BoldItalicAlt.ttf') format('truetype');
+    src: url('https://www.katacoda.com/daml/assets/font/Brown-BoldItalicAlt.eot');
+    src: local('https://www.katacoda.com/daml/assets/font/Brown-BoldItalicAlt'),
+        url('https://www.katacoda.com/daml/assets/font/Brown-BoldItalicAlt.eot?#iefix') format('embedded-opentype'),
+        url('https://www.katacoda.com/daml/assets/font/Brown-BoldItalicAlt.woff') format('woff'),
+        url('https://www.katacoda.com/daml/assets/font/Brown-BoldItalicAlt.ttf') format('truetype');
     font-weight: bold;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Brown';
-    src: url('/font/Brown-RegularItalic.eot');
-    src: local('/font/Brown-RegularItalic'),
-        url('/font/Brown-RegularItalic.eot?#iefix') format('embedded-opentype'),
-        url('/font/Brown-RegularItalic.woff') format('woff'),
-        url('/font/Brown-RegularItalic.ttf') format('truetype');
+    src: url('https://www.katacoda.com/daml/assets/font/Brown-RegularItalic.eot');
+    src: local('https://www.katacoda.com/daml/assets/font/Brown-RegularItalic'),
+        url('https://www.katacoda.com/daml/assets/font/Brown-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('https://www.katacoda.com/daml/assets/font/Brown-RegularItalic.woff') format('woff'),
+        url('https://www.katacoda.com/daml/assets/font/Brown-RegularItalic.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Brown';
-    src: url('/font/Brown-LightBackslanted.eot');
-    src: local('/font/Brown-LightBackslanted'),
-        url('/font/Brown-LightBackslanted.eot?#iefix') format('embedded-opentype'),
-        url('/font/Brown-LightBackslanted.woff') format('woff'),
-        url('/font/Brown-LightBackslanted.ttf') format('truetype');
+    src: url('https://www.katacoda.com/daml/assets/font/Brown-LightBackslanted.eot');
+    src: local('https://www.katacoda.com/daml/assets/font/Brown-LightBackslanted'),
+        url('https://www.katacoda.com/daml/assets/font/Brown-LightBackslanted.eot?#iefix') format('embedded-opentype'),
+        url('https://www.katacoda.com/daml/assets/font/Brown-LightBackslanted.woff') format('woff'),
+        url('https://www.katacoda.com/daml/assets/font/Brown-LightBackslanted.ttf') format('truetype');
     font-weight: 300;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Brown';
-    src: url('/font/Brown-RegularBackslantedAlt.eot');
-    src: local('/font/Brown-RegularBackslantedAlt'),
-        url('/font/Brown-RegularBackslantedAlt.eot?#iefix') format('embedded-opentype'),
-        url('/font/Brown-RegularBackslantedAlt.woff') format('woff'),
-        url('/font/Brown-RegularBackslantedAlt.ttf') format('truetype');
+    src: url('https://www.katacoda.com/daml/assets/font/Brown-RegularBackslantedAlt.eot');
+    src: local('https://www.katacoda.com/daml/assets/font/Brown-RegularBackslantedAlt'),
+        url('https://www.katacoda.com/daml/assets/font/Brown-RegularBackslantedAlt.eot?#iefix') format('embedded-opentype'),
+        url('https://www.katacoda.com/daml/assets/font/Brown-RegularBackslantedAlt.woff') format('woff'),
+        url('https://www.katacoda.com/daml/assets/font/Brown-RegularBackslantedAlt.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Brown';
-    src: url('/font/Brown-RegularAlt.eot');
-    src: local('/font/Brown-RegularAlt'),
-        url('/font/Brown-RegularAlt.eot?#iefix') format('embedded-opentype'),
-        url('/font/Brown-RegularAlt.woff') format('woff'),
-        url('/font/Brown-RegularAlt.ttf') format('truetype');
+    src: url('https://www.katacoda.com/daml/assets/font/Brown-RegularAlt.eot');
+    src: local('https://www.katacoda.com/daml/assets/font/Brown-RegularAlt'),
+        url('https://www.katacoda.com/daml/assets/font/Brown-RegularAlt.eot?#iefix') format('embedded-opentype'),
+        url('https://www.katacoda.com/daml/assets/font/Brown-RegularAlt.woff') format('woff'),
+        url('https://www.katacoda.com/daml/assets/font/Brown-RegularAlt.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Brown';
-    src: url('/font/Brown-Bold.eot');
-    src: local('/font/Brown-Bold'),
-        url('/font/Brown-Bold.eot?#iefix') format('embedded-opentype'),
-        url('/font/Brown-Bold.woff') format('woff'),
-        url('/font/Brown-Bold.ttf') format('truetype');
+    src: url('https://www.katacoda.com/daml/assets/font/Brown-Bold.eot');
+    src: local('https://www.katacoda.com/daml/assets/font/Brown-Bold'),
+        url('https://www.katacoda.com/daml/assets/font/Brown-Bold.eot?#iefix') format('embedded-opentype'),
+        url('https://www.katacoda.com/daml/assets/font/Brown-Bold.woff') format('woff'),
+        url('https://www.katacoda.com/daml/assets/font/Brown-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Brown';
-    src: url('/font/Brown-ThinBackslanted.eot');
-    src: local('/font/Brown-ThinBackslanted'),
-        url('/font/Brown-ThinBackslanted.eot?#iefix') format('embedded-opentype'),
-        url('/font/Brown-ThinBackslanted.woff') format('woff'),
-        url('/font/Brown-ThinBackslanted.ttf') format('truetype');
+    src: url('https://www.katacoda.com/daml/assets/font/Brown-ThinBackslanted.eot');
+    src: local('https://www.katacoda.com/daml/assets/font/Brown-ThinBackslanted'),
+        url('https://www.katacoda.com/daml/assets/font/Brown-ThinBackslanted.eot?#iefix') format('embedded-opentype'),
+        url('https://www.katacoda.com/daml/assets/font/Brown-ThinBackslanted.woff') format('woff'),
+        url('https://www.katacoda.com/daml/assets/font/Brown-ThinBackslanted.ttf') format('truetype');
     font-weight: 100;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Brown';
-    src: url('/font/Brown-RegularBackslanted.eot');
-    src: local('/font/Brown-RegularBackslanted'),
-        url('/font/Brown-RegularBackslanted.eot?#iefix') format('embedded-opentype'),
-        url('/font/Brown-RegularBackslanted.woff') format('woff'),
-        url('/font/Brown-RegularBackslanted.ttf') format('truetype');
+    src: url('https://www.katacoda.com/daml/assets/font/Brown-RegularBackslanted.eot');
+    src: local('https://www.katacoda.com/daml/assets/font/Brown-RegularBackslanted'),
+        url('https://www.katacoda.com/daml/assets/font/Brown-RegularBackslanted.eot?#iefix') format('embedded-opentype'),
+        url('https://www.katacoda.com/daml/assets/font/Brown-RegularBackslanted.woff') format('woff'),
+        url('https://www.katacoda.com/daml/assets/font/Brown-RegularBackslanted.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Brown';
-    src: url('/font/Brown-BoldBackslanted.eot');
-    src: local('/font/Brown-BoldBackslanted'),
-        url('/font/Brown-BoldBackslanted.eot?#iefix') format('embedded-opentype'),
-        url('/font/Brown-BoldBackslanted.woff') format('woff'),
-        url('/font/Brown-BoldBackslanted.ttf') format('truetype');
+    src: url('https://www.katacoda.com/daml/assets/font/Brown-BoldBackslanted.eot');
+    src: local('https://www.katacoda.com/daml/assets/font/Brown-BoldBackslanted'),
+        url('https://www.katacoda.com/daml/assets/font/Brown-BoldBackslanted.eot?#iefix') format('embedded-opentype'),
+        url('https://www.katacoda.com/daml/assets/font/Brown-BoldBackslanted.woff') format('woff'),
+        url('https://www.katacoda.com/daml/assets/font/Brown-BoldBackslanted.ttf') format('truetype');
     font-weight: bold;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Brown';
-    src: url('/font/Brown-BoldItalic.eot');
-    src: local('/font/Brown-BoldItalic'),
-        url('/font/Brown-BoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('/font/Brown-BoldItalic.woff') format('woff'),
-        url('/font/Brown-BoldItalic.ttf') format('truetype');
+    src: url('https://www.katacoda.com/daml/assets/font/Brown-BoldItalic.eot');
+    src: local('https://www.katacoda.com/daml/assets/font/Brown-BoldItalic'),
+        url('https://www.katacoda.com/daml/assets/font/Brown-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('https://www.katacoda.com/daml/assets/font/Brown-BoldItalic.woff') format('woff'),
+        url('https://www.katacoda.com/daml/assets/font/Brown-BoldItalic.ttf') format('truetype');
     font-weight: bold;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Brown';
-    src: url('/font/Brown-BoldBackslanted-Alt.eot');
-    src: local('/font/Brown-BoldBackslanted-Alt'),
-        url('/font/Brown-BoldBackslanted-Alt.eot?#iefix') format('embedded-opentype'),
-        url('/font/Brown-BoldBackslanted-Alt.woff') format('woff'),
-        url('/font/Brown-BoldBackslanted-Alt.ttf') format('truetype');
+    src: url('https://www.katacoda.com/daml/assets/font/Brown-BoldBackslanted-Alt.eot');
+    src: local('https://www.katacoda.com/daml/assets/font/Brown-BoldBackslanted-Alt'),
+        url('https://www.katacoda.com/daml/assets/font/Brown-BoldBackslanted-Alt.eot?#iefix') format('embedded-opentype'),
+        url('https://www.katacoda.com/daml/assets/font/Brown-BoldBackslanted-Alt.woff') format('woff'),
+        url('https://www.katacoda.com/daml/assets/font/Brown-BoldBackslanted-Alt.ttf') format('truetype');
     font-weight: bold;
     font-style: italic;
 }
@@ -200,9 +200,9 @@
 /*-------------------Btn Font------------------------*/
 @font-face {
     font-family: 'NB International';
-    src: url('/font/NBInternationalMonoWebfont.woff2') format('woff2'),
-        url('/font/NBInternationalMonoWebfont.woff') format('woff'),
-        url('/font/NBInternationalMonoWebfont.ttf') format('truetype');
+    src: url('https://www.katacoda.com/daml/assets/font/NBInternationalMonoWebfont.woff2') format('woff2'),
+        url('https://www.katacoda.com/daml/assets/font/NBInternationalMonoWebfont.woff') format('woff'),
+        url('https://www.katacoda.com/daml/assets/font/NBInternationalMonoWebfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -210,9 +210,9 @@
 
 @font-face {
     font-family: 'NB International';
-    src: url('/font/NBInternationalMonoWebfont_1.woff2') format('woff2'),
-        url('/font/NBInternationalMonoWebfont_1.woff') format('woff'),
-        url('/font/NBInternationalMonoWebfont_1.ttf') format('truetype');
+    src: url('https://www.katacoda.com/daml/assets/font/NBInternationalMonoWebfont_1.woff2') format('woff2'),
+        url('https://www.katacoda.com/daml/assets/font/NBInternationalMonoWebfont_1.woff') format('woff'),
+        url('https://www.katacoda.com/daml/assets/font/NBInternationalMonoWebfont_1.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -220,9 +220,9 @@
 
 @font-face {
     font-family: 'NB International';
-    src: url('/font/NBInternationalMonoWebfont_2.woff2') format('woff2'),
-        url('/font/NBInternationalMonoWebfont_2.woff') format('woff'),
-        url('/font/NBInternationalMonoWebfont_2.ttf') format('truetype');
+    src: url('https://www.katacoda.com/daml/assets/font/NBInternationalMonoWebfont_2.woff2') format('woff2'),
+        url('https://www.katacoda.com/daml/assets/font/NBInternationalMonoWebfont_2.woff') format('woff'),
+        url('https://www.katacoda.com/daml/assets/font/NBInternationalMonoWebfont_2.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
