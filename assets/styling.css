@@ -119,7 +119,7 @@
 
 /* font in the scenarios */
 h3, h4, p, ol, li {
-	font-family: Lato !important;
+	font-family: Lato, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important;
 }
 
 /* font for the scenario buttons */
@@ -144,5 +144,5 @@ button.primary-btn.btn, .primary-btn.btn {
 
 /* copy code font for scenarios */
 .text-tutorial .step code, .side-tutorial .step code {
-	font-family: Lato !important;
+	font-family: Lato, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important;
 }
