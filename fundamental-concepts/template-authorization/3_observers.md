@@ -18,7 +18,7 @@ are created on the actual underlying ledger after the Daml model has been deploy
 to specifying the UNIX access rights without knowing the names of the users on the system. The only
 choice you have is to specify the rights in terms of the file contents.
 
-If you click on the `Scenario results` above the test scenario you see that currently there is one
+If you click on the `Script results` above the test script you see that currently there is one
 active `User` contract, and `Alice` is the only party to observe it.
 
 ![observers1](assets/observers1.png)
@@ -26,12 +26,12 @@ active `User` contract, and `Alice` is the only party to observe it.
 Who is observing what contract is indicated by the `X` under the parties name.
 
 Now let `Alice` delete that contract and create one with the other two parties as followers. Replace
-the last line in the scenario with
+the last line in the script with
 
 <pre class="file" data-target="clipboard">
-  c0 <- submit alice $ create User with username = alice, following = []
-  submit alice $ archive c0
-  submit alice $ create User with username = alice, following = [bob, charlie]
+  c0 <- submit alice $ createCmd User with username = alice, following = []
+  submit alice $ archiveCmd c0
+  submit alice $ createCmd User with username = alice, following = [bob, charlie]
 </pre>
 
 The table view changes to

@@ -22,11 +22,11 @@ For example, here we allocate new parties `Alice`, `Bob` and `Charlie`, and crea
 contract for `Alice` on the simple in-memory ledger of the IDE:
 
 <pre class="file" data-filename="daml/User.daml" data-target="append">
-test = scenario do
-  alice <- getParty "Alice"
-  bob <- getParty "Bob"
-  charlie <- getParty "Charlie"
-  submit alice $ create User with username = alice, following = []
+test = script do
+  alice <- allocateParty "Alice"
+  bob <- allocateParty "Bob"
+  charlie <- allocateParty "Charlie"
+  submit alice $ createCmd User with username = alice, following = []
 </pre>
 
 Note that `alice` is just a variable chosen by us, we have no idea how the in-memory ledger

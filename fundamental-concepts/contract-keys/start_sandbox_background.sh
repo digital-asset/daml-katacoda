@@ -5,6 +5,11 @@ echo Starting sandbox
 rm -rf create-daml-app
 daml create-daml-app create-daml-app
 cd create-daml-app
+sed -i "13i - daml-script" daml.yaml
+sed -i "6i import Daml.Script" ./daml/User.daml
+sed -i "7i import DA.Optional" ./daml/User.daml
+sed -i "8i \n" ./daml/User.daml
+
 daml build
 
 daml sandbox --ledgerid MyLedger &

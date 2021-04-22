@@ -77,9 +77,9 @@ data fields of a contract with the field accessor functions and use pattern matc
 it.
 
 <pre class="file" data-filename="daml/AddressBook.daml" data-target="append">
-test = scenario do
-  alice <- getParty "Alice"
-  p <- submit alice $ create $ PersonContract {name = alice, address = Address {street = "RabbitStreet", city = "QueenOfHearts", country = "Wonderland"}, age = 7}
+test = script do
+  alice <- allocateParty "Alice"
+  p <- submit alice $ createCmd $ PersonContract {name = alice, address = Address {street = "RabbitStreet", city = "QueenOfHearts", country = "Wonderland"}, age = 7}
   submit alice $ do
     c <- fetch p
     assert $ c.name == alice

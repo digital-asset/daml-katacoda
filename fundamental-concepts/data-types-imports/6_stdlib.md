@@ -57,6 +57,7 @@ this in three easy steps:
     - daml-prim
     - daml-stdlib
     - daml-trigger
+    - daml-script
     - ../organizer/organizer-0.1.0.dar
     sandbox-options:
     - --wall-clock-time

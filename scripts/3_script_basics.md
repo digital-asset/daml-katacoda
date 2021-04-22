@@ -25,7 +25,7 @@ What happens if `Alice` would submit a command that should fail? Let's see if we
 </pre>
 
 You will see that the script fails now and the IDE complains loudly about an attempted exercise on
-an already consumed contract. It tells you the exact line number in your scenario where things go
+an already consumed contract. It tells you the exact line number in your script where things go
 wrong and prints the partial transaction graph that was committed so far.
 
 In the next step you learn how to test for failure and how to put assertions and trace messages in

@@ -28,12 +28,12 @@ In Daml the file owner corresponds to the `signatory` and executing a file corre
 a choice.
 
 Finally, let's create a `Message` contract with two signatories. Add the following line to the
-scenario:
+script:
 
 <pre class="file" data-filename="daml/User.daml" data-target="append">
-  submit alice $ exercise c2 $ SendMessage with sender = alice, content = "Hello Bob!"
+  submit alice $ exerciseCmd c2 $ SendMessage with sender = alice, content = "Hello Bob!"
 </pre>
 
-You'll see the new `Message` contract in the scenario results.
+You'll see the new `Message` contract in the script results.
 
 ![created_message](assets/created_message.png)
