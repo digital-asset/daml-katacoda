@@ -64,8 +64,9 @@ We can also check this by fetching the contract with `fetchByKey` in Daml. For i
   -- then we access the first and second elements with helper functions (fst, snd),
   -- or alternatively access them positionally with t._1, t._2 and so on
 
-  let contractId = fst $ fromSome userContractIdAndContract
-  let contract = snd $ fromSome userContractIdAndContract
+  -- In case that the queryContractKey returns a None we throw a failure message
+  let contractId = fst $ fromSomeNote "Failed to get the contract and contract ID" userContractIdAndContract
+  let contract = snd $ fromSomeNote "Failed to get the contract and contract ID" userContractIdAndContract
   assert $ contract == User with username=alice, following=[bob]
   assert $ aliceContractId == contractId
   return()
