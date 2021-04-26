@@ -6,7 +6,9 @@ All Daml update actions that work on contract IDs also have a counter part for c
 | fetch       | fetchByKey    |
 | lookup      | lookupByKey   |
 
-The above Daml update actions are repreresented by four actions in Daml Script, where `fetch` and `lookup` actions are folded into `queryContract` actions.
+The above Daml update actions are repreresented by four actions in Daml Script, where `fetch` and `lookup` actions are folded into `queryContract` actions. In Daml `lookup` and `fetch` have different authorization rules. Doing a transactional `lookup` can be quite expensive. Daml Script doesn’t force anyone to validate anything so we can give you the more powerful `lookup` version where you can handle failures transactionally.
+
+
 
 <br>
 <table>
