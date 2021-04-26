@@ -6,7 +6,9 @@ All Daml update actions that work on contract IDs also have a counter part for c
 | fetch       | fetchByKey    |
 | lookup      | lookupByKey   |
 
-The above Daml update actions are repreresented by four actions in Daml Script, where `fetch` and `lookup` actions are folded into `queryContract` actions.
+The above Daml update actions are repreresented by four actions in Daml Script, where `fetch` and `lookup` actions are folded into `queryContract` actions. In Daml `lookup` and `fetch` have different authorization rules. Doing a transactional `lookup` can be quite expensive. Daml Script doesn’t force anyone to validate anything so we can give you the more powerful `lookup` version where you can handle failures transactionally.
+
+
 
 <br>
 <table>
@@ -44,7 +46,7 @@ test = script do
   return()
 </pre>
 
-- `exerciseByKeyCmd` maps to `exerciseCmd` in Daml and takes as a first argument the template name of the contract we want to exercise a
+- `exerciseByKeyCmd` takes as a first argument the template name of the contract we want to exercise a
   choice on preceded by an `@`
 - the second argument is the contract key, in this case `alice`
 
@@ -52,7 +54,7 @@ You can see that `Alice` is now following in the script output when you click on
 
 ![exercise_by_key](assets/exercise_by_key.png)
 
-We can also check this by fetching the contract with `fetchByKey` in Daml. For illustrative purpose we will use `queryContractKey` to show how this done in Daml Script. Before appending the code please delete the `return()` statement.
+We can also check this by fetching the contract with `fetchByKey` in Daml. For illustrative purpose we will use `queryContractKey` to show how this is done in Daml Script. Before appending the code please delete the `return()` statement.
 
 <pre class="file" data-filename="daml/User.daml" data-target="append">
 
@@ -62,17 +64,17 @@ We can also check this by fetching the contract with `fetchByKey` in Daml. For i
   -- then we access the first and second elements with helper functions (fst, snd),
   -- or alternatively access them positionally with t._1, t._2 and so on
 
-  let contractId = fst $ fromSome userContractIdAndContract
-  let contract = snd $ fromSome userContractIdAndContract
+  -- In case that the queryContractKey returns a None we throw a failure message
+  let contractId = fst $ fromSomeNote "Failed to get the contract and contract ID" userContractIdAndContract
+  let contract = snd $ fromSomeNote "Failed to get the contract and contract ID" userContractIdAndContract
   assert $ contract == User with username=alice, following=[bob]
   assert $ aliceContractId == contractId
   return()
 </pre>
 
 - `queryContractKey` takes as first argument the `template` name (`@User`), the `Party` that will make the query as the second argument (`alice`), and the contract key as the third argument (`(alice)`)
-- `fetchByKey` takes only two argument, i.e., the template name and the contract key
-- Both actions return a tuple, where the first factor is the actual contract ID and the second factor is the
-  contract data
+- `fetchByKey` takes only two argument, i.e., the template name and the contract key and returns a tuple, where the first factor is the actual contract ID and the second factor is the contract data
+- `queryContractKey` returns an `Optional` tuple (consisting of the contract ID and the contract data)
 
 Since we didn't exercise a choice on `Alice` `User` contract, we expect the returned contract ID
 to be unchanged. We check if this is true with `assert $ aliceContractId == contractId`.
@@ -82,7 +84,7 @@ As Daml Script offers only `queryContractKey` for both `fetchByKey` and `lookupB
 - `lookupByKey` takes the same two arguments as `fetchByKey`, i.e., the template name and the contract key
 - `lookupByKey` is similar to `fetchByKey`, but instead of failing the transaction, it will return a
 `None` if the given key does not exist.
-- `lookupByKey` does not give any information of whether a contract with a given key exists or not.
+- `fetchByKey` does not give any information of whether a contract with a given key exists or not.
 If it returns `None`, that means either there is no active contract with that key or the submitting
 party is simply not observing it.
 - Finally, `lookupByKey` is slightly different from it's `lookup` counterpart, in that it needs to be

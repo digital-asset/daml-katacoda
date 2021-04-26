@@ -47,8 +47,8 @@ next step:
 <pre class="file" data-filename="daml/Market.daml" data-target="append">
 deleteInvoiceTrigger : Trigger ()
 deleteInvoiceTrigger = Trigger
-  { initialize = const ()
-  , updateState = \_acs _message () -> ()
+  { initialize = return ()
+  , updateState = const( return () )
   , rule = deleteInvoiceRule
   , registeredTemplates = RegisteredTemplates
       [ registeredTemplate @Invoice
@@ -58,9 +58,7 @@ deleteInvoiceTrigger = Trigger
   }
 </pre>
 
-- Alice's trigger doesn't need any state, hence we set it to `()`. The initial state can simply be
-  `const ()` and we also don't need to update it, so we set `updateState` also to the function
-  always returning `()`.
+- Alice's trigger doesn't need any state, hence we set it to `()`. We also don't need to update it, so we set `updateState` also to always return `()`.
 - In the `registeredTemplates` field we make the trigger monitor changes to contracts of the
   `Invoice` and `PaymentConfirmation` templates.
 - This trigger doesn't need a heartbeat, hence we set it to `None`.
