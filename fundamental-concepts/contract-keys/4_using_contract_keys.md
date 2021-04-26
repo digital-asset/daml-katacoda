@@ -83,7 +83,7 @@ As Daml Script offers only `queryContractKey` for both `fetchByKey` and `lookupB
 - `lookupByKey` takes the same two arguments as `fetchByKey`, i.e., the template name and the contract key
 - `lookupByKey` is similar to `fetchByKey`, but instead of failing the transaction, it will return a
 `None` if the given key does not exist.
-- `lookupByKey` does not give any information of whether a contract with a given key exists or not.
+- `fetchByKey` does not give any information of whether a contract with a given key exists or not.
 If it returns `None`, that means either there is no active contract with that key or the submitting
 party is simply not observing it.
 - Finally, `lookupByKey` is slightly different from it's `lookup` counterpart, in that it needs to be
