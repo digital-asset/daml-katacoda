@@ -13,10 +13,10 @@ Let's see what happens when a non-signatory party tries to create a contract for
 signatory. Add the line
 
 <pre class="file" data-filename="daml/User.daml" data-target="append">
-  submit bob $ create User with username = alice, following = []
+  submit bob $ createCmd User with username = alice, following = []
 </pre>
 
-to the end of the scenario. As expected, the scenario fails and you get a missing authorization error:
+to the end of the script. As expected, the script fails and you get a missing authorization error:
 
 ![missing_authorization](assets/missing_authorization.png)
 
@@ -25,10 +25,10 @@ Indeed, only `Alice` is able to create a `User` contract on which she is signato
 Replace the last line with
 
 <pre class="file" data-target="clipboard">
-  submitMustFail bob $ create User with username = alice, following = []
+  submitMustFail bob $ createCmd User with username = alice, following = []
 </pre>
 
-and your scenario passes again.
+and your script passes again.
 
 Since every party on a Daml ledger is authenticated, and only the party that appears in the
 signatory field of a contract can create it, we can regard such a contract as signed by the

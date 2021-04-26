@@ -15,8 +15,8 @@ also be specified as a choice argument such as in the `SendMessage` choice:
 Lets confirm that the in-memory ledger enforces `controllers`. Append the line
 
 <pre class="file" data-filename="daml/User.daml" data-target="append">
-  c1 <- submit bob $ create User with username = bob, following = []
-  c2 <- submit bob $ exercise c1 $ Follow with userToFollow = alice
+  c1 <- submit bob $ createCmd User with username = bob, following = []
+  c2 <- submit bob $ exerciseCmd c1 $ Follow with userToFollow = alice
   return ()
 </pre>
 
@@ -27,10 +27,10 @@ has the right to execute the choice.
 Now replace the last line with
 
 <pre class="file" data-target="clipboard">
-  submit alice $ exercise c2 $ Follow with userToFollow = charlie
+  submit alice $ exerciseCmd c2 $ Follow with userToFollow = charlie
 </pre>
 
-to the scenario. You will get a scenario error:
+to the script. You will get a script error:
 
 ![scenario_error](assets/scenario_error.png)
 
@@ -39,10 +39,10 @@ and she can't make him follow `Charlie`.
 
 Change the last line to
 <pre class="file" data-target="clipboard">
-  submitMustFail alice $ exercise c2 $ Follow with userToFollow = alice
+  submitMustFail alice $ exerciseCmd c2 $ Follow with userToFollow = alice
 </pre>
 
-to make the scenario work again.
+to make the script work again.
 
 In the final step of this Katacoda, you'll learn how to delegate authorization to execute choices
 from one party to another and how this allows you to create contracts with multiple signatories.

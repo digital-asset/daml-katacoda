@@ -13,5 +13,5 @@ Guide](https://daml.com/learn/getting-started/your-first-feature) and examine th
 - **signatories**
 - **controllers**
 
-We test our understanding by writing Daml scenarios and see what errors we get when we try to
+We test our understanding by writing Daml scripts and see what errors we get when we try to
 violate the specified contract template permissions.
