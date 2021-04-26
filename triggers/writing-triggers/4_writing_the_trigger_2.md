@@ -7,14 +7,14 @@ import DA.Foldable(forA_)
 </pre>
 
 For our rule we will need to check all active `Invoice`s and `PaymentConfirmation`s. We can query
-the active contract set with the `getContracts` function. The first argument is the template name
-preceded with a `@` and the second the active contract set.
+the active contract set with the `query` function that takes the template name preceded with a `@`
+as its argument.
 
 <pre class="file" data-filename="daml/Market.daml" data-target="append">
-deleteInvoiceRule : Party -> ACS -> Time -> Map CommandId [Command] -> () -> TriggerA ()
-deleteInvoiceRule party acs _t commandsInFlight () = do
-  let invoices = getContracts @Invoice acs
-  let confirmations = getContracts @PaymentConfirmation acs
+deleteInvoiceRule : Party -> TriggerA () ()
+deleteInvoiceRule party = do
+  invoices <- query @Invoice
+  confirmations <- query @PaymentConfirmation
 </pre>
 
 Now we want to match `PaymentConfirmation`s with their corresponding open `Invoice`s. We store all
