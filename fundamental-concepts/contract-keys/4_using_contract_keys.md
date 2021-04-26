@@ -44,7 +44,7 @@ test = script do
   return()
 </pre>
 
-- `exerciseByKeyCmd` maps to `exerciseCmd` in Daml and takes as a first argument the template name of the contract we want to exercise a
+- `exerciseByKeyCmd` takes as a first argument the template name of the contract we want to exercise a
   choice on preceded by an `@`
 - the second argument is the contract key, in this case `alice`
 
@@ -52,7 +52,7 @@ You can see that `Alice` is now following in the script output when you click on
 
 ![exercise_by_key](assets/exercise_by_key.png)
 
-We can also check this by fetching the contract with `fetchByKey` in Daml. For illustrative purpose we will use `queryContractKey` to show how this done in Daml Script. Before appending the code please delete the `return()` statement.
+We can also check this by fetching the contract with `fetchByKey` in Daml. For illustrative purpose we will use `queryContractKey` to show how this is done in Daml Script. Before appending the code please delete the `return()` statement.
 
 <pre class="file" data-filename="daml/User.daml" data-target="append">
 
@@ -70,9 +70,8 @@ We can also check this by fetching the contract with `fetchByKey` in Daml. For i
 </pre>
 
 - `queryContractKey` takes as first argument the `template` name (`@User`), the `Party` that will make the query as the second argument (`alice`), and the contract key as the third argument (`(alice)`)
-- `fetchByKey` takes only two argument, i.e., the template name and the contract key
-- Both actions return a tuple, where the first factor is the actual contract ID and the second factor is the
-  contract data
+- `fetchByKey` takes only two argument, i.e., the template name and the contract key and returns a tuple, where the first factor is the actual contract ID and the second factor is the contract data
+- `queryContractKey` returns an `Optional` tuple (consisting of the contract ID and the contract data)
 
 Since we didn't exercise a choice on `Alice` `User` contract, we expect the returned contract ID
 to be unchanged. We check if this is true with `assert $ aliceContractId == contractId`.
