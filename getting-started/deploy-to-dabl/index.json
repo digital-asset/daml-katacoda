@@ -1,6 +1,6 @@
 {
-    "title": "Deploy your application to project:DABL",
-    "description": "Package your create-daml-app application artifacts and deploy them to your project:DABL account",
+    "title": "Deploy your application to Daml Hub",
+    "description": "Package your create-daml-app application artifacts and deploy them to your Daml Hub account",
     "difficulty": "Beginner",
     "time": "20 minutes",
     "details": {
@@ -22,7 +22,7 @@
             "verify": "3_verify.sh"
         },
         {
-            "title": "Sign Up for project:DABL",
+            "title": "Sign Up for Daml Hub",
             "text": "4_create_dabl_account.md"
         },
         {

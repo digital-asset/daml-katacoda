@@ -3,7 +3,7 @@ This is the second to last in a series of four tutorials to get you up and runni
 1. How to build and run the application ([Running the app](https://daml.com/learn/getting-started/build-and-run/)).
 1. The design of its different components ([Application Architecture](https://docs.daml.com/getting-started/app-architecture.html)).
 1. How to write a new feature for the app (this tutorial).
-1. How to deploy your app to [project:DABL](https://www.daml.com/learn/getting-started/deploy-to-dabl/)
+1. How to deploy your app to [Daml Hub](https://www.daml.com/learn/getting-started/deploy-to-dabl/)
 
 In this scenario we'll dive into implementing a new feature for our social network app. This will give us a better idea how to develop Daml applications using our template.
 
