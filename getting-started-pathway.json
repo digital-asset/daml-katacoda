@@ -16,8 +16,8 @@
     },
     {
       "external_link": "https://www.daml.com/learn/getting-started/deploy-to-dabl",
-      "title": "Deploy your Daml app to project:DABL",
-      "description": "Package your create-daml-app application artifacts and deploy them to your project:DABL account",
+      "title": "Deploy your Daml app to Daml Hub",
+      "description": "Package your create-daml-app application artifacts and deploy them to your Daml Hub account",
       "course_id": "deploy-to-dabl"
     }
   ]
