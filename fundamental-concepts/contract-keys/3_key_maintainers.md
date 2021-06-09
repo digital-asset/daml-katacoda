@@ -28,9 +28,9 @@ maintainer _2
 ```
 
 Here the functions `_1: (a, b) -> a` and `_2: (a, b) -> b` are the projections onto the first or
-second factor of a tuple. 
+second factor of a tuple.
 
-In the case of our `User` contract it is sensitive to assume that the `username` is a unique field
+In the case of our `User` contract it is reasonable to assume that the `username` is a unique field
 among all `User` contracts. Knowing that every party sees the creation of a contract with the
 `username` field set to its name, we make it the responsibility of such a party to ensure and check
 that only one such contract exists at any given time.
