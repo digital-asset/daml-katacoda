@@ -15,7 +15,7 @@ The new project is also visible in the Visual Studio Code IDE. The first thing y
 
 <!-- TODO: automate having the right sdk-version in the snippet-->
 <pre class="file" data-target="clipboard">
-sdk-version: 1.13.1
+sdk-version: 1.14.0
 name: forum
 source: daml
 parties:
