@@ -1,5 +1,5 @@
 #!/bin/bash
-export SDK_VERSION=1.14.2
+export SDK_VERSION=1.16.0
 
 curl https://get.daml.com | sh -s $SDK_VERSION \
     && printf "auto-install: false\nupdate-check: never\n" >> $HOME/.daml/daml-config.yaml
