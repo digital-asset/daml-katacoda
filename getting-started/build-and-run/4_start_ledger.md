@@ -8,7 +8,8 @@ daml start
 
 You will know that the command has started successfully when you see the output:
 
-```INFO  com.daml.http.Main$ - Started server: ServerBinding(/0:0:0:0:0:0:0:0:7575)```
+```Press 'r' to re-build and upload the package to the sandbox.
+Press 'Ctrl-C' to quit.```
 
 The `daml start` command does a few things:
 
