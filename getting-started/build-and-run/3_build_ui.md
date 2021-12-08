@@ -14,4 +14,4 @@ cd ui
 npm install
 ```{{execute T1}}
 
-This step may take a couple of moments. You'll see `success Saved lockfile` in the terminal when it's done.
+This step may take a couple of moments. You'll be back to the terminal prompt `$` once the process is done.
