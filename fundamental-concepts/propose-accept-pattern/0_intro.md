@@ -1,4 +1,4 @@
-In [Choices and the Role Pattern](https://daml.com/learn/fundamental-concepts/choices-role-pattern)
+In [Choices and the Role Pattern](https://daml.com/interactive-tutorials/fundamental-concepts/choices-role-pattern)
 you learned about the Role Pattern to group non-consuming choices and define user roles with clearly
 specified capabilities.
 

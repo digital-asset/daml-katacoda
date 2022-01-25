@@ -3,7 +3,7 @@
   "private": false,
   "courses": [
     {
-      "external_link": "https://www.daml.com/learn/triggers/writing-triggers",
+      "external_link": "https://www.daml.com/interactive-tutorials/triggers/writing-triggers",
       "title": "Automation with Daml triggers",
       "description": "Use Daml triggers to automatically execute choices when a specified ledger event occurs.",
       "course_id": "writing-triggers"

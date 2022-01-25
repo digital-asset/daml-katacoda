@@ -67,7 +67,7 @@ Note that we dropped the `nonconsuming` before the `choice` keyword. This makes 
 `consuming`.
 
 Because the `receivingParty` is the controller of the choice only she can take the offer (check out
-the previous [Katacoda](https://daml.com/learn/fundamental-concepts/template-authorization) for more
+the previous [Katacoda](https://daml.com/interactive-tutorials/fundamental-concepts/template-authorization) for more
 on authorization and controllers). As soon as she takes the offer, the `SpecialOffer` is archived on
 the ledger, marked as inactive and the choice can not be executed any longer.
 

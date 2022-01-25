@@ -3,13 +3,13 @@
     "private": false,
     "courses": [
       {
-        "external_link": "https://www.daml.com/learn/deploying-daml/daml-on-fabric/",
+        "external_link": "https://www.daml.com/interactive-tutorials/deploying-daml/daml-on-fabric/",
         "title": "Deploy Daml on Fabric",
         "description": "Get familiar with running an application on the Fabric distributed ledger.",
         "course_id": "daml-on-fabric"
       },
       {
-        "external_link": "https://www.daml.com/learn/deploying-daml/daml-on-sawtooth/",
+        "external_link": "https://www.daml.com/interactive-tutorials/deploying-daml/daml-on-sawtooth/",
         "title": "Deploy Daml on Sawtooth",
         "description": "Run your Daml application on the Hyperledger Sawtooth distributed ledger.",
         "course_id": "daml-on-sawtooth"

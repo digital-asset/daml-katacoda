@@ -1,6 +1,6 @@
 You've already learned how to extend a Daml model when you added the messaging feature to the mini
 social network of the [Getting Started
-Guide](https://daml.com/learn/getting-started/your-first-feature).
+Guide](https://daml.com/interactive-tutorials/getting-started/your-first-feature).
 
 There's a catch though with extending a Daml model like this. A [Daml
 archive](https://docs.daml.com/daml/reference/packages.html) is build with the `daml build` command.
