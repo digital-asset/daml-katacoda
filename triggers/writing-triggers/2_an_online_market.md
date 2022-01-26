@@ -96,7 +96,7 @@ template PaymentConfirmation
         archive self
 </pre>
 
-- Our market model follows the [Role pattern](https://daml.com/learn/fundamental-concepts/choices-role-pattern). It defines a `User` template and offers non-consuming choices to
+- Our market model follows the [Role pattern](https://daml.com/interactive-tutorials/fundamental-concepts/choices-role-pattern). It defines a `User` template and offers non-consuming choices to
   - create a new offer
   - take an offer
   - create a payment confirmation to signal that a payment has been received for the offer

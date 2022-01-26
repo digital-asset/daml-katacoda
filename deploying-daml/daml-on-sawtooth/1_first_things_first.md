@@ -10,7 +10,7 @@ cd create-daml-app
 
 where you'll find the plain `create-daml-app` template application. If you haven't already, I
 recommend you run through the [Getting Started
-Guide](https://daml.com/learn/getting-started/build-and-run) to get you familiar with the
+Guide](https://daml.com/interactive-tutorials/getting-started/build-and-run) to get you familiar with the
 `create-daml-app` template application.
 
 Compile the application with

@@ -58,7 +58,7 @@ You can think of a contract **template** as a record data type annotated with wh
 **signatories**, what parties are **observing** the contract and what **choices** to build
 transactions are made available by the contract. We will cover these concepts in depth in the
 following Katacoda's of the [fundamental concepts
-course](https://daml.com/learn/fundamental-concepts). For example, we can turn our `Person` data
+course](https://daml.com/interactive-tutorials/fundamental-concepts). For example, we can turn our `Person` data
 type into a simple contract template:
 
 <pre class="file" data-filename="daml/AddressBook.daml" data-target="append">
