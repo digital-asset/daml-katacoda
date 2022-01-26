@@ -33,6 +33,12 @@
         "action": "Start"
         },
         {
+        "external_link": "https://www.daml.com/interactive-tutorials/deploying-daml/",
+        "title": "Deploying Daml on Production Ledgers",
+        "description": "Get familiar with running a Daml application on distributed ledgers.",
+        "action": "Start"
+        },
+        {
         "external_link": "https://www.daml.com/websdk",
         "title": "Web SDK",
         "description": "A plain environment to use the Daml SDK in.",
