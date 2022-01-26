@@ -49,7 +49,7 @@ Your `daml.yaml` file should look like
 
 <!-- TODO: automate having the right sdk-version in the snippet-->
 <pre class="file" data-target="clipboard">
-sdk-version: 1.18.0
+sdk-version: 1.18.1
 name: forum
 source: daml
 parties:
