@@ -6,7 +6,7 @@ First off, open a terminal and instantiate the template project. You can click o
 daml new create-daml-app --template create-daml-app
 ```{{execute T1}}
 
-This creates a new folder with contents from our template. Change to the new folder:
+This creates a new folder with contents from our template. To see a list of all available templates run `daml new --list`. Change to the new folder:
 
 ```
 cd create-daml-app

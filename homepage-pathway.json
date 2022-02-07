@@ -1,11 +1,17 @@
 {
     "title": "Learn Daml",
-    "private": true,
+    "private": false,
     "courses": [
         {
         "external_link": "https://www.daml.com/interactive-tutorials/getting-started",
         "title": "Get Started with Daml",
         "description": "A short series of tutorials to learn the basics about Daml development.",
+        "action": "Start"
+        },
+        {
+        "external_link": "https://www.daml.com/interactive-tutorials/canton",
+        "title": "Canton",
+        "description": "Canton scenarios",
         "action": "Start"
         },
         {
@@ -30,12 +36,6 @@
         "external_link": "https://www.daml.com/interactive-tutorials/triggers",
         "title": "Automation with Daml Triggers",
         "description": "Use Daml triggers to automatically execute choices when a specified ledger event occurs.",
-        "action": "Start"
-        },
-        {
-        "external_link": "https://www.daml.com/interactive-tutorials/deploying-daml/",
-        "title": "Deploying Daml on Production Ledgers",
-        "description": "Get familiar with running a Daml application on distributed ledgers.",
         "action": "Start"
         },
         {

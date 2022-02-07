@@ -8,7 +8,7 @@ birthday date to our `Person` data type in `daml/AddressBook.daml`{{open}}:
 import DA.Date
 </pre>
 
-Now we can extend the `Person` record in `daml/AddressBook`{{open}}
+Now we can extend the `Person` record in `daml/AddressBook.daml`{{open}}
 
 <pre class="file" data-target="clipboard">
 data Person = Person {
@@ -41,29 +41,28 @@ this in three easy steps:
     daml build
     ```{{execute T1}}
 
-2. Next add the compiled package to your `daml.yaml` for the project you want to make the package
-   available under the `dependencies` stanza:
+2. Next add the compiled package to your ```daml.yaml```{{open}} for the project you want to make the package
+   available under the `dependencies` stanza. In our case we will be adding
 
-    ```
-    sdk-version: 1.18.1
-    name: some-other-package
+   ```
+       - ../organizer/organizer-0.1.0.dar
+   ```{{copy}}
+
+   Our `daml.yaml` file will look like this after copying the dependecy:
+
+   ```
+    sdk-version: 2.0.0
+    name: data-structures
     version: 0.1.0
     source: daml
-    parties:
-    - Alice
-    - Bob
-    - Charlie
     dependencies:
     - daml-prim
     - daml-stdlib
     - daml-trigger
     - daml-script
     - ../organizer/organizer-0.1.0.dar
-    sandbox-options:
-    - --wall-clock-time
-    - --ledgerid=organzier-sandbox
     start-navigator: false
-    ```
+   ```
 
 3. The last step is to add an `import` statement for the module you want to work with to your
    module source file. In our case this would be

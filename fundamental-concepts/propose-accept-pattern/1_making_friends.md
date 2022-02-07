@@ -9,7 +9,7 @@ accept one. Click on the IDE tab, wait for it to load and copy paste the new `Us
 <pre class="file" data-filename="daml/User.daml" data-target="append">
 module User where
 
-import Daml.Script
+import Daml.Script hiding(User)
 
 template User with
     username: Party

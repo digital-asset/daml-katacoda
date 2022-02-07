@@ -18,9 +18,10 @@ Next, find where the `Network Segment` closes, towards the end of the component.
               &lt;/Header&gt;
               &lt;MessageEdit
                 followers={followers.map(follower =&gt; follower.username)}
+                partyToAlias={partyToAlias}
               /&gt;
               &lt;Divider /&gt;
-              &lt;MessageList /&gt;
+              &lt;MessageList partyToAlias={partyToAlias}/&gt;
             &lt;/Segment&gt;
 </pre>
 

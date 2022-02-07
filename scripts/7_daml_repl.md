@@ -43,14 +43,14 @@ To have definitions of the `User.daml` module in scope, we need to load it first
 You can create a new `User` contract for `Alice` by submitting a `createCmd` command:
 
 ```
-aliceCid <- submit alice (createCmd User with username = alice, following = [])
+aliceCid <- submit alice (createCmd User.User with username = alice, following = [])
 ```{{execute T2}}
 
 Here `aliceCid` is the contract ID of the `User` contract that just got created. We can confirm that
 the contract has been created by a query:
 
 ```
-contracts <- query @User alice
+contracts <- query @User.User alice
 ```{{execute T2}}
 
 To inspect the contracts variable, you can simply use a `debug` statement:

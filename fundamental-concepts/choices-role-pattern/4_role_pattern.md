@@ -38,7 +38,7 @@ curl -s -X POST -H "Content-Type: application/json" -H 'Authorization: Bearer ey
       \"receivingParty\": \"Bob\",
       \"offer\": \"A bottle of my newest barbeque sauce for free! \"
   }}" localhost:7575/v1/exercise
-```{{execute T1}}
+```{{execute T2}}
 
 You'll get a response from the ledger with the result of the choice execution:
 
@@ -58,7 +58,7 @@ curl -s -X POST -H "Content-Type: application/json" -H 'Authorization: Bearer ey
       \"receivingParty\": \"Bob\",
       \"offer\": \"Try the new extra spicy for free! \"
   }}" localhost:7575/v1/exercise
-```{{execute T1}}
+```{{execute T2}}
 
 Contracts that have consuming choices make your application interface stateful. By applying the
 *Role Pattern* and group non-consuming choices together as much as possible in role contracts, you

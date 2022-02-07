@@ -1,20 +1,23 @@
 It's time to run the app with the newly added feature!
 
-In the root create-daml-app folder of terminal 1 run the below command by clicking on it.
+As we're running the build process from scratch for the project, we need to install the project dependencies again. This wouldn't be necessary in case where project dependencies would have been previoulsy installed.
+
+Let's install the dependencies by running the below commands in the second terminal:
 
 ```
-daml start
-```{{execute T1}}
+cd create-daml-app/ui
+npm install
+```{{execute T2}}
 
-Wait for the above terminal command to fnish (it is done once you see the `INFO  com.daml.http.Main$ - Started server: ServerBinding(/0:0:0:0:0:0:0:0:7575)` line).
-
-Once the above command has finished, run the below command in terminal 2 by clicking on it.
+Now we're ready to start the UI by running:
 
 ```
 npm start
 ```{{execute T2}}
 
-which will start the UI. As a reminder, this starts the web UI connected to the running Sandbox and JSON API server. Once the web UI has been compiled and started, you should see `Compiled successfully!` in your terminal. You can now [open the UI tab](https://[[HOST_SUBDOMAIN]]-3000-[[KATACODA_HOST]].environments.katacoda.com), where you should see the same login page as before
+As a reminder, this starts the web UI connected to the running Daml Sandbox and JSON API server. In case where we would have an already running UI this step wouldn't be necessary.
+
+Once the web UI has been compiled and started, you should see `Compiled successfully!` in your terminal. You can now [open the UI tab](https://[[HOST_SUBDOMAIN]]-3000-[[KATACODA_HOST]].environments.katacoda.com), where you should see the same login page as before
 
 ![Login Screen](/daml/courses/getting-started/your-first-feature/assets/create-daml-app-login-screen.png)
 

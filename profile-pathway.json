@@ -6,6 +6,11 @@
         "id": "getting-started"
       },
       {
+      "title": "Canton",
+      "description": "Canton scenarios",
+      "id": "canton"
+      },
+      {
         "title": "Fundamental Daml Concepts",
         "description": "Start modeling your data in Daml, understand the 'signatory', 'observer' and 'controller' keywords and learn how you can write secure and privacy respecting Daml applications.",
         "id": "fundamental-concepts"
@@ -19,11 +24,6 @@
         "title": "Automation with Daml Triggers",
         "description": "Use Daml triggers to automatically execute choices when a specified ledger event occurs.",
         "id": "triggers"
-      },
-      {
-        "title": "Deploying Daml on Production Ledgers",
-        "description": "Deploy your Daml application on the growing list of supported production ledgers.",
-        "id": "deploying-daml"
       }
     ],
     "scenarios": [

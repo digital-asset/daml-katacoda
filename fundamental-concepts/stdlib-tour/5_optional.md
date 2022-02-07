@@ -1,13 +1,16 @@
 # Optional fields
 
 Sometimes you need to deal with data fields that are **optional**. This means that the value might
-not be specified at the time of creating the record. For example, you might want to add an optional
-email address field to the `Person` record. Replace the definition of the `Person` data type and add
-the additional import:
+not be specified at the time of creating the record. In order to use it let's add it to the list of imported modules:
 
 <pre class="file" data-target="clipboard">
 import DA.Optional
 
+</pre>
+
+We can, for example, add an optional email address field to the `Person` record. Replace the definition of the `Person` data type with:
+
+<pre class="file" data-target="clipboard">
 data Person = Person {
   name: Text,
   address: Address,
@@ -49,7 +52,7 @@ prettyEmail mbEmail = fromOptional " -- " mbEmail
 </pre>
 
 Optional values can also be used as return values of functions, if you want to indicate that the
-computation might fail or might be undefined. `lookup` of `DA.Next.Map` is an archetypal example:
+computation might fail or might be undefined. `lookup` of `DA.Map` is an archetypal example:
 
 <pre>
 lookup: Map k v -> Optional v

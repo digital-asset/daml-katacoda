@@ -2,7 +2,7 @@ The trigger `rule` is the actual logic of your trigger. You will need to add the
 to the header of the `daml/Market.daml`{{open}} module:
 
 <pre class="file" data-target="clipboard">
-import DA.Next.Map
+import DA.Map
 import DA.Foldable(forA_)
 </pre>
 
