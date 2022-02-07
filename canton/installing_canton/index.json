@@ -1,0 +1,57 @@
+{
+    "title": "Installing Canton",
+    "description": "Learn hot to download and fully set up Canton's Participant Node and a Domain",
+    "difficulty": "Beginner",
+    "time": "30 minutes",
+    "details": {
+      "steps": [
+        {
+          "title": "Downloading Canton",
+          "text": "1_canton_download.md"
+        },
+        {
+          "title": "Your topology",
+          "text": "2_your_topology.md"
+        },
+        {
+          "title": "Environment Variables",
+          "text": "3_environment_variables.md"
+        },
+        {
+          "title": "Selecting Your Storage Layer",
+          "text": "4_storage_layer.md"
+        },
+        {
+          "title": "Setting up Participant Node's Storage",
+          "text": "5_participant_storage.md"
+        },
+        {
+          "title": "Participant Node Setup",
+          "text": "6_participant_setup.md"
+        },
+        {
+          "title": "Domain Setup",
+          "text": "7_domain_setup.md"
+        }
+      ],
+      "intro": {
+        "text": "0_intro.md"      },
+      "finish": {
+        "text": "99_finish.md"
+      }
+    },
+    "environment": {
+      "showide": true,
+      "uieditorpath": "/root/canton-community-1.0.0-rc8",
+      "showdashboard": false,
+      "terminals": [
+        {"name": "Terminal 2", "target": "host01"},
+        {"name": "Terminal 3", "target": "host01"}
+      ],
+      "idePort": 23000,
+      "uilayout": "terminal-iframe"
+    },
+    "backend": {
+      "imageid": "daml-sdk-env"
+    }
+  }

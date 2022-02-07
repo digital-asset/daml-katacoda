@@ -1,0 +1,47 @@
+{
+    "title": "Deploy the social Networking Application on Canton",
+    "description": "Get familiar with deploying an application on Canton",
+    "difficulty": "Beginner",
+    "time": "30 minutes",
+    "details": {
+      "steps": [
+        {
+          "title": "Starting Canton",
+          "text": "1_starting_canton.md",
+          "code": "1_set_the_folder.sh"
+        },
+        {
+          "title": "Deploying the Application",
+          "text": "2_running_the_app.md"
+        },
+        {
+          "title": "Connecting to participant2",
+          "text": "3_connecting to_p2.md"
+        }
+      ],
+      "intro": {
+        "text": "0_intro.md",
+        "courseData": "init_background.sh"
+      },
+      "finish": {
+        "text": "99_finish.md"
+      }
+    },
+    "environment": {
+      "showide": true,
+      "uieditorpath": "/root/canton-community-1.0.0-rc8",
+      "showdashboard": true,
+      "dashboards": [{"name": "Participant 1", "port": 3000}, {"name": "Participant 2", "port": 3001}],
+      "terminals": [
+        {"name": "Terminal 2", "target": "host01"},
+        {"name": "Terminal 3", "target": "host01"},
+        {"name": "Terminal 4", "target": "host01"},
+        {"name": "Terminal 5", "target": "host01"}
+      ],
+      "idePort": 23000,
+      "uilayout": "terminal-iframe"
+    },
+    "backend": {
+      "imageid": "daml-sdk-env"
+    }
+  }

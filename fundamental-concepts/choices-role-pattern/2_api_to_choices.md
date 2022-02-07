@@ -14,7 +14,7 @@ curl -s -X POST -H "Content-Type: application/json" -H 'Authorization: Bearer ey
     "username": "Alice",
     "following": ["Bob"]
   }}' localhost:7575/v1/create | tee result
-```{{execute T1}}
+```{{execute T2}}
 
 1. The `Authorization` header authorizes the request with a dummy JWT token for `Alice`. You can
    read more about authorization [here](https://docs.daml.com/json-api/index.html#with-authentication).
@@ -95,7 +95,7 @@ curl -X POST -H "Content-Type: application/json" -H 'Authorization: Bearer eyJhb
         \"sender\": \"Bob\",
         \"content\": \"Hi Alice! \"
 }}" localhost:7575/v1/exercise
-```{{execute T1}}
+```{{execute T2}}
 
 The ledger answers with a list of created contracts, which contains the created `Message` contract,
 and the result of the execution of the choice, which is the contract ID of the created `Message`

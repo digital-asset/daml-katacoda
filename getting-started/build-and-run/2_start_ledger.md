@@ -1,10 +1,10 @@
-Now that our backend and UI are built we can run the app in two steps.
-The first is to start the Daml ledger in another terminal.
+We can run the app in two steps.
+
+The first is to start the Daml ledger in terminal.
 
 ```
-cd create-daml-app
 daml start
-```{{execute T2}}
+```{{execute T1}}
 
 You will know that the command has started successfully when you see the output:
 

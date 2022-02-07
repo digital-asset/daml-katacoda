@@ -10,25 +10,21 @@
         "text": "1_template.md"
       },
       {
-        "title": "Building  Daml",
-        "text": "2_build_daml.md"
+        "title": "Running the Daml Ledger",
+        "courseData": "2_start_ledger.sh",
+        "text": "2_start_ledger.md"
       },
       {
-        "title": "Building the UI",
-        "courseData": "4_start_ledger.sh",
+        "title": "Build the UI",
         "text": "3_build_ui.md"
       },
       {
-        "title": "Running the Daml Ledger",
-        "text": "4_start_ledger.md"
-      },
-      {
         "title": "Start the UI",
-        "text": "5_start_ui.md"
+        "text": "4_start_ui.md"
       },
       {
         "title": "Use the Application",
-        "text": "6_use_app.md"
+        "text": "5_use_app.md"
       }
     ],
     "intro": {

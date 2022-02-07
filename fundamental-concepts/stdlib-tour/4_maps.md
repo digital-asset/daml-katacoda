@@ -1,17 +1,24 @@
 # Maps
 
 If you need to store associations from keys to values, the best data container to choose is a `Map`
-from the `DA.Next.Map` module. For example, we could have a map from phone numbers to contacts for
+from the `DA.Map` module. In order to use it let's add it to the list of imported modules:
+
+<pre class="file" data-target="clipboard">
+import qualified DA.Map as M
+
+</pre>
+
+We import the module `DA.Map` qualified with the prefix `M` because many
+functions in the `DA.Map` module have equally named corresponding functions in the already
+imported `DA.Set` module (e.g., `insert` and `fromList` are defined in both of these modules9.
+
+For example, we could have a map from phone numbers to contacts for
 quick number lookup:
 
 <pre class="file" data-filename="daml/AddressBook.daml" data-target="append">
 type PhoneNumber = Int
 type PhoneBook =  M.Map PhoneNumber Person
 </pre>
-
-As a reminder, we import the module `DA.Next.Map` qualified with the prefix `M` because many
-functions in the `DA.Next.Map` module have equally named corresponding functions in the already
-imported `DA.Next.Set` module. For example, `insert` is defined in both of these modules.
 
 Let's start with the empty phone book:
 <pre class="file" data-filename="daml/AddressBook.daml" data-target="append">
@@ -35,7 +42,7 @@ testPhoneBook1 = M.insert 123456789 (testPerson with name = "police") testPhoneB
 
 If you want to lookup an entry in the book, use the `lookup` function
 <pre class="file" data-filename="daml/AddressBook.daml" data-target="append">
-maybeAPerson: Optional Person 
+maybeAPerson: Optional Person
 maybeAPerson = M.lookup 123456789 testPhoneBook
 </pre>
 
@@ -54,8 +61,8 @@ later elements will overwrite previous ones.
 
 To convert a map back to a list of tuples you can use `toList.`
 
-The `DA.Next.Map` module contains many useful functions to work with maps. Have a look at the
-[documentation](https://docs.daml.com/daml/stdlib/DA-Next-Map.html) and then take the quiz:
+The `DA.Map` module contains many useful functions to work with maps. Have a look at the
+[documentation](https://docs.daml.com/daml/stdlib/DA-Map.html) and then take the quiz:
 
 >> 1) Which function constructs a 'Map a b' from a list of tuples '[(a, b)]'? <<
 === fromList
@@ -69,15 +76,15 @@ The `DA.Next.Map` module contains many useful functions to work with maps. Have 
 >> 4) How do you lookup the element with key 3 in the map 'm' of the previous question? <<
 === lookup 3 m
 
->> 6) What's the return type of the lookup of the previous question? <<
+>> 5) What's the return type of the lookup of the previous question? <<
 () Text
 (*) Optional Text
 
->> 7) Given the map 'm: Map Int Text', how do you filter for only even keys? <<
+>> 6) Given the map 'm: Map Int Text', how do you filter for only even keys? <<
 (*) filterWithKey (\k _v ->  k `mod` 2 == 0) m
 () filter (k -> k `mod` 2 == 0) m
 
->> 8) What's the result of 'toList $ fromList [(1, "a"), (2, "b"), (2, "c")]'? Hint: Keep in mind that duplicate keys are overwritten in insertion oder. <<
+>> 7) What's the result of 'toList $ fromList [(1, "a"), (2, "b"), (2, "c")]'? Hint: Keep in mind that duplicate keys are overwritten in insertion oder. <<
 === [(1, "a"), (2, "c")]
 
 **Scroll down to find the solutions for the quiz!**

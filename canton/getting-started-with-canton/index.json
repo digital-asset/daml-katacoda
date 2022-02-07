@@ -1,0 +1,68 @@
+{
+    "title": "Get Started with Canton",
+    "description": "Get familiar with running Canton",
+    "difficulty": "Beginner",
+    "time": "30 minutes",
+    "details": {
+      "steps": [
+        {
+          "title": "Canton Folder Structure",
+          "text": "1_canton_folder_structure.md",
+          "code": "1_set_the_folder.sh"
+        },
+        {
+          "title": "Starting Canton",
+          "text": "2_starting_canton.md"
+        },
+        {
+          "title": "Example Topology",
+          "text": "3_example_topology.md"
+        },
+        {
+          "title": "Starting and Connecting the Nodes",
+          "text": "4_starting_and_connecting_nodes.md"
+        },
+        {
+          "title": "Canton Identities and Provisioning Parties",
+          "text": "5_canton_identities_and_provisioning_parties.md"
+        },
+        {
+          "title": "Provisioning Smart Contract Code",
+          "text": "6_provisioning_smart_contract_code.md"
+        },
+        {
+          "title": "Executing Smart Contracts",
+          "text": "7_executing_smart_contracts.md"
+        },
+        {
+          "title": "Privacy",
+          "text": "8_privacy.md"
+        },
+        {
+          "title": "Automation Using Bootstrap Scripts",
+          "text": "9_automation_using_bootstrap_scripts.md"
+        }
+      ],
+      "intro": {
+        "text": "0_intro.md",
+        "courseData": "init_background.sh"
+      },
+      "finish": {
+        "text": "99_finish.md"
+      }
+    },
+    "environment": {
+      "showide": true,
+      "uieditorpath": "/root/canton-community-1.0.0-rc8",
+      "showdashboard": true,
+      "dashboards": [{"name": "UI", "port": 3000}],
+      "terminals": [
+          {"name": "Terminal 2", "target": "host01"}
+      ],
+      "idePort": 23000,
+      "uilayout": "terminal-iframe"
+    },
+    "backend": {
+      "imageid": "daml-sdk-env"
+    }
+  }

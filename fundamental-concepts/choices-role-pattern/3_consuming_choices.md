@@ -42,7 +42,7 @@ curl -s -X POST -H "Content-Type: application/json" -H 'Authorization: Bearer ey
     "offer": "Get Alices Barbeque Sauce 50% off!"
   }}' localhost:7575/v1/create | tee result
 
-```{{execute T1}}
+```{{execute T2}}
 
 and get a response
 
@@ -81,7 +81,7 @@ curl -s -X POST -H "Content-Type: application/json" -H 'Authorization: Bearer ey
     }
 }" localhost:7575/v1/exercise
 
-```{{execute T1}}
+```{{execute T2}}
 
 The sandbox responds that it has indeed archived the `SpecialOffer` contract and that the return
 value of the choice is empty, exactly as specified in the `TakeOffer` choice:
@@ -101,7 +101,7 @@ curl -s -X POST -H "Content-Type: application/json" -H 'Authorization: Bearer ey
     }
 }" localhost:7575/v1/exercise
 
-```{{execute T1}}
+```{{execute T2}}
 
 As expected the ledger responds with
 

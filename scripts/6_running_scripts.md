@@ -4,27 +4,19 @@ against any live Daml ledger!
 Let's try this with the local sandbox ledger. You can start the sandbox by running
 
 ```
-daml build
-daml sandbox .daml/dist/create-daml-app-0.1.0.dar
+daml start
 ```{{execute T1}}
 
 in the terminal. Wait a few seconds for the sandbox ledger to start. Once it's up you'll see
 
 ```
-   ____             ____
-  / __/__ ____  ___/ / /  ___ __ __
- _\ \/ _ `/ _ \/ _  / _ \/ _ \\ \ /
-/___/\_,_/_//_/\_,_/_.__/\___/_\_\
-
-INFO: Initialized sandbox version 1.1.0-snapshot.20200430.4057.0.681c862d with ledger-id = 7b4a418b-dd4b-479b-9771-611d4ec7d98b, port = 6865, dar file = List(.daml/dist/create-daml-app-0.1.0.dar), time mode = wall-clock time, ledger = in-memory, auth-service = AuthServiceWildcard$, contract ids seeding = strong
-
+.......
+Press 'r' to re-build and upload the package to the sandbox.
+Press 'Ctrl-C' to quit.
 ```
 in the terminal.
 
-The `daml build` command compiles your Daml source code to a DAR archive, located in
-`.daml/dist/create-daml-app-0.1.0.dar`.
-
-Now you can run your script against the local sandbox ledger. In the **second** terminal, change
+Now you can run your script against    the local sandbox ledger. In the **second** terminal, change
 directory to `create-daml-app` and execute the script with
 
 ```
@@ -42,6 +34,5 @@ daml script --dar .daml/dist/create-daml-app-0.1.0.dar --script-name User:test -
 The script finishes and outputs the final trace:
 
 ```
-[DA.Internal.Prelude:540]: "done!"
-
+[DA.Internal.Prelude:555]: "done!"
 ```
