@@ -18,24 +18,19 @@ The new project is also visible in the Visual Studio Code IDE. The first thing y
 sdk-version: 2.0.0
 name: forum
 source: daml
-parties:
-  - Alice
-  - Bob
 version: 0.0.1
 dependencies:
   - daml-prim
   - daml-stdlib
   - daml-script
   - ../create-daml-app/.daml/dist/create-daml-app-0.1.0.dar
-sandbox-options:
-  - --wall-clock-time
 </pre>
 
 A package is simply added by pointing to file location of its `dar` (**D**AML **ar**chive) archive.
 When you build a `dar` package with `daml build` within a project without an additional output
 argument, the `dar` will be under the path `.daml/dist/` relativ to your project root.
 
-Remove the two files `daml/Main.daml` and `daml/Setup.daml`. These were added as a starting point,
+Remove the file `daml/Main.daml`. This was added as a starting point,
 but we have our own ideas.
 
 ```
