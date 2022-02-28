@@ -9,7 +9,7 @@ accept one. Click on the IDE tab, wait for it to load and copy paste the new `Us
 <pre class="file" data-filename="daml/User.daml" data-target="append">
 module User where
 
-import Daml.Script hiding(User)
+import Daml.Script hiding (User)
 
 template User with
     username: Party
@@ -30,6 +30,24 @@ template User with
       controller username
       do
         exerciseByKey @FriendRequest friendRequest Accept
+
+template Alias with
+    username: Party
+    alias: Text
+    public: Party
+  where
+    signatory username
+    observer public
+
+    key (username, public) : (Party, Party)
+    maintainer key._1
+
+    nonconsuming choice Change: ContractId Alias with
+        newAlias: Text
+      controller username
+      do
+        archive self
+        create this with alias = newAlias
 </pre>
 
 - Notice that we removed the `Follow` choice and replaced it with two choices implementing the
@@ -43,5 +61,28 @@ template User with
   field of the `FriendRequest` contract
 - We use [contract keys](https://daml.com/interactive-tutorials/fundamental-concepts/contract-keys) instead of
   contract IDs in the `AcceptFriendRequest` choice to make the code and API simpler.
+
+Next, we add the `Alias` template that we’ve already seen in previous tutorials. This is used
+to give human readable names to parties.
+
+<pre class="file" data-filename="daml/User.daml" data-target="append">
+template Alias with
+    username: Party
+    alias: Text
+    public: Party
+  where
+    signatory username
+    observer public
+
+    key (username, public) : (Party, Party)
+    maintainer key._1
+
+    nonconsuming choice Change: ContractId Alias with
+        newAlias: Text
+      controller username
+      do
+        archive self
+        create this with alias = newAlias
+</pre>
 
 Let's see how we can implement the `FriendRequest` and `Friendship` contracts to complete the model.
