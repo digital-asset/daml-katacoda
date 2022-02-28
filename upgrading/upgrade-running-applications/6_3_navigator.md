@@ -1,4 +1,5 @@
-Copy the contract ID of `Alice`s `User` contract and also note the package ID of the
+Copy the contract ID of `Alice`s `User` contract by clicking on it
+and also note the package ID of the
 `create-daml-app-0.1.0` package (it's noted in the `template` field) of the contract.
 
 ![AliceUserContractHighlighted](assets/alice_contract_highlighted.png)

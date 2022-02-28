@@ -7,10 +7,9 @@ Let's create a new project to write such a migration contract:
 
 ```
 cd ..
-daml new migration skeleton
+daml new migration --template skeleton
 cd migration
-rm -rf daml
-mkdir daml
+rm -rf daml/*
 ``` {{execute T2}}
 
 To write a migration contract, we need to import the two versions of each package in the migration
@@ -22,17 +21,11 @@ project. Open the
 sdk-version: 2.0.0
 name: migration
 source: daml
-parties:
-  - Alice
-  - Bob
-  - Charlie
 version: 0.0.1
 dependencies:
   - daml-prim
   - daml-stdlib
   - daml-script
-sandbox-options:
-  - --wall-clock-time
 data-dependencies:
   - ../create-daml-app/create-daml-app-0.1.0.dar
   - ../forum/forum-0.1.0.dar

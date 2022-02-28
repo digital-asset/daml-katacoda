@@ -6,14 +6,14 @@ cd ../create-daml-app
 ```{{execute T2}}
 
 and open `daml/User.daml`{{open}} in the IDE tab and wait for it to load. We'll extend the `User`
-data with a `nickname` field, such that the beginning of the template looks like
+data with a `email` field, such that the beginning of the template looks like
 
 <pre class="file" data-target="clipboard">
 template User
   with
     username: Party
     following: [Party]
-    nickname: Optional Text
+    email: Optional Text
   where
 </pre>
 
@@ -52,18 +52,12 @@ Your `daml.yaml` file should look like
 sdk-version: 2.0.0
 name: forum
 source: daml
-parties:
-  - Alice
-  - Bob
-  - Charlie
 version: 0.1.1
 dependencies:
   - daml-prim
   - daml-stdlib
   - daml-script
   - ../create-daml-app/create-daml-app-0.1.1.dar
-sandbox-options:
-  - --wall-clock-time
 </pre>
 
 Don't forget to update the `version` field **and** the `dar` filepath under `dependencies`. We'll
