@@ -16,7 +16,7 @@ import qualified V2.Forum
 
 -- These are pure functions describing how data of V1 is moved to V2 and back.
 upgradeUser : V1.User.User -> V2.User.User
-upgradeUser V1.User.User{..} = V2.User.User with nickname = None, ..
+upgradeUser V1.User.User{..} = V2.User.User with email = None, ..
 
 rollbackUser : V2.User.User -> V1.User.User
 rollbackUser V2.User.User{..} = V1.User.User with ..
@@ -117,14 +117,14 @@ template MigrateUser
    like `upgradeUser`. `User{..}` brings all the fields of the `User` template in scope and
 
    ```
-   V2.User with nickname = None, ..
+   V2.User with email = None, ..
    ```
 
-   assigns each equally named field of V2.User the field in scope except `nickname`, which is
+   assigns each equally named field of V2.User the field in scope except `email`, which is
    set to `None`.
-1. Since the new `nickname` field is optional, a straight forward migration is just to set it to
+1. Since the new `email` field is optional, a straight forward migration is just to set it to
    `None` in `upgradeUser`. Another possibility would be to add a choice argument specifying the
-   chosen nickname.
+   chosen email.
 1. The `Comment` contract of the `forum` package contains a reference to `Post` contracts in
    the form of a contract ID in the field `post`. If we upgrade a `Post`, we want to upgrade the
    `Comment`s as well and update the contract ID to the contract ID of the new post. Hence the

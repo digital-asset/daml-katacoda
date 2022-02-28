@@ -40,7 +40,6 @@ and deploy the packages **in the second terminal after the sandbox has fully sta
 
 ```
 cd forum
-daml ledger upload-dar ../create-daml-app/create-daml-app-0.1.0.dar
 daml ledger upload-dar forum-0.1.0.dar
 ```{{execute T2}}
 
@@ -48,7 +47,7 @@ To create a few users, posts and comments of the social network run the `initial
 `forum-0.1.0.dar` package:
 
 ```
-daml script --dar forum-0.1.0.dar --script-name Init:initialize --ledger-host localhost --ledger-port 6865 --wall-clock-time
+daml script --dar forum-0.1.0.dar --script-name Init:initialize --ledger-host localhost --ledger-port 6865
 ```{{execute T2}}
 
 Nice, your social network is running and users are happily posting and commenting in the forum
