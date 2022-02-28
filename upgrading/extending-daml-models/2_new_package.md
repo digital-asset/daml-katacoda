@@ -18,17 +18,12 @@ The new project is also visible in the Visual Studio Code IDE. The first thing y
 sdk-version: 2.0.0
 name: forum
 source: daml
-parties:
-  - Alice
-  - Bob
 version: 0.0.1
 dependencies:
   - daml-prim
   - daml-stdlib
   - daml-script
   - ../create-daml-app/.daml/dist/create-daml-app-0.1.0.dar
-sandbox-options:
-  - --wall-clock-time
 </pre>
 
 A package is simply added by pointing to file location of its `dar` (**D**AML **ar**chive) archive.
