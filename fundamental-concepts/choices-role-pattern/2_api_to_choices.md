@@ -5,15 +5,50 @@ contract templates in your Daml model. For the provided HTTP JSON API this is th
 and its arguments as POST arguments to the call. In addition, there will also be an `archive`
 endpoint at `v1/archive` to archive an active contract and mark it inactive.
 
-Try to create `Alice`'s `User` contract by running a `create` request:
+First, allocate the two parties `Alice` and `Bob` on the ledger and create their authorization
+tokens:
 
 ```
-curl -s -X POST -H "Content-Type: application/json" -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwczovL2RhbWwuY29tL2xlZGdlci1hcGkiOnsibGVkZ2VySWQiOiJNeUxlZGdlciIsImFwcGxpY2F0aW9uSWQiOiJmb29iYXIiLCJhY3RBcyI6WyJBbGljZSJdfX0.VdDI96mw5hrfM5ZNxLyetSVwcD7XtLT4dIdHIOa9lcU' -d '{
-  "templateId": "User:User",
-  "payload": {
-    "username": "Alice",
-    "following": ["Bob"]
-  }}' localhost:7575/v1/create | tee result
+curl -s -X POST -H "Content-Type: application/json" -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwczovL2RhbWwuY29tL2xlZGdlci1hcGkiOnsibGVkZ2VySWQiOiJzYW5kYm94IiwiYXBwbGljYXRpb25JZCI6ImZvb2JhciIsImFjdEFzIjpbIkFsaWNlIl19fQ.1Y9BBFH5uVz1Nhfmx12G_ECJVcMncwm-XLaWM40EHbY' -d '{
+  "identifierHint": "Alice",
+  "displayName": "Alice"
+  }' localhost:7575/v1/parties/allocate | tee result
+ALICE=`cat result | jq .result.identifier`
+
+./assets/jwt encode --secret secret -A HS256 "{\"https://daml.com/ledger-api\": {
+    \"ledgerId\": \"sandbox\",
+    \"applicationId\": \"foobar\",
+    \"actAs\": [$ALICE]
+  }
+}" | tee result
+JWT_ALICE=`cat result`
+```{{execute T2}}
+
+```
+curl -s -X POST -H "Content-Type: application/json" -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwczovL2RhbWwuY29tL2xlZGdlci1hcGkiOnsibGVkZ2VySWQiOiJzYW5kYm94IiwiYXBwbGljYXRpb25JZCI6ImZvb2JhciIsImFjdEFzIjpbIkFsaWNlIl19fQ.1Y9BBFH5uVz1Nhfmx12G_ECJVcMncwm-XLaWM40EHbY' -d '{
+  "identifierHint": "Bob",
+  "displayName": "Bob"
+  }' localhost:7575/v1/parties/allocate | tee result
+BOB=`cat result | jq .result.identifier`
+
+./assets/jwt encode --secret secret -A HS256 "{\"https://daml.com/ledger-api\": {
+    \"ledgerId\": \"sandbox\",
+    \"applicationId\": \"foobar\",
+    \"actAs\": [$BOB]
+  }
+}" | tee result
+JWT_BOB=`cat result`
+```{{execute T2}}
+
+Then, try to create `Alice`'s `User` contract by running a `create` request:
+
+```
+curl -s -X POST -H "Content-Type: application/json" -H "Authorization: Bearer $JWT_ALICE" -d "{
+  \"templateId\": \"User:User\",
+  \"payload\": {
+    \"username\": $ALICE,
+    \"following\": [$BOB]
+  }}" localhost:7575/v1/create | tee result
 ```{{execute T2}}
 
 1. The `Authorization` header authorizes the request with a dummy JWT token for `Alice`. You can
@@ -28,7 +63,7 @@ curl -s -X POST -H "Content-Type: application/json" -H 'Authorization: Bearer ey
 The sandbox ledger returns the created contract ID in the response:
 
 ```
-{"result":{"observers":["Bob"], "agreementText":"","contractId":"00dc73ac11bbe3181ffd74d1843a108ea2c625cdd5749624feeb2acbd670413fcf","key":"Alice","payload":{"username":"Alice","following":["Bob"]},"signatories":["Alice"],"templateId":"7ec600d1f061bd68a3aa3cf7b315d8d486cb3f6d05e8a341a2328039358888b8:User:User"},"status":200}
+{"result":{"agreementText":"","contractId":"00eb1526cddc3cfeeef3fb9c45fe68f0ff61aaf17e4c05d9337a76d733f6dbd951ca001220face32ba023a96a85eeb89329e6e6e7c66d53929076e3536f2ae325be909aba9","observers":["Bob::12203f9f425513e50c466f603195b1fcd24d31a9ce4879d0a16fe4211bc9b41f5563"],"payload":{"username":"Alice::12203f9f425513e50c466f603195b1fcd24d31a9ce4879d0a16fe4211bc9b41f5563","following":["Bob::12203f9f425513e50c466f603195b1fcd24d31a9ce4879d0a16fe4211bc9b41f5563"]},"signatories":["Alice::12203f9f425513e50c466f603195b1fcd24d31a9ce4879d0a16fe4211bc9b41f5563"],"templateId":"0018ea324e4d855445d7c492aaadad8ee20be6483c8777174048da279a690988:User:User"},"status":200} 
 ```
 
 Note that the output might slightly vary and that the contract ID string will be different.
@@ -87,22 +122,22 @@ contract from the returned result and then run a request against the `v1/exercis
 
 ```
 ALICE_USER_CONTRACT=`cat result | jq .result.contractId`
-curl -X POST -H "Content-Type: application/json" -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwczovL2RhbWwuY29tL2xlZGdlci1hcGkiOnsibGVkZ2VySWQiOiJNeUxlZGdlciIsImFwcGxpY2F0aW9uSWQiOiJmb29iYXIiLCJhY3RBcyI6WyJCb2IiXX19.zU-iMSFG90na8IHacrS25xho3u6AKnSlTKbvpkaSyYw' -d "{
+curl -X POST -H "Content-Type: application/json" -H "Authorization: Bearer $JWT_BOB" -d "{
     \"templateId\": \"User:User\",
     \"contractId\": $ALICE_USER_CONTRACT,
     \"choice\": \"SendMessage\",
     \"argument\": {
-        \"sender\": \"Bob\",
+        \"sender\": $BOB,
         \"content\": \"Hi Alice! \"
 }}" localhost:7575/v1/exercise
-```{{execute T2}}
+```{{execute T1}}
 
 The ledger answers with a list of created contracts, which contains the created `Message` contract,
 and the result of the execution of the choice, which is the contract ID of the created `Message`
 contract.
 
 ```
-{"result":{"events":[{"created":{"agreementText":"","contractId":"002d843cb8f14eeac714ea0f8538a32942c84f0d4fa1b9a26ec9a9f56c230b2c4a","observers":[],"payload":{"sender":"Bob","receiver":"Alice","content":"Hi Alice!"},"signatories":["Alice","Bob"],"templateId":"7ec600d1f061bd68a3aa3cf7b315d8d486cb3f6d05e8a341a2328039358888b8:User:Message"}}],"exerciseResult":"002d843cb8f14eeac714ea0f8538a32942c84f0d4fa1b9a26ec9a9f56c230b2c4a"},"status":200}%
+{"result":{"agreementText":"","contractId":"00cf9da2a960e04ac861e70b159b835a7cc1113e4b671f61d6acf060b2de532102ca001220f507362e9939cb12826a0d174814ae68cbb0f457daa0757e0cb7735a5258ce6d","observers":["Bob::12206f7e61b3c755b6f4e5cef0b3106f53113e924b3149f839d749b56eaab85572eb"],"payload":{"username":"Alice::12206f7e61b3c755b6f4e5cef0b3106f53113e924b3149f839d749b56eaab85572eb","following":["Bob::12206f7e61b3c755b6f4e5cef0b3106f53113e924b3149f839d749b56eaab85572eb"]},"signatories":["Alice::12206f7e61b3c755b6f4e5cef0b3106f53113e924b3149f839d749b56eaab85572eb"],"templateId":"edbbd9f58ba7dd64e12bdd438f394bcdf640046f61d81db92b16bf48a330f7c2:User:User"},"status":200}                          
 ```
 
 
