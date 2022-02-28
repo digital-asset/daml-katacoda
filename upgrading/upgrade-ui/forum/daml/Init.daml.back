@@ -2,19 +2,32 @@ module Init where
 
 import User
 import Forum
-import Daml.Script
+import Daml.Script hiding (User)
+import qualified Daml.Script as Script
 
 initialize: Script ()
 initialize = do
+  public <- allocatePartyWithHint "Public" (PartyIdHint "Public")
+  publicUser <- validateUserId "public"
+  createUser (Script.User publicUser (Some public)) [CanActAs public]
   alice <- allocatePartyWithHint "Alice" (PartyIdHint "Alice")
   bob <- allocatePartyWithHint "Bob" (PartyIdHint "Bob")
   charlie <- allocatePartyWithHint "Charlie" (PartyIdHint "Charlie")
+  aliceUser <- validateUserId "alice"
+  bobUser <- validateUserId "bob"
+  charlieUser <- validateUserId "charlie"
+  createUser (Script.User aliceUser (Some alice)) [CanActAs alice, CanReadAs public]
+  createUser (Script.User bobUser (Some bob)) [CanActAs bob, CanReadAs public]
+  createUser (Script.User charlieUser (Some charlie)) [CanActAs charlie, CanReadAs public]
   aliceUserCid <- submit alice $
     createCmd $ User with username = alice, following = [bob, charlie]
+  submit alice $ createCmd Alias with username = alice, alias = "Alice", public = public
   bobUserCid <- submit bob $
     createCmd $ User with username = bob, following = [alice, charlie]
+  submit bob $ createCmd Alias with username = bob, alias = "Bob", public = public
   charlieUserCid <- submit charlie $
     createCmd $ User with username = charlie, following = [alice, bob]
+  submit charlie $ createCmd Alias with username = charlie, alias = "Charlie", public = public
   users <- query @User alice
   let Some (_, aliceUser) = find (\(_, u) -> u.username == alice) users
   let Some (_, bobUser) = find (\(_, u) -> u.username == bob) users

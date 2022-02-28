@@ -1,10 +1,17 @@
 module Init where
 
 import User
-import Daml.Script
+import Daml.Script hiding (User)
+import qualified Daml.Script as Script
 
 initialize: Script ()
 initialize = do
+  public <- validateUserId "public"
+  publicUser <- getUser public
+  Some publicParty <- pure $ publicUser.primaryParty
   doris <- allocatePartyWithHint "Doris" (PartyIdHint "Doris")
-  submit doris $ createCmd $ User with username = doris, following = [], nickname = Some "DorisTheDamlExpert"
+  dorisUser <- validateUserId "doris"
+  createUser (Script.User dorisUser (Some doris)) [CanActAs doris, CanReadAs publicParty]
+  submit doris $ createCmd $ User with username = doris, following = [], email = Some "doris@daml.expert"
+  submit doris $ createCmd Alias with username = doris, alias = "Doris", public = publicParty
   return ()
