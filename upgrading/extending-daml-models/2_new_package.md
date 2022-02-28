@@ -35,7 +35,7 @@ A package is simply added by pointing to file location of its `dar` (**D**AML **
 When you build a `dar` package with `daml build` within a project without an additional output
 argument, the `dar` will be under the path `.daml/dist/` relativ to your project root.
 
-Remove the two files `daml/Main.daml` and `daml/Setup.daml`. These were added as a starting point,
+Remove the file `daml/Main.daml`. This was added as a starting point,
 but we have our own ideas.
 
 ```

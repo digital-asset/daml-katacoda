@@ -9,7 +9,7 @@ cd ../create-daml-app
 and run
 
 ```
-daml sandbox .daml/dist/create-daml-app-0.1.0.dar
+daml sandbox --dar .daml/dist/create-daml-app-0.1.0.dar
 ```{{execute}}
 
 Make sure to wait until the sandbox is up and ready and you see
