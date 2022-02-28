@@ -6,7 +6,7 @@ import qualified V1.Forum
 import qualified V2.Forum
 
 upgradeUser : V1.User.User -> V2.User.User
-upgradeUser V1.User.User{..} = V2.User.User with nickname = None, ..
+upgradeUser V1.User.User{..} = V2.User.User with email = None, ..
 
 rollbackUser : V2.User.User -> V1.User.User
 rollbackUser V2.User.User{..} = V1.User.User with ..

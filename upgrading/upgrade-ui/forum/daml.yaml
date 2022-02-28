@@ -1,15 +1,9 @@
-sdk-version: 1.1.1
+sdk-version: 2.0.0-snapshot.20220225.9368.0.b291a57e
 name: forum
 source: daml
-parties:
-  - Alice
-  - Bob
-  - Charlie
-version: 0.1.0
+version: 0.1.1
 dependencies:
   - daml-prim
   - daml-stdlib
   - daml-script
-  - ../create-daml-app/create-daml-app-0.1.0.dar
-sandbox-options:
-  - --wall-clock-time
+  - ../create-daml-app/create-daml-app-0.1.1.dar
