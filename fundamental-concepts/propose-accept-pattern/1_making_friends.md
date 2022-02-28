@@ -30,24 +30,6 @@ template User with
       controller username
       do
         exerciseByKey @FriendRequest friendRequest Accept
-
-template Alias with
-    username: Party
-    alias: Text
-    public: Party
-  where
-    signatory username
-    observer public
-
-    key (username, public) : (Party, Party)
-    maintainer key._1
-
-    nonconsuming choice Change: ContractId Alias with
-        newAlias: Text
-      controller username
-      do
-        archive self
-        create this with alias = newAlias
 </pre>
 
 - Notice that we removed the `Follow` choice and replaced it with two choices implementing the
