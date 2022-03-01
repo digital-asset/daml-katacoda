@@ -2,7 +2,6 @@ The trigger `rule` is the actual logic of your trigger. You will need to add the
 to the header of the `daml/Market.daml`{{open}} module:
 
 <pre class="file" data-target="clipboard">
-import DA.Map
 import DA.Foldable(forA_)
 </pre>
 
@@ -28,7 +27,6 @@ expressed with `do` notations for lists:
               guard $ invoiceCid == invoice
               guard $ party == obligor
               pure confirmationCid
-
 </pre>
 
 For every pair of a `PaymentConfirmation` and an `Invoice` we check that the invoice field of the
