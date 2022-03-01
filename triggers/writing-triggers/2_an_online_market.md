@@ -6,13 +6,28 @@ module Market where
 
 import DA.Date
 
-template User
-  with
-    party : Party
+-- MAIN_TEMPLATE_BEGIN
+template User with
+    username: Party
+    following: [Party]
   where
-    signatory party
-    key party : Party
+    signatory username
+    observer following
+-- MAIN_TEMPLATE_END
+
+    key username: Party
     maintainer key
+
+    -- FOLLOW_BEGIN
+    nonconsuming choice Follow: ContractId User with
+        userToFollow: Party
+      controller username
+      do
+        assertMsg "You cannot follow yourself" (userToFollow /= username)
+        assertMsg "You cannot follow the same user twice" (notElem userToFollow following)
+        archive self
+        create this with following = userToFollow :: following
+    -- FOLLOW_END
 
     nonconsuming choice NewSellOffer : ()
       with
@@ -20,33 +35,53 @@ template User
         title : Text
         description : Text
         price : Int
-      controller party
+      controller username
         do
           now <- getTime
-          create $ SellOffer {seller = party, date = toDateUTC now, ..}
+          create $ SellOffer {seller = username, date = toDateUTC now, ..}
           pure ()
 
     nonconsuming choice TakeSellOffer : ()
       with
         offer : ContractId SellOffer
-      controller party
+      controller username
         do
-          exercise offer DoTrade with tradePartner = party
+          exercise offer DoTrade with tradePartner = username
           pure ()
 
     nonconsuming choice ConfirmPayment : ()
       with
         invoice : ContractId Invoice
-      controller party
+      controller username
         do
           Invoice{..} <- fetch invoice
-          assert $ owner == party
+          assert $ owner == username
           create $ PaymentConfirmation
                       with
                         invoice = invoice
-                        party = party
+                        party = username
                         obligor = obligor
           pure ()
+
+-- ALIAS_BEGIN
+template Alias with
+    username: Party
+    alias: Text
+    public: Party
+  where
+    signatory username
+    observer public
+
+    key (username, public) : (Party, Party)
+    maintainer key._1
+
+    nonconsuming choice Change: ContractId Alias with
+        newAlias: Text
+      controller username
+      do
+        archive self
+        create this with alias = newAlias
+-- ALIAS_END
 
 template SellOffer
   with

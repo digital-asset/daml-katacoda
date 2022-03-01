@@ -29,13 +29,13 @@ Triggers are started from the command line with the `daml trigger` command
 
 ```
 cd market
-daml trigger --dar .daml/dist/market-0.1.0.dar --trigger-name Market:deleteInvoiceTrigger --ledger-host localhost --ledger-port 6865 --ledger-party Bob
+daml trigger --dar .daml/dist/market-0.1.0.dar --trigger-name Market:deleteInvoiceTrigger --ledger-host localhost --ledger-port 6865 --ledger-user bob
 ```{{execute T3}}
 
 - the `--dar` argument points to the location of the compiled `.dar` file
 - the `--trigger-name` is the full name of the trigger, i.e. the module name, a colon, then the
   function name of the trigger.
-- the `--ledger-party` argument gives the trigger the party name for which it should execute the
+- the `--ledger-user` argument gives the trigger the user id for which it should execute the
   trigger
 
 Once the trigger is running and waiting for ledger events you see the output
