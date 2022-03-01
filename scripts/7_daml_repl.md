@@ -6,7 +6,7 @@ First, kill the running sandbox in the first terminal (ctrl-c) and restart it to
 clean state.
 
 ```
-daml sandbox .daml/dist/create-daml-app-0.1.0.dar
+daml start
 ```{{execute T1}}
 
 To start the Daml REPL run
@@ -59,8 +59,10 @@ To inspect the contracts variable, you can simply use a `debug` statement:
 debug contracts
 ```{{execute T2}}
 
+You will then see a similar output in the terminal as the one below:
+
 ```
-[DA.Internal.Prelude:540]: [(<contract-id>,User {username = 'Alice', following = []})]
+[DA.Internal.Prelude:555]: [(0065860dae29c33ca79d3235830adfe869e398b45208c154d93e5687be2ab142aeca001220572bac9a2b9a0698e548a3975bfc2e92142468cca4db865c4dec0c01fc3875f7,User {username = 'Alice::1220874a71201157e848c2c23129a86793092e447a484de8a7ecf717c07d57b4abd5', following = []})]
 ```
 
 1. as expected, the `contracts` variable contains the single contract `Alice` we just created
