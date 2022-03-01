@@ -11,7 +11,15 @@ daml new forum
 cd forum
 ```{{execute T1}}
 
-The new project is also visible in the Visual Studio Code IDE. The first thing you need to do is to add the `create-daml-app` to the dependencies in the `/forum/daml.yaml`{{open}} file. After, the file will look like this:
+The new project is also visible in the Visual Studio Code IDE. Remove the file `daml/Main.daml`. This was added as a starting point, but we have our own ideas.
+
+```
+rm daml/Main.daml
+```{{execute T1}}
+
+And let's also remove it from the `/forum/daml.yaml`{{open}} be deleting the `init-script: Main:setup` line.
+
+Next, let's add the `create-daml-app` to the dependencies in the `/forum/daml.yaml`{{open}} file. After, the file will look like this:
 
 <!-- TODO: automate having the right sdk-version in the snippet-->
 <pre class="file" data-target="clipboard">
@@ -29,13 +37,6 @@ dependencies:
 A package is simply added by pointing to file location of its `dar` (**D**AML **ar**chive) archive.
 When you build a `dar` package with `daml build` within a project without an additional output
 argument, the `dar` will be under the path `.daml/dist/` relativ to your project root.
-
-Remove the file `daml/Main.daml`. This was added as a starting point,
-but we have our own ideas.
-
-```
-rm daml/Main.daml
-```{{execute T1}}
 
 Now open a new file `/forum/daml/Forum.daml`{{open}}. The data model for the forum consists of two
 templates `Post` and `Comment`, where `Post` has a non-consuming choice to add comments. Copy the
@@ -73,6 +74,8 @@ template Comment with
 
 Notice how we reuse the `User` template imported from the `create-daml-app` package. Thus a forum
 post will be linked to a `User` profile of the Getting Started Guide social network.
+
+> Note: we might get a suiggly line under `User` in the import statement. in case you see it that will dissapear after we build the project and refresh the IDE tab.
 
 As usual, you build the package with
 
