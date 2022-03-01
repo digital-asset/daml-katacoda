@@ -35,4 +35,6 @@ sed -i "s/__SDK_VERSION__/$sdk_version/g" $(find ~/ -name daml.yaml -or -name pa
 
 setup_vs_extension
 
+chmod +x /root/jwt
+
 echo done
