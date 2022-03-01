@@ -6,6 +6,7 @@
   "details": {
     "assets": {
         "host01": [
+          {"file": "jwt", "target": "/root/"}
         ]
     },
     "steps": [
