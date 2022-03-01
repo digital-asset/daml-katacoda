@@ -53,3 +53,9 @@ build-options:
     [here](https://docs.daml.com/daml/reference/packages.html#id5)
 
 In the next step we'll write the actual migration contract.
+
+To initialize the dependencies, we build the currently empty project before writing the code:
+
+```
+daml build
+``` {{execute T2}}
