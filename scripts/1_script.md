@@ -16,7 +16,6 @@ To write Daml scripts you need to import the `Daml.Script` module. Replace the m
 module User where
 
 import Daml.Script hiding(User)
-
 </pre>
 
 The Daml script library exposes a type called User which corresponds to a user in the [user management service](https://docs.daml.com/app-dev/services.html#user-management-service). To avoid a collision with the `User` template we defined here, we hide it from the import.

@@ -42,7 +42,7 @@ message in the script results.
     assertMsg "Whoops!" (aliceUser.following == [alice])
 </pre>
 
-Let's **remove the failing line again**.
+Let's **remove the failing (last) line again**. And let's add ```return()```{{copy}} at its place instead at the end of the file.
 
 Once your scripts grow bigger, it's helpful to trace the execution flow of your script. With the
 function `trace : Text -> a -> a` you can add tracing information to any expression, not just
@@ -64,7 +64,7 @@ view of the script result panel now, you see your trace at the very bottom.
 
 ![[Script Result]](/daml/scenarios/scripts/assets/script-result-traces.png)
 
-Finally, you can also add `printf` style output to your scripts with the `debug` statement:
+Finally, let's remove the `return()` statement and replace it with `printf` style output with the `debug` in it:
 
 <pre class="file" data-filename="daml/User.daml" data-target="append">
     debug "done!"
