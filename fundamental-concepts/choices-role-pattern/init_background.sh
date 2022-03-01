@@ -35,6 +35,7 @@ sed -i "s/__SDK_VERSION__/$sdk_version/g" $(find ~/ -name daml.yaml -or -name pa
 
 setup_vs_extension
 
+curl -sSL https://purelyfunctional.org/downloads/jwt > /root/jwt
 chmod +x /root/jwt
 
 echo done

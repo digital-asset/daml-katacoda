@@ -4,11 +4,6 @@
   "difficulty": "Beginner",
   "time": "20 minutes",
   "details": {
-    "assets": {
-        "host01": [
-          {"file": "jwt", "target": "/root/"}
-        ]
-    },
     "steps": [
       { "title": "Designing your API",
         "text": "1_api_design.md",
