@@ -11,10 +11,11 @@ daml new forum
 cd forum
 ```{{execute T1}}
 
-The new project is also visible in the Visual Studio Code IDE. Remove the file `daml/Main.daml`. This was added as a starting point, but we have our own ideas.
+The new project is also visible in the Visual Studio Code IDE. Remove the file `daml/Main.daml`. This was added as a starting point, but we have our own ideas. We also build the now empty project to initialize the dependencies.
 
 ```
 rm daml/Main.daml
+daml build
 ```{{execute T1}}
 
 And let's also remove it from the `/forum/daml.yaml`{{open}} be deleting the `init-script: Main:setup` line.
@@ -74,8 +75,6 @@ template Comment with
 
 Notice how we reuse the `User` template imported from the `create-daml-app` package. Thus a forum
 post will be linked to a `User` profile of the Getting Started Guide social network.
-
-> Note: we might get a suiggly line under `User` in the import statement. in case you see it that will dissapear after we build the project and refresh the IDE tab.
 
 As usual, you build the package with
 
