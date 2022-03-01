@@ -50,7 +50,7 @@ daml-prim-GHC-Prim-e491352788e56ca4603acc411ffe1a49fefd76ed8b163af86cf5ee5f4c386
 The output might be **different** depending on the SDK version you're running. The string in the
 second column is the package ID. In fact, it's a hash of the compiled package contents.
 
-Now in the IDE, we change the `User` template just slightly by adding a new field `email` to it.
+Now in the IDE, we change the `/create-daml-app/daml/User.daml`{{open}} template just slightly by adding a new field `email` to it.
 Replace the `User` data fields with
 
 <pre class="file" data-target="clipboard">
