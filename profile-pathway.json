@@ -19,23 +19,23 @@
         "title": "Upgrading Daml Applications",
         "description": "Learn how to upgrade running Daml applications and migrate existing data to your new model.",
         "id": "upgrading"
+      }
+    ],
+    "scenarios": [
+      {
+        "title": "Daml Scripts",
+        "description": "Test your Daml models with scripts and interact with any Daml ledger from the command line.",
+        "id": "scripts"
       },
       {
         "title": "Automation with Daml Triggers",
         "description": "Use Daml triggers to automatically execute choices when a specified ledger event occurs.",
         "id": "triggers"
-      }
-    ],
-    "scenarios": [
+      },
       {
         "title": "Daml Playground",
         "description": "A playground for the Daml SDK",
         "id": "playground"
-      },
-      {
-        "title": "Daml Scripts",
-        "description": "Test your Daml models with scripts and interact with any Daml ledger from the command line.",
-        "id": "scripts"
       }
     ]
   }

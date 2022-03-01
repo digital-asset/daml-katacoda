@@ -50,6 +50,11 @@
         "title": "Daml Scripts",
         "description": "Test your Daml models with scripts and interact with live ledgers from the command line.",
         "id": "scripts"
+      },
+      {
+      "title": "Automation with Daml Triggers",
+      "description": "Use Daml triggers to automatically execute choices when a specified ledger event occurs.",
+      "id": "triggers"
       }
     ]
 }
