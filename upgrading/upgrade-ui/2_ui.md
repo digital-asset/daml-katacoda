@@ -18,8 +18,8 @@ Then replace the `createUserMemo` function in `ui/src/components/MainScreen.tsx`
 implementation that has the necessary UI prompts and ledger queries to perform the update:
 
 <pre class="file" data-target="clipboard">
-  const [userContract, setUserContract] = useState<User.User | undefined>(undefined);
-  const createUserMemo = useCallback(async () => {
+  const [userContract, setUserContract] = useState&lt;User.User | undefined&gt;(undefined);
+  const createUserMemo = useCallback(async () =&gt; {
     try {
       /* check whether the user has already upgraded */
       const v0userContract = await ledger.fetchByKey(cdaV0.User.User, party);
@@ -33,12 +33,12 @@ implementation that has the necessary UI prompts and ledger queries to perform t
           setUserContract((await ledger.fetch(User.User, r[0]))!.payload);
           /* find `Post`s of the forum-0.1.0 package */
           const oldPosts = await ledger.query(forumV0.Forum.Post, {user: {username: v0userContract.payload.username}});
-          oldPosts.forEach(async oldPost => {
+          oldPosts.forEach(async oldPost =&gt; {
             /* migrate the post */
             const newPost = await ledger.exercise(MigrateUser.DoMigratePost, migration.contractId, {postCid: oldPost.contractId});
             /* get all `Comment`s for the post of the user */
             const oldComments  = await ledger.query(forumV0.Forum.Comment, {post: oldPost.contractId, commenter: {username: party}});
-            oldComments.forEach(async oldComment => { await
+            oldComments.forEach(async oldComment =&gt; { await
               /* migrate the `Comment` */
               ledger.exercise(MigrateUser.DoMigrateComment, migration.contractId, {commentCid: oldComment.contractId, newPostCid: newPost[0]})
             });
@@ -77,9 +77,9 @@ email address of a user, which we added in
 end of `ui/src/components/MainScreen.tsx`:
 
 <pre class="file" data-filename="ui/src/components/MainView.tsx" data-target="clipboard">
-            <Menu.Item position='right'>
+            &lt;Menu.Item position='right'&gt;
               You are logged in as {user.userId} ({userContract?.email ? userContract?.email : "no email"}).
-            </Menu.Item>
+            &lt;/Menu.Item&gt;
 </pre>
 
 
@@ -102,17 +102,17 @@ import * as forumV0 from '@daml.js/forum-0.1.0';
 import {MigrateUser} from '@daml.js/migration-v0-v1/lib/Migrate';
 
 type Props = {
-  onLogout: () => void;
-  getPublicParty : () => PublicParty;
+  onLogout: () =&gt; void;
+  getPublicParty : () =&gt; PublicParty;
 }
 
-const toAlias = (userId: string): string =>
+const toAlias = (userId: string): string =&gt;
   userId.charAt(0).toUpperCase() + userId.slice(1);
 
 /**
  * React component for the main screen of the `App`.
  */
-const MainScreen: React.FC<Props> = ({onLogout, getPublicParty}) => {
+const MainScreen: React.FC&lt;Props&gt; = ({onLogout, getPublicParty}) =&gt; {
   const user = userContext.useUser();
   const party = userContext.useParty();
   const {usePublicParty, setup} = getPublicParty();
@@ -124,9 +124,9 @@ const MainScreen: React.FC<Props> = ({onLogout, getPublicParty}) => {
 
   const [createdUser, setCreatedUser] = useState(false);
   const [createdAlias, setCreatedAlias] = useState(false);
-  
-  const [userContract, setUserContract] = useState<User.User | undefined>(undefined);
-  const createUserMemo = useCallback(async () => {
+
+  const [userContract, setUserContract] = useState&lt;User.User | undefined&gt;(undefined);
+  const createUserMemo = useCallback(async () =&gt; {
     try {
       /* check whether the user has already upgraded */
       const v0userContract = await ledger.fetchByKey(cdaV0.User.User, party);
@@ -140,12 +140,12 @@ const MainScreen: React.FC<Props> = ({onLogout, getPublicParty}) => {
           setUserContract((await ledger.fetch(User.User, r[0]))!.payload);
           /* find `Post`s of the forum-0.1.0 package */
           const oldPosts = await ledger.query(forumV0.Forum.Post, {user: {username: v0userContract.payload.username}});
-          oldPosts.forEach(async oldPost => {
+          oldPosts.forEach(async oldPost =&gt; {
             /* migrate the post */
             const newPost = await ledger.exercise(MigrateUser.DoMigratePost, migration.contractId, {postCid: oldPost.contractId});
             /* get all `Comment`s for the post of the user */
             const oldComments  = await ledger.query(forumV0.Forum.Comment, {post: oldPost.contractId, commenter: {username: party}});
-            oldComments.forEach(async oldComment => { await
+            oldComments.forEach(async oldComment =&gt; { await
               /* migrate the `Comment` */
               ledger.exercise(MigrateUser.DoMigrateComment, migration.contractId, {commentCid: oldComment.contractId, newPostCid: newPost[0]})
             });
@@ -167,7 +167,7 @@ const MainScreen: React.FC<Props> = ({onLogout, getPublicParty}) => {
     }
   }, [ledger, party]);
 
-  const createAliasMemo = useCallback(async () => {
+  const createAliasMemo = useCallback(async () =&gt; {
     if (publicParty) {
       try {
         let userAlias = await ledger.fetchByKey(User.Alias, {_1: party, _2: publicParty});
@@ -181,40 +181,40 @@ const MainScreen: React.FC<Props> = ({onLogout, getPublicParty}) => {
     }
   }, [ledger, user, publicParty, party]);
 
-  useEffect(() => {createUserMemo();} , [createUserMemo])
-  useEffect(() => {createAliasMemo();} , [createAliasMemo])
+  useEffect(() =&gt; {createUserMemo();} , [createUserMemo])
+  useEffect(() =&gt; {createAliasMemo();} , [createAliasMemo])
 
   if (!(createdUser && createdAlias)) {
-    return <h1>Logging in...</h1>;
+    return &lt;h1&gt;Logging in...&lt;/h1&gt;;
   } else {
     return (
-      <>
-        <Menu icon borderless>
-          <Menu.Item>
-            <Image
+      &lt;&gt;
+        &lt;Menu icon borderless&gt;
+          &lt;Menu.Item&gt;
+            &lt;Image
               as='a'
               href='https://www.daml.com/'
               target='_blank'
               src='/daml.svg'
               alt='Daml Logo'
               size='mini'
-            />
-          </Menu.Item>
-          <Menu.Menu position='right' className='test-select-main-menu'>
-            <Menu.Item position='right'>
+            /&gt;
+          &lt;/Menu.Item&gt;
+          &lt;Menu.Menu position='right' className='test-select-main-menu'&gt;
+            &lt;Menu.Item position='right'&gt;
               You are logged in as {user.userId} ({userContract?.email ? userContract?.email : "no email"}).
-            </Menu.Item>
-            <Menu.Item
+            &lt;/Menu.Item&gt;
+            &lt;Menu.Item
               position='right'
               active={false}
               className='test-select-log-out'
               onClick={onLogout}
               icon='log out'
-            />
-          </Menu.Menu>
-        </Menu>
-        <MainView />
-      </>
+            /&gt;
+          &lt;/Menu.Menu&gt;
+        &lt;/Menu&gt;
+        &lt;MainView /&gt;
+      &lt;/&gt;
     );
   }
 };
