@@ -31,10 +31,11 @@ When you build a `dar` package with `daml build` within a project without an add
 argument, the `dar` will be under the path `.daml/dist/` relativ to your project root.
 
 Remove the file `daml/Main.daml`. This was added as a starting point,
-but we have our own ideas.
+but we have our own ideas. We also build the now empty project to initialize the dependencies.
 
 ```
 rm daml/Main.daml
+daml build
 ```{{execute T1}}
 
 Now open a new file `/forum/daml/Forum.daml`{{open}}. The data model for the forum consists of two
