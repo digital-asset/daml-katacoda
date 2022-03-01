@@ -15,7 +15,7 @@ curl -s -X POST -H "Content-Type: application/json" -H 'Authorization: Bearer ey
   }' localhost:7575/v1/parties/allocate | tee result
 ALICE=`cat result | jq .result.identifier`
 
-./assets/jwt encode --secret secret -A HS256 "{\"https://daml.com/ledger-api\": {
+jwt encode --secret secret -A HS256 "{\"https://daml.com/ledger-api\": {
     \"ledgerId\": \"sandbox\",
     \"applicationId\": \"foobar\",
     \"actAs\": [$ALICE]
@@ -31,7 +31,7 @@ curl -s -X POST -H "Content-Type: application/json" -H 'Authorization: Bearer ey
   }' localhost:7575/v1/parties/allocate | tee result
 BOB=`cat result | jq .result.identifier`
 
-./assets/jwt encode --secret secret -A HS256 "{\"https://daml.com/ledger-api\": {
+jwt encode --secret secret -A HS256 "{\"https://daml.com/ledger-api\": {
     \"ledgerId\": \"sandbox\",
     \"applicationId\": \"foobar\",
     \"actAs\": [$BOB]
@@ -63,7 +63,7 @@ curl -s -X POST -H "Content-Type: application/json" -H "Authorization: Bearer $J
 The sandbox ledger returns the created contract ID in the response:
 
 ```
-{"result":{"agreementText":"","contractId":"00eb1526cddc3cfeeef3fb9c45fe68f0ff61aaf17e4c05d9337a76d733f6dbd951ca001220face32ba023a96a85eeb89329e6e6e7c66d53929076e3536f2ae325be909aba9","observers":["Bob::12203f9f425513e50c466f603195b1fcd24d31a9ce4879d0a16fe4211bc9b41f5563"],"payload":{"username":"Alice::12203f9f425513e50c466f603195b1fcd24d31a9ce4879d0a16fe4211bc9b41f5563","following":["Bob::12203f9f425513e50c466f603195b1fcd24d31a9ce4879d0a16fe4211bc9b41f5563"]},"signatories":["Alice::12203f9f425513e50c466f603195b1fcd24d31a9ce4879d0a16fe4211bc9b41f5563"],"templateId":"0018ea324e4d855445d7c492aaadad8ee20be6483c8777174048da279a690988:User:User"},"status":200} 
+{"result":{"agreementText":"","contractId":"00eb1526cddc3cfeeef3fb9c45fe68f0ff61aaf17e4c05d9337a76d733f6dbd951ca001220face32ba023a96a85eeb89329e6e6e7c66d53929076e3536f2ae325be909aba9","observers":["Bob::12203f9f425513e50c466f603195b1fcd24d31a9ce4879d0a16fe4211bc9b41f5563"],"payload":{"username":"Alice::12203f9f425513e50c466f603195b1fcd24d31a9ce4879d0a16fe4211bc9b41f5563","following":["Bob::12203f9f425513e50c466f603195b1fcd24d31a9ce4879d0a16fe4211bc9b41f5563"]},"signatories":["Alice::12203f9f425513e50c466f603195b1fcd24d31a9ce4879d0a16fe4211bc9b41f5563"],"templateId":"0018ea324e4d855445d7c492aaadad8ee20be6483c8777174048da279a690988:User:User"},"status":200}
 ```
 
 Note that the output might slightly vary and that the contract ID string will be different.
@@ -137,7 +137,7 @@ and the result of the execution of the choice, which is the contract ID of the c
 contract.
 
 ```
-{"result":{"agreementText":"","contractId":"00cf9da2a960e04ac861e70b159b835a7cc1113e4b671f61d6acf060b2de532102ca001220f507362e9939cb12826a0d174814ae68cbb0f457daa0757e0cb7735a5258ce6d","observers":["Bob::12206f7e61b3c755b6f4e5cef0b3106f53113e924b3149f839d749b56eaab85572eb"],"payload":{"username":"Alice::12206f7e61b3c755b6f4e5cef0b3106f53113e924b3149f839d749b56eaab85572eb","following":["Bob::12206f7e61b3c755b6f4e5cef0b3106f53113e924b3149f839d749b56eaab85572eb"]},"signatories":["Alice::12206f7e61b3c755b6f4e5cef0b3106f53113e924b3149f839d749b56eaab85572eb"],"templateId":"edbbd9f58ba7dd64e12bdd438f394bcdf640046f61d81db92b16bf48a330f7c2:User:User"},"status":200}                          
+{"result":{"agreementText":"","contractId":"00cf9da2a960e04ac861e70b159b835a7cc1113e4b671f61d6acf060b2de532102ca001220f507362e9939cb12826a0d174814ae68cbb0f457daa0757e0cb7735a5258ce6d","observers":["Bob::12206f7e61b3c755b6f4e5cef0b3106f53113e924b3149f839d749b56eaab85572eb"],"payload":{"username":"Alice::12206f7e61b3c755b6f4e5cef0b3106f53113e924b3149f839d749b56eaab85572eb","following":["Bob::12206f7e61b3c755b6f4e5cef0b3106f53113e924b3149f839d749b56eaab85572eb"]},"signatories":["Alice::12206f7e61b3c755b6f4e5cef0b3106f53113e924b3149f839d749b56eaab85572eb"],"templateId":"edbbd9f58ba7dd64e12bdd438f394bcdf640046f61d81db92b16bf48a330f7c2:User:User"},"status":200}
 ```
 
 
