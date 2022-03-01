@@ -34,22 +34,20 @@ You can create it again with the `v1/create` endpoint:
 
 ```
 rm result
-curl -s -X POST -H "Content-Type: application/json" -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwczovL2RhbWwuY29tL2xlZGdlci1hcGkiOnsibGVkZ2VySWQiOiJNeUxlZGdlciIsImFwcGxpY2F0aW9uSWQiOiJmb29iYXIiLCJhY3RBcyI6WyJBbGljZSJdfX0.VdDI96mw5hrfM5ZNxLyetSVwcD7XtLT4dIdHIOa9lcU' -d '{
-  "templateId": "User:SpecialOffer",
-  "payload": {
-    "offeringParty": "Alice",
-    "receivingParty": "Bob",
-    "offer": "Get Alices Barbeque Sauce 50% off!"
-  }}' localhost:7575/v1/create | tee result
+curl -s -X POST -H "Content-Type: application/json" -H "Authorization: Bearer $JWT_ALICE" -d "{
+  \"templateId\": \"User:SpecialOffer\",
+  \"payload\": {
+    \"offeringParty\": $ALICE,
+    \"receivingParty\": $BOB,
+    \"offer\": \"Get Alices Barbeque Sauce 50% off!\"
+  }}" localhost:7575/v1/create | tee result
 
 ```{{execute T2}}
 
 and get a response
 
 ```
-{"result":{"agreementText":"","contractId":"0060809eb719f9d28a2d783369440d85630dbc8069c8d7b859556cf8765e4a0858","observers":["Bob"],"payload":{"offeringParty":"Alice","receivingParty":"Bob","offer":"Get
-Alices Barbeque Sauce 50%
-off!"},"signatories":["Alice"],"templateId":"78b4e7ce7dc580ccbc77aa2d05b6659e2df24047af5f72db131cfb0b56d6a943:User:SpecialOffer"},"status":200}%
+{"result":{"agreementText":"","contractId":"0095d5c6c1694603c34836b16cf0b31c5fe95ec55c4cd55240360a5df803095a35ca001220f9e1adb32899e68cc13445221ac0c36b6f5392cea2f2891f264fe381ea084c0f","observers":["Bob::12206f7e61b3c755b6f4e5cef0b3106f53113e924b3149f839d749b56eaab85572eb"],"payload":{"offeringParty":"Alice::12206f7e61b3c755b6f4e5cef0b3106f53113e924b3149f839d749b56eaab85572eb","receivingParty":"Bob::12206f7e61b3c755b6f4e5cef0b3106f53113e924b3149f839d749b56eaab85572eb","offer":"Get Alices Barbeque Sauce 50% off"},"signatories":["Alice::12206f7e61b3c755b6f4e5cef0b3106f53113e924b3149f839d749b56eaab85572eb"],"templateId":"edbbd9f58ba7dd64e12bdd438f394bcdf640046f61d81db92b16bf48a330f7c2:User:SpecialOffer"},"status":200}
 ```
 
 Once the receiving party takes your offer, you'd like the offer to be removed from the ledger.
@@ -73,7 +71,7 @@ the ledger, marked as inactive and the choice can not be executed any longer.
 
 ```
 SPECIAL_OFFER_CONTRACT=`cat result | jq .result.contractId`
-curl -s -X POST -H "Content-Type: application/json" -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwczovL2RhbWwuY29tL2xlZGdlci1hcGkiOnsibGVkZ2VySWQiOiJNeUxlZGdlciIsImFwcGxpY2F0aW9uSWQiOiJmb29iYXIiLCJhY3RBcyI6WyJCb2IiXX19.zU-iMSFG90na8IHacrS25xho3u6AKnSlTKbvpkaSyYw' -d "{
+curl -s -X POST -H "Content-Type: application/json" -H "Authorization: Bearer $JWT_BOB" -d "{
     \"templateId\": \"User:SpecialOffer\",
     \"contractId\": $SPECIAL_OFFER_CONTRACT,
     \"choice\": \"TakeOffer\",
@@ -87,13 +85,13 @@ The sandbox responds that it has indeed archived the `SpecialOffer` contract and
 value of the choice is empty, exactly as specified in the `TakeOffer` choice:
 
 ```
-{"result":{"events":[{"archived":{"contractId":"0060809eb719f9d28a2d783369440d85630dbc8069c8d7b859556cf8765e4a0858","templateId":"78b4e7ce7dc580ccbc77aa2d05b6659e2df24047af5f72db131cfb0b56d6a943:User:SpecialOffer"}}],"exerciseResult":{}},"status":200}%
+{"result":{"events":[{"archived":{"contractId":"0095d5c6c1694603c34836b16cf0b31c5fe95ec55c4cd55240360a5df803095a35ca001220f9e1adb32899e68cc13445221ac0c36b6f5392cea2f2891f264fe381ea084c0f","templateId":"edbbd9f58ba7dd64e12bdd438f394bcdf640046f61d81db92b16bf48a330f7c2:User:SpecialOffer"}}],"exerciseResult":{}},"status":200}
 ```
 
 Now let's try to get more cheap barbeque sauce:
 
 ```
-curl -s -X POST -H "Content-Type: application/json" -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwczovL2RhbWwuY29tL2xlZGdlci1hcGkiOnsibGVkZ2VySWQiOiJNeUxlZGdlciIsImFwcGxpY2F0aW9uSWQiOiJmb29iYXIiLCJhY3RBcyI6WyJCb2IiXX19.zU-iMSFG90na8IHacrS25xho3u6AKnSlTKbvpkaSyYw' -d "{
+curl -s -X POST -H "Content-Type: application/json" -H "Authorization: Bearer $JWT_BOB" -d "{
     \"templateId\": \"User:SpecialOffer\",
     \"contractId\": $SPECIAL_OFFER_CONTRACT,
     \"choice\": \"TakeOffer\",
@@ -106,7 +104,7 @@ curl -s -X POST -H "Content-Type: application/json" -H 'Authorization: Bearer ey
 As expected the ledger responds with
 
 ```
-{"errors":["io.grpc.StatusRuntimeException: INVALID_ARGUMENT: Command interpretation error in LF-Damle: dependency error: couldn't find contract ContractId(0060809eb719f9d28a2d783369440d85630dbc8069c8d7b859556cf8765e4a0858). Details: N/A."],"status":500}%
+{"errors":["NOT_FOUND: CONTRACT_NOT_FOUND(11,5084bd3c): Contract could not be found with id 0095d5c6c1694603c34836b16cf0b31c5fe95ec55c4cd55240360a5df803095a35ca001220f9e1adb32899e68cc13445221ac0c36b6f5392cea2f2891f264fe381ea084c0f"],"status":404}
 ```
 
 The contract is not available anymore because it was already consumed when we executed the consuming
