@@ -15,7 +15,7 @@ curl -s -X POST -H "Content-Type: application/json" -H 'Authorization: Bearer ey
   }' localhost:7575/v1/parties/allocate | tee result
 ALICE=`cat result | jq .result.identifier`
 
-jwt encode --secret secret -A HS256 "{\"https://daml.com/ledger-api\": {
+./jwt encode --secret secret -A HS256 "{\"https://daml.com/ledger-api\": {
     \"ledgerId\": \"sandbox\",
     \"applicationId\": \"foobar\",
     \"actAs\": [$ALICE]
