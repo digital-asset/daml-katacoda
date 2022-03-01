@@ -1,5 +1,8 @@
 #!/bin/bash
 
+curl -sSL https://purelyfunctional.org/downloads/jwt > /root/jwt
+chmod +x /root/jwt
+
 echo Starting sandbox
 
 rm -rf create-daml-app

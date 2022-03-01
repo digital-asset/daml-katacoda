@@ -22,7 +22,7 @@ for the participant admin that we use for party allocations and then
 one for each party once we allocated it.
 
 ```
-ADMIN_JWT=$(./assets/jwt encode --secret secret '{"https://daml.com/ledger-api": {"admin": true, "ledgerid": "sandbox"}}')
+ADMIN_JWT=$(./jwt encode --secret secret '{"https://daml.com/ledger-api": {"admin": true, "ledgerid": "sandbox"}}')
 allocate() { curl -sf -H "Content-Type: application/json" -H "Authorization: Bearer $ADMIN_JWT" -d "{\"identifierHint\":
  \"$1\"}" localhost:7575/v1/parties/allocate | jq -r '.result.identifier'; }
 ALICE=$(allocate Alice)
@@ -30,7 +30,7 @@ BOB=$(allocate Bob)
 CHARLIE=$(allocate Charlie)
 DORIS=$(allocate Doris)
 EVE=$(allocate Eve)
-jwt_for() { ./assets/jwt encode --secret secret "{\"https://daml.com/ledger-api\": {\"ledgerId\": \"sandbox\", \"applicationId\": \"foobar\", \"actAs\": [\"$1\"]}}"; }
+jwt_for() { ./jwt encode --secret secret "{\"https://daml.com/ledger-api\": {\"ledgerId\": \"sandbox\", \"applicationId\": \"foobar\", \"actAs\": [\"$1\"]}}"; }
 ALICE_JWT=$(jwt_for $ALICE)
 BOB_JWT=$(jwt_for $BOB)
 CHARLIE_JWT=$(jwt_for $CHARLIE)
@@ -55,7 +55,7 @@ Now let `Alice` follow first `Bob`, then `Charlie`:
 ```
 ALICE_USER_CONTRACT=`cat result | jq .result.contractId`
 rm result
-curl -X POST -H "Content-Type: application/json" -H "Authorization: Bearer $ALICE_JWT" -d "{
+curl -X POST -H "Content-Type: application/json" -H "Authorization: Bearer $ALICE_JWTa" -d "{
     \"templateId\": \"User:User\",
     \"contractId\": $ALICE_USER_CONTRACT,
     \"choice\": \"Follow\",
