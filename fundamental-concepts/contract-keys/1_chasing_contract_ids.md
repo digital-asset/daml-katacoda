@@ -55,7 +55,7 @@ Now let `Alice` follow first `Bob`, then `Charlie`:
 ```
 ALICE_USER_CONTRACT=`cat result | jq .result.contractId`
 rm result
-curl -X POST -H "Content-Type: application/json" -H "Authorization: Bearer $ALICE_JWTa" -d "{
+curl -X POST -H "Content-Type: application/json" -H "Authorization: Bearer $ALICE_JWT" -d "{
     \"templateId\": \"User:User\",
     \"contractId\": $ALICE_USER_CONTRACT,
     \"choice\": \"Follow\",
