@@ -48,7 +48,7 @@ curl -s -X POST -H "Content-Type: application/json" -H "Authorization: Bearer $A
     \"username\": \"$ALICE\",
     \"following\": []
   }}" localhost:7575/v1/create | tee result
-```{{execute T1}}
+```{{execute T2}}
 
 Now let `Alice` follow first `Bob`, then `Charlie`:
 
@@ -62,7 +62,7 @@ curl -X POST -H "Content-Type: application/json" -H "Authorization: Bearer $ALIC
     \"argument\": {
         \"userToFollow\": \"$BOB\"
 }}" localhost:7575/v1/exercise | tee result
-```{{execute T1}}
+```{{execute T2}}
 
 ```
 ALICE_USER_CONTRACT=`cat result | jq .result.exerciseResult`
@@ -74,7 +74,7 @@ curl -X POST -H "Content-Type: application/json" -H "Authorization: Bearer $ALIC
     \"argument\": {
         \"userToFollow\": \"$CHARLIE\"
 }}" localhost:7575/v1/exercise | tee result
-```{{execute T1}}
+```{{execute T2}}
 
 Notice how the contract ID of `Alice`s  `User` in the `exerciseResult` field of the server
 response changes with every execution of a successful `Follow` choice.
