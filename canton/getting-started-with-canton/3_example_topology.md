@@ -24,7 +24,7 @@ canton {
   // enable ledger_api commands for our getting started guide
   features.enable-testing-commands = yes
 }
-````
+```
 
 A participant node provides access to the global virtual Canton ledger to one or more Canton users, called **parties**. Under the hood, the participants synchronize the state of their parties’ contracts by running the Canton synchronization protocol. To run the protocol, the participants must connect to one or more synchronization domains, or just domains for short. In order to execute a **transaction*3 (a change that updates the shared contracts of several parties), there must exist a single domain to which all the parties’ participants are connected. In the remainder of this tutorial, you will construct the following network topology, that will enable the three parties Alice, Bob, and Bank to transact with each other.
 

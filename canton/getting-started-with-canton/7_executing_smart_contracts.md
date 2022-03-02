@@ -6,7 +6,7 @@ First, we need to add the Bank as a party:
 
 You might have noticed that we’ve added a `waitForDomain` argument here. This is necessary to force some synchronisation between the nodes to ensure that the new party is known within the distributed system before it is used.
 
-> Note: Canton alleviates most synchronization issues when interacting with Daml contracts. Nevertheless, Canton is a concurrent, distributed system. All operations happen asynchronously. Creating the `Bank` party is an operation local to `participant2`, and `mydomain` becomes aware of the party with a delay (see [Topology Transactions](https://www.canton.io/docs/dev/user-manual/usermanual/identity_management.html#identity-transactions) for more detail). Processing and network delays also exist for all other operations that affect multiple nodes, though everyone sees the operations on the domain in the same order. When you execute commands interactively, the delays are usually too small to notice. However, if you’re programming Canton scripts or applications that talk to multiple nodes, you might need some form of manual synchronization. Most Canton console commands have some form of synchronisation to simplify your life and sometimes, using `utils.retry_until_true(...)` comes in as a handy solution.
+> Note: Canton alleviates most synchronization issues when interacting with Daml contracts. Nevertheless, Canton is a concurrent, distributed system. All operations happen asynchronously. Creating the `Bank` party is an operation local to `participant2`, and `mydomain` becomes aware of the party with a delay (see [Topology Transactions](https://docs.daml.com/canton/user-manual/usermanual/identity_management.html#identity-transactions) for more detail). Processing and network delays also exist for all other operations that affect multiple nodes, though everyone sees the operations on the domain in the same order. When you execute commands interactively, the delays are usually too small to notice. However, if you’re programming Canton scripts or applications that talk to multiple nodes, you might need some form of manual synchronization. Most Canton console commands have some form of synchronisation to simplify your life and sometimes, using `utils.retry_until_true(...)` comes in as a handy solution.
 
 Now, the corresponding Daml contracts that we are going to use for this example are:
 
@@ -214,7 +214,7 @@ pkgPaint : com.digitalasset.canton.participant.admin.v0.PackageDescription = Pac
   packageId = "d96d66fa42dc72a667e0ab0f55ae9ad5a20848e11afe9008eb75aadcd786960b",
   sourceDescription = "CantonExamples"
 )
-````
+```
 
 Note that the modules are compositional. The `Iou` module is not aware of the `Paint` module, but the `Paint` module is using the `Iou` module within its workflow. This is how we can extend any workflow in Daml and just build in top of it. In particular, the `Bank` does not need to know about the `Paint` module at all, but can still participate in the transaction, without any adverse effect. As a result, everybody can extend the system with their own functionality. Let’s create and submit the offer now
 

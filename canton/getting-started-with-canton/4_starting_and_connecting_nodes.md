@@ -56,7 +56,7 @@ Ports:
     public: 15022
 Connected Participants: None
 Sequencer: SequencerHealthStatus(isActive = true)
-````
+```
 
 Recall that the aliases `mydomain`, `participant1` and `participant2` come from the configuration file. The nodes are obviously up and running. By default, Canton will start and initialize the nodes automatically. This behavior can be overridden using the `--manual-start` command line flag or appropriate configuration settings.
 
