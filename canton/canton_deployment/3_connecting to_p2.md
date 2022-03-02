@@ -13,7 +13,7 @@ DAML_SDK_VERSION=2.0.0 daml json-api \
 Then start another instance of the UI for Bob, running on port `3001` and connected to the HTTP JSON API on port `7576`.
 
 ```
-cd canton-open-source-2.0.0/create-daml-app/ui
+cd canton-community-2.0.0/create-daml-app/ui
 PORT=3001 REACT_APP_HTTP_JSON=http://localhost:7576 REACT_APP_LEDGER_ID=participant2 npm start
 ```{{execute T5}}
 

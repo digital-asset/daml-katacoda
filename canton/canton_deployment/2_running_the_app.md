@@ -15,7 +15,7 @@ DAML_SDK_VERSION=2.0.0 daml json-api \
 Leave this running. The UI can then be started from a 3rd terminal window with:
 
 ```
-cd canton-open-source-2.0.0/create-daml-app/ui
+cd canton-community-2.0.0/create-daml-app/ui
 REACT_APP_LEDGER_ID=participant1 npm start
     ```{{execute T3}}
 
