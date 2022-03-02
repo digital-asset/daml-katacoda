@@ -26,4 +26,4 @@ Canton distinguishes static configuration from dynamic configuration. Static con
 
 > Note: Please consult the section on the [console commands](https://docs.daml.com/canton/user-manual/usermanual/console.html#canton-console) and [administration APIs](https://docs.daml.com/canton/user-manual/usermanual/administration.html#administration-apis).
 
-If you don’t know how to connect to domains, onboard parties or provision Daml code, please go through [Canton's  getting started guide](https://www.daml.com/interactive-tutorials/canton/getting-started-with-canton).
+If you don’t know how to connect to domains, onboard parties or provision Daml code, please go through [Canton's  getting started guide](https://www.digitalasset.com/developers/interactive-tutorials/canton/getting-started-with-canton).

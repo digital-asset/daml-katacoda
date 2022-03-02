@@ -3,37 +3,37 @@
     "private": false,
     "courses": [
         {
-        "external_link": "https://www.daml.com/interactive-tutorials/getting-started",
+        "external_link": "https://www.digitalasset.com/developers/interactive-tutorials/getting-started",
         "title": "Get Started with Daml",
         "description": "A short series of tutorials to learn the basics about Daml development.",
         "action": "Start"
         },
         {
-        "external_link": "https://www.daml.com/interactive-tutorials/canton",
+        "external_link": "https://www.digitalasset.com/developers/interactive-tutorials/canton",
         "title": "Platform operations",
         "description": "Learn the basisc of operating Canton such as setting up Participant Nodes and Domain",
         "action": "Start"
         },
         {
-        "external_link": "https://www.daml.com/interactive-tutorials/fundamental-concepts",
+        "external_link": "https://www.digitalasset.com/developers/interactive-tutorials/fundamental-concepts",
         "title": "Fundamental Daml Concepts",
         "description": "Start modeling your data in Daml, understand the 'signatory', 'observer' and 'controller' keywords and learn how you can write secure and privacy respecting Daml applications.",
         "action": "Start"
         },
         {
-        "external_link": "https://www.daml.com/interactive-tutorials/scripts",
+        "external_link": "https://www.digitalasset.com/developers/interactive-tutorials/scripts",
         "title": "Daml Scripts",
         "description": "Test your Daml models with scripts and interact with any Daml ledger from the command line.",
         "action": "Start"
         },
         {
-        "external_link": "https://www.daml.com/interactive-tutorials/upgrading",
+        "external_link": "https://www.digitalasset.com/developers/interactive-tutorials/upgrading",
         "title": "Upgrading Daml Applications",
         "description": "Learn how to upgrade running Daml aplication and migrate existing data to your new model.",
         "action": "Start"
         },
         {
-        "external_link": "https://www.daml.com/interactive-tutorials/triggers",
+        "external_link": "https://www.digitalasset.com/developers/interactive-tutorials/triggers",
         "title": "Automation with Daml Triggers",
         "description": "Use Daml triggers to automatically execute choices when a specified ledger event occurs.",
         "action": "Start"
