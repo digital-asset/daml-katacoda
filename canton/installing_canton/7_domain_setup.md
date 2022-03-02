@@ -15,7 +15,7 @@ In a production environment you might be running the domain on a separate infras
 
 ```
 create database domain1;
-grant all privileges on database domain to canton;
+grant all privileges on database domain1 to canton;
 ```{{execute T1}}
 
 Next we set up the environment variables mentioned at the beginning of this guide (in Step 3) for our convenience.
@@ -38,7 +38,7 @@ Note that, if this would have been a separate Pstgres installation we would need
 Once this is all done you can start the domain using
 
 ```
-$CANTON/bin/canton -c $CONF/storage/postgres.conf -c $CONF/nodes/domain.conf
+$CANTON/bin/canton -c $CONF/storage/postgres.conf -c $CONF/nodes/domain1.conf
 ```{{execute T3}}
 
 We can now connect `participant1`  with `domain1`:
