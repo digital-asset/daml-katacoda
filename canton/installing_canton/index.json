@@ -42,7 +42,7 @@
     },
     "environment": {
       "showide": true,
-      "uieditorpath": "/root/canton-community-1.0.0-rc8",
+      "uieditorpath": "/root/canton-open-source-2.0.0",
       "showdashboard": false,
       "terminals": [
         {"name": "Terminal 2", "target": "host01"},
