@@ -1,3 +1,3 @@
 echo Initializing
 sleep 3
-cd /root/canton-community-1.0.0-rc8
+cd /root/canton-open-source-2.0.0

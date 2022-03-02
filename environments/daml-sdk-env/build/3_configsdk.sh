@@ -13,5 +13,6 @@ chmod +x patch-extension.sh
 ./patch-extension.sh $(find ~/.daml/sdk/2.*/studio/daml-bundled.vsix) patched-daml-bundled.vsix
 unzip patched-daml-bundled.vsix -d daml-bundled
 mv daml-bundled/extension /opt/.katacodacode/extensions/daml-bundled
-rm -Rf /tmp/daml-bundled
 rm -Rf daml-bundled
+rm patched-daml-bundled.vsix
+rm patch-extension.sh
