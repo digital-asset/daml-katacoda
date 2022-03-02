@@ -8,13 +8,16 @@ Copy the below code into the `MessageList.tsx` file by clicking on the `Copy to 
 import React from 'react'
 import { List, ListItem } from 'semantic-ui-react';
 import { User } from '@daml.js/create-daml-app';
-import { useStreamQuery } from '@daml/react';
+import { userContext } from './App';
 
+type Props = {
+  partyToAlias: Map&lt;string, string&gt;
+}
 /**
  * React component displaying the list of messages for the current user.
  */
-const MessageList: React.FC = () =&gt; {
-  const messagesResult = useStreamQuery(User.Message);
+const MessageList: React.FC&lt;Props&gt; = ({partyToAlias}) =&gt; {
+  const messagesResult = userContext.useStreamQueries(User.Message);
 
   return (
     &lt;List relaxed&gt;
@@ -24,7 +27,7 @@ const MessageList: React.FC = () =&gt; {
           &lt;ListItem
             className='test-select-message-item'
             key={message.contractId}&gt;
-            &lt;strong&gt;{sender} &amp;rarr; {receiver}:&lt;/strong&gt; {content}
+            &lt;strong&gt;{partyToAlias.get(sender) ?? sender} &rarr; {partyToAlias.get(receiver) ?? receiver}:&lt;/strong&gt; {content}
           &lt;/ListItem&gt;
         );
       })}

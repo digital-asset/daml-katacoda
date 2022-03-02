@@ -14,4 +14,7 @@ sdk_version=$(~/.daml/bin/daml version | awk '/(default SDK version for new proj
 echo "Daml SDK version is" $sdk_version
 sed -i "s/__SDK_VERSION__/$sdk_version/g" $(find ~/ -name daml.yaml -or -name package.json)
 
+curl -sSL https://purelyfunctional.org/downloads/jwt > /root/jwt
+chmod +x /root/jwt
+
 echo done

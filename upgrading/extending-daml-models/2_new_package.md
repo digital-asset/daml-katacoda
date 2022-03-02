@@ -11,36 +11,33 @@ daml new forum
 cd forum
 ```{{execute T1}}
 
-The new project is also visible in the Visual Studio Code IDE. The first thing you need to do is to add the `create-daml-app` to the dependencies in the `/forum/daml.yaml`{{open}} file. After, the file will look like this:
+The new project is also visible in the Visual Studio Code IDE. Remove the file `daml/Main.daml`. This was added as a starting point, but we have our own ideas. We also build the now empty project to initialize the dependencies.
+
+```
+rm daml/Main.daml
+daml build
+```{{execute T1}}
+
+And let's also remove it from the `/forum/daml.yaml`{{open}} be deleting the `init-script: Main:setup` line.
+
+Next, let's add the `create-daml-app` to the dependencies in the `/forum/daml.yaml`{{open}} file. After, the file will look like this:
 
 <!-- TODO: automate having the right sdk-version in the snippet-->
 <pre class="file" data-target="clipboard">
-sdk-version: 1.18.1
+sdk-version: 2.0.0
 name: forum
 source: daml
-parties:
-  - Alice
-  - Bob
 version: 0.0.1
 dependencies:
   - daml-prim
   - daml-stdlib
   - daml-script
   - ../create-daml-app/.daml/dist/create-daml-app-0.1.0.dar
-sandbox-options:
-  - --wall-clock-time
 </pre>
 
 A package is simply added by pointing to file location of its `dar` (**D**AML **ar**chive) archive.
 When you build a `dar` package with `daml build` within a project without an additional output
 argument, the `dar` will be under the path `.daml/dist/` relativ to your project root.
-
-Remove the two files `daml/Main.daml` and `daml/Setup.daml`. These were added as a starting point,
-but we have our own ideas.
-
-```
-rm daml/Main.daml
-```{{execute T1}}
 
 Now open a new file `/forum/daml/Forum.daml`{{open}}. The data model for the forum consists of two
 templates `Post` and `Comment`, where `Post` has a non-consuming choice to add comments. Copy the

@@ -1,3 +1,15 @@
+We will be using `Daml Script` to show certain things in this tutorial so let's add the ``` - daml-script```{{copy}} library to the `dependencies` field in ```daml.yaml```{{open}}.
+
+And then import its module:
+
+<pre class="file" data-filename="daml/AddressBook.daml" data-target="append">
+
+import Daml.Script
+
+</pre>
+
+
+
 # Records
 
 One of the most basic data types in Daml is the record. Here's an example:
@@ -80,9 +92,8 @@ it.
 test = script do
   alice <- allocateParty "Alice"
   p <- submit alice $ createCmd $ PersonContract {name = alice, address = Address {street = "RabbitStreet", city = "QueenOfHearts", country = "Wonderland"}, age = 7}
-  submit alice $ do
-    c <- fetch p
-    assert $ c.name == alice
+  Some c <- queryContractId alice p
+  assert $ c.name == alice
 </pre>
 
 **Scroll down to find the solutions to the quiz!**

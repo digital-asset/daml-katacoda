@@ -3,19 +3,19 @@
   "private": false,
   "courses": [
     {
-      "external_link": "https://www.daml.com/interactive-tutorials/upgrading/extending-daml-models",
+      "external_link": "https://www.digitalasset.com/developers/interactive-tutorials/upgrading/extending-daml-models",
       "title": "Extend Daml Models with Packages",
       "description": "Extend a Daml model with a feature contained in a new package and upload it to a running application.",
       "course_id": "extending-daml-models"
     },
     {
-      "external_link": "https://www.daml.com/interactive-tutorials/upgrading/upgrade-running-applications",
+      "external_link": "https://www.digitalasset.com/developers/interactive-tutorials/upgrading/upgrade-running-applications",
       "title": "Upgrade Daml Models and Migrate a Live Application",
       "description": "Learn how to upgrade a Daml model and migrate a running application.",
       "course_id": "upgrade-running-applications"
     },
     {
-      "external_link": "https://www.daml.com/interactive-tutorials/upgrading/upgrade-ui",
+      "external_link": "https://www.digitalasset.com/developers/interactive-tutorials/upgrading/upgrade-ui",
       "title": "Daml Upgrades: User Interface",
       "description": "Extend your UI to carry out upgrades",
       "course_id": "upgrade-ui"

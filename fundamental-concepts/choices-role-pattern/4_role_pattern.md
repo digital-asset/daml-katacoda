@@ -30,35 +30,35 @@ ledger. We can create as many `SpecialOffers` as we want, the `User` contract is
 contract ID won't change. For instance,
 
 ```
-curl -s -X POST -H "Content-Type: application/json" -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwczovL2RhbWwuY29tL2xlZGdlci1hcGkiOnsibGVkZ2VySWQiOiJNeUxlZGdlciIsImFwcGxpY2F0aW9uSWQiOiJmb29iYXIiLCJhY3RBcyI6WyJBbGljZSJdfX0.VdDI96mw5hrfM5ZNxLyetSVwcD7XtLT4dIdHIOa9lcU' -d "{
+curl -s -X POST -H "Content-Type: application/json" -H "Authorization: Bearer $JWT_ALICE" -d "{
     \"templateId\": \"User:User\",
     \"contractId\": $ALICE_USER_CONTRACT,
     \"choice\": \"CreateSpecialOffer\",
     \"argument\": {
-      \"receivingParty\": \"Bob\",
+      \"receivingParty\": $BOB,
       \"offer\": \"A bottle of my newest barbeque sauce for free! \"
   }}" localhost:7575/v1/exercise
-```{{execute T1}}
+```{{execute T2}}
 
 You'll get a response from the ledger with the result of the choice execution:
 
 ```
-{"result":{"events":[{"created":{"agreementText":"","contractId":"007d3d4e8f4dd655c3a74015c7643234f153ab530fb3fa9dc2ae45a588ac229d83","observers":["Bob"],"payload":{"offeringParty":"Alice","receivingParty":"Bob","offer":"A bottle of my newest barbeque sauce for free!"},"signatories":["Alice"],"templateId":"1e516fa856052b8668b28462219411050954aecf3515a643a2f7a0efddb94f7b:User:SpecialOffer"}}],"exerciseResult":"007d3d4e8f4dd655c3a74015c7643234f153ab530fb3fa9dc2ae45a588ac229d83"},"status":200}%
+{"result":{"events":[{"created":{"agreementText":"","contractId":"0047ee350b6e9a4604fd6eaa493b6d442d49ffba601fa212ded1611014510d5c6fca001220d1316b8ed3911087b20cee6679844d1674402571e2b126097286dadef8108403","observers":["Bob::12206f7e61b3c755b6f4e5cef0b3106f53113e924b3149f839d749b56eaab85572eb"],"payload":{"offeringParty":"Alice::12206f7e61b3c755b6f4e5cef0b3106f53113e924b3149f839d749b56eaab85572eb","receivingParty":"Bob::12206f7e61b3c755b6f4e5cef0b3106f53113e924b3149f839d749b56eaab85572eb","offer":"A bottle of my newest barbeque sauce for free! "},"signatories":["Alice::12206f7e61b3c755b6f4e5cef0b3106f53113e924b3149f839d749b56eaab85572eb"],"templateId":"edbbd9f58ba7dd64e12bdd438f394bcdf640046f61d81db92b16bf48a330f7c2:User:SpecialOffer"}}],"exerciseResult":"0047ee350b6e9a4604fd6eaa493b6d442d49ffba601fa212ded1611014510d5c6fca001220d1316b8ed3911087b20cee6679844d1674402571e2b126097286dadef8108403"},"status":200}
 ```
 
 Now if `Alice` wants to create another offer, she can execute the `CreateSpecialOffer` choice on the
 same contract ID again:
 
 ```
-curl -s -X POST -H "Content-Type: application/json" -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwczovL2RhbWwuY29tL2xlZGdlci1hcGkiOnsibGVkZ2VySWQiOiJNeUxlZGdlciIsImFwcGxpY2F0aW9uSWQiOiJmb29iYXIiLCJhY3RBcyI6WyJBbGljZSJdfX0.VdDI96mw5hrfM5ZNxLyetSVwcD7XtLT4dIdHIOa9lcU' -d "{
+curl -s -X POST -H "Content-Type: application/json" -H "Authorization: Bearer $JWT_ALICE" -d "{
     \"templateId\": \"User:User\",
     \"contractId\": $ALICE_USER_CONTRACT,
     \"choice\": \"CreateSpecialOffer\",
     \"argument\": {
-      \"receivingParty\": \"Bob\",
+      \"receivingParty\": $BOB,
       \"offer\": \"Try the new extra spicy for free! \"
   }}" localhost:7575/v1/exercise
-```{{execute T1}}
+```{{execute T2}}
 
 Contracts that have consuming choices make your application interface stateful. By applying the
 *Role Pattern* and group non-consuming choices together as much as possible in role contracts, you

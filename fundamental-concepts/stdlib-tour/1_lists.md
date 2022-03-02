@@ -12,7 +12,7 @@ data Address = Address {
   street: Text,
   city: Text,
   country: Text
-} deriving (Eq, Show)
+} deriving (Eq, Show, Ord)
 
 data Person = Person {
   name: Text,

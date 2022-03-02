@@ -101,7 +101,7 @@ be imported for you. You can read more on module imports and file structure
   - `[*] street: Address -> Text` The projection functions of the imported record types are imported
   - `[*] city: Address -> Text`
   - `[*] country: Address -> Text`
-  - `[] lookup: Map k v -> Optional v` This belongs to the module `DA.Next.Map` which is not imported.
+  - `[] lookup: Map k v -> Optional v` This belongs to the module `DA.Map` which is not imported.
   - `[*] length: [a] -> Int` This belongs to `Prelude`, which is always imported.
 
 1.
@@ -110,4 +110,4 @@ be imported for you. You can read more on module imports and file structure
   - `[] street: Address -> Text` This is missing the `A.` qualifier and hence is not in scope.
   - `[*] A.street: Address -> Text` As before, the projection functions of the records are imported, just with a qualifying `A.`.
   - `[*] length: [a] -> Int` This is imported from the `Prelude` module, which is always imported.
-  - `[] lookup: Map k v -> Optional v` This is defined in the `DA.Next.Map` module, which is not imported.
+  - `[] lookup: Map k v -> Optional v` This is defined in the `DA.Map` module, which is not imported.

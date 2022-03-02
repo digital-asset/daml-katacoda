@@ -8,26 +8,26 @@ contract key. For the `User` template the contract key is given by it's `usernam
 `Alice`s' `User` template this is `Alice`:
 
 ```
-curl -X POST -H "Content-Type: application/json" -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwczovL2RhbWwuY29tL2xlZGdlci1hcGkiOnsibGVkZ2VySWQiOiJNeUxlZGdlciIsImFwcGxpY2F0aW9uSWQiOiJmb29iYXIiLCJhY3RBcyI6WyJBbGljZSJdfX0.VdDI96mw5hrfM5ZNxLyetSVwcD7XtLT4dIdHIOa9lcU' -d '{
-    "templateId": "User:User",
-    "key": "Alice",
-    "choice": "Follow",
-    "argument": {
-        "userToFollow": "Doris"
-}}' localhost:7575/v1/exercise
-```{{execute T1}}
+curl -X POST -H "Content-Type: application/json" -H "Authorization: Bearer $ALICE_JWT" -d "{
+    \"templateId\": \"User:User\",
+    \"key\": \"$ALICE\",
+    \"choice\": \"Follow\",
+    \"argument\": {
+        \"userToFollow\": \"$DORIS\"
+}}" localhost:7575/v1/exercise
+```{{execute T2}}
 
 And you can exercise the choice again with the same key:
 
 ```
-curl -X POST -H "Content-Type: application/json" -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwczovL2RhbWwuY29tL2xlZGdlci1hcGkiOnsibGVkZ2VySWQiOiJNeUxlZGdlciIsImFwcGxpY2F0aW9uSWQiOiJmb29iYXIiLCJhY3RBcyI6WyJBbGljZSJdfX0.VdDI96mw5hrfM5ZNxLyetSVwcD7XtLT4dIdHIOa9lcU' -d '{
-    "templateId": "User:User",
-    "key": "Alice",
-    "choice": "Follow",
-    "argument": {
-        "userToFollow": "Eve"
-}}' localhost:7575/v1/exercise
-```{{execute T1}}
+curl -X POST -H "Content-Type: application/json" -H "Authorization: Bearer $ALICE_JWT" -d "{
+    \"templateId\": \"User:User\",
+    \"key\": \"$ALICE\",
+    \"choice\": \"Follow\",
+    \"argument\": {
+        \"userToFollow\": \"$EVE\"
+}}" localhost:7575/v1/exercise
+```{{execute T2}}
 
 Daml allows you to specify one field of your template to be a [Contract Key](https://docs.daml.com/daml/reference/contract-keys.html).
 
@@ -36,16 +36,16 @@ need to know upfront that the specified contract key is unique among all instant
 the template. Creating a contract twice with the same key will result in a runtime error:
 
 ```
-curl -s -X POST -H "Content-Type: application/json" -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwczovL2RhbWwuY29tL2xlZGdlci1hcGkiOnsibGVkZ2VySWQiOiJNeUxlZGdlciIsImFwcGxpY2F0aW9uSWQiOiJmb29iYXIiLCJhY3RBcyI6WyJBbGljZSJdfX0.VdDI96mw5hrfM5ZNxLyetSVwcD7XtLT4dIdHIOa9lcU' -d '{
-  "templateId": "User:User",
-  "payload": {
-    "username": "Alice",
-    "following": []
-  }}' localhost:7575/v1/create
-```{{execute T1}}
+curl -s -X POST -H "Content-Type: application/json" -H "Authorization: Bearer $ALICE_JWT" -d "{
+  \"templateId\": \"User:User\",
+  \"payload\": {
+    \"username\": \"$ALICE\",
+    \"following\": []
+  }}" localhost:7575/v1/create
+```{{execute T2}}
 
 The server responds with a `DuplicatedKey` error:
 
 ```
-{"errors":["io.grpc.StatusRuntimeException: INVALID_ARGUMENT: Disputed: DuplicateKey: Contract Key not unique"],"status":500}
+{"errors":["ALREADY_EXISTS: DUPLICATE_CONTRACT_KEY(10,99d02a30): Inconsistent rejected transaction would create a key that already exists (DuplicateKey); category=10, domain=local, participant=sandbox"],"status":409}
 ```

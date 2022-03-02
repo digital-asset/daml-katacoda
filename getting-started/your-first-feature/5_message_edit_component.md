@@ -6,21 +6,22 @@ import React from 'react'
 import { Form, Button } from 'semantic-ui-react';
 import { Party } from '@daml/types';
 import { User } from '@daml.js/create-daml-app';
-import { useParty, useLedger } from '@daml/react';
+import { userContext } from './App';
 
 type Props = {
   followers: Party[];
+  partyToAlias: Map&lt;string, string&gt;;
 }
 
 /**
  * React component to edit a message to send to a follower.
  */
-const MessageEdit: React.FC&lt;Props&gt; = ({followers}) =&gt; {
-  const sender = useParty();
+const MessageEdit: React.FC&lt;Props&gt; = ({followers, partyToAlias}) =&gt; {
+  const sender = userContext.useParty();
   const [receiver, setReceiver] = React.useState&lt;string | undefined&gt;();
-  const [content, setContent] = React.useState(&quot;&quot;);
+  const [content, setContent] = React.useState("");
   const [isSubmitting, setIsSubmitting] = React.useState(false);
-  const ledger = useLedger();
+  const ledger = userContext.useLedger();
 
   const submitMessage = async (event: React.FormEvent) =&gt; {
     try {
@@ -30,7 +31,7 @@ const MessageEdit: React.FC&lt;Props&gt; = ({followers}) =&gt; {
       }
       setIsSubmitting(true);
       await ledger.exerciseByKey(User.User.SendMessage, receiver, {sender, content});
-      setContent(&quot;&quot;);
+      setContent("");
     } catch (error) {
       alert(`Error sending message:\n${JSON.stringify(error)}`);
     } finally {
@@ -40,27 +41,28 @@ const MessageEdit: React.FC&lt;Props&gt; = ({followers}) =&gt; {
 
   return (
     &lt;Form onSubmit={submitMessage}&gt;
-      &lt;Form.Dropdown
-        selection
+      &lt;Form.Select
+        fluid
+        search
         className='test-select-message-receiver'
-        placeholder=&quot;Select a follower&quot;
-        options={followers.map(follower =&gt; ({ key: follower, text: follower, value: follower }))}
+        placeholder={receiver ? partyToAlias.get(receiver) ?? receiver : "Select a follower"}
         value={receiver}
-        onChange={event =&gt; setReceiver(event.currentTarget.textContent ?? undefined)}
+        options={followers.map(follower =&gt; ({ key: follower, text: partyToAlias.get(follower) ?? follower, value: follower }))}
+        onChange={(event, data) =&gt; setReceiver(data.value?.toString())}
       /&gt;
       &lt;Form.Input
         className='test-select-message-content'
-        placeholder=&quot;Write a message&quot;
+        placeholder="Write a message"
         value={content}
         onChange={event =&gt; setContent(event.currentTarget.value)}
       /&gt;
       &lt;Button
         fluid
         className='test-select-message-send-button'
-        type=&quot;submit&quot;
-        disabled={isSubmitting || receiver === undefined || content === &quot;&quot;}
+        type="submit"
+        disabled={isSubmitting || receiver === undefined || content === ""}
         loading={isSubmitting}
-        content=&quot;Send&quot;
+        content="Send"
       /&gt;
     &lt;/Form&gt;
   );

@@ -9,21 +9,17 @@ cd ../create-daml-app
 and run
 
 ```
-daml sandbox .daml/dist/create-daml-app-0.1.0.dar
+daml sandbox --dar .daml/dist/create-daml-app-0.1.0.dar
 ```{{execute}}
 
 Make sure to wait until the sandbox is up and ready and you see
 
 ```
-INFO: Slf4jLogger started
-INFO: Listening on localhost:6865 over plain text.
-   ____             ____
-  / __/__ ____  ___/ / /  ___ __ __
- _\ \/ _ `/ _ \/ _  / _ \/ _ \\ \ /
-/___/\_,_/_//_/\_,_/_.__/\___/_\_\
-
-INFO: Initialized sandbox version 1.1.1 with ledger-id = e0e24b63-322c-4d72-8774-8df61bdb4ab7, port = 6865, dar file = List(.daml/dist/create-daml-app-0.1.0.dar), time mode = wall-clock time, ledger = in-memory, auth-service = AuthServiceWildcard$, contract ids seeding = strong
-
+Starting Canton sandbox.
+Listening at port 6865
+Uploading .daml/dist/create-daml-app-0.1.0.dar to localhost:6865
+DAR upload succeeded.
+Canton sandbox is ready.
 ```
 
 In the second terminal change directory to the `forum` project.
