@@ -6,8 +6,8 @@
         "id": "getting-started"
       },
       {
-      "title": "Canton",
-      "description": "Canton scenarios",
+      "title": "Platform operations",
+      "description": "Learn the basisc of operating Canton such as setting up Participant Nodes and Domains",
       "id": "canton"
       },
       {

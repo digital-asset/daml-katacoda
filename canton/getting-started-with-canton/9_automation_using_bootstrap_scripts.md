@@ -1,6 +1,6 @@
 To avoid having to manually complete routine tasks such as starting nodes or provisioning parties each time Canton is started, a bootstrap script can be configured. Bootstrap scripts are automatically run after Canton has started and can contain any valid Canton Console commands. A bootstrap script is passed via the `--bootstrap` CLI argument when starting Canton. By convention, we use a `.canton` file ending.
 
-For example, the corresponding bootstrap script to connect the participant nodes to the local domain and `ping` `participant1` from `participant2` (see [Starting and Connecting The Nodes](https://www.canton.io/docs/dev/user-manual/tutorials/getting_started.html#connecting-the-nodes)) is:
+For example, the corresponding bootstrap script to connect the participant nodes to the local domain and `ping` `participant1` from `participant2` (see [Starting and Connecting The Nodes](https://docs.daml.com/canton/user-manual/tutorials/getting_started.html#connecting-the-nodes)) is:
 
 ```
 nodes.local start

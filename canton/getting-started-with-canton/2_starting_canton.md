@@ -39,7 +39,7 @@ Generic Node References
 -----------------------
 domainManagers - All domain manager nodes
 ..
-````
+```
 
 You can also get help for specific Canton objects and commands, for example ```help("participant1")```{{execute T1}} or ```participant1.help("start")```{{execute T1}}.
 
