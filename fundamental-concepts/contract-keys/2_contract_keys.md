@@ -15,7 +15,7 @@ curl -X POST -H "Content-Type: application/json" -H "Authorization: Bearer $ALIC
     \"argument\": {
         \"userToFollow\": \"$DORIS\"
 }}" localhost:7575/v1/exercise
-```{{execute T1}}
+```{{execute T2}}
 
 And you can exercise the choice again with the same key:
 
@@ -27,7 +27,7 @@ curl -X POST -H "Content-Type: application/json" -H "Authorization: Bearer $ALIC
     \"argument\": {
         \"userToFollow\": \"$EVE\"
 }}" localhost:7575/v1/exercise
-```{{execute T1}}
+```{{execute T2}}
 
 Daml allows you to specify one field of your template to be a [Contract Key](https://docs.daml.com/daml/reference/contract-keys.html).
 
@@ -42,7 +42,7 @@ curl -s -X POST -H "Content-Type: application/json" -H "Authorization: Bearer $A
     \"username\": \"$ALICE\",
     \"following\": []
   }}" localhost:7575/v1/create
-```{{execute T1}}
+```{{execute T2}}
 
 The server responds with a `DuplicatedKey` error:
 
