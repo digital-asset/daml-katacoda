@@ -12,6 +12,8 @@ echo "DANGEROUSLY_DISABLE_HOST_CHECK=true" >> .env
 sed -i 's+ws://localhost:7575/+wss://[[HOST_SUBDOMAIN]]-7575-[[KATACODA_HOST]].environments.katacoda.com/+g' src/config.ts
 cd /root
 tar xzf forum.tar.gz
+rm /root/forum/daml/._Forum.daml
+rm /root/forum/._daml.yaml
 cd /tmp
 sdk_version=$(~/.daml/bin/daml version | awk '/(default SDK version for new projects)/ {print $1}')
 echo "Daml SDK version is" $sdk_version

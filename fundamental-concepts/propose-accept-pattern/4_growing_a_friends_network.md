@@ -25,36 +25,24 @@ To display (outstanding) friend requests, we wrote two new React components
 
 These are straight forward components that display the requests and have a button to cancel them.
 
-Now compile your Daml model
+Now let us compile our Daml model, generate the new JavaScript bindings, and start the Sandbox with
 
 ```
 cd create-daml-app
-daml build
-```{{execute T1}}
-
-then generate the new JavaScript bindings with
-
-```
-daml codegen js .daml/dist/create-daml-app-0.1.0.dar -o ui/daml.js
-```{{execute T1}}
-
-and install them
-
-```
-cd ui
-npm install
-cd ..
-```{{execute T1}}
-
-Finally, start the sandbox
-
-```
 daml start
 ```{{execute T1}}
 
-and the new UI in the second terminal
+As a reminder, compiling the Daml model and generating the JavaScript bindings can be done via Daml assistant commands if necessary: the corresponding commands are `daml build` and `daml daml codegen js .daml/dist/create-daml-app-0.1.0.dar -o ui/daml.js` in this example.
+
+Next, let's install the necessary UI dependencies in the second terminal, including the generated JavaScript files with
 
 ```
 cd create-daml-app/ui
+npm install
+```{{execute T2}}
+
+Finally, let's start the new UI
+
+```
 npm start
 ```{{execute T2}}
