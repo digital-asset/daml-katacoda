@@ -12,8 +12,7 @@ This naming expresses the fact that often applications assign a role with certai
 user. The capabilities need to be active as long as the user exists on the system. In Daml, the role
 is given by a contract such as `User` and the capabilities by its non-consuming choices.
 
-For example, we could extend our `User` contract of the `create-daml-app` with another capability
-with an additional choice:
+For example, we could extend our `User` contract of the `create-daml-app` by adding the `CreateSpecialOffer` choice below the `SendMessage` choice:
 
 <pre class="file" data-target="clipboard">
     nonconsuming choice CreateSpecialOffer: ContractId SpecialOffer

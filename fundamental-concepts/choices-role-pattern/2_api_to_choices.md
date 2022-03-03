@@ -72,8 +72,7 @@ To execute the `sendMessage` endpoint we require as a first argument an active `
 ensure that the sending party has opened an account in our application. Making the availability of
 an endpoint dependent on the existence of some contract on the ledger is such a common pattern when
 designing an API for a multi-user system, that in Daml it's embedded in the syntax in the form of
-`choices`.  Let's implement `sendMessage` with a choice called `SendMessage`. Add the following
-choice to the `User` template:
+`choices`.  Let's implement `sendMessage` with a choice called `SendMessage`. Open the `daml/User.daml`{{open}} file and add the following choice to the `User` template:
 
 <pre class="file" data-target="clipboard">
     nonconsuming choice SendMessage: ContractId Message with
