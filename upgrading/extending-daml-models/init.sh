@@ -1,3 +1,3 @@
 #!/bin/bash
-wait 5
+sleep 5
 cd daml-projects/create-daml-app
