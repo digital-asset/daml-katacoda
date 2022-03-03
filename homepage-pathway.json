@@ -27,19 +27,19 @@
         "action": "Start"
         },
         {
-        "external_link": "https://www.digitalasset.com/developers/interactive-tutorials/upgrading",
-        "title": "Upgrading Daml Applications",
-        "description": "Learn how to upgrade running Daml aplication and migrate existing data to your new model.",
-        "action": "Start"
-        },
-        {
         "external_link": "https://www.digitalasset.com/developers/interactive-tutorials/triggers",
         "title": "Automation with Daml Triggers",
         "description": "Use Daml triggers to automatically execute choices when a specified ledger event occurs.",
         "action": "Start"
         },
         {
-        "external_link": "https://www.daml.com/websdk",
+        "external_link": "https://www.digitalasset.com/developers/interactive-tutorials/upgrading",
+        "title": "Upgrading Daml Applications",
+        "description": "Learn how to upgrade running Daml aplication and migrate existing data to your new model.",
+        "action": "Start"
+        },
+        {
+        "external_link": "https://www.digitalasset.com/developers/websdk",
         "title": "Web SDK",
         "description": "A plain environment to use the Daml SDK in.",
         "action": "Start"
