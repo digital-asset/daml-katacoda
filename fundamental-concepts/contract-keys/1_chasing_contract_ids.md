@@ -36,7 +36,7 @@ BOB_JWT=$(jwt_for $BOB)
 CHARLIE_JWT=$(jwt_for $CHARLIE)
 DORIS_JWT=$(jwt_for $DORIS)
 EVE_JWT=$(jwt_for $EVE)
-```{{execute T1}}
+```{{execute T2}}
 
 Try executing the `Follow` choice a couple of times and see how the returned contract ID changes
 every time. First create a new `User` contract for `Alice` via the JSON API:
