@@ -39,7 +39,7 @@ curl -s -X POST -H "Content-Type: application/json" -H "Authorization: Bearer $J
   \"payload\": {
     \"offeringParty\": $ALICE,
     \"receivingParty\": $BOB,
-    \"offer\": \"Get Alices Barbeque Sauce 50% off!\"
+    \"offer\": \"Get Alices Barbeque Sauce 50% off! \"
   }}" localhost:7575/v1/create | tee result
 
 ```{{execute T2}}
@@ -54,7 +54,7 @@ Once the receiving party takes your offer, you'd like the offer to be removed fr
 Otherwise `Bob` would get `Alice` barbeque sauce for half the price forever! A good way to get this
 semantic would be to add a `consuming` choice `TakeOffer` to the `SpecialOffer` template:
 
-<pre class="file" data-target="clipboard">
+<pre class="file" data-filename="daml/User.daml" data-target="append">
     choice TakeOffer: ()
       controller receivingParty
         do

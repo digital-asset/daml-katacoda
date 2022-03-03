@@ -130,7 +130,7 @@ curl -X POST -H "Content-Type: application/json" -H "Authorization: Bearer $JWT_
         \"sender\": $BOB,
         \"content\": \"Hi Alice! \"
 }}" localhost:7575/v1/exercise
-```{{execute T1}}
+```{{execute T2}}
 
 The ledger answers with a list of created contracts, which contains the created `Message` contract,
 and the result of the execution of the choice, which is the contract ID of the created `Message`
