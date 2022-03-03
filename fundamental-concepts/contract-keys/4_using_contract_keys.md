@@ -34,8 +34,7 @@ The above Daml update actions are represented by four actions in Daml Script, wh
 </table>
 <br>
 
-Let's try these out with a Daml script. First, we let `Alice` exercise the `Follow` choice with
-`exerciseByKeyCmd`:
+Let's try these out with a Daml script. First, **open the IDE tab and wait for it to load**. Once that's done we will add a Daml script that lets `Alice` exercise the `Follow` choice with `exerciseByKeyCmd`:
 
 <pre class="file" data-filename="daml/User.daml" data-target="append">
 test = script do
