@@ -32,12 +32,13 @@ Once finished, open `ui/package.json`{{open}} in the IDE and add the new depende
     "@daml/ledger": "2.0.0",
     "@daml/react": "2.0.0",
     "@daml/types": "2.0.0",
-    "jwt-simple": "^0.5.6",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
+    "@daml/hub-react": "^1.0.0",
     "dotenv": "^8.2.0",
+    "jwt-simple": "^0.5.6",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
     "semantic-ui-css": "^2.4.1",
-    "semantic-ui-react": "^0.88.1"
+    "semantic-ui-react": "^2.0.0"
   }
 </pre>
 
