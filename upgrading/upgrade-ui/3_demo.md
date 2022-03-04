@@ -5,7 +5,8 @@ npm start
 ```{{execute T2}}
 
 and [open the UI tab](https://[[HOST_SUBDOMAIN]]-3000-[[KATACODA_HOST]].environments.katacoda.com).
-As in previous cases we have three network participants:
+As in previous cases we have three users of the `create-daml-app-0.1.0` social
+network:
 1. `Alice` with the username `alice`
 2. `Bob` with the username `bob`
 3. `Charlie` with the username `charlie`
