@@ -6,7 +6,7 @@ as part of your Daml model gives you the peace of mind that your application doe
 loop-holes and your users data is save.
 
 In this scenario we'll have a close look at the Daml code of the [extended Getting Started
-Guide](https://daml.com/interactive-tutorials/getting-started/your-first-feature) and examine the concepts behind
+Guide](https://digitalasset.com/developers/interactive-tutorials/getting-started/your-first-feature) and examine the concepts behind
 
 - **parties**
 - **observers**

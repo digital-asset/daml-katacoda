@@ -41,7 +41,7 @@ template User with
 - The `NewFriendRequest` choice simply creates a `FriendRequest` contract. We use the record punning
   syntax `..`, to automatically assign the `friend` field of the choice argument to the `friend`
   field of the `FriendRequest` contract
-- We use [contract keys](https://daml.com/interactive-tutorials/fundamental-concepts/contract-keys) instead of
+- We use [contract keys](https://digitalasset.com/developers/interactive-tutorials/fundamental-concepts/contract-keys) instead of
   contract IDs in the `AcceptFriendRequest` choice to make the code and API simpler.
 
 Next, we add the `Alias` template that we’ve already seen in previous tutorials. This is used
