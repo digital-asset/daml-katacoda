@@ -1,13 +1,12 @@
 The new UI is ready for a demonstration. Start the UI in the second terminal with
 
 ```
-cd create-daml-app/ui
 npm start
 ```{{execute T2}}
 
 and [open the UI tab](https://[[HOST_SUBDOMAIN]]-3000-[[KATACODA_HOST]].environments.katacoda.com).
 Now try to login as `alice`. `Alice` is already a user of the `create-daml-app-0.1.0` social
-network. Hence, you should now see a pop-up asking her to upgrade. 
+network. Hence, you should now see a pop-up asking her to upgrade.
 
 ![AliceLogin](assets/login_screen.png)
 

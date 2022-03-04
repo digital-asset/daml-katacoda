@@ -13,11 +13,12 @@ In order to do so, you need the generated JavaScript bindings for the newly avai
 so:
 
 ```
+cd /root/create-daml-app
 daml codegen js create-daml-app-0.1.0.dar -o ui/daml.js
 daml codegen js create-daml-app-0.1.1.dar -o ui/daml.js
 daml codegen js forum-0.1.0.dar -o ui/daml.js
 daml codegen js migration-0.1.0.dar -o ui/daml.js
-```{{execute T1}}
+```{{execute T2}}
 
 Once finished, open `ui/package.json`{{open}} in the IDE and add the new dependencies for the
 `create-daml-app-0.1.1`, `forum-0.1.0` and `migration-0.1.0` packages
@@ -45,7 +46,7 @@ and install them with
 ```
 cd ui
 npm install
-```{{execute T1}}
+```{{execute T2}}
 
 Notice that the `create-daml-app` import now points to the `create-daml-app-0.1.1` package, while we
 refer to imports from the old `create-daml-app-0.1.0` package by `create-daml-app-0.1.0`. This
