@@ -5,15 +5,21 @@ npm start
 ```{{execute T2}}
 
 and [open the UI tab](https://[[HOST_SUBDOMAIN]]-3000-[[KATACODA_HOST]].environments.katacoda.com).
+As in previous cases we have three network participants:
+1. `Alice` with the username `alice`
+2. `Bob` with the username `bob`
+3. `Charlie` with the username `charlie`
+
 Now try to login as `alice`. `Alice` is already a user of the `create-daml-app-0.1.0` social
 network. Hence, you should now see a pop-up asking her to upgrade.
 
-![AliceLogin](assets/login_screen.png)
+![AliceMigrated](assets/login_screen.png)
 
-Click on `OK`, and try to login again. All of `Alice`s contracts of the create-daml-app and the
-forum have been upgraded!
+Click on `OK`. You will receive another popup confirming that her upgrade was successful. As `Bob` and `Charlie` still haven't migrated their contracts you can see the difference in their usernames.
 
-Now log-out and login as `Doris`. `Doris` signed up to `create-daml-app-0.1.1` and already added a
-nickname to her `User` contract. You'll notice the changed `Welcome` line:
+![AliceLogin](assets/alice_login.png)
 
-![DorisWelcome](assets/doris_welcome.png)
+Once `Bob` and `Charlie` upgrade their contracts their usernames will change.
+
+![BobLogin](assets/bob_login.png)
+![CharlieLogin](assets/charlie_login.png)
