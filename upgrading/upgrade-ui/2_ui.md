@@ -89,7 +89,7 @@ version.
 
 Your final `ui/src/components/MainView.tsx`{{open}} file should look like this:
 
-```<pre class="file" data-filename="ui/src/components/MainScreen.tsx" data-target="replace">```
+```
 // Copyright (c) 2022 Digital Asset (Switzerland) GmbH and/or its affiliates. All rights reserved.
 // SPDX-License-Identifier: Apache-2.0
 
