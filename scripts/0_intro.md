@@ -11,7 +11,7 @@ This tutorial will teach you how to
 1. run Daml scripts against a ledger
 1. start the REPL and interact with a ledger
 
-We'll take the Daml model of the social network of the [Getting Started](https://daml.com/interactive-tutorials/getting-started/)
+We'll take the Daml model of the social network of the [Getting Started](https://digitalasset.com/developers/interactive-tutorials/getting-started/)
 guide and extend it with tests. After that, we'll be 100% certain that we're not sending any
 messages to the wrong person!
 

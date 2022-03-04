@@ -10,7 +10,7 @@ will get stored on your chosen back-end ledger, it will expose a gRPC and JSON A
 client side and UI libraries to connect to it, all without you writing a single line of code.
 
 In the [Daml Template
-Authorization](https://daml.com/interactive-tutorials/fundamental-concepts/template-authorization/) tutorial we
+Authorization](https://digitalasset.com/developers/interactive-tutorials/fundamental-concepts/template-authorization/) tutorial we
 discussed how to setup access rights to your application data. In this tutorial you'll learn how to
 design your exposed API to interact with your application with [Daml
 choices](https://docs.daml.com/daml/reference/choices.html).

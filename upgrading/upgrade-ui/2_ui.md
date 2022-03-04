@@ -76,7 +76,7 @@ email address of a user, which we added in
 `create-daml-app-0.1.1`. For that, replace the welcome message at the
 end of `ui/src/components/MainScreen.tsx`:
 
-<pre class="file" data-filename="ui/src/components/MainView.tsx" data-target="clipboard">
+<pre class="file" data-target="clipboard">
             &lt;Menu.Item position='right'&gt;
               You are logged in as {user.userId} ({userContract?.email ? userContract?.email : "no email"}).
             &lt;/Menu.Item&gt;
@@ -87,7 +87,9 @@ Finally, because not all users upgrade at the same time, we need to
 make sure that we read `Alias` contracts in both the old and the new
 version.
 
-<pre class="file" data-filename="ui/src/components/MainScreen.tsx" data-target="replace">
+Your final `ui/src/components/MainView.tsx`{{open}} file should look like this:
+
+```
 // Copyright (c) 2022 Digital Asset (Switzerland) GmbH and/or its affiliates. All rights reserved.
 // SPDX-License-Identifier: Apache-2.0
 
@@ -220,4 +222,4 @@ const MainScreen: React.FC&lt;Props&gt; = ({onLogout, getPublicParty}) =&gt; {
 };
 
 export default MainScreen;
-</pre>
+```

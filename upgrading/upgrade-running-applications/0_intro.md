@@ -1,4 +1,4 @@
-In the [previous tutorial](https://daml.com/interactive-tutorials/upgrading/extending-daml-models) you extended the
+In the [previous tutorial](https://digitalasset.com/developers/interactive-tutorials/upgrading/extending-daml-models) you extended the
 social network application of the Getting Started Guide with a new forum feature.
 
 The new `forum` package depends now on the `create-daml-app` package. So what happens if you have
