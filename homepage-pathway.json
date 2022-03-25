@@ -5,13 +5,13 @@
         {
         "external_link": "https://www.digitalasset.com/developers/interactive-tutorials/getting-started",
         "title": "Get Started with Daml",
-        "description": "A short series of tutorials to learn the basics about Daml development.",
+        "description": "A short series of tutorials to learn the basics of Daml development.",
         "action": "Start"
         },
         {
-        "external_link": "https://www.digitalasset.com/developers/interactive-tutorials/canton",
+        "external_link": "https://www.digitalasset.com/developers/interactive-tutorials/platform-operations",
         "title": "Platform operations",
-        "description": "Learn the basisc of operating Canton such as setting up Participant Nodes and Domain",
+        "description": "Learn the basics of operating Canton such as setting up Participant Nodes and Domain",
         "action": "Start"
         },
         {

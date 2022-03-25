@@ -1,1 +1,1 @@
-base : 'ubuntu1804'
+base : 'daml-ubuntu1804'

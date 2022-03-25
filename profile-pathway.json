@@ -8,7 +8,7 @@
       {
       "title": "Platform operations",
       "description": "Learn the basisc of operating Canton such as setting up Participant Nodes and Domains",
-      "id": "canton"
+      "id": "platform-operations"
       },
       {
         "title": "Fundamental Daml Concepts",
