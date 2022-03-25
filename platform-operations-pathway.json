@@ -3,19 +3,19 @@
     "private": false,
     "courses": [
       {
-        "external_link": "https://www.digitalasset.com/developers/interactive-tutorials/canton/getting-started-with-canton",
+        "external_link": "https://www.digitalasset.com/developers/interactive-tutorials/platform-operations/getting-started-with-canton",
         "title": "Get Started With Canton",
         "description": "Get familiar with running Canton",
         "course_id": "getting-started-with-canton"
       },
       {
-        "external_link": "https://www.digitalasset.com/developers/interactive-tutorials/canton/canton-deployment",
+        "external_link": "https://www.digitalasset.com/developers/interactive-tutorials/platform-operations/canton-deployment",
         "title": "Deploying a Full-stack Application on Canton",
         "description": "Get familiar with deploying an app on Canton",
         "course_id": "canton-deployment"
       },
       {
-        "external_link": "https://www.digitalasset.com/developers/interactive-tutorials/canton/installing-canton",
+        "external_link": "https://www.digitalasset.com/developers/interactive-tutorials/platform-operations/installing-canton",
         "title": "Installing Canton",
         "description": "Learn how to fully set up Canton",
         "course_id": "installing-canton"
