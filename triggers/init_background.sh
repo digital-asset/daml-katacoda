@@ -2,7 +2,7 @@
 
 echo initializing...
 
-wget https://katacoda.com/daml/courses/triggers/writing-triggers/assets/market.tar.gz
+wget https://katacoda.com/daml/scenarios/triggers/assets/market.tar.gz
 
 daml new market empty-skeleton
 
