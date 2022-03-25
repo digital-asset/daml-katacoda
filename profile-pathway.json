@@ -2,7 +2,7 @@
     "courses": [
       {
         "title": "Get Started with Daml",
-        "description": "A short series of tutorials to learn the basics about Daml development.",
+        "description": "A short series of tutorials to learn the basics of Daml development.",
         "id": "getting-started"
       },
       {
