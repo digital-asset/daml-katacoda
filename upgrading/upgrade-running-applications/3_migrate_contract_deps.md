@@ -18,7 +18,7 @@ project. Open the
 
 <!-- TODO: automate having the right sdk-version in the snippet-->
 <pre class="file" data-target="clipboard">
-sdk-version: 2.0.0
+sdk-version: 2.1.1
 name: migration
 source: daml
 version: 0.0.1

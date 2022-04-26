@@ -3,7 +3,7 @@ You can login as Bob using `participant2` by following essentially the same proc
 First, start another instance of the HTTP JSON API, this time using the options `-- ledger-port=12021` and `--http-port 7576`. `12021` corresponds to `participant2`’s ledger port, and `7576` is a new port for another instance of the HTTP JSON API.
 
 ```
-DAML_SDK_VERSION=2.0.0 daml json-api \
+DAML_SDK_VERSION=2.1.1 daml json-api \
    --ledger-host localhost \
    --ledger-port 12021 \
    --http-port 7576 \
@@ -13,7 +13,7 @@ DAML_SDK_VERSION=2.0.0 daml json-api \
 Then start another instance of the UI for Bob, running on port `3001` and connected to the HTTP JSON API on port `7576`.
 
 ```
-cd canton-community-2.0.0/create-daml-app/ui
+cd canton-open-source-2.1.1/create-daml-app/ui
 PORT=3001 REACT_APP_HTTP_JSON=http://localhost:7576 REACT_APP_LEDGER_ID=participant2 npm start
 ```{{execute T5}}
 

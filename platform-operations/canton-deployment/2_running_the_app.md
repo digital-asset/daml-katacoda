@@ -5,7 +5,7 @@ Once Canton is running, start the HTTP JSON API:
 - And connected to the UI on the default expected port `7575`
 
 ```
-DAML_SDK_VERSION=2.0.0 daml json-api \
+DAML_SDK_VERSION=2.1.1 daml json-api \
     --ledger-host localhost \
     --ledger-port 12011 \
     --http-port 7575 \
@@ -15,7 +15,7 @@ DAML_SDK_VERSION=2.0.0 daml json-api \
 Leave this running. The UI can then be started from a 3rd terminal window with:
 
 ```
-cd canton-community-2.0.0/create-daml-app/ui
+cd canton-open-source-2.1.1/create-daml-app/ui
 REACT_APP_LEDGER_ID=participant1 npm start
     ```{{execute T3}}
 
