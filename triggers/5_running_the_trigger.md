@@ -38,12 +38,6 @@ daml trigger --dar .daml/dist/market-0.1.0.dar --trigger-name Market:deleteInvoi
 - the `--ledger-user` argument gives the trigger the user id for which it should execute the
   trigger
 
-Once the trigger is running and waiting for ledger events you see the output
-
-```
-Trigger is running as Bob
-```
-
 In a production environment the party running the trigger needs to authenticate itself agains the
 ledger. You can do this by passing the argument
 
