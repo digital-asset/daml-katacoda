@@ -66,13 +66,13 @@ In this tutorial we will show you how to download and set up Canton Open Source.
 Let's first download Canton's `.tar` file from the [GitHub repository](https://github.com/DACH-NY/canton).
 
 ```
- wget https://github.com/digital-asset/daml/releases/download/v2.0.0/canton-open-source-2.0.0.tar.gz
+ wget https://github.com/digital-asset/daml/releases/download/v2.1.1/canton-open-source-2.1.1.tar.gz
 ```{{execute T1}}
 
 We'll extract it next.
 
 ```
-tar xzf canton-open-source-2.0.0.tar.gz
+tar xzf canton-open-source-2.1.1.tar.gz
 ```{{execute T1}}
 
 This guide uses the example configurations you can find in the release bundle under `example/03-advanced-configuration` and explains you how to leverage these examples for your purposes. Therefore, any file named in this guide will refer to subdirectories of the advanced configuration example.

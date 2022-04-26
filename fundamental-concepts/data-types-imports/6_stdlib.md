@@ -51,7 +51,7 @@ this in three easy steps:
    Our `daml.yaml` file will look like this after copying the dependecy:
 
    ```
-    sdk-version: 2.0.0
+    sdk-version: 2.1.1
     name: data-structures
     version: 0.1.0
     source: daml

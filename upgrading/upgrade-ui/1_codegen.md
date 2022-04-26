@@ -29,16 +29,16 @@ Once finished, open `ui/package.json`{{open}} in the IDE and add the new depende
     "@daml.js/create-daml-app": "file:daml.js/create-daml-app-0.1.1",
     "@daml.js/forum-0.1.0": "file:daml.js/forum-0.1.0",
     "@daml.js/migration-v0-v1": "file:daml.js/migration-0.1.0",
-    "@daml/ledger": "2.0.0",
-    "@daml/react": "2.0.0",
-    "@daml/types": "2.0.0",
+    "@daml/ledger": "2.1.1",
+    "@daml/react": "2.1.1",
+    "@daml/types": "2.1.1",
     "@daml/hub-react": "^1.0.0",
     "dotenv": "^8.2.0",
     "jwt-simple": "^0.5.6",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "semantic-ui-css": "^2.4.1",
-    "semantic-ui-react": "^2.0.0"
+    "semantic-ui-react": "^2.1.1"
   }
 </pre>
 

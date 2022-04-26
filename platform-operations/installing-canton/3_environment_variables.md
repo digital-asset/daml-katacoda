@@ -1,7 +1,7 @@
 For our convenience in this guide, we will use a few environment variables to refer to a set of directions. Please set the environment variable “CANTON” to point to the place where you have unpacked the canton release bundle.
 
 ```
-cd ./canton-community-2.0.0
+cd ./canton-open-source-2.1.1
 export CANTON=`pwd`
 ```{{execute T2}}
 
