@@ -71,10 +71,10 @@ implementation that has the necessary UI prompts and ledger queries to perform t
    user has already upgraded or has not yet registered and we proceed as usual.
 
 To make things a bit more interesting, we update the
-`ui/src/components/MainView.tsx`{{open}} component to display the
+`ui/src/components/MainScreen.tsx`{{open}} component to display the
 email address of a user, which we added in
 `create-daml-app-0.1.1`. For that, replace the welcome message at the
-end of `ui/src/components/MainScreen.tsx`:
+end of `ui/src/components/MainScreen.tsx`{{open}}:
 
 <pre class="file" data-target="clipboard">
             &lt;Menu.Item position='right'&gt;
@@ -87,7 +87,7 @@ Finally, because not all users upgrade at the same time, we need to
 make sure that we read `Alias` contracts in both the old and the new
 version.
 
-Your final `ui/src/components/MainView.tsx`{{open}} file should look like this:
+Your final `ui/src/components/MainScreen.tsx`{{open}} file should look like this:
 
 ```
 // Copyright (c) 2022 Digital Asset (Switzerland) GmbH and/or its affiliates. All rights reserved.
