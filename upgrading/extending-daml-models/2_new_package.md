@@ -24,7 +24,7 @@ Next, let's add the `create-daml-app` to the dependencies in the `/forum/daml.ya
 
 <!-- TODO: automate having the right sdk-version in the snippet-->
 <pre class="file" data-target="clipboard">
-sdk-version: 2.1.1
+sdk-version: 2.2.0
 name: forum
 source: daml
 version: 0.0.1

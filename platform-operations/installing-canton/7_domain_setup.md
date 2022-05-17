@@ -21,7 +21,7 @@ grant all privileges on database domain1 to canton;
 Next we set up the environment variables mentioned at the beginning of this guide (in Step 3) for our convenience.
 
 ```
-cd ./canton-open-source-2.1.1
+cd ./canton-open-source-2.2.0
 export CANTON=`pwd`
 export CONF="$CANTON/examples/03-advanced-configuration"
 ```{{execute T3}}
