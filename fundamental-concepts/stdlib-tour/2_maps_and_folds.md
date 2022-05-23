@@ -69,7 +69,7 @@ For example, you can implement the above Java loop in just one line with
 
 <pre class="file" data-filename="daml/AddressBook.daml" data-target="append">
 total: Int
-total = foldl (\y x -> y + x) 1 [0, 1, 2, 3, 5, 8, 13]
+total = foldl (\y x -> y + x) 0 [0, 1, 2, 3, 5, 8, 13]
 </pre>
 
 Not surprisingly, `sum: Additive a => [a]` is already provided by the `Prelude` module.
